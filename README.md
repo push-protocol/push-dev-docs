@@ -1,8 +1,3 @@
----
-description: >-
-  Notifications are the building blocks of communication across Web3. Check out
-  how EPNS is building the communication layer of decentralized Web
----
 
 # ⭐ Getting Started
 
@@ -60,79 +55,26 @@ Being an open communication middleware, notifications can be integrated and show
 
 </details>
 
-### Developer Guides & Concepts&#x20;
+## Developer Guides & Concepts 
 
-{% tabs %}
-{% tab title="Channels " %}
-**🖥** _Lear️n everything about channels, their working mechanisms, and how to create one._\
-&#x20;__&#x20;
+### 1. Channels
+*🖥 Lear️n everything about channels, their working mechanisms, and how to create one.*
 
-{% content-ref url="concepts/create-your-notif-channel/" %}
-[create-your-notif-channel](concepts/create-your-notif-channel/)
-{% endcontent-ref %}
-
-{% content-ref url="developer-guides/create-your-notif-channel/" %}
-[create-your-notif-channel](developer-guides/create-your-notif-channel/)
-{% endcontent-ref %}
-{% endtab %}
-
-{% tab title="Notifications" %}
-🔔 _Explore all about notifications, their types, the different ways of sending and receiving notifications as well as other imperative details._\
-__
-
-{% content-ref url="concepts/web3-notifications/" %}
-[web3-notifications](concepts/web3-notifications/)
-{% endcontent-ref %}
-
-{% content-ref url="developer-guides/sending-notifications/" %}
-[sending-notifications](developer-guides/sending-notifications/)
-{% endcontent-ref %}
-
-{% content-ref url="developer-guides/receiving-notifications/" %}
-[receiving-notifications](developer-guides/receiving-notifications/)
-{% endcontent-ref %}
-
-{% content-ref url="developer-guides/sending-notifications/notification-payload-types/" %}
-[notification-payload-types](developer-guides/sending-notifications/notification-payload-types/)
-{% endcontent-ref %}
-{% endtab %}
-
-{% tab title="SDK" %}
-⚙ _Understand the key features of EPNS SDK and how to use it in your own project easily._ \
-__
-
-{% content-ref url="developer-tooling/epns-sdk/" %}
-[epns-sdk](developer-tooling/epns-sdk/)
-{% endcontent-ref %}
-
-{% content-ref url="developer-tooling/epns-sdk/epns-sdk-starter-kit.md" %}
-[epns-sdk-starter-kit.md](developer-tooling/epns-sdk/epns-sdk-starter-kit.md)
-{% endcontent-ref %}
-{% endtab %}
-
-{% tab title="Showrunners" %}
-_🛠 Learn about the showrunners framework and how to use it to build out notifications for your specific use cases._\
+* [What are Channels?](https://docs.epns.io/developers/concepts/create-your-notif-channel)
+* [How to create a Channel?](https://docs.epns.io/developers/developer-guides/create-your-notif-channel)
 
 
-{% content-ref url="developer-tooling/showrunners-framework/" %}
-[showrunners-framework](developer-tooling/showrunners-framework/)
-{% endcontent-ref %}
+### 2. Notificatins
+*🔔 Explore all about notifications, their types, the different ways of sending and receiving notifications as well as other imperative details.*
 
-{% content-ref url="developer-guides/sending-notifications/using-showrunners-scaffold-gasless.md" %}
-[using-showrunners-scaffold-gasless.md](developer-guides/sending-notifications/using-showrunners-scaffold-gasless.md)
-{% endcontent-ref %}
-{% endtab %}
+* [Web3 Notificatins](https://docs.epns.io/developers/concepts/web3-notifications)
+* [Different ways of Sending Notifications](https://docs.epns.io/developers/developer-guides/sending-notifications)
+* [Receiving Notifications](https://docs.epns.io/developers/developer-guides/receiving-notifications)
+* [Notification Standards](https://docs.epns.io/developers/developer-guides/sending-notifications/notification-payload-types)
 
-{% tab title="Smart Contracts" %}
-📝 _Learn about the EPNS Core and Communicator smart contracts architecture._ \
-__
 
-{% content-ref url="developer-tooling/epns-smart-contracts/" %}
-[epns-smart-contracts](developer-tooling/epns-smart-contracts/)
-{% endcontent-ref %}
+### 3. EPNS SDK
+*⚙ Understand the key features of EPNS SDK and how to use it in your own project easily.*
+* [EPNS SDK](https://docs.epns.io/developers/developer-tooling/epns-sdk)
+* [EPNS SDK Starter Kit](https://docs.epns.io/developers/developer-tooling/epns-sdk/epns-sdk-starter-kit) 
 
-{% content-ref url="developer-tooling/epns-smart-contracts/epns-contract-addresses.md" %}
-[epns-contract-addresses.md](developer-tooling/epns-smart-contracts/epns-contract-addresses.md)
-{% endcontent-ref %}
-{% endtab %}
-{% endtabs %}
