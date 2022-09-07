@@ -36,7 +36,8 @@ interface IPUSHCommInterface {
 }
 
 contract Push is ERC20 {
-    address public EPNS_COMM_ADDRESS = 0xb3971BCef2D791bc4027BbfedFb47319A4AAaaAa;
+    // EPNS COMM ADDRESS ON ETHEREUM KOVAN, CHECK THIS: https://docs.epns.io/developers/developer-tooling/epns-smart-contracts/epns-contract-addresses
+    address public EPNS_COMM_ADDRESS = 0xf418588522d5dd018b425E472991E52EBBeEEEEE;
 
     constructor ()
         ERC20("Push Token", "PUSH")
