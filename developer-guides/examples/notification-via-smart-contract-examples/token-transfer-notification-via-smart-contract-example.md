@@ -106,6 +106,6 @@ contract Push is ERC20 {
         }
         return string(bstr);
     }
-}s
+}
 ```
 

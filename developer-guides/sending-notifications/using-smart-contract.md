@@ -43,3 +43,7 @@ IPUSHCommInterface(EPNS_COMM_CONTRACT_ADDRESS_FOR_SPECIFIC_BLOCKCHAIN).sendNotif
 ```
 
 The last step is to go back to your channel and add the smart contract address as a delegate ensuring notifications sent by your smart contract are routed through your channel and presented to your users. Learn about [adding-delegates-for-channel.md](../create-your-notif-channel/adding-delegates-for-channel.md "mention").
+
+{% hint style="info" %}
+Example of Token Transfer Notification can be found here :point\_right: [token-transfer-notification-via-smart-contract-example.md](../examples/notification-via-smart-contract-examples/token-transfer-notification-via-smart-contract-example.md "mention")
+{% endhint %}
