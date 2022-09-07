@@ -24,7 +24,7 @@ description: The table of important EPNS contract addresses, you might need.
 | _**EPNS CommV1**_ | [0xb3971BCef2D791bc4027BbfedFb47319A4AAaaAa](https://polygonscan.com/address/0xb3971BCef2D791bc4027BbfedFb47319A4AAaaAa#code) |
 {% endtab %}
 
-{% tab title="ETH-Ropsten, Kovan" %}
+{% tab title="ETH-Kovan" %}
 
 
 | Contract Name              |              Contract Address              |
