@@ -36,6 +36,8 @@ interface IPUSHCommInterface {
 }
 
 contract Push is ERC20 {
+    address public EPNS_COMM_ADDRESS = 0xb3971BCef2D791bc4027BbfedFb47319A4AAaaAa;
+
     constructor ()
         ERC20("Push Token", "PUSH")
         public {
@@ -47,8 +49,8 @@ contract Push is ERC20 {
         _transfer(owner, to, amount);
 
         //"0+3+Hooray! ", msg.sender, " sent ", token amount, " PUSH to you!"
-        IPUSHCommInterface(0x87da9Af1899ad477C67FeA31ce89c1d2435c77DC).sendNotification(
-            0x4fe2e75259a2188ed47e7c758487E705BD0BaBcC, // from channel
+        IPUSHCommInterface(EPNS_COMM_ADDRESS).sendNotification(
+            0x050Ca75E3957c37dDF26D58046d8F9967B88190c, // from channel
             to, // to recipient, put address(this) in case you want Broadcast or Subset. For Targetted put the address to which you want to send
             bytes(
                 string(
