@@ -14,15 +14,67 @@ Please ensure that you have correctly installed showrunners using the [**Setup S
 Hello World channel exists to simply demonstrate how easy it is to send notifications in Web3. To setup the channel, you will need to do the following things.
 
 1. Ensure that you have [**created your channel**](../../developer-guides/create-your-notif-channel/) and make a note of the private key used for the same.&#x20;
-2. Head to `src/sample_showrunners` from the git clone of **epns-showrunners-framework-staging** which you had done earlier.
+2. Head to `src/sample_showrunners` from the git clone of **epns-showrunners-framework** which you had done earlier.
 3. Copy the folder `helloWorld` and drop it in `src/showrunners` folder.
-4. You might notice that the showrunners has already moved to complain about `helloWorldKeys.json` not containing the correct private key.\
+   1. You might notice that the showrunners has already moved to complain about `helloWorldKeys.json` not containing the correct private key.\
+      \
+      `{` \
+      &#x20;   `"PRIVATE_KEY_NEW_STANDARD_1":` \
+      &#x20;   `{` \
+      &#x20;       `"PK": "YOUR_CHANNEL_PRIVATE_KEY_HERE",` \
+      &#x20;       `"CHAIN_ID": "CHAIN_ID_HERE"`\
+      &#x20;   `},` \
+      `}`\
+      ``&#x20;
+4. Simply copy and paste the private key of your channel instead of `YOUR_CHANNEL_PRIVATE_KEY_HERE` and you should be presented with the following screen.\
    \
-   `{`\
-   &#x20;   `"PRIVATE_KEY_1": "YOUR_CHANNEL_PRIVATE_KEY_HERE"` \
-   `}`\
-   ``&#x20;
-5. Simply copy and paste the private key of your channel instead of `YOUR_CHANNEL_PRIVATE_KEY_HERE` and you should be presented with the following screen.
+   For `CHAIN_ID_HERE`, You will need to paste the multi chain id format, current supported formats are:
+
+{% tabs %}
+{% tab title="Ethereum Testnet" %}
+`"CHAIN_ID": "eip155:42"`\
+``\
+``**Note:** Use `eip155:42` if you deployed your channel on Ethereum Testnet\
+
+
+{% hint style="info" %}
+Will only work if .env also has SHOWRUNNERS\_ENV=staging
+{% endhint %}
+{% endtab %}
+
+{% tab title="Matic Testnet" %}
+`"CHAIN_ID": "eip155:80001"`\
+``\
+``**Note:** Use `eip155:80001` if you deployed your channel on Matic Mumbai Testnet\
+
+
+{% hint style="info" %}
+Will only work if .env also has SHOWRUNNERS\_ENV=staging
+{% endhint %}
+{% endtab %}
+
+{% tab title="Ethereum Mainnet" %}
+`"CHAIN_ID": "eip155:1"`\
+``\
+``**Note:** Use `eip155:1` if you deployed your channel on Ethereum Mainnet\
+
+
+{% hint style="info" %}
+Will only work if .env also has SHOWRUNNERS\_ENV=prod
+{% endhint %}
+{% endtab %}
+
+{% tab title="Polygon Mainnet" %}
+`"CHAIN_ID": "eip155:137"`\
+``\
+``**Note:** Use `eip155:137` if you deployed your channel on Polygon\
+
+
+{% hint style="info" %}
+Will only work if .env also has SHOWRUNNERS\_ENV=prod
+{% endhint %}
+{% endtab %}
+{% endtabs %}
 
 ![](<../../.gitbook/assets/Screen Shot 2022-05-09 at 1.10.56 PM.png>)
 

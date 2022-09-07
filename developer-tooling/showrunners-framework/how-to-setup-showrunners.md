@@ -31,6 +31,9 @@ For creating this `.env` file, simply copy the `.env.sample` file present in the
 ```
 # MAKE A COPY OF THIS AND FILL WITH YOUR CREDENTIALS AND NAME IT .env (Remove .sample Part)
 
+# SHOWRUNNERS ENVIRONMENT: prod or staging or dev
+SHOWRUNNERS_ENV=staging
+
 ## NORMAL CONFIG
 # DEBUG | CAN BE 'debug' or 'prod'
 LOG_LEVEL=debug_or_prod # 'debug' or 'prod'
@@ -47,6 +50,7 @@ ALCHEMY_API=your_alchemy_api_key_or_null
 
 | Param                   | Valid Values                                  | Comment                                                                                                                                                                                                                       |
 | ----------------------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SHOWRUNNERS\_ENV        | **prod** or **staging**                       | Describes the Push Network you are targeting. If you deployed your channel on staging then this will be _staging_ else if you deployed on mainnet (even multi-chain channel) then this will be _prod_.                        |
 | LOG\_LEVEL              | **debug** or **prod**                         | Changes the amount of log generated, recommended to use debug until you are sure of the logic.                                                                                                                                |
 | INFURA\_PROJECT         | **your\_infura\_project\_id** or **null**     | <p>Head to <a href="https://infura.io/"><strong>infura.io</strong></a> to generate one, required to query data of blockchain. </p><p></p><p>Need atleast one (Infura, Etherscan or Alchemy) to operate correctly.</p>         |
 | INFURA\_PROJECT\_SECRET | **your\_infura\_project\_secret** or **null** | <p>Head to <a href="https://infura.io/"><strong>infura.io</strong></a> to generate one, required to query data of blockchain. </p><p></p><p>Need atleast one (Infura, Etherscan or Alchemy) to operate correctly.</p>         |
