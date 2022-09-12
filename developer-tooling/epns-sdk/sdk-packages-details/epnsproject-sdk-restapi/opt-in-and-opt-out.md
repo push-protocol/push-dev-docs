@@ -23,7 +23,7 @@ const { account, library, chainId } = useWeb3React();
 const signer = library.getSigner(account);
 ```
 
-### **opt in to a channel Comment**
+### **opt in to a channel**
 
 ```typescript
 await EpnsAPI.channels.subscribe({

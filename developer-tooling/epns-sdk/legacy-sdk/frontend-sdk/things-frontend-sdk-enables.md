@@ -176,6 +176,6 @@ After the wallet connect happens in your application, trigger the below code sni
 
 The UI should look somewhat like this screenshot below 👇
 
-![Here, if the user is connected to their wallet and clicks on the bell icon, they will see the next screen](<../../../../.gitbook/assets/image (34).png>)
+![Here, if the user is connected to their wallet and clicks on the bell icon, they will see the next screen](<../../../../.gitbook/assets/image (31).png>)
 
-![The Sidebar shows the EPNS notifications with a header which is a clickable link to the EPNS dApp.](<../../../../.gitbook/assets/image (11).png>)
+![The Sidebar shows the EPNS notifications with a header which is a clickable link to the EPNS dApp.](<../../../../.gitbook/assets/image (30).png>)
