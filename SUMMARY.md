@@ -19,7 +19,7 @@
     * [Polygon (Channel Setup)](developer-guides/create-your-notif-channel/enabling-channel-on-other-chains/polygon-channel-setup.md)
   * [Adding Delegates For Channel](developer-guides/create-your-notif-channel/adding-delegates-for-channel.md)
   * [Channel Creation Guides](developer-guides/create-your-notif-channel/channel-creation-guides/README.md)
-    * [Deploying your First Channel](developer-guides/create-your-notif-channel/channel-creation-guides/deploying-your-first-channel.md)
+    * [Deploying your First Channel](developer-guides/examples/deploying-your-first-channel.md)
     * [Creating a Channel using Gnosis Safe](developer-guides/create-your-notif-channel/channel-creation-guides/creating-a-channel-using-gnosis-safe.md)
 * [Sending Notifications](developer-guides/sending-notifications/README.md)
   * [Using Smart Contract](developer-guides/sending-notifications/using-smart-contract.md)

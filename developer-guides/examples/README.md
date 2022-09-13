@@ -1,7 +1,7 @@
 # Examples
 
-{% content-ref url="../create-your-notif-channel/channel-creation-guides/deploying-your-first-channel.md" %}
-[deploying-your-first-channel.md](../create-your-notif-channel/channel-creation-guides/deploying-your-first-channel.md)
+{% content-ref url="deploying-your-first-channel.md" %}
+[deploying-your-first-channel.md](deploying-your-first-channel.md)
 {% endcontent-ref %}
 
 {% content-ref url="notification-via-subgraph-example.md" %}

@@ -6,7 +6,7 @@ description: >-
 
 # Deploying your First Channel
 
-Any legitimate Ethereum Wallet address can activate itself in the protocol as a Channel, and start sending notifications. In order to set up a channel, a user can create one by using our [EPNS dApp](https://app.epns.io/) or directly interacting with our [EPNS Core Smart Contracts](../../../developer-tooling/epns-smart-contracts/epns-core-contract/channel-creation-process-on-smart-contract.md).
+Any legitimate Ethereum Wallet address can activate itself in the protocol as a Channel, and start sending notifications. In order to set up a channel, a user can create one by using our [EPNS dApp](https://app.epns.io/) or directly interacting with our [EPNS Core Smart Contracts](../../developer-tooling/epns-smart-contracts/epns-core-contract/channel-creation-process-on-smart-contract.md).
 
 In this tutorial, we will use the EPNS Staging dApp to launch our channel and test notifications features. It's incredibly simple and easy to deploy channels on the EPNS using our dApp. Without any further ado, let's set up our channel 🚀
 
@@ -24,13 +24,13 @@ Go to the [EPNS Staging dApp](https://staging.epns.io) or [EPNS Prod dApp](https
 
 Connect your [Metamask Wallet](https://metamask.io/) or any other supported wallet!&#x20;
 
-![EPNS dApp](<../../../.gitbook/assets/Screenshot 2022-06-30 at 5.12.24 PM.png>)
+![EPNS dApp](<../../.gitbook/assets/Screenshot 2022-06-30 at 5.12.24 PM.png>)
 
 ### Step 3️⃣ - **Developer** > **Create Channel**
 
 Once Connected, go to the **Developer** > **Create Channel**
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-09-05 at 12.27.22 AM.png" alt=""><figcaption><p>Create Channel Page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-05 at 12.27.22 AM.png" alt=""><figcaption><p>Create Channel Page</p></figcaption></figure>
 
 {% hint style="warning" %}
 If you are on staging environment, don't forget to mint:\
@@ -49,7 +49,7 @@ Faucets giving you trouble? Head to our :point\_right: [EPNS Discord Channel](ht
 
 ### Step 4️⃣ - Understand and fill details (Especially Channel Alias) ****&#x20;
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-09-05 at 2.30.03 AM.png" alt=""><figcaption><p>Channel Alias is immutable in Push Protocol v1 and can't be changed later</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-05 at 2.30.03 AM.png" alt=""><figcaption><p>Channel Alias is immutable in Push Protocol v1 and can't be changed later</p></figcaption></figure>
 
 #### What is Channel Alias Address?
 
@@ -65,8 +65,8 @@ Channel Alias is only shown if you switch to any other network than Ethereum. **
 
 Read the section attached below to learn more about channel alias addresses.
 
-{% content-ref url="../../../concepts/create-your-notif-channel/what-is-a-channel-alias.md" %}
-[what-is-a-channel-alias.md](../../../concepts/create-your-notif-channel/what-is-a-channel-alias.md)
+{% content-ref url="../../concepts/create-your-notif-channel/what-is-a-channel-alias.md" %}
+[what-is-a-channel-alias.md](../../concepts/create-your-notif-channel/what-is-a-channel-alias.md)
 {% endcontent-ref %}
 
 ### **Step** 5️⃣ - Do Transactions
@@ -76,13 +76,13 @@ You will need to do two transactions (and optionally a third one if you are crea
 1. **Approval of DAI** -> This transaction ensures that your wallet address has successfully approved the EPNSCore contract to use 50 DAI on your behalf.
 2. **Channel Creation on EPNSCore ->** Once approved, the 2nd transaction calls the channel creation function on EPNSCore smart contract to create the channel.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-09-05 at 2.27.04 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-05 at 2.27.04 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### **Step** 6️⃣ **** - Verify Channel on another Blockchain
 
 If you have created a multichain channel then you need to switch to that blockchain network and do another tx that verifies your channel on that network.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-09-05 at 2.33.17 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-05 at 2.33.17 AM.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 Congratulations 🎉 Your channel should now be successfully created. YES, it's this much easy..!
@@ -90,7 +90,7 @@ Congratulations 🎉 Your channel should now be successfully created. YES, it's 
 
 ## Know your Channel
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-09-05 at 2.44.05 AM.png" alt=""><figcaption><p>Channel Dashboard</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-05 at 2.44.05 AM.png" alt=""><figcaption><p>Channel Dashboard</p></figcaption></figure>
 
 After successful channel creation, the EPNS dApp will start showing the Channel's Profile Page. There are a few details about this page listed below for your reference;
 

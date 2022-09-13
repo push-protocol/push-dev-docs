@@ -18,17 +18,22 @@ Before we proceed with the actual steps of connecting the safe to the EPNS dapp 
 2. Fund your safe with at least 50 DAI. _This amount of DAI is required for channel creation._
 3.  Initiate a **contract interaction** from your safe itself to trigger the _**approve()**_** ** function of the [DAI Token](https://etherscan.io/address/0x6B175474E89094C44Da98b954EedeAC495271d0F) with the following values for the argument.
 
-    a. _usr (address) -_ `0x66329Fdd4042928BfCAB60b179e1538D56eeeeeE`
+    `a.`` `_`usr (address) :`_`0x66329Fdd4042928BfCAB60b179e1538D56eeeeeE - EPNSCore Contract`
 
-    b. wad (uint256) - 50 DAI
+    `b. wad (uint256) - 50 DAI -> Channel Creation Fees`
 
 This is important to ensure that the EPNSCore contract is allowed to use 50 DAI from the safe for the successful creation of the channel.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>A sample of how DAI approval transaction</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>A sample of how DAI approval transaction</p></figcaption></figure>
+
+{% hint style="info" %}
+If you are setting up a Channel on Prod dApp (Ethereum Mainnet), you can request for **channel creation gas fee reimbursement** within 24 hrs by [filling out this form](https://docs.google.com/forms/d/e/1FAIpQLScNQ2\_mACRQgyIPsr47woE69\_FOds8aLIGupT20QIEUMfgnQw/viewform). See [this medium article for more information](https://medium.com/ethereum-push-notification-service/calling-all-hobbyist-devs-channel-creation-gas-fee-is-now-refundable-6631ccd01baf).
+{% endhint %}
 
 Alright, once you have ensured all the prerequisites are completed, let's move forward with creating a channel with the Gnosis safe using the following steps.
 
-**Step 1:** Connect to the EPNS Dapp using your Gnosis safe.
+**Step 1:** Connect to the EPNS Dapp using your Gnosis safe. \
+Follow the steps mentioned below:
 
 a. Go to [https://app.epns.io/](https://app.epns.io/)
 
@@ -40,7 +45,6 @@ d. Once you have connected with your safe on the gnosis safe app, go to the apps
 
 e. Search for the Wallet connect app and click on it.
 
-\
 f. Paste the **connection link (**from step b**)** in the given Wallet connect box.
 
 And that's it. Once the connection link is provided your safe is automatically logged in with the EPNS DAPP.
@@ -55,12 +59,12 @@ Connecting to EPNS DAPP using your gnosis safe
 
 Once you have successfully connected your gnosis safe to the EPNS dapp, it basically gets easier from now on.&#x20;
 
-Now creating a channel is an exactly similar process as it was using an EOA account.
+Now that you are connected to the dapp, creating a channel using a safe is an exactly similar process as it was using an EOA account.
 
 Follow the steps mentioned in the following section to create a channel 👇
 
-{% content-ref url="deploying-your-first-channel.md" %}
-[deploying-your-first-channel.md](deploying-your-first-channel.md)
+{% content-ref url="../../examples/deploying-your-first-channel.md" %}
+[deploying-your-first-channel.md](../../examples/deploying-your-first-channel.md)
 {% endcontent-ref %}
 
 **Step 3: Signing and Initiating channel creation transaction.**
@@ -69,6 +73,12 @@ The only difference in creating a channel with Gnosis safe is the fact that ever
 
 Therefore, once the channel details are entered and the transaction is initiated, its time for the required number of owners to sign and approve this transaction from the gnosis safe app to execute it.
 
-After the successful execution of the transaction, your channel will be adequately created on the EPNS dapp.&#x20;
+After the successful execution of the transaction, your channel will be created on the EPNS dapp and will be owned by the safe(_and its owners_).
 
+{% hint style="info" %}
 _**Remember in order to access the channel's profile page,  you must log in to the dapp from the safe itself.**_
+{% endhint %}
+
+{% embed url="https://loom.com/share/388b7a807f5c4bc3b8e7538c90a717a8" %}
+Accessing the Channel Dashboard
+{% endembed %}
