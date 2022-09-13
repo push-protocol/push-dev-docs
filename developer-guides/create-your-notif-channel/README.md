@@ -45,7 +45,8 @@ If you are setting up a Channel on Prod dApp (Ethereum Mainnet), you can request
 
 1. Ensure that you have the above requirements ready.
 2. Head to [EPNS Prod dApp](https://app.epns.io) or [EPNS Staging dApp](https://staging.epns.io) based on your channel creation requirement. **Note:** Channel creation is a protocol based event which means you can also create the channel by interacting with [EPNS Core Smart Contract](../../developer-tooling/epns-smart-contracts/epns-core-contract/channel-creation-process-on-smart-contract.md).
-3. Visit Create Channel and follow the instructions to create your channel. _Optionally you can visit_  [deploying-your-first-channel.md](../examples/deploying-your-first-channel.md "mention") _guide for step by step tutorial._
+3. Visit Create Channel and follow the instructions to create your channel. _Optionally you can visit_  [deploying-your-first-channel.md](channel-creation-guides/deploying-your-first-channel.md "mention") _guide for step by step tutorial._
+4. If you wish to create a channel using a Gnosis safe, please visit[creating-a-channel-using-gnosis-safe.md](channel-creation-guides/creating-a-channel-using-gnosis-safe.md "mention") and follow the guide to create one.
 
 {% hint style="warning" %}
 If you want to send notifications from other network, please make sure to check and understand [enabling-channel-on-other-chains](enabling-channel-on-other-chains/ "mention") section as you need to provide that info during your channel creation process.
