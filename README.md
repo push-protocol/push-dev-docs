@@ -19,7 +19,7 @@ Being an open communication middleware, notifications can be integrated and show
 
 <!---->
 
-* A wallet address can create only one [**Channel**](https://whitepaper.epns.io/protocol-specs-section/epns-protocol/channels) **** on the protocol.&#x20;
+* A wallet address can create only one [**Channel**](https://whitepaper.epns.io/protocol-specs-section/epns-protocol/channels) on the protocol.&#x20;
 
 <!---->
 
@@ -33,7 +33,7 @@ Being an open communication middleware, notifications can be integrated and show
 
 * Channels can send notifications to their users(wallet addresses) in a number of ways including:&#x20;
   * [**Backend SDK**](developer-tooling/epns-sdk/legacy-sdk/backend-sdk/) (**Gasless**, Best for automated logic from dApp / Backend)
-  * ****[**Showrunners Framework**](developer-tooling/showrunners-framework/) (**Scaffold / Gasless**, Best for automated logic via scaffold backend)
+  * [**Showrunners Framework**](developer-tooling/showrunners-framework/) (**Scaffold / Gasless**, Best for automated logic via scaffold backend)
   * Smart contract to Smart contract (**requires gas**, **** Best for instant on-chain events, piggybacks on an on-chain transaction via Interface ABI call)
   * Manually from EPNS dApp (**Gasless**, Best for manual logic)
 
@@ -51,20 +51,21 @@ Being an open communication middleware, notifications can be integrated and show
 
 <!---->
 
-* Currently, we have [**Staging** ](https://staging.epns.io/)and [**Prod** ](https://app.epns.io/)dApp that interfaces with EPNS Protocol to enable communication & notifications.
+* Currently, we have [**Staging**](https://staging.epns.io/)and [**Prod**](https://app.epns.io/)dApp that interfaces with EPNS Protocol to enable communication & notifications.
 
 </details>
 
-## Developer Guides & Concepts 
+## Developer Guides & Concepts
 
 ### 1. Channels
+
 *🖥 Lear️n everything about channels, their working mechanisms, and how to create one.*
 
 * [What are Channels?](https://docs.epns.io/developers/concepts/create-your-notif-channel)
 * [How to create a Channel?](https://docs.epns.io/developers/developer-guides/create-your-notif-channel)
 
-
 ### 2. Notificatins
+
 *🔔 Explore all about notifications, their types, the different ways of sending and receiving notifications as well as other imperative details.*
 
 * [Web3 Notificatins](https://docs.epns.io/developers/concepts/web3-notifications)
@@ -72,9 +73,9 @@ Being an open communication middleware, notifications can be integrated and show
 * [Receiving Notifications](https://docs.epns.io/developers/developer-guides/receiving-notifications)
 * [Notification Standards](https://docs.epns.io/developers/developer-guides/sending-notifications/notification-payload-types)
 
-
 ### 3. EPNS SDK
-*⚙ Understand the key features of EPNS SDK and how to use it in your own project easily.*
-* [EPNS SDK](https://docs.epns.io/developers/developer-tooling/epns-sdk)
-* [EPNS SDK Starter Kit](https://docs.epns.io/developers/developer-tooling/epns-sdk/epns-sdk-starter-kit) 
 
+*⚙ Understand the key features of EPNS SDK and how to use it in your own project easily.*
+
+* [EPNS SDK](https://docs.epns.io/developers/developer-tooling/epns-sdk)
+* [EPNS SDK Starter Kit](https://docs.epns.io/developers/developer-tooling/epns-sdk/epns-sdk-starter-kit)
