@@ -89,7 +89,7 @@ Being an open communication middleware, notifications can be integrated and show
 {% endcontent-ref %}
 {% endtab %}
 
-{% tab title="Untitled" %}
+{% tab title="SDK" %}
 ⚙ _Understand the key features of EPNS SDK and how to use it in your own project easily._&#x20;
 
 {% content-ref url="developer-tooling/epns-sdk/" %}
