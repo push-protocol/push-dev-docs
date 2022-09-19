@@ -1,7 +1,6 @@
-
 # ⭐ Getting Started
 
-Ethereum Push Notification Service (EPNS) is the world’s first decentralized communication & notification protocol for Web3.&#x20;
+Ethereum Push Notification Service (EPNS) is the world’s first decentralized communication & notification protocol for Web3.
 
 Using the protocol, any smart contract, dApp, or backend service can send on-chain or off-chain notifications tied to the wallet addresses of users in a gasless, multichain, open, and platform-agnostic way.
 
@@ -19,7 +18,7 @@ Being an open communication middleware, notifications can be integrated and show
 
 <!---->
 
-* A wallet address can create only one [**Channel**](https://whitepaper.epns.io/protocol-specs-section/epns-protocol/channels) **** on the protocol.&#x20;
+* A wallet address can create only one [**Channel**](https://whitepaper.epns.io/protocol-specs-section/epns-protocol/channels) \*\*\*\* on the protocol.
 
 <!---->
 
@@ -27,14 +26,14 @@ Being an open communication middleware, notifications can be integrated and show
 
 <!---->
 
-* Creating a channel requires 50 DAI and Channel info (Channel name, Image, description, CTA) and some **ETH** too.&#x20;
+* Creating a channel requires 50 DAI and Channel info (Channel name, Image, description, CTA) and some **ETH** too.
 
 <!---->
 
-* Channels can send notifications to their users(wallet addresses) in a number of ways including:&#x20;
+* Channels can send notifications to their users(wallet addresses) in a number of ways including:
   * [**Backend SDK**](developer-tooling/epns-sdk/legacy-sdk/backend-sdk/) (**Gasless**, Best for automated logic from dApp / Backend)
-  * ****[**Showrunners Framework**](developer-tooling/showrunners-framework/) (**Scaffold / Gasless**, Best for automated logic via scaffold backend)
-  * Smart contract to Smart contract (**requires gas**, **** Best for instant on-chain events, piggybacks on an on-chain transaction via Interface ABI call)
+  * \*\*\*\*[**Showrunners Framework**](developer-tooling/showrunners-framework/) (**Scaffold / Gasless**, Best for automated logic via scaffold backend)
+  * Smart contract to Smart contract (**requires gas**, \*\*\*\* Best for instant on-chain events, piggybacks on an on-chain transaction via Interface ABI call)
   * Manually from EPNS dApp (**Gasless**, Best for manual logic)
 
 <!---->
@@ -55,26 +54,75 @@ Being an open communication middleware, notifications can be integrated and show
 
 </details>
 
-## Developer Guides & Concepts 
+### Developer Guides & Concepts
 
-### 1. Channels
-*🖥 Lear️n everything about channels, their working mechanisms, and how to create one.*
+{% tabs %}
+{% tab title="Channels" %}
+**🖥** _Learn everything about channels, their working mechanisms, and how to create one._
 
-* [What are Channels?](https://docs.epns.io/developers/concepts/create-your-notif-channel)
-* [How to create a Channel?](https://docs.epns.io/developers/developer-guides/create-your-notif-channel)
+{% content-ref url="concepts/create-your-notif-channel/" %}
+[create-your-notif-channel](concepts/create-your-notif-channel/)
+{% endcontent-ref %}
 
+{% content-ref url="developer-guides/create-your-notif-channel/" %}
+[create-your-notif-channel](developer-guides/create-your-notif-channel/)
+{% endcontent-ref %}
+{% endtab %}
 
-### 2. Notificatins
-*🔔 Explore all about notifications, their types, the different ways of sending and receiving notifications as well as other imperative details.*
+{% tab title="Notifications" %}
+🔔 _Explore all about notifications, their types, the different ways of sending and receiving notifications as well as other imperative details._
 
-* [Web3 Notificatins](https://docs.epns.io/developers/concepts/web3-notifications)
-* [Different ways of Sending Notifications](https://docs.epns.io/developers/developer-guides/sending-notifications)
-* [Receiving Notifications](https://docs.epns.io/developers/developer-guides/receiving-notifications)
-* [Notification Standards](https://docs.epns.io/developers/developer-guides/sending-notifications/notification-payload-types)
+{% content-ref url="concepts/web3-notifications/" %}
+[web3-notifications](concepts/web3-notifications/)
+{% endcontent-ref %}
 
+{% content-ref url="developer-guides/sending-notifications/" %}
+[sending-notifications](developer-guides/sending-notifications/)
+{% endcontent-ref %}
 
-### 3. EPNS SDK
-*⚙ Understand the key features of EPNS SDK and how to use it in your own project easily.*
-* [EPNS SDK](https://docs.epns.io/developers/developer-tooling/epns-sdk)
-* [EPNS SDK Starter Kit](https://docs.epns.io/developers/developer-tooling/epns-sdk/epns-sdk-starter-kit) 
+{% content-ref url="developer-guides/receiving-notifications/" %}
+[receiving-notifications](developer-guides/receiving-notifications/)
+{% endcontent-ref %}
+
+{% content-ref url="developer-guides/sending-notifications/notification-payload-types/" %}
+[notification-payload-types](developer-guides/sending-notifications/notification-payload-types/)
+{% endcontent-ref %}
+{% endtab %}
+
+{% tab title="Untitled" %}
+⚙ _Understand the key features of EPNS SDK and how to use it in your own project easily._&#x20;
+
+{% content-ref url="developer-tooling/epns-sdk/" %}
+[epns-sdk](developer-tooling/epns-sdk/)
+{% endcontent-ref %}
+
+{% content-ref url="developer-tooling/epns-sdk/epns-sdk-starter-kit.md" %}
+[epns-sdk-starter-kit.md](developer-tooling/epns-sdk/epns-sdk-starter-kit.md)
+{% endcontent-ref %}
+{% endtab %}
+
+{% tab title="Showrunners" %}
+_🛠 Learn about the showrunners framework and how to use it to build out notifications for your specific use cases._
+
+{% content-ref url="developer-tooling/showrunners-framework/" %}
+[showrunners-framework](developer-tooling/showrunners-framework/)
+{% endcontent-ref %}
+
+{% content-ref url="developer-guides/sending-notifications/using-showrunners-scaffold-gasless.md" %}
+[using-showrunners-scaffold-gasless.md](developer-guides/sending-notifications/using-showrunners-scaffold-gasless.md)
+{% endcontent-ref %}
+{% endtab %}
+
+{% tab title="Smart Contracts" %}
+📝 _Learn about the EPNS Core and Communicator smart contracts architecture._&#x20;
+
+{% content-ref url="developer-tooling/epns-smart-contracts/" %}
+[epns-smart-contracts](developer-tooling/epns-smart-contracts/)
+{% endcontent-ref %}
+
+{% content-ref url="developer-tooling/epns-smart-contracts/epns-contract-addresses.md" %}
+[epns-contract-addresses.md](developer-tooling/epns-smart-contracts/epns-contract-addresses.md)
+{% endcontent-ref %}
+{% endtab %}
+{% endtabs %}
 
