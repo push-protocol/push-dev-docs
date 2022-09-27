@@ -6,7 +6,7 @@ description: Understanding the Proposal Phase
 
 The Proposal phase may be considered as the initial step towards the governance journey.
 
-For any proposal to be accepted and executed for EPNS Governance, the initial proposer needs to submit their proposal on the [Governance Proposal](https://gov.epns.io/c/governance-proposals/8) Forum with the rules mentioned below.
+For any proposal to be accepted and executed for PUSH Governance, the initial proposer needs to submit their proposal on the [Governance Proposal](https://gov.epns.io/c/governance-proposals/8) Forum with the rules mentioned below.
 
 {% hint style="info" %}
 Note: _This is a Discourse-hosted forum for governance-related discussion. Community members must register for an account before participating. Proposals on the forum must be submitted following a template._

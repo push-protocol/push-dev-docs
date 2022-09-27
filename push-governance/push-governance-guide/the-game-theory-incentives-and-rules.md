@@ -1,7 +1,7 @@
 ---
 description: >-
   Quick overview on the game theory, the incentive mechanisms and the rules
-  involved in the EPNS Governance.
+  involved in the PUSH Governance.
 ---
 
 # The Game Theory, Incentives & Rules
