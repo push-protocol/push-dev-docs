@@ -2,24 +2,24 @@
 description: This package helps to embed sidebar notifications to any dApp
 ---
 
-# @epnsproject/sdk-uiembed
+# @pushprotocol/uiembed
 
 ### Installation
 
 ```
-  yarn add @epnsproject/sdk-uiembed
+  yarn add @pushprotocol/uiembed
 ```
 
 or,
 
 ```
-  npm install @epnsproject/sdk-uiembed  
+  npm install @pushprotocol/uiembed
 ```
 
 ### Importing and Setting Up
 
-```
-import { EmbedSDK } from "@epnsproject/sdk-uiembed";
+```typescript
+import { EmbedSDK } from "@pushprotocol/uiembed";
 ```
 
 add in HTML/JSX the below HTML tag -
@@ -34,7 +34,7 @@ or any component with the ID _**sdk-trigger-id**_
 
 After the wallet is connected to your app flow, trigger the below code snippet.
 
-> **Note:** _You have to have the wallet connected with an account to execute the below code because internally the SDK calls the EPNS `FeedsAPI` which needs the account address. You will see notifications if you have opted-in to a channel using_ [_EPNS_](https://staging-app.epns.io/)__
+> **Note:** _You have to have the wallet connected with an account to execute the below code because internally the SDK calls the Push `FeedsAPI` which needs the account address. You will see notifications if you have opted-in to a channel using_ [_PUSH_](https://staging.push.org/#/channels)__
 
 ```typescript
   useEffect(() => {

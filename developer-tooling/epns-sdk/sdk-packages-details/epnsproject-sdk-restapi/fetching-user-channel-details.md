@@ -5,8 +5,8 @@
 This method allows us to fetch all the notifications that landed in the inbox of a user.
 
 ```typescript
-const notifications = await EpnsAPI.user.getFeeds({
-  user: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
+const notifications = await PushAPI.user.getFeeds({
+  user: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
   env: 'staging'
 });
 ```
@@ -16,8 +16,8 @@ const notifications = await EpnsAPI.user.getFeeds({
 Allows us to fetch all the spam notifications for a given user's wallet address.
 
 ```typescript
-const spams = await EpnsAPI.user.getFeeds({
-  user: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
+const spams = await PushAPI.user.getFeeds({
+  user: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
   spam: true,
   env: 'staging'
 });
@@ -39,8 +39,8 @@ Allowed Options (params with \* are mandatory)
 &#x20;This method shall provide us with the list of addresses of channels subscribed by a user address
 
 ```typescript
-const subscriptions = await EpnsAPI.user.getSubscriptions({
-  user: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
+const subscriptions = await PushAPI.user.getSubscriptions({
+  user: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
   env: 'staging'
 });
 ```
@@ -61,8 +61,8 @@ Allowed Options (params with \* are mandatory)
 this method will get channel data for any valid channel address
 
 ```typescript
-const channelData = await EpnsAPI.channels.getChannel({
-  channel: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // channel address in CAIP
+const channelData = await PushAPI.channels.getChannel({
+  channel: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // channel address in CAIP
   env: 'staging'
 });
 ```
@@ -79,8 +79,8 @@ Allowed Options (params with \* are mandatory)
 &#x20;This method fetches the list of channels’ data which match the query in the search
 
 ```typescript
-const channelsData = await EpnsAPI.channels.search({
-  query: 'epns', // a search query
+const channelsData = await PushAPI.channels.search({
+  query: 'push', // a search query
   page: 1, // page index
   limit: 20, // no of items per page
   env: 'staging'

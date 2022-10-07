@@ -31,7 +31,7 @@ const signer = library.getSigner(account);
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 3, // target
   identityType: 2, // direct payload
@@ -45,8 +45,8 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
     cta: '',
     img: ''
   },
-  recipients: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // recipient address
-  channel: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
+  recipients: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // recipient address
+  channel: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
   env: 'staging'
 });
 ```
@@ -55,7 +55,7 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 4, // subset
   identityType: 2, // direct payload
@@ -69,8 +69,8 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
     cta: '',
     img: ''
   },
-  recipients: ['eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', 'eip155:42:0xCdBE6D076e05c5875D90fa35cc85694E1EAFBBd1'], // recipients addresses
-  channel: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
+  recipients: ['eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', 'eip155:5:0xCdBE6D076e05c5875D90fa35cc85694E1EAFBBd1'], // recipients addresses
+  channel: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
   env: 'staging'
 });
 ```
@@ -79,7 +79,7 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 1, // broadcast
   identityType: 2, // direct payload
@@ -93,60 +93,62 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
     cta: '',
     img: ''
   },
-  channel: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
+  channel: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
   env: 'staging'
 });
 ```
 
-#### **IPFS payload for single recipient(target)**
+#### ****
+
+**IPFS payload for single recipient(target)**
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 3, // target
-  identityType: 1,
+  identityType: 1, // ipfs payload
   ipfsHash: 'bafkreicuttr5gpbyzyn6cyapxctlr7dk2g6fnydqxy6lps424mcjcn73we', // IPFS hash of the payload
-  recipients: 'eip155:42:0xCdBE6D076e05c5875D90fa35cc85694E1EAFBBd1', // recipient address
-  channel: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
+  recipients: 'eip155:5:0xCdBE6D076e05c5875D90fa35cc85694E1EAFBBd1', // recipient address
+  channel: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
   env: 'staging'
 });
 ```
 
-#### **IPFS payload for group of recipients(subset)**
+**IPFS payload for group of recipients(subset)**
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 4, // subset
-  identityType: 1,
+  identityType: 1, // ipfs payload
   ipfsHash: 'bafkreicuttr5gpbyzyn6cyapxctlr7dk2g6fnydqxy6lps424mcjcn73we', // IPFS hash of the payload
-  recipients: ['eip155:42:0xCdBE6D076e05c5875D90fa35cc85694E1EAFBBd1', 'eip155:42:0x52f856A160733A860ae7DC98DC71061bE33A28b3'], // recipients addresses
-  channel: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
+  recipients: ['eip155:5:0xCdBE6D076e05c5875D90fa35cc85694E1EAFBBd1', 'eip155:5:0x52f856A160733A860ae7DC98DC71061bE33A28b3'], // recipients addresses
+  channel: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
   env: 'staging'
 });
 ```
 
-#### **IPFS payload for all recipients(broadcast)**
+**IPFS payload for all recipients(broadcast)**
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 1, // broadcast
   identityType: 1, // direct payload
   ipfsHash: 'bafkreicuttr5gpbyzyn6cyapxctlr7dk2g6fnydqxy6lps424mcjcn73we', // IPFS hash of the payload
-  channel: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
+  channel: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
   env: 'staging'
 });
 ```
 
-#### **minimal payload for single recipient(target)**
+#### **minimal payload for a single recipient(target)**
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 3, // target
   identityType: 0, // Minimal payload
@@ -160,8 +162,8 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
     cta: '',
     img: ''
   },
-  recipients: 'eip155:42:0xCdBE6D076e05c5875D90fa35cc85694E1EAFBBd1', // recipient address
-  channel: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
+  recipients: 'eip155:5:0xCdBE6D076e05c5875D90fa35cc85694E1EAFBBd1', // recipient address
+  channel: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
   env: 'staging'
 });
 ```
@@ -170,7 +172,7 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 4, // subset
   identityType: 0, // Minimal payload
@@ -184,8 +186,8 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
     cta: '',
     img: ''
   },
-  recipients: ['eip155:42:0xCdBE6D076e05c5875D90fa35cc85694E1EAFBBd1', 'eip155:42:0x52f856A160733A860ae7DC98DC71061bE33A28b3'], // recipients address
-  channel: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
+  recipients: ['eip155:5:0xCdBE6D076e05c5875D90fa35cc85694E1EAFBBd1', 'eip155:5:0x52f856A160733A860ae7DC98DC71061bE33A28b3'], // recipients address
+  channel: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
   env: 'staging'
 });
 ```
@@ -194,7 +196,7 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 1, // broadcast
   identityType: 0, // Minimal payload
@@ -208,7 +210,7 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
     cta: '',
     img: ''
   },
-  channel: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
+  channel: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
   env: 'staging'
 });
 ```
@@ -223,7 +225,7 @@ _Ensure that the channel has the **graphId** being provided._
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 3, // target
   identityType: 3, // Subgraph payload
@@ -231,8 +233,8 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
     id: '_your_graph_id',
     counter: 3
   },
-  recipients: 'eip155:42:0xCdBE6D076e05c5875D90fa35cc85694E1EAFBBd1', // recipient address
-  channel: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
+  recipients: 'eip155:5:0xCdBE6D076e05c5875D90fa35cc85694E1EAFBBd1', // recipient address
+  channel: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
   env: 'staging'
 });
 ```
@@ -245,7 +247,7 @@ _Ensure that the channel has the **graphId** being provided._
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 4, // subset
   identityType: 3, // graph payload
@@ -253,8 +255,8 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
     id: '_your_graph_id',
     counter: 3
   },
-  recipients: ['eip155:42:0xCdBE6D076e05c5875D90fa35cc85694E1EAFBBd1', 'eip155:42:0x52f856A160733A860ae7DC98DC71061bE33A28b3'], // recipients addresses
-  channel: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
+  recipients: ['eip155:5:0xCdBE6D076e05c5875D90fa35cc85694E1EAFBBd1', 'eip155:5:0x52f856A160733A860ae7DC98DC71061bE33A28b3'], // recipients addresses
+  channel: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
   env: 'staging'
 });
 ```
@@ -267,7 +269,7 @@ _Ensure that the channel has the **graphId** being provided._
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 1, // broadcast
   identityType: 3, // graph payload
@@ -275,7 +277,7 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
     id: '_your_graph_id',
     counter: 3
   },
-  channel: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
+  channel: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // your channel address
   env: 'staging'
 });
 ```

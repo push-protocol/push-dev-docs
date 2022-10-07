@@ -16,6 +16,10 @@ PUSH SDK is divided into different packages, each of which enables functionaliti
 [epnsproject-sdk-uiweb.md](epnsproject-sdk-uiweb.md)
 {% endcontent-ref %}
 
+{% content-ref url="pushprotocol-socket/" %}
+[pushprotocol-socket](pushprotocol-socket/)
+{% endcontent-ref %}
+
 {% content-ref url="epnsproject-sdk-uiembed.md" %}
 [epnsproject-sdk-uiembed.md](epnsproject-sdk-uiembed.md)
 {% endcontent-ref %}

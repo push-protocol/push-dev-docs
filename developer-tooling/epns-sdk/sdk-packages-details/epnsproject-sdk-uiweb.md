@@ -2,18 +2,18 @@
 description: Package for React based UI web components to be used by dApp.
 ---
 
-# @epnsproject/sdk-uiweb
+# @pushprotocol/uiweb
 
 ### Installation
 
 ```
-  yarn add @epnsproject/sdk-uiweb
+  yarn add @pushprotocol/uiweb
 ```
 
 or,
 
 ```
-  npm install @epnsproject/sdk-uiweb  
+  npm install @pushprotocol/uiweb  
 ```
 
 > _**Note:**_ `styled-components` is a `peerDependency`. Please install it in your dApp if you don't have it already!
@@ -33,14 +33,14 @@ or
 Import the SDK package in the component file where you want to render notification(s)
 
 ```typescript
-import { NotificationItem, chainNameType } from "@epnsproject/sdk-uiweb";
+import { NotificationItem, chainNameType } from "@pushprotocol/uiweb";
 ```
 
 After you get the Notification data from the [API](https://app.gitbook.com/o/-MCJn6rNLQKVOk-aCimu/s/pQzrIQwtTyxis5s10tsE/\~/changes/OfIXJ2KYkdQs4ZwCZcMo/developer-tooling/epns-sdk/sdk-packages/epnsproject-sdk-restapi) or otherwise,
 
 ```typescript
-const notifications = await EpnsAPI.user.getFeeds({
-  user: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
+const notifications = await PushAPI.user.getFeeds({
+  user: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
   env: 'staging'
 });
 ```
@@ -84,11 +84,11 @@ render the Notification UI as follows
 For Spam data [API](https://github.com/ethereum-push-notification-service/epns-sdk/blob/main/packages/restapi/README.md#fetching-user-spam-notifications)
 
 ```typescript
-const spams = await EpnsAPI.user.getFeeds({
-  user: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
+const spams = await PushAPI.user.getFeeds({
+  user: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
   spam: true,
   env: 'staging'
-});types
+});
 ```
 
 render the Spam UI as follows
@@ -135,7 +135,7 @@ const subscribeFn = async () => {
 }
 ```
 
-we can use this `@epnsproject/sdk-restapi` method to do that - [subscribe](https://github.com/ethereum-push-notification-service/epns-sdk/blob/main/packages/restapi/README.md#opt-in-to-a-channel)
+we can use this [epnsproject-sdk-restapi](epnsproject-sdk-restapi/ "mention") method to do that - [subscribe](https://github.com/ethereum-push-notification-service/sdk/blob/main/packages/restapi/README.md#opt-in-to-a-channel)
 
 ```typescript
 const isSubscribedFn = async () => {
@@ -144,7 +144,7 @@ const isSubscribedFn = async () => {
 }
 ```
 
-we can use this `@epnsproject/sdk-restapi` method to find out that - [getSubscriptions](https://github.com/ethereum-push-notification-service/epns-sdk/blob/main/packages/restapi/README.md#fetching-user-subscriptions)
+we can use this [epnsproject-sdk-restapi](epnsproject-sdk-restapi/ "mention") method to find out that - [getSubscriptions](https://github.com/ethereum-push-notification-service/epns-sdk/blob/main/packages/restapi/README.md#fetching-user-subscriptions)
 
 where
 

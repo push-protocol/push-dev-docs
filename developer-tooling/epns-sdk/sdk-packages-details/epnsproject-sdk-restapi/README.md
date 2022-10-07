@@ -2,24 +2,24 @@
 description: This package gives access to PUSH protocol backend APIs
 ---
 
-# @epnsproject/sdk-restapi
+# @pushprotocol/restapi
 
 ### Installation <a href="#installation" id="installation"></a>
 
 ```
-  yarn add @epnsproject/sdk-restapi ethers
+  yarn add @pushprotocol/restapi ethers
 ```
 
 or
 
 ```
-  npm install @epnsproject/sdk-restapi ethers
+  npm install @pushprotocol/restapi ethers 
 ```
 
 I**mport in your file**
 
 ```
-import * as EpnsAPI from "@epnsproject/sdk-restapi";
+import * as PushAPI from "@pushprotocol/restapi";
 ```
 
 {% hint style="info" %}
@@ -49,7 +49,7 @@ In any of the `restapi` methods (unless explicitly stated otherwise) we accept e
 
 ### Features
 
-As of now, the @epnsproject/sdk-restapi package provides us with 3 imperative types of features:
+As of now, the @pushprotocol/restapi package provides us with 3 imperative types of features:
 
 1. **Fetching User/Channel Details**&#x20;
 
