@@ -74,6 +74,7 @@
     * [@pushprotocol/socket](developer-tooling/epns-sdk/sdk-packages-details/pushprotocol-socket/README.md)
       * [Example - SDK Sockets](developer-tooling/epns-sdk/sdk-packages-details/pushprotocol-socket/example-sdk-sockets.md)
     * [@pushprotocol/uiembed](developer-tooling/epns-sdk/sdk-packages-details/epnsproject-sdk-uiembed.md)
+    * [@pushprotocol/reactnative](developer-tooling/epns-sdk/sdk-packages-details/epnsproject-sdk-uiembed-1.md)
   * [Legacy SDK](developer-tooling/epns-sdk/legacy-sdk/README.md)
     * [Frontend SDK](developer-tooling/epns-sdk/legacy-sdk/frontend-sdk/README.md)
       * [Installation](developer-tooling/epns-sdk/legacy-sdk/frontend-sdk/installation.md)
