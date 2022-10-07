@@ -6,9 +6,9 @@ description: A effective guide to using the PUSH SDK and its features
 
 This [starter-kit](https://github.com/ethereum-push-notification-service/epns-sdk-starter-kit) is meant to showcase developers on how to use the PUSH SDK packages -
 
-* [@epnsproject/sdk-restapi](https://www.npmjs.com/package/@epnsproject/sdk-restapi) Provides access to PUSH backend APIs.
-* [@epnsproject/sdk-uiweb](https://www.npmjs.com/package/@epnsproject/sdk-uiweb) Provides React based components to show Notifications, Spam, SubscribedModal etc for dApps.
-* [@epnsproject/sdk-uiembed](https://www.npmjs.com/package/@epnsproject/sdk-uiembed) Provides vanilla JS sidebar notifications for any dapp.
+* [@pushprotocol/restapi](https://www.npmjs.com/package/@pushprotocol/restapi) Provides access to PUSH backend APIs.
+* [@pushprotocol/uiweb](https://www.npmjs.com/package/@pushprotocol/uiweb) Provides React based components to show Notifications, Spam, SubscribedModal etc for dApps.
+* [@pushprotocol/uiembed](https://www.npmjs.com/package/@pushprotocol/uiembed) Provides vanilla JS sidebar notifications for any dApp.
 
 
 
@@ -19,12 +19,12 @@ This [starter-kit](https://github.com/ethereum-push-notification-service/epns-sd
 
 ### Getting started
 
-```
-git clone https://github.com/ethereum-push-notification-service/epns-sdk-starter-kit.git
+```git
+git clone https://github.com/ethereum-push-notification-service/push-sdk-starter-kit.git
 ```
 
 ```
-cd epns-sdk-starter-kit
+cd push-sdk-starter-kit
 ```
 
 ```
@@ -39,7 +39,7 @@ yarn start
 
 If you are trying to build out a separate dapp following this starter-kit example, some of the following dependencies might be required for the SDK and any dApp to work.
 
-1. `@epnsproject/sdk-uiweb` has a `peerDependency` on `styled-components`
+1. `@pushprotocol/uiweb` has a `peerDependency` on `styled-components`
 
 ```
 yarn add styled-components
@@ -61,14 +61,16 @@ yarn add @web3-react/core @web3-react/injected-connector
 
 ### App walkthrough
 
-The App has the following features-
 
-| Page          | Features                                                                                                                                                                                               | SDK package used                                           |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------- |
-| Notifications | <p>notifications,<br>spams,<br>subscribed modal</p>                                                                                                                                                    | <p>@epnsproject/sdk-uiweb,<br>@epnsproject/sdk-restapi</p> |
-| Channels      | <p>get channel details for a specific channel,<br>search for channel(s),<br>get channel subscribers,<br>is the logged-in user subscribed to the channel,<br>opt in a channel,<br>opt out a channel</p> | @epnsproject/sdk-restapi                                   |
-| Payloads      | send notification for different use cases                                                                                                                                                              | @epnsproject/sdk-restapi                                   |
-| Embed         | sidebar notifications for the logged in user if subscribed on PUSH                                                                                                                                     | @epnsproject/sdk-uiembed                                   |
+
+| Page          | Features                                                                                                                                                                                               | SDK package used                                     |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------- |
+| Notifications | <p>notifications,<br>spams,<br>subscribed modal</p>                                                                                                                                                    | <p>@pushprotocol/uiweb,<br>@pushprotocol/restapi</p> |
+| Channels      | <p>get channel details for a specific channel,<br>search for channel(s),<br>get channel subscribers,<br>is the logged-in user subscribed to the channel,<br>opt in a channel,<br>opt out a channel</p> | @pushprotocol/restapi                                |
+| Payloads      | send notification for different use cases                                                                                                                                                              | @pushprotocol/restapi                                |
+| Embed         | sidebar notifications for the logged in user if subscribed on PUSH protocol                                                                                                                            | @pushprotocol/uiembed                                |
+
+The App has the following features-
 
 **We have extracted some snippets from the actual source code of the `starter-kit` files mentioned below to give you a snapshot view of what all SDK features are used in this dApp. But to make sure you are following along correctly please refer to the source code itself in the files mentioned.**
 
@@ -99,14 +101,14 @@ We store this data in the web3Context and make it available across the dApp for 
 #### NOTIFICATIONS PAGE (`src/pages/notifications/index.tsx`)
 
 ```typescript
-import * as EpnsAPI from "@epnsproject/sdk-restapi";
-import { NotificationItem, chainNameType, SubscribedModal } from '@epnsproject/sdk-uiweb';
+import * as PushAPI from "@pushprotocol/restapi";
+import { NotificationItem, chainNameType, SubscribedModal } from '@pushprotocol/uiweb';
 ```
 
 #### [**Fetching Notifications**](https://github.com/ethereum-push-notification-service/epns-sdk/blob/main/packages/restapi/README.md#fetching-user-notifications)
 
 ```typescript
-const notifications = await EpnsAPI.user.getFeeds({
+const notifications = await PushAPI.user.getFeeds({
   user: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
   env: 'staging'
 });
@@ -149,7 +151,7 @@ const notifications = await EpnsAPI.user.getFeeds({
 #### [**Fetching Spams**](https://github.com/ethereum-push-notification-service/epns-sdk/blob/main/packages/restapi/README.md#fetching-user-spam-notifications)
 
 ```typescript
-const spams = await EpnsAPI.user.getFeeds({
+const spams = await PushAPI.user.getFeeds({
   user: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
   spam: true,
   env: 'staging'
@@ -202,7 +204,7 @@ const subscribeFn = async () => {
 }
 ```
 
-we can use this `@epnsproject/sdk-restapi` method to do that - [subscribe](https://github.com/ethereum-push-notification-service/epns-sdk/tree/main/packages/restapi/README.md#opt-in-to-a-channel)
+we can use this [epnsproject-sdk-restapi](sdk-packages-details/epnsproject-sdk-restapi/ "mention") method to do that - [subscribe](https://github.com/ethereum-push-notification-service/epns-sdk/tree/main/packages/restapi/README.md#opt-in-to-a-channel)
 
 ```typescript
 const isSubscribedFn = async () => {
@@ -211,25 +213,25 @@ const isSubscribedFn = async () => {
 }
 ```
 
-we can use this `@epnsproject/sdk-restapi` method to find out that - [getSubscriptions](https://github.com/ethereum-push-notification-service/epns-sdk/tree/main/packages/restapi/README.md#fetching-user-subscriptions)
+we can use this [epnsproject-sdk-restapi](sdk-packages-details/epnsproject-sdk-restapi/ "mention") method to find out that - [getSubscriptions](https://github.com/ethereum-push-notification-service/epns-sdk/tree/main/packages/restapi/README.md#fetching-user-subscriptions)
 
 **Parsing raw** [**Feeds API data**](https://github.com/ethereum-push-notification-service/epns-sdk/blob/main/packages/restapi/README.md#fetching-user-notifications) **using** [**utils**](https://github.com/ethereum-push-notification-service/epns-sdk/blob/main/packages/restapi/README.md#parsing-notifications) **method `parseApiResponse`**
 
-Utils method to parse raw EPNS Feeds API response into a pre-defined shape as below.
+Utils method to parse raw Push Feeds API response into a pre-defined shape as below.
 
 ```typescript
 // fetch some raw feeds data
-const apiResponse = await EpnsAPI.user.getFeeds({
+const apiResponse = await PushAPI.user.getFeeds({
   user: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address
   raw: true,
   env: 'staging'
 });
 // parse it to get a specific shape of object.
-const parsedResults = EpnsAPI.utils.parseApiResponse(apiResponse);
+const parsedResults = PushAPI.utils.parseApiResponse(apiResponse);
 
 const [oneNotification] = parsedResults;
 
-// Now this object can be directly used by for e.g. "@epnsproject/sdk-uiweb"  NotificationItem component as props.
+// Now this object can be directly used by for e.g. "@pushprotocol/uiweb"  NotificationItem component as props.
 
 const {
   cta,
@@ -243,6 +245,7 @@ const {
   secret,
   notification
 } = oneNotification;
+
 ```
 
 _We get the above `keys` after the parsing of the API repsonse._
@@ -261,58 +264,60 @@ _We get the above `keys` after the parsing of the API repsonse._
     {showSubscribe ? <SubscribedModal onClose={toggleSubscribedModal}/> : null}
 ```
 
+
+
 CHANNELS PAGE (`src/pages/channels/index.tsx`)
 
-```typescript
-import * as EpnsAPI from '@epnsproject/sdk-restapi';
+```
+import * as PushAPI from '@pushprotocol/restapi';
 ```
 
-#### [**Fetch Channel Data**](https://github.com/ethereum-push-notification-service/epns-sdk/blob/main/packages/restapi/README.md#fetching-channel-details)
+[**Fetch Channel Data**](https://github.com/ethereum-push-notification-service/sdk/blob/main/packages/restapi/README.md#fetching-channel-details)
 
 ```typescript
-const channelData = await EpnsAPI.channels.getChannel({
+const channelData = await PushAPI.channels.getChannel({
   channel: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // channel address in CAIP
   env: 'staging'
 });
 ```
 
-#### [**Searching for channel(s)**](https://github.com/ethereum-push-notification-service/epns-sdk/blob/main/packages/restapi/README.md#searching-for-channels)
+[**Searching for channel(s)**](https://github.com/ethereum-push-notification-service/sdk/blob/main/packages/restapi/README.md#searching-for-channels)
 
 ```typescript
-const channelsData = await EpnsAPI.channels.search({
-  query: 'epns', // a search query
+const channelsData = await PushAPI.channels.search({
+  query: 'push', // a search query
   page: 1, // page index
   limit: 20, // no of items per page
   env: 'staging'
 });
 ```
 
-#### [**DEPRECATED-Fetch Channel Subscribers**](https://github.com/ethereum-push-notification-service/epns-sdk/blob/main/packages/restapi/README.md#deprecated)
+[**DEPRECATED-Fetch Channel Subscribers**](https://github.com/ethereum-push-notification-service/sdk/blob/main/packages/restapi/README.md#deprecated)
 
 ```typescript
-const subscribers = await EpnsAPI.channels._getSubscribers({
+const subscribers = await PushAPI.channels._getSubscribers({
   channel: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // channel address in CAIP
   env: 'staging'
 });
 ```
 
-#### [**Fetch User subscriptions**](https://github.com/ethereum-push-notification-service/epns-sdk/blob/main/packages/restapi/README.md#fetching-user-subscriptions)
+[**Fetch User subscriptions**](https://github.com/ethereum-push-notification-service/sdk/blob/main/packages/restapi/README.md#fetching-user-subscriptions)
 
 ```typescript
-const subscriptions = await EpnsAPI.user.getSubscriptions({
+const subscriptions = await PushAPI.user.getSubscriptions({
   user: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
   env: 'staging'
 });
 ```
 
-#### [**Opt-In to a channel**](https://github.com/ethereum-push-notification-service/epns-sdk/blob/main/packages/restapi/README.md#opt-in-to-a-channel)
+[**Opt-In to a channel**](https://github.com/ethereum-push-notification-service/sdk/blob/main/packages/restapi/README.md#opt-in-to-a-channel)
 
 ```typescript
 const _signer = library.getSigner(account); // from useWeb3()
  //
  //
  //
-await EpnsAPI.channels.subscribe({
+await PushAPI.channels.subscribe({
   signer: _signer,
   channelAddress: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // channel address in CAIP
   userAddress: 'eip155:42:0x52f856A160733A860ae7DC98DC71061bE33A28b3', // user address in CAIP
@@ -326,14 +331,14 @@ await EpnsAPI.channels.subscribe({
 })
 ```
 
-#### [**Opt-Out of a channel**](https://github.com/ethereum-push-notification-service/epns-sdk/blob/main/packages/restapi/README.md#opt-out-to-a-channel)
+[**Opt-Out of a channel**](https://github.com/ethereum-push-notification-service/sdk/blob/main/packages/restapi/README.md#opt-out-to-a-channel)
 
 ```typescript
 const _signer = library.getSigner(account); // from useWeb3()
  //
  //
  //
-await EpnsAPI.channels.unsubscribe({
+await PushAPI.channels.unsubscribe({
   signer: _signer,
   channelAddress: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // channel address in CAIP
   userAddress: 'eip155:42:0x52f856A160733A860ae7DC98DC71061bE33A28b3', // user address in CAIP
@@ -347,15 +352,15 @@ await EpnsAPI.channels.unsubscribe({
 })
 ```
 
-**PAYLOADS PAGE (`src/pages/payloads/index.tsx`)**
+PAYLOADS PAGE (`src/pages/payloads/index.tsx`)
 
-#### [**Send Notifications**](https://github.com/ethereum-push-notification-service/epns-sdk/blob/main/packages/restapi/README.md#sending-notification)
+[**Send Notifications**](https://github.com/ethereum-push-notification-service/sdk/blob/main/packages/restapi/README.md#sending-notification)
 
 **direct payload for single recipient(target)**
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 3, // target
   identityType: 2, // direct payload
@@ -379,7 +384,7 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 4, // subset
   identityType: 2, // direct payload
@@ -403,7 +408,7 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 1, // broadcast
   identityType: 2, // direct payload
@@ -426,7 +431,7 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 3, // target
   identityType: 1, // ipfs payload
@@ -441,7 +446,7 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 4, // subset
   identityType: 1, // ipfs payload
@@ -456,7 +461,7 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 1, // broadcast
   identityType: 1, // direct payload
@@ -470,7 +475,7 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 3, // target
   identityType: 0, // Minimal payload
@@ -494,7 +499,7 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 4, // subset
   identityType: 0, // Minimal payload
@@ -518,7 +523,7 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 1, // broadcast
   identityType: 0, // Minimal payload
@@ -543,11 +548,10 @@ _**Make sure the channel has the graph id you are providing!!**_
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 3, // target
-  identityType: 3,
-  // Subgraph options
+  identityType: 3, // Subgraph payload
   graph: {
     id: '_your_graph_id',
     counter: 3
@@ -564,11 +568,10 @@ _**Make sure the channel has the graph id you are providing!!**_
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 4, // subset
-  identityType: 3,
-  // Subgraph options
+  identityType: 3, // graph payload
   graph: {
     id: '_your_graph_id',
     counter: 3
@@ -585,11 +588,10 @@ _**Make sure the channel has the graph id you are providing!!**_
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
-const apiResponse = await EpnsAPI.payloads.sendNotification({
+const apiResponse = await PushAPI.payloads.sendNotification({
   signer,
   type: 1, // broadcast
-  identityType: 3,
-  // Subgraph options
+  identityType: 3, // graph payload
   graph: {
     id: '_your_graph_id',
     counter: 3
@@ -601,11 +603,11 @@ const apiResponse = await EpnsAPI.payloads.sendNotification({
 
 EMBED PAGE (`src/pages/embed/index.tsx`)
 
-[**Embed - Sidebaar notifications**](https://github.com/ethereum-push-notification-service/epns-sdk/blob/main/packages/uiembed/README.md#uiembed)
+[**Embed - Sidebaar notifications**](https://github.com/ethereum-push-notification-service/sdk/blob/main/packages/uiembed/README.md#uiembed)
 
 ```typescript
 import { useEffect, useContext } from 'react';
-import { EmbedSDK } from "@epnsproject/sdk-uiembed";
+import { EmbedSDK } from "@pushprotocol/uiembed";
 import Web3Context from '../../context/web3Context';
 
 const EmbedPage = () => {
@@ -636,7 +638,7 @@ const EmbedPage = () => {
         }
     
         return () => {
-          EmbedSDK.cleanup();
+          EmbedSDK.cleanup();ty
         };
       }, [account, chainId]);
 
