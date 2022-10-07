@@ -25,30 +25,30 @@ yarn init
 
 <pre><code># install the sdk "restapi" package &#x26; its peer dependencies in your app
 <strong>
-</strong><strong>yarn add @epnsproject/sdk-restapi ethers
+</strong><strong>yarn add @pushprotocol/restapi ethers
 </strong>
 # or, 
 
-npm install @epnsproject/sdk-restapi ethers</code></pre>
+npm install @pushprotocol/restapi ethers</code></pre>
 
 ### Usage
 
-In order to demonstrate a simple example of how to use the SDK, we shall try to use a feature from our **@epnsproject/sdk-restapi** package.
+In order to demonstrate a simple example of how to use the SDK, we shall try to use a feature from our **@pushprotocol/restapi** package.
 
 > _Note: This is just one of the many features of our SDK for the sake of this example._ \
 > _You can refer to the_ _subsequent sections for details on all the_ [.](./ "mention")__
 
 #### Fetching Notifications
 
-For this example, we shall try to use the **getFeeds()** feature from the **sdk-restapi** package.&#x20;
+For this example, we shall try to use the **getFeeds()** feature from the **restapi** package.&#x20;
 
 This simply allows us to get all the notifications for a particular user address on a specific chain.
 
 ```typescript
-import * as EpnsAPI from "@epnsproject/sdk-restapi";
+import * as PushAPI from "@pushprotocol/restapi";
 
 const fetchNotifs = async() => {
-    const notifications = await EpnsAPI.user.getFeeds({
+    const notifications = await PushAPI.user.getFeeds({
         user: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
         env: 'staging'
     });
@@ -70,10 +70,10 @@ The above-mentioned example gives you all the notifications that a given user re
 However, now let's fetch the spam notification received by a given user address.
 
 ```typescript
-import * as EpnsAPI from "@epnsproject/sdk-restapi";
+import * as PushAPI from "@pushprotocol/restapi";
 
 const fetchSpam = async() => {
-    const spams = await EpnsAPI.user.getFeeds({
+    const spams = await PushAPI.user.getFeeds({
         user: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
         spam: true,
         env: 'staging'
