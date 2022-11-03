@@ -24,4 +24,8 @@ PUSH SDK is divided into different packages, each of which enables functionaliti
 [epnsproject-sdk-uiembed.md](epnsproject-sdk-uiembed.md)
 {% endcontent-ref %}
 
+{% content-ref url="epnsproject-sdk-uiembed-1.md" %}
+[epnsproject-sdk-uiembed-1.md](epnsproject-sdk-uiembed-1.md)
+{% endcontent-ref %}
+
 &#x20;

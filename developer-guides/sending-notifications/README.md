@@ -25,3 +25,7 @@ We have fortified a robust set of tools to start sending notifications. Whether 
 {% content-ref url="using-subgraph-gasless.md" %}
 [using-subgraph-gasless.md](using-subgraph-gasless.md)
 {% endcontent-ref %}
+
+{% content-ref url="using-smart-contract.md" %}
+[using-smart-contract.md](using-smart-contract.md)
+{% endcontent-ref %}
