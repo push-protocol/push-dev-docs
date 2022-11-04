@@ -7,10 +7,11 @@
 * [What are Channels?](concepts/create-your-notif-channel/README.md)
   * [What is a Channel Alias](concepts/create-your-notif-channel/what-is-a-channel-alias.md)
   * [What are Channel Delegates](concepts/create-your-notif-channel/what-are-channel-delegates.md)
-* [Web3 Notifications](concepts/web3-notifications/README.md)
+* [Push Notification for Web3](concepts/web3-notifications/README.md)
   * [Types of Notifications](concepts/web3-notifications/types-of-notifications.md)
   * [What are Delegated Notifications?](concepts/web3-notifications/what-are-delegated-notifications.md)
   * [Design Notification Content](concepts/web3-notifications/design-notification-content.md)
+* [Push Chat for Web3](concepts/push-chat-for-web3.md)
 
 ## ⚡ Developer Guides
 
