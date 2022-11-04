@@ -105,6 +105,18 @@ Being an open communication middleware, notifications can be integrated and show
 {% endcontent-ref %}
 {% endtab %}
 
+{% tab title="Push Chat" %}
+📝 _Learn about the details of Push Chat and how to easily integrate it_
+
+{% content-ref url="concepts/push-chat-for-web3.md" %}
+[push-chat-for-web3.md](concepts/push-chat-for-web3.md)
+{% endcontent-ref %}
+
+{% content-ref url="developer-guides/integrating-push-chat.md" %}
+[integrating-push-chat.md](developer-guides/integrating-push-chat.md)
+{% endcontent-ref %}
+{% endtab %}
+
 {% tab title="Showrunners" %}
 _🛠 Learn about the showrunners framework and how to use it to build out notifications for your specific use cases._
 
@@ -114,18 +126,6 @@ _🛠 Learn about the showrunners framework and how to use it to build out notif
 
 {% content-ref url="developer-guides/sending-notifications/using-showrunners-scaffold-gasless.md" %}
 [using-showrunners-scaffold-gasless.md](developer-guides/sending-notifications/using-showrunners-scaffold-gasless.md)
-{% endcontent-ref %}
-{% endtab %}
-
-{% tab title="Smart Contracts" %}
-📝 _Learn about the EPNS Core and Communicator smart contracts architecture._&#x20;
-
-{% content-ref url="developer-tooling/epns-smart-contracts/" %}
-[epns-smart-contracts](developer-tooling/epns-smart-contracts/)
-{% endcontent-ref %}
-
-{% content-ref url="developer-tooling/epns-smart-contracts/epns-contract-addresses.md" %}
-[epns-contract-addresses.md](developer-tooling/epns-smart-contracts/epns-contract-addresses.md)
 {% endcontent-ref %}
 {% endtab %}
 {% endtabs %}

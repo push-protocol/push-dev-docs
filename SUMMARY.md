@@ -43,6 +43,7 @@
   * [Integrating Channel opt ins](developer-guides/integrating-on-frontend/integrating-channel-opt-ins.md)
   * [Integrating Notifications](developer-guides/integrating-on-frontend/integrating-notifications.md)
 * [Testing Sent Notifications](developer-guides/testing-sent-notifications.md)
+* [Integrating Push Chat](developer-guides/integrating-push-chat.md)
 * [Examples](developer-guides/examples/README.md)
   * [Notification Via Smart Contract examples](developer-guides/examples/notification-via-smart-contract-examples/README.md)
     * [Token transfer notification via Smart Contract example](developer-guides/examples/notification-via-smart-contract-examples/token-transfer-notification-via-smart-contract-example.md)
