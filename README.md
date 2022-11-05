@@ -106,7 +106,7 @@ Being an open communication middleware, notifications can be integrated and show
 {% endtab %}
 
 {% tab title="Push Chat" %}
-📝 _Learn about the details of Push Chat and how to easily integrate it_
+📝 _Learn about the details of Push Chat and how to easily integrate it._
 
 {% content-ref url="concepts/push-chat-for-web3.md" %}
 [push-chat-for-web3.md](concepts/push-chat-for-web3.md)
@@ -114,6 +114,10 @@ Being an open communication middleware, notifications can be integrated and show
 
 {% content-ref url="developer-guides/integrating-push-chat.md" %}
 [integrating-push-chat.md](developer-guides/integrating-push-chat.md)
+{% endcontent-ref %}
+
+{% content-ref url="developer-tooling/epns-sdk/sdk-packages-details/epnsproject-sdk-uiweb/uiweb-0.2.3-push-support-chat.md" %}
+[uiweb-0.2.3-push-support-chat.md](developer-tooling/epns-sdk/sdk-packages-details/epnsproject-sdk-uiweb/uiweb-0.2.3-push-support-chat.md)
 {% endcontent-ref %}
 {% endtab %}
 

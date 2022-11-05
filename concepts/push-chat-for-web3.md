@@ -107,3 +107,13 @@ With the SDK, it will be easy for developers to integrate messaging into their d
 * Chat with the community on a web3 game
 * DMs or DAO token gated conversation
 * Any other cool, crazy feature you can think of
+
+Alright. Now that you have a clear picture of the Push Chat and its SDK, let's dive in and try to integrate the push chat in your application.
+
+{% content-ref url="../developer-guides/integrating-push-chat.md" %}
+[integrating-push-chat.md](../developer-guides/integrating-push-chat.md)
+{% endcontent-ref %}
+
+{% content-ref url="../developer-tooling/epns-sdk/sdk-packages-details/epnsproject-sdk-uiweb/uiweb-0.2.3-push-support-chat.md" %}
+[uiweb-0.2.3-push-support-chat.md](../developer-tooling/epns-sdk/sdk-packages-details/epnsproject-sdk-uiweb/uiweb-0.2.3-push-support-chat.md)
+{% endcontent-ref %}
