@@ -73,15 +73,15 @@ These concepts are for your understanding as most of them are abstracted away bu
 One exception to CAIP-10 format is for smart contract to smart contract interaction (ie: [using-smart-contract.md](../using-smart-contract.md "mention") [#smart-contract-example](notification-standard-basics.md#smart-contract-example "mention")), For this specific feature, the native blockchain address is required and not CAIP-10.
 {% endhint %}
 
-* **Source** - The source from which the notification is coming from. Currently supports `ETH_TEST_GOERLI`, `ETH_MAINNET`, `POLYGON_MAINNET`, `POLYGON_TEST_MUMBAI`, `THE_GRAPH`.\
+* **Source** - The source from which the notification is coming from. Currently supports `ETH_TEST_KOVAN`, `ETH_MAINNET`, `POLYGON_MAINNET`, `POLYGON_TEST_MUMBAI`, `THE_GRAPH`.\
   \
-  Source is determined by the network it is coming from in case of smart contracts, internally for the graph and by the CAIP-10 format of the Sender for PUSH SDK.&#x20;
+  Source is determined by the network it is coming from in case of smart contracts, internally for the graph and by the CAIP-10 format of the Sender for Push SDK.&#x20;
 
 {% hint style="success" %}
 Source is abstracted away unless you are interacting directly with Push Nodes, it's verified mostly through verification proof on push nodes to ensure it can't be spoofed.
 {% endhint %}
 
-* **Recipient(s)** - **** The address to the notification should reach. The address is represented in CAIP-10 format. For now, PUSH supports Ethereum and Polygon chain. Their respective CAIP-10 format can be represented as:\
+* **Recipient(s)** - **** The address to the notification should reach. The address is represented in CAIP-10 format. For now, Push supports Ethereum and Polygon chain. Their respective CAIP-10 format can be represented as:\
 
   * Ethereum(Goerli): `eip155:42:<Address>`
   * Polygon(Mumbai): `eip155:80001:<Address>`&#x20;
@@ -132,8 +132,8 @@ IPUSHCommInterface(EPNS_COMM_CONTRACT_ADDRESS_FOR_SPECIFIC_BLOCKCHAIN).sendNotif
 ```
 {% endtab %}
 
-{% tab title="PUSH SDK Example" %}
-EPNS SDK supports all Identity Types but it is recommended to use Identity Type 2 (Direct Payload) as it's blazingly fast!\
+{% tab title="Push SDK Example" %}
+Push SDK supports all Identity Types but it is recommended to use Identity Type 2 (Direct Payload) as it's blazingly fast!\
 \
 **What to call:** \
 ****[epns-sdk](../../../developer-tooling/epns-sdk/ "mention")****\

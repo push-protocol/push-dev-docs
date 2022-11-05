@@ -1,7 +1,7 @@
 ---
 description: >-
   This section describes how Notifications can be sent from any dApp, service,
-  or smart contract by interacting with PUSH smart contracts
+  or smart contract by interacting with Push smart contracts
 ---
 
 # Sending Notifications

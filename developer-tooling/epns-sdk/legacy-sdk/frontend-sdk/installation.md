@@ -22,7 +22,7 @@ Please refer this for above repos -&#x20;
 
 ### Installation for General Usage
 
-In order to install this SDK onto your existing Dapp or Mobile Application, you can install it under the General Usage category and start parsing notifications from EPNS directly to your Dapp.
+In order to install this SDK onto your existing Dapp or Mobile Application, you can install it under the General Usage category and start parsing notifications from Push directly to your Dapp.
 
 It can be installed as an **npm** package via the following command 👇
 
@@ -36,10 +36,10 @@ In case you are using React version <17.0.0, use the below command 👇
 
 As a developer, you might feel the need to add more features to the existing Frontend SDK. You can use the below steps to install in development mode and see changes firsthand as you improvise the code.
 
-To install, test, and develop the SDK locally, the following steps are required to set up EPNS Frontend SDK for testing on existing React applications.
+To install, test, and develop the SDK locally, the following steps are required to set up Push Frontend SDK for testing on existing React applications.
 
 ```bash
-// cloning the EPNS Frontend SDK
+// cloning the Push Frontend SDK
 -> git clone https://github.com/ethereum-push-notification-service/epns-frontend-sdk-staging.git
 
 // navigate to the project's directory

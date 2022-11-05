@@ -1,13 +1,13 @@
 # Testing Sent Notifications
 
-PUSH is an open network and supports all platforms. This means that notifications work just like how Ethereum functions. The communications are stored in an open, distributed (and soon to be decentralised) network (much like how the backend of Ethereum stores the data).&#x20;
+Push is an open network and supports all platforms. This means that notifications work just like how Ethereum functions. The communications are stored in an open, distributed (and soon to be decentralised) network (much like how the backend of Ethereum stores the data).&#x20;
 
 This can then fetched by any crypto frontend / wallet / software to display it out to their users (very similar to how frontend wallets like Metamask, Trust, Phantom, etc works).
 
-This means you can see notifications on any platform or frontend that integrates PUSH. You can test out how notifications come by using any of the crypto frontends listed below or any other third party ones that have integrated the Push protocol.
+This means you can see notifications on any platform or frontend that integrates Push. You can test out how notifications come by using any of the crypto frontends listed below or any other third party ones that have integrated the Push protocol.
 
 {% hint style="info" %}
-The tutorial assumes you are a developer creating and sending notifications from a **staging environment**. If you are a user or have created notifications from the prod environment, then check out [https://docs.epns.io/users](https://docs.epns.io/users)
+The tutorial assumes you are a developer creating and sending notifications from a **staging environment**. If you are a user or have created notifications from the prod environment, then check out [https://docs.push.org/users/](https://docs.push.org/users/)
 {% endhint %}
 
 ## Push Protocol Integrated Mobile Apps / Wallets / Extensions and dApps
@@ -18,13 +18,13 @@ Push protocol is made for users and all its functions including opting in to rec
 
 ### Extensions
 
-**Step 1:** Install PUSH Staging Chrome Extension.
+**Step 1:** Install Push Staging Chrome Extension.
 
-{% embed url="https://chrome.google.com/webstore/detail/epns-staging-protocol-alp/bjiennpmhdcandkpigcploafccldlakj" %}
+{% embed url="https://chrome.google.com/webstore/detail/push-staging-protocol-alp/bjiennpmhdcandkpigcploafccldlakj" %}
 **Staging Environment**
 {% endembed %}
 
-{% embed url="https://chrome.google.com/webstore/detail/epns-protocol-alpha/lbdcbpaldalgiieffakjhiccoeebchmg" %}
+{% embed url="https://chrome.google.com/webstore/detail/push-protocol-alpha/lbdcbpaldalgiieffakjhiccoeebchmg" %}
 **Production Environment**
 {% endembed %}
 
@@ -40,11 +40,11 @@ If you are installing the Chrome extension on **Brave** then you need to enable 
 
 ### dApp
 
-{% embed url="https://staging-app.epns.io/#/channels" %}
-&#x20;**Staging Environment**
+{% embed url="https://staging.push.org/" %}
+**Staging Environment**
 {% endembed %}
 
-{% embed url="https://app.epns.io" %}
+{% embed url="https://app.push.org/" %}
 **Production Environment**
 {% endembed %}
 
@@ -73,10 +73,10 @@ If you are installing the Chrome extension on **Brave** then you need to enable 
 {% hint style="warning" %}
 iOS doesn't have a public staging app (only production app is available on the App Store). \
 \
-Best way to test staging on iOS would be to join :point\_right: [EPNS Discord Channel](https://discord.com/invite/YVPB99F9W5) :point\_left: and ask a team member to provide you with a testflight beta link.&#x20;
+Best way to test staging on iOS would be to join :point\_right: [Push Discord Channel](https://discord.com/invite/YVPB99F9W5) :point\_left: and ask a team member to provide you with a testflight beta link.&#x20;
 {% endhint %}
 
-{% embed url="https://discord.com/invite/YVPB99F9W5" %}
+{% embed url="https://discord.com/invite/pushprotocol" %}
 **For Requesting Staging Environment App**
 {% endembed %}
 

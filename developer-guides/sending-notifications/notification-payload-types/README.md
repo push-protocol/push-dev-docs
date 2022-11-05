@@ -12,7 +12,7 @@ Considering the fact that notifications have been so imperative as well as custo
 {% hint style="info" %}
 **The notification standard (Basic)** covers all the requirements you need to know to start sending notifications.\
 \
-**Notification standard (Advanced)** covers topics related to the composability of the PUSH notification protocol, how it works, how it can be expanded, etc
+**Notification standard (Advanced)** covers topics related to the composability of the Push notification protocol, how it works, how it can be expanded, etc
 {% endhint %}
 
 {% content-ref url="notification-standard-basics.md" %}

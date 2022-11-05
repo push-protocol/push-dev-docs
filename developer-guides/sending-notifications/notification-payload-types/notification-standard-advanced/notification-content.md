@@ -18,9 +18,9 @@ Notification Content Markdown only works for the payload that transforms inside 
 |                    |                                                                                                    | For Segregation  | For new line                  |
 | \[w: textcontent]  | \<PUSHText color="white">Hello World\</PUSHText>                                                   | For colored text | For white color               |
 |                    | \<PUSHText color=”#ANYHEXCODE”> Hello world \</PUSHText>                                           | For colored text | Supports any color by hexcode |
-| \[d: textcontent]  | \<PUSHText color="primary">Hello World \</PUSHText>                                                | For colored text | PUSH Primary colored Text     |
-| \[s: textcontent]  | \<PUSHText color="secondary">Hello World \</PUSHText>                                              | For colored text | PUSH Secondary colored Text   |
-| \[t: textcontent]  | \<PUSHText color="tertiary">Hello World \</PUSHText>                                               | For colored text | PUSH Tetiary colored Text     |
+| \[d: textcontent]  | \<PUSHText color="primary">Hello World \</PUSHText>                                                | For colored text | Push Primary colored Text     |
+| \[s: textcontent]  | \<PUSHText color="secondary">Hello World \</PUSHText>                                              | For colored text | Push Secondary colored Text   |
+| \[t: textcontent]  | \<PUSHText color="tertiary">Hello World \</PUSHText>                                               | For colored text | Push Tetiary colored Text     |
 | \[u: textcontent]  | \<PUSHText color="green" link="[https://www.epns.io">](broken-reference) EPNS website \</PUSHText> | For URL’s        | Underlined, Red Colored Text  |
 
 ### Reference Implementation -
@@ -82,7 +82,7 @@ Notification Content Markdown only works for the payload that transforms inside 
 > Implementation -  <PUSHText color=”#00FF00”> Push Nodes </PUSHText>
 ```
 
-* **PUSH Primary colored Text** -
+* Push **Primary colored Text** -
 
 ```
 > Use case - 	For colored text
@@ -91,7 +91,7 @@ Notification Content Markdown only works for the payload that transforms inside 
 > Implementation - <PUSHText color="primary"> Analytics dashboard </PUSHText>
 ```
 
-* **PUSH Secondary colored Text** -
+* Push **Secondary colored Text** -
 
 ```
 > Use case - 	For colored text
@@ -100,7 +100,7 @@ Notification Content Markdown only works for the payload that transforms inside 
 > Implementation - <PUSHText color="secondary">EPNS Dapp </PUSHText>
 ```
 
-* **PUSH Tetiary colored Text**
+* Push **Tetiary colored Text**
 
 ```
 > Use case - 	For colored text

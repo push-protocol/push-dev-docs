@@ -1,7 +1,7 @@
 # Receiving via Restful API
 
 {% hint style="info" %}
-PUSH SDK offers a variety of ways by which you can show your users web3 notifications. You can read about the entire monorepo by going to this section: [epns-sdk](../../developer-tooling/epns-sdk/ "mention")
+Push SDK offers a variety of ways by which you can show your users web3 notifications. You can read about the entire monorepo by going to this section: [epns-sdk](../../developer-tooling/epns-sdk/ "mention")
 {% endhint %}
 
 ### Quick Start

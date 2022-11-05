@@ -1,12 +1,12 @@
 ---
-description: A effective guide to using the PUSH SDK and its features
+description: A effective guide to using the Push SDK and its features
 ---
 
 # Push SDK Starter Kit
 
-This [starter-kit](https://github.com/ethereum-push-notification-service/epns-sdk-starter-kit) is meant to showcase developers on how to use the PUSH SDK packages -
+This [starter-kit](https://github.com/ethereum-push-notification-service/epns-sdk-starter-kit) is meant to showcase developers on how to use the Push SDK packages -
 
-* [@pushprotocol/restapi](https://www.npmjs.com/package/@pushprotocol/restapi) Provides access to PUSH backend APIs.
+* [@pushprotocol/restapi](https://www.npmjs.com/package/@pushprotocol/restapi) Provides access to Push backend APIs.
 * [@pushprotocol/uiweb](https://www.npmjs.com/package/@pushprotocol/uiweb) Provides React based components to show Notifications, Spam, SubscribedModal etc for dApps.
 * [@pushprotocol/uiembed](https://www.npmjs.com/package/@pushprotocol/uiembed) Provides vanilla JS sidebar notifications for any dApp.
 
@@ -57,7 +57,7 @@ yarn add styled-components
 yarn add @web3-react/core @web3-react/injected-connector
 ```
 
-> **Note:**  _No need to install these if you are using the `starter-kit` itself since we have already installed these for you so that you can focus on how to use the_ PUSH_-SDK packages_
+> **Note:**  _No need to install these if you are using the `starter-kit` itself since we have already installed these for you so that you can focus on how to use the_ Push_-SDK packages_
 
 ### App walkthrough
 
@@ -68,7 +68,7 @@ yarn add @web3-react/core @web3-react/injected-connector
 | Notifications | <p>notifications,<br>spams,<br>subscribed modal</p>                                                                                                                                                    | <p>@pushprotocol/uiweb,<br>@pushprotocol/restapi</p> |
 | Channels      | <p>get channel details for a specific channel,<br>search for channel(s),<br>get channel subscribers,<br>is the logged-in user subscribed to the channel,<br>opt in a channel,<br>opt out a channel</p> | @pushprotocol/restapi                                |
 | Payloads      | send notification for different use cases                                                                                                                                                              | @pushprotocol/restapi                                |
-| Embed         | sidebar notifications for the logged in user if subscribed on PUSH protocol                                                                                                                            | @pushprotocol/uiembed                                |
+| Embed         | sidebar notifications for the logged in user if subscribed on Push protocol                                                                                                                            | @pushprotocol/uiembed                                |
 
 The App has the following features-
 

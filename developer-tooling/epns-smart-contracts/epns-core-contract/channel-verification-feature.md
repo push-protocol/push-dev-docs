@@ -1,18 +1,18 @@
 ---
 description: >-
   Understanding the Channel verification and revocation of channel verification
-  in EPNS Core V1
+  in Push Core V1
 ---
 
 # Channel Verification Feature
 
-EPNS Core contract also includes a new Channel Verification feature which allows Channels to have a verification tag.
+Push  Core contract also includes a new Channel Verification feature which allows Channels to have a verification tag.
 
 The **verification tag** of a Channel has its own significance. While on one hand, a verified channel enhances the user’s reliability on the channel and its notifications, it also gets a comparatively better position on the User interface.&#x20;
 
 ### **Understanding the Channel Verification procedure**
 
-Channels in the EPNS Core protocol can have either a **Primary** or **** a **Secondary verification tag.**
+Channels in the Push Core protocol can have either a **Primary** or **** a **Secondary verification tag.**
 
 **a. Primary Verification tag:** Channels that have directly been verified by the Push Channel Admin are the ones that have a _**primary verification**_ tag.\
 All Primary Verified channels have the power to verify other unverified channels.
@@ -37,6 +37,6 @@ For instance:
 
 The infographics below will help understand the verification procedure in the core smart contract effectively:
 
-![Channel verification and Unverfication Process in EPNS CoreV1](<../../../.gitbook/assets/image (14).png>)
+![Channel verification and Unverfication Process in Push CoreV1](<../../../.gitbook/assets/image (14).png>)
 
 **b.Unverifying a Secondary verified channel:** A channel with a secondary verification tag can be unverified either by the actual verifier of the channel or by the **Push** channel admin itself. As channels with secondary verification tags cannot verify other channels, their revocation of the verification tag has no impact on any other Channel’s verification tag.

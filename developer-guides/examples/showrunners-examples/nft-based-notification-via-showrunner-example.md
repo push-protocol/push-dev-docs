@@ -7,7 +7,7 @@ description: >-
 # NFT-Based notification via Showrunner example
 
 **Greetings!!**\
-If you are new to PUSH protocol and don't have a proper idea of how to create an NFT-based channel for notifications on top of [showrunners](https://docs.epns.io/developers/developer-tooling/showrunners-framework). This guide is for you ;)\
+If you are new to Push protocol and don't have a proper idea of how to create an NFT-based channel for notifications on top of [showrunners](https://docs.epns.io/developers/developer-tooling/showrunners-framework). This guide is for you ;)\
 \
 We will walk through coding and interacting with the [Digible ](https://www.digible.io/)to create the notification regarding the NFTs listed there.\
 \
@@ -33,7 +33,7 @@ Digible has provided us with the Contract Addresses and ABIs for the concerned e
 
 To get the Idea of when the function is called we monitor the block numbers of every transaction in the given contract address if it concerned to call the monitored event.Whenever we observe a new block number, we trigger a notification and also update the latest block number in our temporary storage for further monitoring.
 
-#### [Channel File](https://github.com/ethereum-push-notification-service/epns-showrunners-framework/blob/main/src/showrunners/digible/digibleChannel.ts)
+#### [Channel File](https://github.com/ethereum-push-notification-service/push-showrunners-framework/blob/main/src/sample\_showrunners/digible/digibleChannel.ts)
 
 The channel file is the brain for every channel notification logic. The file follows basic steps of input obtainment, some processed logic and conditions and when the condition for logic is satisfied the code generates the notification.
 
@@ -181,7 +181,7 @@ This notification is addressed only to the people who are involved in the specif
             });
 ```
 
-#### [Jobs File](https://github.com/ethereum-push-notification-service/epns-showrunners-framework/blob/main/src/showrunners/digible/digibleJobs.ts)
+#### [Jobs File](https://github.com/ethereum-push-notification-service/push-showrunners-framework/blob/main/src/sample\_showrunners/digible/digibleJobs.ts)
 
 This folder is responsible to run the Cron Jobs. Expanding on the “Cron Jobs”, this is a function which uses a module called Node-Schedule to run a code at a specific, repeating time interval. Though the main logic resides in the Channel file, the logic is constantly run by this file, so that as soon as the function satisfies the condition when its called, a notification is sent.
 

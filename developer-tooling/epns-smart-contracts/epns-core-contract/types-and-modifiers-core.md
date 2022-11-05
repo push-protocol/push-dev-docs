@@ -1,7 +1,7 @@
 ---
 description: >-
   Explains the different types of Data types and access controls used in the
-  EPNS Core smart contract
+  Push Core smart contract
 ---
 
 # Types & Modifiers - Core
@@ -38,7 +38,7 @@ description: >-
     uint256 public ADD_CHANNEL_MIN_POOL_CONTRIBUTION;
 ```
 
-**A.1 To keep track of FUNDS and FEES in EPNS Core**
+**A.1 To keep track of FUNDS and FEES in Push Core**
 
 * **POOL\_FUNDS:**
   * Keeps track of the total amount of DAI in the protocol.
@@ -95,7 +95,7 @@ struct Channel {
     }
 ```
 
-The **Channel** struct in the EPNS Core smart contract stores every crucial data about the channels that are created on the core contract.
+The **Channel** struct in the Push Core smart contract stores every crucial data about the channels that are created on the core contract.
 
 * **ChannelType**
   * Denotes the type of channel being created.

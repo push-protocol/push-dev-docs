@@ -8,7 +8,7 @@ Each notification sent to the protocol is essentially a JSON payload, bytes data
 
 The protocol distinguishes payloads content which will contain the content which needs to be displayed, rules to display/morph the content, the recipients to which the content is meant to be delivered along with the encryption method used if the content is encrypted.
 
-The notification payload type for PUSH is infinitely extensible and opens a huge range of possibilities including multi-factor authentication, payments, blacklisting address (Multi-sig contract as a channel with exchanges as their subscribers), etc.&#x20;
+The notification payload type for Push is infinitely extensible and opens a huge range of possibilities including multi-factor authentication, payments, blacklisting address (Multi-sig contract as a channel with exchanges as their subscribers), etc.&#x20;
 
 The data defined in the JSON payload they carry is used to interpret and extend that functionality.
 
@@ -57,7 +57,7 @@ The data defined in the JSON payload they carry is used to interpret and extend 
 | acta (Optional)         | is the call to action of that feed item.                                                                                                                                                                                                                                                         |
 | aimg (Optional)         | is the image shown in the feed item, this field is also capable of carrying youtube links.                                                                                                                                                                                                       |
 | etime (Optional)        | if given, notif will be deleted after this in epoch                                                                                                                                                                                                                                              |
-| recipients(Required)    | Recipents address needs to be defined depending on the payload type, if 0x00 is provided it will represents all the subscribers of the channeland in the case of secret payload each subscriber address will be mapped with the secret.                                                          |
+| recipients(Required)    | Recipents address needs to be defined depending on the payload type, if 0x00 is provided it will represents all the subscribers of the channel and in the case of secret payload each subscriber address will be mapped with the secret.                                                         |
 | secret (Optional)       | is required for encryption and decryption of payload data, this will be mapped with the user address as key-value pair.                                                                                                                                                                          |
 
 ## Examples of Notification Payloads

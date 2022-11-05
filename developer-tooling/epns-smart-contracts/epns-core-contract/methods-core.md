@@ -1,6 +1,6 @@
 ---
 description: >-
-  Brief overview of all the imperative functionalities of the EPNS Core smart
+  Brief overview of all the imperative functionalities of the Push Core smart
   contract
 ---
 
@@ -22,7 +22,7 @@ function setEpnsCommunicatorAddress(address _commAddress) external onlyPushChann
 
 _**Description:**_
 
-* Allows only the Push Channel Admin to set the EPNS Communicator smart contract's address
+* Allows only the Push Channel Admin to set the Push Communicator smart contract's address
 
 **2.setGovernanceAddress(address)**
 
@@ -149,7 +149,7 @@ function transferPushChannelAdminControl(address _newAdmin) public onlyPushChann
 
 * Channel's state is changed from **Active to DeActivated state**
 * **Channel Deactivation Fees** of 10 DAI are deducted.
-* The remaining amount of DAI after fee deduction is Swapped to PUSH Tokens and refunded back to the Chanenl Owner
+* The remaining amount of DAI after fee deduction is Swapped to Push Tokens and refunded back to the Channel Owner
 * Imperative on-chain details about the channel like _new Channel pool contribution, new Channel weight ,etc_ are updated in the contract
 * Emits out a _**DeactivateChannel()**_ event with the _Channel's address, Total Refund amount value_
 
@@ -254,7 +254,7 @@ function transferPushChannelAdminControl(address _newAdmin) public onlyPushChann
 |       Description       |    Type   |                     Description                    |
 | :---------------------: | :-------: | :------------------------------------------------: |
 |       _**\_user**_      | _address_ |                 address of the user                |
-|    _**\_userAmount**_   | _uint256_ |      User's amount to be swapped to PUSH token     |
+|    _**\_userAmount**_   | _uint256_ |      User's amount to be swapped to Push token     |
 | _**\_amountsOutValue**_ | _uint256_ | amountsOut value for Uniswap while swapping tokens |
 
 _**Description:**_
@@ -316,7 +316,7 @@ _**Description:**_
 * Returns the verification tag of the channel's address passed in the argument.
 * If the target channel is currently not verified by anyone, the function returns **0**.
 * If the target channel was verified by the Push Channel admin itself, the function returns **1**. It means the channel has a **Primary verification tag**.
-* If the target channel was verified by any other verified channel, the function returns **2**. It means the channel has a **Secondary verification tag**. _Note: It's quite important to keep the following Channel Verification procedure of EPNS Core in mind:_
+* If the target channel was verified by any other verified channel, the function returns **2**. It means the channel has a **Secondary verification tag**. _Note: It's quite important to keep the following Channel Verification procedure of Push Core in mind:_
 * _If a Channel (C-A) with **Secondary verification tag** verifies other channels in the protocol but **later gets unverified by the Push Channel Admin**, all the other channels that were verified by that specific channel **'C-A**' get unverified as well._ For instance,
 
 > 1. Push Channel Admin verifies Channel A - Primary Verification

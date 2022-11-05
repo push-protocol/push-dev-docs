@@ -6,13 +6,13 @@ description: Quick guide on how to create a channel using a gnosis safe
 
 While you can use an EOA for creating a channel, that's not the only option.&#x20;
 
-Channels, on the PUSH protocol, can also be created using a multi-sig contract. Once created, that contract shall be the owner of that channel and any channel action can be performed after the approval of the required signers of that particular multi-sig contract.
+Channels, on the Push protocol, can also be created using a multi-sig contract. Once created, that contract shall be the owner of that channel and any channel action can be performed after the approval of the required signers of that particular multi-sig contract.
 
-In this quick example, we shall learn to create a channel on PUSH using a Gnosis Safe (_instead of a simple EOA_).
+In this quick example, we shall learn to create a channel on Push using a Gnosis Safe (_instead of a simple EOA_).
 
 ### Prerequisites
 
-Before we proceed with the actual steps of connecting the safe to the PUSH dapp and creating a channel, let's quickly understand the prerequisites:
+Before we proceed with the actual steps of connecting the safe to the Push dapp and creating a channel, let's quickly understand the prerequisites:
 
 1. Create your own gnosis safe with the right set of owners and policies.
 2. Fund your safe with at least 50 DAI. _This amount of DAI is required for channel creation._
@@ -32,10 +32,10 @@ If you are setting up a Channel on Prod dApp (Ethereum Mainnet), you can request
 
 Alright, once you have ensured all the prerequisites are completed, let's move forward with creating a channel with the Gnosis safe using the following steps.
 
-**Step 1:** Connect to the PUSH Dapp using your Gnosis safe. \
+**Step 1:** Connect to the Push dApp using your Gnosis safe. \
 Follow the steps mentioned below:
 
-a. Go to [https://app.epns.io/](https://app.epns.io/)
+a. Go to [https://app.push.org/](https://app.push.org/)
 
 b. Select **Wallet Connect** as an option to connect your wallet to the dapp and **Copy the connection link. (**_Keep this link handy as we will use it soon_**)**
 
@@ -47,17 +47,17 @@ e. Search for the Wallet connect app and click on it.
 
 f. Paste the **connection link (**from step b**)** in the given Wallet connect box.
 
-And that's it. Once the connection link is provided your safe is automatically logged in with the PUSH DAPP.
+And that's it. Once the connection link is provided your safe is automatically logged in with the Push dapp.
 
-Here is a quick video of the entire process of connecting your safe to PUSH DAPP.
+Here is a quick video of the entire process of connecting your safe to Push dapp.
 
 {% embed url="https://www.loom.com/share/a08d946e81bc48e88f24874ebbfd0939" %}
-Connecting to PUSH DAPP using your gnosis safe
+Connecting to Push dapp using your gnosis safe
 {% endembed %}
 
 **Step 2: Create the Channel**&#x20;
 
-Once you have successfully connected your gnosis safe to the PUSH dapp, it basically gets easier from now on.&#x20;
+Once you have successfully connected your gnosis safe to the Push dapp, it basically gets easier from now on.&#x20;
 
 Now that you are connected to the dapp, creating a channel using a safe is an exactly similar process as it was using an EOA account.
 
@@ -73,7 +73,7 @@ The only difference in creating a channel with Gnosis safe is the fact that ever
 
 Therefore, once the channel details are entered and the transaction is initiated, it's time for the required number of owners to sign and approve this transaction from the gnosis safe app to execute it.
 
-After the successful execution of the transaction, your channel will be created on the PUSH dapp and will be owned by the safe(_and its owners_).
+After the successful execution of the transaction, your channel will be created on the Push dapp and will be owned by the safe(_and its owners_).
 
 {% hint style="info" %}
 _**Remember in order to access the channel's profile page,  you must log in to the dapp from the safe itself.**_

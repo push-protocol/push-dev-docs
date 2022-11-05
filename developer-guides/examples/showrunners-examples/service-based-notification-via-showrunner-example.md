@@ -8,7 +8,7 @@ description: >-
 # Service based notification via Showrunner example
 
 **Greetings!!**\
-If you are new to PUSH protocol and don't have a proper idea of how to create an service-based channel for notifications on top of [showrunners](https://docs.epns.io/developers/developer-tooling/showrunners-framework). This guide is for you ;)\
+If you are new to Push protocol and don't have a proper idea of how to create an service-based channel for notifications on top of [showrunners](https://docs.epns.io/developers/developer-tooling/showrunners-framework). This guide is for you ;)\
 \
 We will walk through coding and interacting with the [ENS](https://ens.domains/) Domain service to create the notification if a user's domain is expiring. \
 \
@@ -26,7 +26,7 @@ First we need to create a folder in `src/showrunners/<`_`your_channel_name>`_
 
 The notifications for the ENS channel are mainly focused on informing the user about the Domain Validity
 
-#### [Channel File](https://github.com/ethereum-push-notification-service/epns-showrunners-framework/blob/main/src/showrunners/ens/ensChannel.ts)
+#### [Channel File](https://github.com/ethereum-push-notification-service/push-showrunners-framework/blob/main/src/sample\_showrunners/ens/ensChannel.ts)
 
 The channel file is the brain for every channel notification logic. The file follows basic steps of input obtainment, some processed logic and conditions and when the condition for logic is satisfied the code generates the notification.
 
@@ -144,7 +144,7 @@ We now compare both Threshold and the difference, to check if the expiry is beyo
 if (secDiff < TRIGGER_THRESHOLD_SECS && secDiff >= 0) {
 ```
 
-If the above condition is verified the process of triggering a notification is initiated. For this we use an inbuilt EPNS class function called “sendNotification”.This function to send the notification requires certain data from our side.The following data is what we generally provide in a notification:
+If the above condition is verified the process of triggering a notification is initiated. For this we use an inbuilt Push class function called “sendNotification”. This function to send the notification requires certain data from our side. The following data is what we generally provide in a notification:
 
 * Recipient Address
 * Notification Title
@@ -199,7 +199,7 @@ After getting all the data from our side the notification is good-to-go, and the
       });
 ```
 
-#### [Jobs File](https://github.com/ethereum-push-notification-service/epns-showrunners-framework/blob/main/src/showrunners/ens/ensJobs.ts)
+#### [Jobs File](https://github.com/ethereum-push-notification-service/push-showrunners-framework/blob/main/src/sample\_showrunners/ens/ensJobs.ts)
 
 This folder is responsible to run the Cron Jobs. Expanding on the “Cron Jobs”, this is a function which uses a module called Node-Schedule to run a code at a specific, repeating time interval. Though the main logic resides in the Channel file, the logic is constantly run by this file, so that as soon as the function satisfies the condition when its called, a notification is sent.
 

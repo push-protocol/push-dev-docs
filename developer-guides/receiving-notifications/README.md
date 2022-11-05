@@ -1,6 +1,6 @@
 ---
 description: >-
-  This section describes how Notifications can be received from the PUSH
+  This section describes how Notifications can be received from the Push
   Communication Protocol
 ---
 
@@ -9,7 +9,7 @@ description: >-
 {% hint style="success" %}
 Integrating receiving notifications is a critical component as it enables your users to have the best experience and improve massively on web3 UX. \
 \
-However, it is not required as PUSH is an open network and already have integrations. If you want to just test out sent notifications then head to [testing-sent-notifications.md](../testing-sent-notifications.md "mention")
+However, it is not required as Push is an open network and already have integrations. If you want to just test out sent notifications then head to [testing-sent-notifications.md](../testing-sent-notifications.md "mention")
 {% endhint %}
 
 {% hint style="info" %}

@@ -1,10 +1,10 @@
 ---
-description: A super quick guide to get you started with PUSH SDK
+description: A super quick guide to get you started with Push SDK
 ---
 
 # Quick Start
 
-Now that you have a basic understanding of what PUSH SDK is, let's go through an absolutely easy procedure of how to set it up and use the package in your code.
+Now that you have a basic understanding of what Push SDK is, let's go through an absolutely easy procedure of how to set it up and use the package in your code.
 
 ### Installation and Set-Up
 

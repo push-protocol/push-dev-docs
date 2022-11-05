@@ -1,16 +1,16 @@
 ---
 description: >-
-  PUSH SDK provides an abstraction layer to integrate PUSH protocol features
+  Push SDK provides an abstraction layer to integrate Push protocol features
   with your Frontend as well as Backend
 ---
 
-# PUSH SDK
+# Push SDK
 
-PUSH SDK is a growing _**Monorepo**_ of packages that provide solutions for a wide range of development tasks one might come across while building on top of PUSH protocol. It is a Javascript-based group of packages that helps developers to:
+Push SDK is a growing _**Monorepo**_ of packages that provide solutions for a wide range of development tasks one might come across while building on top of Push protocol. It is a Javascript-based group of packages that helps developers to:
 
 * Send notifications
 * Subscribe (opt-in) / Unsubscribe (opt-out)
-* Build PUSH features into their dApps
+* Build Push features into their dApps
 * Enable Access to Push Nodes APIs
 * Render Default Notifications UI, etc
 
@@ -18,9 +18,9 @@ It is written in Typescript and supports React, React Native, Plain JS, and Node
 
 It is also built on top of standard Web3 packages like **ethers**, **@web3-react**
 
-### PUSH SDK Features
+### Push SDK Features
 
-A brief glance at the most imperative features of PUSH SDK along with the associated package and target platform.
+A brief glance at the most imperative features of Push SDK along with the associated package and target platform.
 
 |          Feature         | Description                                                             | Monorepo package          | Target platform |
 | :----------------------: | ----------------------------------------------------------------------- | ------------------------- | --------------- |
@@ -37,22 +37,22 @@ A brief glance at the most imperative features of PUSH SDK along with the associ
 |    Embed Notifications   | UI JS based sidebar modal to display notifications of a user in a dapp. | @pushprotocol/uiembed     | UI              |
 
 {% hint style="info" %}
-**Note**_**:** It must be noted that the_ PUSH _SDK uses the_ [_CAIP format_](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-10.md) _as of now, in order to provide a chain-agnostic protocol for communication between dapps or wallets._&#x20;
+**Note**_**:** It must be noted that the_ Push _SDK uses the_ [_CAIP format_](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-10.md) _as of now, in order to provide a chain-agnostic protocol for communication between dapps or wallets._&#x20;
 
-PUSH SDK uses CAIP10 format but defaults to Ethereum address format, CAIP 10 format is a way to identify multichain addresses which is extended from CAIP 2. Any blockchain address becomes namespace + “:” + chain\_id + “:” + account\_address.\
+Push SDK uses CAIP10 format but defaults to Ethereum address format, CAIP 10 format is a way to identify multichain addresses which is extended from CAIP 2. Any blockchain address becomes namespace + “:” + chain\_id + “:” + account\_address.\
 __\
 _However, as we expand our boundaries to multiple chains in the future, we shall define our own specifications, if need be._\
 __\
 _More details about this are in the_ [epnsproject-sdk-restapi](sdk-packages-details/epnsproject-sdk-restapi/ "mention")__
 {% endhint %}
 
-### Build using PUSH SDK
+### Build using Push SDK
 
 {% content-ref url="epns-sdk-starter-kit.md" %}
 [epns-sdk-starter-kit.md](epns-sdk-starter-kit.md)
 {% endcontent-ref %}
 
-### Learn more about the PUSH SDK Packages
+### Learn more about the Push SDK Packages
 
 {% content-ref url="sdk-packages-details/epnsproject-sdk-restapi/" %}
 [epnsproject-sdk-restapi](sdk-packages-details/epnsproject-sdk-restapi/)

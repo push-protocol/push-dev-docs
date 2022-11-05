@@ -4,9 +4,9 @@ description: >-
   different types etc
 ---
 
-# Web3 Notifications
+# Push Notification for Web3
 
-Any successfully created channel, in its **active** state,  can send notifications to its subscribers about a wide range of things related to defi, governance proposals, web3 news, or any other crucial updates about their protocol/services.
+Any successfully created channel, in its **active** state, can send notifications to its subscribers about a wide range of things related to defi, governance proposals, web3 news, or any other crucial updates about their protocol/services.
 
 Notifications land in the inbox of those users who are subscribed to the channel. Non-subscribers of a particular channel aren't alerted about notifications from that channel as they land in their spam box.
 
@@ -18,7 +18,7 @@ As per the current design of the protocol, there can be 3 main actors who can se
 
 **2**. **Delegate Notification Senders:** Channel owners can allow any particular wallet address to send notifications on behalf of his/her channel. This feature is called delegated notifications and you can read more about it in this section 👉[what-are-delegated-notifications.md](what-are-delegated-notifications.md "mention")
 
-**3. Notifications To Yourself:** The EPNS Communicator allows any address to send notifications to themselves 😃 It’s important to note, however, that the address sends the notification to themselves only.
+**3. Notifications To Yourself:** The Push Communicator allows any address to send notifications to themselves 😃 It’s important to note, however, that the address sends the notification to themselves only.
 
 {% hint style="info" %}
 **Note:**

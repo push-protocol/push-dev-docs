@@ -44,7 +44,7 @@ const  epnsSdk = new EpnsSDK(CHANNEL_PK);
 ```
 
 {% hint style="info" %}
-_If you are yet to create a channel you can proceed to_ [_our staging dapp_](http://staging-app.epns.io/) _to create one or refer to our_ [_how-to guides_](https://www.notion.so/epns/How-to-EPNS-853afe64839b4cdd8c63209342a783d0)_._
+_If you are yet to create a channel you can proceed to_ [_our staging dapp_](https://staging.push.org/) _to create one or refer to our_ [_how-to guides_](https://www.notion.so/epns/How-to-EPNS-853afe64839b4cdd8c63209342a783d0)_._
 {% endhint %}
 
 **Step 4:**  This is an interesting part where you can implement the notification logic, whether it’s on-chain or off-chain, based on which the notification is to be sent through your channel.

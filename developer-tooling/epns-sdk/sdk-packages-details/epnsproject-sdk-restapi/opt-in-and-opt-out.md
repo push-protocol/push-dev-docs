@@ -80,7 +80,7 @@ Allowed Options (params with \* are mandatory)
 | onError                  | function | -       | on error callback                  |
 | env                      | string   | ‘prod’  | API env - ‘prod’, ‘staging’, ‘dev  |
 
-**PUSH communicator contract address**
+**Push communicator contract address**
 
 ```
 ETH Mainnet - 0xb3971BCef2D791bc4027BbfedFb47319A4AAaaAa

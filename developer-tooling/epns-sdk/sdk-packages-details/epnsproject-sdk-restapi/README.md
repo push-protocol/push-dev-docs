@@ -1,5 +1,5 @@
 ---
-description: This package gives access to PUSH protocol backend APIs
+description: This package gives access to Push protocol backend APIs
 ---
 
 # @pushprotocol/restapi
@@ -26,7 +26,7 @@ import * as PushAPI from "@pushprotocol/restapi";
 **Note on Addresses:**\
 ****
 
-PUSH _SDK uses **CAIP10** format but defaults to Ethereum address format._\
+Push _SDK uses **CAIP10** format but defaults to Ethereum address format._\
 __\
 _CAIP 10 format is a way to identify multichain addresses which are extended from CAIP 2. Any blockchain address becomes namespace + “:” + chain\_id + “:” + account\_address._\
 __\

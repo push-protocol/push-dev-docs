@@ -8,12 +8,12 @@ description: >-
 
 The Frontend SDK comprises of three major modules, which function as:
 
-1. Fetching the notifications from EPNS backend
+1. Fetching the notifications from Push backend
 2. Parsing the fetched notifications
 3. Rendering the parsed notification on Mobile and Web Applications
-4. Embedding EPNS notifications in your dApp
+4. Embedding Push notifications in your dApp
 
-The whole process is aligned in this manner to maintain the flow of control from EPNS backend to your app's Frontend.
+The whole process is aligned in this manner to maintain the flow of control from Push backend to your app's Frontend.
 
 ## Fetching and Parsing Notifications from the API
 
@@ -89,10 +89,10 @@ This section contains several markdown formats available and how to use them. Th
 | :----------------: | ---------------------------- | ---------------- |
 |                    | New line                     | For Segregation  |
 |  \[u: textcontent] | Underlined, Red Colored Text | For URLs         |
-|  \[d: textcontent] | EPNS Primary colored Text    | For colored text |
-|  \[s: textcontent] | EPNS Secondary colored Text  | For colored text |
-|  \[t: textcontent] | EPNS Tetiary colored Text    | For colored text |
-|  \[e: textcontent] | EPNS Secondary colored Text  | For colored text |
+|  \[d: textcontent] | Push Primary colored Text    | For colored text |
+|  \[s: textcontent] | Push Secondary colored Text  | For colored text |
+|  \[t: textcontent] | Push Tetiary colored Text    | For colored text |
+|  \[e: textcontent] | Push Secondary colored Text  | For colored text |
 |  \[w: textcontent] | White colored Text           | For colored text |
 | \[mg: textcontent] | Medium grey colored Text     | For colored text |
 | \[dg: textcontent] | Dark grey colored Text       | For colored text |
@@ -100,7 +100,7 @@ This section contains several markdown formats available and how to use them. Th
 |  \[i: textcontent] | Italics Text                 | For Emphasis     |
 | \[bi: textcontent] | Bold and Italics Text        | For Emphasis     |
 
-## Embedding EPNS Notifications in your App
+## Embedding Push Notifications in your App
 
 For using the **EmbedSDK** in your decentralized application, you should follow the given command (_skip this if already installed!_)
 
@@ -124,7 +124,7 @@ You can also add some other component with the ID **`sdk-trigger-id`.** Make sur
 
 After the wallet connect happens in your application, trigger the below code snippet 👇
 
-**Note:** You need to have the wallet connected with an account to execute the below code. This is because the SDK internally calls the EPNS `get_feeds()` API which required the Wallet Address. You will see notifications if you have opted-in to a channel using [EPNS](https://staging-app.epns.io/).
+**Note:** You need to have the wallet connected with an account to execute the below code. This is because the SDK internally calls the Push `get_feeds()` API which required the Wallet Address. You will see notifications if you have opted-in to a channel using [Push](https://staging.push.org/).
 
 ```javascript
   useEffect(() => {
@@ -178,4 +178,4 @@ The UI should look somewhat like this screenshot below 👇
 
 ![Here, if the user is connected to their wallet and clicks on the bell icon, they will see the next screen](<../../../../.gitbook/assets/image (31).png>)
 
-![The Sidebar shows the EPNS notifications with a header which is a clickable link to the EPNS dApp.](<../../../../.gitbook/assets/image (30).png>)
+![The Sidebar shows the Push notifications with a header which is a clickable link to the Push dApp.](<../../../../.gitbook/assets/image (30).png>)

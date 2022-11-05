@@ -4,7 +4,7 @@ description: A quick introduction to Push Protocol
 
 # ⭐ Getting Started
 
-PUSH Protocol (EPNS) is the world’s first decentralized communication & notification protocol for Web3.
+Push Protocol (EPNS) is the world’s first decentralized communication & notification protocol for Web3.
 
 Using the protocol, any smart contract, dApp, or backend service can send on-chain or off-chain notifications tied to the wallet addresses of users in a gasless, multichain, open, and platform-agnostic way.
 
@@ -12,7 +12,7 @@ Being an open communication middleware, notifications can be integrated and show
 
 <details>
 
-<summary>Quick Guide to Getting Started with PUSH Protocol 🛣</summary>
+<summary>Quick Guide to Getting Started with Push Protocol 🛣</summary>
 
 * Any user who activates themselves on the protocol to send a notification is called a [**Channel**](https://whitepaper.epns.io/protocol-specs-section/epns-protocol/channels).
 

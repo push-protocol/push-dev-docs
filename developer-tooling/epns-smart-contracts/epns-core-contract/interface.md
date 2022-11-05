@@ -1,12 +1,12 @@
 ---
-description: Interface contracts connected to EPNS Contract
+description: Interface contracts connected to Push Contract
 ---
 
 # Interface
 
 
 
-EPNS contract interacts with AAVE Protocol with the help of these interfaces&#x20;
+Push contract interacts with AAVE Protocol with the help of these interfaces&#x20;
 
 ```typescript
 interface ILendingPoolAddressesProvider {

@@ -16,7 +16,7 @@ A heads-up: :innocent: _We are going to build out simple showrunner that is goin
 
 **Step 1:** Create a new folder inside the `src/showrunners` folder named `nftTransfer`
 
-Step 2: Create a channel in the PUSH staging dApp
+Step 2: Create a channel in the Push staging dApp
 
 **Step 3**: Get the private key for the wallet you used to create the channel and create a file called `nftTransferKeys.json` inside the nftTransfer folder
 
@@ -59,7 +59,7 @@ export default class NFTTransferChannel extends EPNSChannel {
 
 **What's going on here?**
 
-* **W**e are creating a new class `NFTTransferChannel` which extends the PUSH Channel class.
+* **W**e are creating a new class `NFTTransferChannel` which extends the Push Channel class.
 * In the `super() the` constructor we pass in certain arguments required for the channel like the `networkToMonitor` , name, and URL for the channel.
 * The `useOffChain the` parameter tells the showrunner to use the off-chain notification instead of an on-chain one.
 
@@ -67,7 +67,7 @@ export default class NFTTransferChannel extends EPNSChannel {
 
 Our objective is to create a channel to send notifications about `Transfer` events of an ERC721 contract. So we will need to fetch events from the blockchain and construct meaningful notification payload from them
 
-For that, we can make use of the PUSH backend-SDK for fetching the data from the blockchain.
+For that, we can make use of the Push backend-SDK for fetching the data from the blockchain.
 
 Before the next thing we need is to pick an NFT for which we want to monitor the events. For this, we can use the Awesome `Crypto Coven` NFTs.
 

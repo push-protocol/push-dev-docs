@@ -40,10 +40,14 @@ Now that you have a good understanding of channels, you can follow the quick gui
 
 If you wish to dive in a bit deep and understand more about channels, their creation procedure, different channel states, verification mechanismsm, etc, please follow the guides mentioned below 👇
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
 {% content-ref url="what-is-a-channel-alias.md" %}
 [what-is-a-channel-alias.md](what-is-a-channel-alias.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../developer-guides/create-your-notif-channel/enabling-channel-on-other-chains/" %}
+[enabling-channel-on-other-chains](../../developer-guides/create-your-notif-channel/enabling-channel-on-other-chains/)
+{% endcontent-ref %}
+
+{% content-ref url="../../developer-guides/create-your-notif-channel/adding-delegates-for-channel.md" %}
+[adding-delegates-for-channel.md](../../developer-guides/create-your-notif-channel/adding-delegates-for-channel.md)
 {% endcontent-ref %}

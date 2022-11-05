@@ -2,7 +2,7 @@
 
 ## About
 
-This module is used to send notifications to [EPNS](http://www.epns.io/) channels easy. It Provides an abstraction layer above advanced internal EPNS notification functions.
+This module is used to send notifications to [Push](http://www.epns.io/) channels easy. It Provides an abstraction layer above advanced internal Push notification functions.
 
 It is written in typescript and requires node v10.0.0 or higher. Most features will work with nodejs v6.0.0 and higher but using older versions than v10.0.0 is not recommended.
 
@@ -14,7 +14,7 @@ npm install @epnsproject/backend-sdk-staging
 
 ### Usage
 
-In order to use this package, [you must first have created a channel at EPNS](http://staging-app.epns.io/). Then note the private key of the account you used to create the channel, because we would be using it in this tutorial
+In order to use this package, [you must first have created a channel at Push](https://staging.push.org/). Then note the private key of the account you used to create the channel, because we would be using it in this tutorial
 
 ```
 // Import the required packages
@@ -63,9 +63,9 @@ new EpnsSDK(
 
 | Parameter                   | Description                                                                                              | Default Value                                                                                                                                                                   |
 | --------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| channelKey                  | The private key of the account used to [create a channel on EPNS](https://staging-app.epns.io/)          | N/A (This is the only parameter not required)                                                                                                                                   |
+| channelKey                  | The private key of the account used to [create a channel on Push](https://staging.push.org/)             | N/A (This is the only parameter not required)                                                                                                                                   |
 | communicatorContractAddress | an override parameter if you intend to use a different communicator contract from the staging one        | For `Kovan Network`:`0x87da9Af1899ad477C67FeA31ce89c1d2435c77DC` and for `Polygon Network`: `0xD2ee1e96e3592d5945dDc1808834d7EE67400823`                                        |
-| communicatorContractABI     | The ABI of the communicator contract specified                                                           | Defaults to the latest communicator contract published by EPNS                                                                                                                  |
+| communicatorContractABI     | The ABI of the communicator contract specified                                                           | Defaults to the latest communicator contract published by Push                                                                                                                  |
 | channelAddress              | The ethereum address used to create the channel                                                          | defaults to `ethers.utils.computeAddress(channelKey)` which is the public key of the specified private key                                                                      |
 | networkKeys                 | These are important if you want to perform any on chain activities, you will have to provide infura keys | The type of the object containing the keys are as follows `interface NetWorkSettings {alchemy?: string;infura?: {projectID: string;projectSecret:string;};etherscan?: string;}` |
 | notificationChainId         | The chain on which you want to send notifications                                                        | defaults to `42` which is for the kovan network, other option is `80001` which is for the kovan network                                                                         |
@@ -140,13 +140,13 @@ async  getContract(
 | abi       | Specify the abi of which the contract you seek                   | <p>N/A - required parameter<br></p> |
 
 {% hint style="info" %}
-Find all the EPNS Contract Addresses [here](../../../epns-smart-contracts/epns-contract-addresses.md)
+Find all the Push Contract Addresses [here](../../../epns-smart-contracts/epns-contract-addresses.md)
 {% endhint %}
 
 ## Backend SDKs Packages
 
 | Environment    | Github Repo                                                                                                                                                      | NPM Package                                                                                                                      |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| **Staging**    | [https://github.com/ethereum-push-notification-service/epns-backend-sdk-staging](https://github.com/ethereum-push-notification-service/epns-backend-sdk-staging) | [https://www.npmjs.com/package/@epnsproject/backend-sdk-staging](https://www.npmjs.com/package/@epnsproject/backend-sdk-staging) |
-| **Production** | [https://github.com/ethereum-push-notification-service/epns-backend-sdk](https://github.com/ethereum-push-notification-service/epns-backend-sdk)                 | [https://www.npmjs.com/package/@epnsproject/backend-sdk](https://www.npmjs.com/package/@epnsproject/backend-sdk)                 |
+| **Staging**    | [https://github.com/ethereum-push-notification-service/push-backend-sdk-staging](https://github.com/ethereum-push-notification-service/push-backend-sdk-staging) | [https://www.npmjs.com/package/@epnsproject/backend-sdk-staging](https://www.npmjs.com/package/@epnsproject/backend-sdk-staging) |
+| **Production** | [https://github.com/ethereum-push-notification-service/push-backend-sdk](https://github.com/ethereum-push-notification-service/push-backend-sdk)                 | [https://www.npmjs.com/package/@epnsproject/backend-sdk](https://www.npmjs.com/package/@epnsproject/backend-sdk)                 |
 

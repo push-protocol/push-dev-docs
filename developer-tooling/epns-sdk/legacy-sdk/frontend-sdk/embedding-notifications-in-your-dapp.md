@@ -1,12 +1,12 @@
 ---
 description: >-
-  This will embed an EPNS sidebar/modal to your UI which will show the EPNS
-  notifications, easiest way to integrate EPNS with your dApp.
+  This will embed an Push sidebar/modal to your UI which will show the Push
+  notifications, easiest way to integrate Push with your dApp.
 ---
 
 # Embedding notifications in your dApp
 
-This feature allows you to inject EPNS Notifications inside your dApp without having to actually write lot of code. This App injector is more or less like a 1 time setup and after that your app has to basically never upgrade to get latest features from the EPNS Notifications.
+This feature allows you to inject Push Notifications inside your dApp without having to actually write lot of code. This App injector is more or less like a 1 time setup and after that your app has to basically never upgrade to get latest features from the Push Notifications.
 
 
 

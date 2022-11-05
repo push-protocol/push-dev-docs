@@ -6,7 +6,7 @@ description: >-
 
 # SDK Packages / Details
 
-PUSH SDK is divided into different packages, each of which enables functionalities either on a API level or on a UI level. The UI level packages are provided for developers to enable faster implementation but for most parts, the API SDK is what the developers will be interacting with.
+Push SDK is divided into different packages, each of which enables functionalities either on a API level or on a UI level. The UI level packages are provided for developers to enable faster implementation but for most parts, the API SDK is what the developers will be interacting with.
 
 {% content-ref url="epnsproject-sdk-restapi/" %}
 [epnsproject-sdk-restapi](epnsproject-sdk-restapi/)

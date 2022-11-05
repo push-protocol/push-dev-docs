@@ -10,19 +10,19 @@ Hosted SNS Module is a mid-level solution that eliminates all the heavy load of 
 
 Integrating the SNS module into your code takes less than 10 mins and contains just 3 steps:
 
-**Step 1:** Implement a webhook to listen to [`AWS SNS`](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/sns-examples.html). Here’s a boilerplate along with specs to get you npm installed and running: [https://github.com/ethereum-push-notification-service/epns-sns-boilerplate](https://github.com/ethereum-push-notification-service/epns-sns-boilerplate)
+**Step 1:** Implement a webhook to listen to [`AWS SNS`](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/sns-examples.html). Here’s a boilerplate along with specs to get you npm installed and running: [https://github.com/ethereum-push-notification-service/push-sns-boilerplate](https://github.com/ethereum-push-notification-service/push-sns-boilerplate)
 
 **Step 2:** You will need to open an endpoint either at a dedicated IP that listens to SNS or, if you are testing locally, have to expose the public endpoint for which tons of software is available.\
 \
 _**Hint:**_** ** For testing locally, You can also use [ngrok](https://ngrok.com/download) to expose the public endpoint. If you use this with the boilerplate, the port needs to be 6000. The ngrok URL is now the SNS endpoint required in step 3.
 
 {% hint style="info" %}
-**Important:** Once you set up this, you need to contact us by either shouting / tagging us on [Discord](https://discord.com/invite/YVPB99F9W5) or reaching out via the [contact form](https://epns.io/#contact). We need this as the SNS module requires whitelisting of your webhook endpoint.
+**Important:** Once you set up this, you need to contact us by either shouting / tagging us on [Discord](https://discord.com/invite/YVPB99F9W5) or reaching out via the [contact form](mailto:support@epns.io). We need this as the SNS module requires whitelisting of your webhook endpoint.
 {% endhint %}
 
-## PUSH SNS Boilerplate
+## Push SNS Boilerplate
 
-[This](https://github.com/ethereum-push-notification-service/epns-sns-boilerplate) boilerplate can be used as a starting point to consume the feeds from the EPNS SNS Topic.
+[This](https://github.com/ethereum-push-notification-service/epns-sns-boilerplate) boilerplate can be used as a starting point to consume the feeds from the Push SNS Topic.
 
 
 
@@ -61,7 +61,7 @@ Here’s a timelapse of how everything works… see you on the other side 😃
 
 
 
-**The Message** is the field in the above JSON is the actual notification sent from the EPNS in JSON stringified format.
+**The Message** is the field in the above JSON is the actual notification sent from the Push in JSON stringified format.
 
 
 

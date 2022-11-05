@@ -1,7 +1,7 @@
 ---
 description: >-
   Explains the different types of Data types and access controls used in the
-  EPNS Comm smart contract
+  Push Comm smart contract
 ---
 
 # Types & Modifiers - Comm
@@ -42,7 +42,7 @@ struct User {
     }
 ```
 
-The **User** struct in the EPNS Communicator smart contract stores all the crucial data of a particular user on the smart contract
+The **User** struct in the Push Communicator smart contract stores all the crucial data of a particular user on the smart contract
 
 *   **userActivated**
 

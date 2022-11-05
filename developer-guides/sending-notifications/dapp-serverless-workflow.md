@@ -1,19 +1,19 @@
 ---
 description: >-
-  In this tutorial, you will learn to send notifications from the PUSH dapp to
+  In this tutorial, you will learn to send notifications from the Push dApp to
   your subscribers. We will be using our Staging dApp & Goerli Network to
   deliver notifications.
 ---
 
-# Using PUSH dApp (Gasless)
+# Using Push dApp (Gasless)
 
-One of the easiest ways to send decentralized notifications is by using the PUSH dapp itself. The only prerequisite is that you must create a Channel on PUSH to be able to send notifications. In case you missed out, please check [this tutorial to create a Channel.](../create-your-notif-channel/)
+One of the easiest ways to send decentralized notifications is by using the Push dApp itself. The only prerequisite is that you must create a Channel on Push to be able to send notifications. In case you missed out, please check [this tutorial to create a Channel.](../create-your-notif-channel/)
 
 Once you create a Channel, you have to navigate to the [Channel Dashboard](https://staging.epns.io/#/dashboard). There you will see the profile page for your newly created Channel along with some Utilities to play around with.
 
 Towards the bottom of the Dashboard, you will find the Send Notification section. That's what we are going to utilize today for sending notifications. Clicking on the **Select Notification Type** dropdown, you will see various types of notifications that can be sent manually via dApp.
 
-PUSH currently supports **Broadcast, Subsets, and Targeted** notifications. All the notifications sent via dApp are **Gasless**.
+Push currently supports **Broadcast, Subsets, and Targeted** notifications. All the notifications sent via dApp are **Gasless**.
 
 {% hint style="info" %}
 You can  send notifications to any wallet address but the wallet addresses that have opted-in to your channel will have notifications delivered to their feed while wallets that are not opted in will have the notifications routed to spam.
@@ -25,7 +25,7 @@ Let’s walk you through sending notifications in all the available types.
 
 Broadcast notifications are useful when a channel wants to **communicate a message to all the subscribers of a channel**.
 
-Imagine if you are the owner of a dApp-based channel on PUSH, and you pushed out some updates to your dApp. You will definitely want to broadcast this news to all the subscriber audiences you have. Broadcast notifications are designed for this purpose.
+Imagine if you are the owner of a dApp-based channel on Push , and you pushed out some updates to your dApp. You will definitely want to broadcast this news to all the subscriber audiences you have. Broadcast notifications are designed for this purpose.
 
 In order to do that, select **Broadcast** from the dropdown list under **Send Notifications.** You will see new input fields, something like the below picture. For your reference, we have filled the input fields with some dummy messages. You can fill in details according to your needs.
 
@@ -41,7 +41,7 @@ Hit the **Send Notification** button and it will initiate a gasless transaction 
 
 Suppose you want to notify only a specific group of wallet addresses. It might be needed for distributing membership rewards or sending notifications only to those with special access or any other use case.
 
-To cater to this request, PUSH brings you the capability to send notifications to a subset of users. All you need is the wallet addresses of all those whom you want to notify. Wanna see how? Come check this out ‼️
+To cater to this request, Push brings you the capability to send notifications to a subset of users. All you need is the wallet addresses of all those whom you want to notify. Wanna see how? Come check this out ‼️
 
 Select **Subset** from the dropdown list under **Send Notifications.** You will see input fields similar to Broadcast notifications. The only difference is there is a **new field that asks you to enter wallet addresses.**
 
@@ -55,7 +55,7 @@ Click on the **Send Notification** button and it’ll initiate a gasless signing
 
 Till now, we have seen examples of how to send broadcast & subset notifications. Now, we’ll show you how to send notifications to a specific wallet address.
 
-For many dapps and developers, this is **the most important type** which helps in serving customized notifications for users. And a lot of official channels on PUSH combine with backend SDK and Showrunners to send wallet-specific notifications.
+For many dapps and developers, this is **the most important type** which helps in serving customized notifications for users. And a lot of official channels on Push combine with backend SDK and Showrunners to send wallet-specific notifications.
 
 To send **Targeted** notifications, simply click on the **Targeted** option under **Send Notification** panel. Fill in the contents and also **specify the wallet address** that you want to notify. Take a look at the below example;
 

@@ -1,10 +1,10 @@
 ---
-description: Embedding EPNS notifications in your dApp
+description: Embedding Push notifications in your dApp
 ---
 
 # EmbedSDK
 
-This will embed an EPNS sidebar/modal to your UI which will show the EPNS notifications, easiest way to integrate EPNS with your dApp.
+This will embed an Push sidebar/modal to your UI which will show the Push notifications, easiest way to integrate Push with your dApp.
 
 
 

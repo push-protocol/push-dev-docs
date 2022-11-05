@@ -44,7 +44,7 @@ Example:
 
 Format: `1 + <IPFS HASH (cid)>`
 
-`<IPFS HASH (cid)>`: The IPFS hash pointing to the payload. The payload should be as per PUSH protocol standard for Notification.
+`<IPFS HASH (cid)>`: The IPFS hash pointing to the payload. The payload should be as per Push protocol standard for Notification.
 
 Example:
 
@@ -56,7 +56,7 @@ Example:
 
 Format: `2+<Payload in string format>`
 
-`<Payload in string format>`: The payload as per PUSH standard should be stringified and attested to the storage type.
+`<Payload in string format>`: The payload as per Push standard should be stringified and attested to the storage type.
 
 Example:
 
@@ -70,4 +70,4 @@ Format: `3 + subgraphId + notification number[counter]`
 
 `subgraphId`: The subgraph id deployed in The Graph. It has the format of `<github id>/<subgraph name>`.
 
-`notification number`: As per the PUSH entity, every notification has a notification number attached. So, one will need to pass the subgraph number to identify which subgraph data should be sent as a notification.
+`notification number`: As per the Push entity, every notification has a notification number attached. So, one will need to pass the subgraph number to identify which subgraph data should be sent as a notification.

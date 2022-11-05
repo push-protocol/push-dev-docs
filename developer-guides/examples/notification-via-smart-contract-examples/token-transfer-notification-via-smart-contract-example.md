@@ -1,6 +1,6 @@
 # Token transfer notification via Smart Contract example
 
-Here is an example of a contract that uses EPNS communicator to send notification whenever the contract receives fund.
+Here is an example of a contract that uses Push communicator to send notification whenever the contract receives fund.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ Here is an example of a contract that uses EPNS communicator to send notificatio
 
 ### Tutorial time
 
-PUSH protocol also supports sending notifications to user wallets directly from your smart contract and that too by **only adding 2 lines of extra code to your smart contract** :tada:.
+Push protocol also supports sending notifications to user wallets directly from your smart contract and that too by **only adding 2 lines of extra code to your smart contract** :tada:.
 
 The best way to do it is by creating your channel first > tweaking your smart contract with notification logic and finally adding the deployed contract address as delegate to your channel.
 

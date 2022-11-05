@@ -41,10 +41,10 @@ _To overcome this limitation eip-712v2 is identity-independent._
 [using-subgraph-gasless.md](../../using-subgraph-gasless.md)
 {% endcontent-ref %}
 
-&#x20;They need to call the `addSubgraph` function from EPNS Core Contract to add the subgraph. The Push Node will pick up the same and verification proof for this consists of:
+&#x20;They need to call the `addSubgraph` function from Push Core Contract to add the subgraph. The Push Node will pick up the same and verification proof for this consists of:
 
-* **`GraphId`** - This will be the id of subgraph. It is usually represented as `githubid/subgraph name` e.g - epns/epnssubgraph.
-* **`notification`**` ```` `**`number`**`[counter]` - It will keep the count of Notifications and will process in a successive manner
+* **`GraphId`** - This will be the id of subgraph. It is usually represented as `githubid/subgraph name` e.g - push/pushsubgraph.
+* **`notification number`**`[counter]` - It will keep the count of Notifications and will process in a successive manner
 * **`::uid::optionaluid`** - **::uid** is an optional delimiter which if present along with **optionaluid** allows the proof to be uniquely different.
 
 ## Examples of Verification Proofs
@@ -175,8 +175,8 @@ This signifies the verification from the off-chain, the verification is done thr
 
 ### The Graph
 
-* `The Graph` - Notification can be triggered through a subgraph. They need to call `addSubgraph` function from EPNS Core Contract to add the subgraph. The Push Node will pick up the same, verification proof of the same consist of -
-* `GraphId` - This will be the id of subgraph. It is usually represented as `githubid/subgraph name` e.g - epns/epnssubgraph.
+* `The Graph` - Notification can be triggered through a subgraph. They need to call `addSubgraph` function from Push Core Contract to add the subgraph. The Push Node will pick up the same, verification proof of the same consist of -
+* `GraphId` - This will be the id of subgraph. It is usually represented as `githubid/subgraph name` e.g - push/pushsubgraph.
 * `notification number[counter]` - It will keep the count of Notifications and will process in a successive manner
 
 ```jsx

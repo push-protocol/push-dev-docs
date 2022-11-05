@@ -1,7 +1,7 @@
 ---
 description: >-
   This is an introductory guide to take you through the entire process of how to
-  send notifications from a Subgraph using PUSH.
+  send notifications from a Subgraph using Push.
 ---
 
 # Using Subgraph (Gasless)
@@ -12,7 +12,7 @@ description: >-
 
 A **Subgraph** defines which data **The Graph** will index from a blockchain, and how it will store it. Once deployed, it will form a part of a global graph of blockchain data which you can retrieve using GraphQL.
 
-Currently, PUSH only supports the subgraphs deployed on **Hosted Service of The Graph Protocol**. Providing support to Subgraph Studio would be part of the next iteration.
+Currently, Push only supports the subgraphs deployed on **Hosted Service of The Graph Protocol**. Providing support to Subgraph Studio would be part of the next iteration.
 
 For more information on how to deploy a subgraph on the hosted service for your smart contract or dApp, check out [this documentation](https://thegraph.com/docs/en/hosted-service/deploy-subgraph-hosted/).
 
@@ -26,20 +26,20 @@ For example, the [**Uniswap Subgraph**](https://thegraph.com/hosted-service/subg
 
 This will be extremely helpful for the end-users of your dApp and entities connected to your smart contract making the user experience smoother.
 
-## Sending Notifications using PUSH
+## Sending Notifications using Push
 
-PUSH protocol has developed an in-house `Helper Function` specifically for The Graph Protocol which allows you to read events from the Subgraph and define notifications accordingly. Once defined, they will be stored on the Subgraph in a `Long String` format.
+Push protocol has developed an in-house `Helper Function` specifically for The Graph Protocol which allows you to read events from the Subgraph and define notifications accordingly. Once defined, they will be stored on the Subgraph in a `Long String` format.
 
 Push Nodes can, later on, fetch the notifications defined on a Subgraph and push them accordingly to Subscribers of the Channel.
 
 ![Flow diagram of how notifications are sent ](<../../.gitbook/assets/image (10).png>)
 
-## Setting up PUSH with Subgraph
+## Setting up Push with Subgraph
 
-In order to integrate PUSH with your Subgraph, you will need:
+In order to integrate Push with your Subgraph, you will need:
 
 1. Your Subgraph ID
-2. A Channel deployed on PUSH
+2. A Channel deployed on Push&#x20;
 
 In case you don’t have the Subgraph ID, feel free to create your own Subgraph by following the step-by-step guide available here at [Create a Subgraph](https://thegraph.com/docs/en/developer/create-subgraph-hosted/).
 
@@ -47,9 +47,9 @@ Once you have published your Subgraph, you can start sending notifications based
 
 Enough talking, let’s get into Building stuff right away by following the imperative steps below.
 
-### 1. **Initialize Subgraph with** PUSH
+### 1. **Initialize Subgraph with** Push
 
-* Navigate to the Subgraph directory and you’ll find `schema.graphql` file. Open in an editor of your choice and include the following PUSH Schema:
+* Navigate to the Subgraph directory and you’ll find `schema.graphql` file. Open in an editor of your choice and include the following Push Schema:
 
 ```graphql
 type EpnsNotificationCounter @entity {
@@ -148,17 +148,17 @@ The `notification` variable is defined in the given below format 👇🏼
 notification = `{\"type\": \"${type}\", \"title\": \"${title}\", \"body\": \"${body}\", \"subject\": \"${subject}\", \"message\": \"${message}\", \"image\": \"${image}\", \"secret\": \"${secret}\", \"cta\": \"${cta}\"}`
 ```
 
-### **4. Call the EPNS Helper Function**
+### **4. Call the Push Helper Function**
 
-Once the above steps are complete, we need to invoke the EPNS helper function and send the response. To call the EPNS Notification helper function, use the below script;
+Once the above steps are complete, we need to invoke the Push helper function and send the response. To call the Push Notification helper function, use the below script;
 
 ```typescript
 sendEPNSNotification (recipient, notification)
 ```
 
-## Alright! Let's Add Subgraph to EPNS Channel
+## Alright! Let's Add Subgraph to Push Channel
 
-Once you have set up EPNS integration into your subgraph, you must add the subgraph to its channel in order to deliver notifications. You will require the **Subgraph ID** for this purpose.
+Once you have set up Push integration into your subgraph, you must add the subgraph to its channel in order to deliver notifications. You will require the **Subgraph ID** for this purpose.
 
 It is a slug usually present at the end of the subgraph URL 😉
 
@@ -168,20 +168,20 @@ https://thegraph.com/hosted-service/subgraph/aiswaryawalter/graph-poc-sample
 
 If you are a **Channel Owner**, follow the below steps;
 
-1. Go to **EPNS Dapp** ([https://staging.epns.io/](https://staging.epns.io/)) → Channel Dashboard → Settings Button → Add Subgraph Details
+1. Go to **Push Dapp** ([https://staging.push.org/](https://staging.push.org/)) → Channel Dashboard → Settings Button → Add Subgraph Details
 2. Enter your `Subgraph ID` and `Poll Interval`
 
 Poll Interval (in seconds) defines the time period at which Push Nodes shall ping the subgraph for fetching the latest notifications.
 
-**Note:** _This is an on-chain transaction that stores the above data to **EPNS Core Contract.** So it requires $ETH for gas fees._
+**Note:** _This is an on-chain transaction that stores the above data to **Push Core Contract.** So it requires $ETH for gas fees._
 
 > _If you don’t have a channel yet, you can easily create one by following this guide_ [_here_](https://docs.epns.io/developers/developer-zone/create-your-notif-channel)_._
 
-![Add Subgraph details page in Channel Settings section on the EPNS DApp](<../../.gitbook/assets/image (26).png>)
+![Add Subgraph details page in Channel Settings section on the Push DApp](<../../.gitbook/assets/image (26).png>)
 
-🎉 Congratulations on successfully integrating EPNS Helper Function into your Subgraph, and also adding Subgraph details into your channel.
+🎉 Congratulations on successfully integrating Push Helper Function into your Subgraph, and also adding Subgraph details into your channel.
 
-Once done, **EPNS Push Nodes** will fetch the subgraph info from the Core Contract and start polling the respective subgraph for notifications at regular Poll Intervals.
+Once done, **Push Nodes** will fetch the subgraph info from the Core Contract and start polling the respective subgraph for notifications at regular Poll Intervals.
 
 
 

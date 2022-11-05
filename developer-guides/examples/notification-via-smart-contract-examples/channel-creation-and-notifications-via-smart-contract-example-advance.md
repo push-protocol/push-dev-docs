@@ -2,7 +2,7 @@
 
 Along with the UI one can also use contract to contract interaction to create channel as well as send notification.
 
-Here is an example of an contract that uses EPNS Core to create channel and EPNS communicator to send notification whenever the contract receives fund
+Here is an example of an contract that uses Push Core to create channel and Push communicator to send notification whenever the contract receives fund
 
 ### Code
 
@@ -109,6 +109,6 @@ Some of the constants that would be used throughout the code:
     address public DAI_ADDRESS = 0xFf795577d9AC8bD7D90Ee22b6C1703490b6512FD;
 ```
 
-The `createChannelWithEPNS` takes in IPFS hash which contains the channel details as per EPNS standard. Then the function approves EPNS Core Contract to spend 50 DAI. At last, it calls the `createChannelWithFees` of EPNS Core Contract to crate the channel.
+The `createChannelWithEPNS` takes in IPFS hash which contains the channel details as per Push standard. Then the function approves Push Core Contract to spend 50 DAI. At last, it calls the `createChannelWithFees` of Push Core Contract to crate the channel.
 
-After the channel is created, we want to notify all the subscribers whenever funds are sent to the contract. This is where we will use the EPNS Communicator contract to send notification. The `receive` function is a special function that gets executed whenever ether is sent to the contract. So, here we are calling the `sendNotification` of the communicator contract. The parameters include channel, recipient and the message body in the form of identity bytes.&#x20;
+After the channel is created, we want to notify all the subscribers whenever funds are sent to the contract. This is where we will use the Push Communicator contract to send notification. The `receive` function is a special function that gets executed whenever ether is sent to the contract. So, here we are calling the `sendNotification` of the communicator contract. The parameters include channel, recipient and the message body in the form of identity bytes.&#x20;
