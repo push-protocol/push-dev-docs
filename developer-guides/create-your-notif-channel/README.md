@@ -17,13 +17,6 @@ While there are quite a few [protocol level details about channels](../../develo
 
 The Prod dApp is mainly useful for fully functional dapps & smart contracts that are live on Blockchain networks. Creating your channel on Prod requires 50 DAI (yes, the real ones), and it's recommended if you have a good user base or active community who wants notifications.
 
-Using the Push dapp or smart contracts, anyone with a wallet address on the Ethereum network can create their own channel. It can be deployed on;
-
-1. The Ethereum Mainnet ([via Prod dApp](http://app.push.org/)), or
-2. Goerli Test Network ([via Staging dApp](https://staging.push.org/))
-
-The Prod dApp is mainly useful for fully functional dapps & smart contracts that are live on Blockchain networks. Creating your channel on Prod requires 50 DAI (yes, the real ones), and it's recommended if you have a good user base or active community who wants notifications.
-
 The Staging dapp is very useful for Builders/Developers to test out channels, send dummy notifications, and understand the functionalities of the Push Protocol. In the upcoming sections, we will set up a channel on Staging App.
 
 ## Requirements for Setting Up a Channel
