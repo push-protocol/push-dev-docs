@@ -12,6 +12,8 @@ Creating a channel is the very first step for sending notifications via Push. Ha
 
 While there are quite a few [protocol level details about channels](../../developer-tooling/epns-smart-contracts/epns-core-contract/channel-creation-process-on-smart-contract.md), let us first begin with understanding the overall Channel creation process.
 
+Using the Push dapp or smart contracts, anyone with a wallet address on the Ethereum network can create their own channel. It can be deployed on:
+
 1. The Ethereum Mainnet ([via Prod dApp](http://app.push.org/)), or
 2. Goerli Test Network ([via Staging dApp](https://staging.push.org/))
 
