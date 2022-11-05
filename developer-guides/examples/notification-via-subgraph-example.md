@@ -26,7 +26,7 @@ yarn global add @graphprotocol/graph-cli
 ### **Contract deployment**
 
 1. Copy the ERC-20 contract -[https://github.com/aiswaryawalter/epns-graph-token-alerter/blob/main/contracts/PushToken.sol](https://github.com/aiswaryawalter/epns-graph-token-alerter/blob/main/contracts/PushToken.sol)
-2. Deploy on the Kovan Test Network using the Remix IDE - [https://remix.ethereum.org/](https://remix.ethereum.org/\*\*)
+2. Deploy on the Goerli Test Network using the Remix IDE - [https://remix.ethereum.org/](https://remix.ethereum.org/\*\*)
 
 ### **Subgraph deployment**
 

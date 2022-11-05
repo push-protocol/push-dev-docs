@@ -13,7 +13,7 @@ While there are quite a few [protocol level details about channels](../../develo
 Using the PUSH dapp or smart contracts, anyone with a wallet address on the Ethereum network can create their own channel. It can be deployed on;
 
 1. The Ethereum Mainnet ([via Prod dApp](https://app.epns.io)), or
-2. Kovan Test Network ([via Staging dApp](https://staging.epns.io))
+2. Goerli Test Network ([via Staging dApp](https://staging.epns.io))
 
 The Prod dApp is mainly useful for fully functional dApps & smart contracts that are live on Blockchain networks. Creating your channel on Prod requires 50 DAI (yes, the real ones), and it's recommended if you have a good user base or active community who wants notifications.
 

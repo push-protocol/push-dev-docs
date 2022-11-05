@@ -1,8 +1,8 @@
 ---
 description: >-
   In this tutorial, you will learn to send notifications from the PUSH dapp to
-  your subscribers. We will be using our Staging dApp & Kovan Network to deliver
-  notifications.
+  your subscribers. We will be using our Staging dApp & Goerli Network to
+  deliver notifications.
 ---
 
 # Using PUSH dApp (Gasless)
@@ -35,7 +35,7 @@ You can also see the real-time **Notification Preview** and check out how the No
 
 ![](<../../.gitbook/assets/Screenshot 2022-07-12 at 1.42.58 PM.png>)
 
-Hit the **Send Notification** button and it will initiate a gasless transaction on Kovan Network. Click on **Sign**, and the notification will be sent. Subscribers can see the notification appear in their Inboxes.
+Hit the **Send Notification** button and it will initiate a gasless transaction on Goerli Network. Click on **Sign**, and the notification will be sent. Subscribers can see the notification appear in their Inboxes.
 
 ### Sending Subset Notifications
 
