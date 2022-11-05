@@ -12,8 +12,8 @@ Push SDK is divided into different packages, each of which enables functionaliti
 [epnsproject-sdk-restapi](epnsproject-sdk-restapi/)
 {% endcontent-ref %}
 
-{% content-ref url="epnsproject-sdk-uiweb.md" %}
-[epnsproject-sdk-uiweb.md](epnsproject-sdk-uiweb.md)
+{% content-ref url="epnsproject-sdk-uiweb/" %}
+[epnsproject-sdk-uiweb](epnsproject-sdk-uiweb/)
 {% endcontent-ref %}
 
 {% content-ref url="pushprotocol-socket/" %}

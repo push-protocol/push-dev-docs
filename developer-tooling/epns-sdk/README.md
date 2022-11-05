@@ -62,8 +62,8 @@ _More details about this are in the_ [epnsproject-sdk-restapi](sdk-packages-deta
 [epnsproject-sdk-uiembed.md](sdk-packages-details/epnsproject-sdk-uiembed.md)
 {% endcontent-ref %}
 
-{% content-ref url="sdk-packages-details/epnsproject-sdk-uiweb.md" %}
-[epnsproject-sdk-uiweb.md](sdk-packages-details/epnsproject-sdk-uiweb.md)
+{% content-ref url="sdk-packages-details/epnsproject-sdk-uiweb/" %}
+[epnsproject-sdk-uiweb](sdk-packages-details/epnsproject-sdk-uiweb/)
 {% endcontent-ref %}
 
 {% content-ref url="sdk-packages-details/pushprotocol-socket/" %}
