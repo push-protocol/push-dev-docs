@@ -148,17 +148,17 @@ we can use this [epnsproject-sdk-restapi](epnsproject-sdk-restapi/ "mention") me
 
 where
 
-| Prop              | Type    | Remarks                                                                                                                                                                               |
-| ----------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| notificationTitle | string  | Title of the notification (given during notification creation)                                                                                                                        |
-| notificationBody  | number  | Message body of the notification (given during notification creation)                                                                                                                 |
-| icon              | string  | Channel Icon (IPFS url) (given during channel setup)                                                                                                                                  |
-| app               | string  | Channel Name (given during channel setup)                                                                                                                                             |
-| cta               | string  | Call To Action Link (given during notification creation)                                                                                                                              |
-| image             | string  | Any media link (given during notification creation)                                                                                                                                   |
-| url               | string  | Channel Link (given during channel setup)                                                                                                                                             |
-| chainName         | string  | Can be anyone of the following blockchain networks on which the notification was sent - "ETH\_MAINNET", "ETH\_TEST\_KOVAN", "POLYGON\_MAINNET", "POLYGON\_TEST\_MUMBAI", "THE\_GRAPH" |
-| theme             | string  | 'light' or 'dark' (customization to be given by the dApp)                                                                                                                             |
-| isSpam            | boolean | whether a spam notification or not                                                                                                                                                    |
-| subscribeFn       | Promise | Function to subscribe to the channel                                                                                                                                                  |
-| isSubscribedFn    | Promise | Function that returns the subscription status of a channel                                                                                                                            |
+| Prop              | Type    | Remarks                                                                                                                                                                                |
+| ----------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| notificationTitle | string  | Title of the notification (given during notification creation)                                                                                                                         |
+| notificationBody  | number  | Message body of the notification (given during notification creation)                                                                                                                  |
+| icon              | string  | Channel Icon (IPFS url) (given during channel setup)                                                                                                                                   |
+| app               | string  | Channel Name (given during channel setup)                                                                                                                                              |
+| cta               | string  | Call To Action Link (given during notification creation)                                                                                                                               |
+| image             | string  | Any media link (given during notification creation)                                                                                                                                    |
+| url               | string  | Channel Link (given during channel setup)                                                                                                                                              |
+| chainName         | string  | Can be anyone of the following blockchain networks on which the notification was sent - "ETH\_MAINNET", "ETH\_TEST\_GOERLI", "POLYGON\_MAINNET", "POLYGON\_TEST\_MUMBAI", "THE\_GRAPH" |
+| theme             | string  | 'light' or 'dark' (customization to be given by the dApp)                                                                                                                              |
+| isSpam            | boolean | whether a spam notification or not                                                                                                                                                     |
+| subscribeFn       | Promise | Function to subscribe to the channel                                                                                                                                                   |
+| isSubscribedFn    | Promise | Function that returns the subscription status of a channel                                                                                                                             |

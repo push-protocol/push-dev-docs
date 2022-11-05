@@ -60,7 +60,7 @@ This signifies the verification from the on-chain, currently, Ethereum and Polyg
     "verificationProof":"eip155:<chainId>:<TX-Hash>",
     "channel": "eip155:42 or 80001:0xd8634c39bbfd4033c0d3289c4515275102423681",
     "recipient": "eip155:42 or 80001:0xd8634c39bbfd4033c0d3289c4515275102423681",
-    "source": "ETH_TEST_KOVAN or POLYGON_TEST_MUMBAI or ETH_MAINNET"
+    "source": "ETH_TEST_GOERLI or POLYGON_TEST_MUMBAI or ETH_MAINNET"
     "identity": "0+<Notification-Type>+<Title>+<body>"
 }
 ```
@@ -72,7 +72,7 @@ This signifies the verification from the on-chain, currently, Ethereum and Polyg
     "verificationProof":"eip155:<chainId>:<TX-Hash>",
     "channel": "eip155:42 or 80001:0xd8634c39bbfd4033c0d3289c4515275102423681",
     "recipient": "eip155:42 or 80001:0xd8634c39bbfd4033c0d3289c4515275102423681",
-    "source": "ETH_TEST_KOVAN or POLYGON_TEST_MUMBAI or ETH_MAINNET"
+    "source": "ETH_TEST_GOERLI or POLYGON_TEST_MUMBAI or ETH_MAINNET"
     "identity": "1+<IPFS-HASH>"
 }
 ```
@@ -84,7 +84,7 @@ This signifies the verification from the on-chain, currently, Ethereum and Polyg
     "verificationProof":"eip155:<chainId>:<TX-Hash>",
     "channel": "eip155:42 or 80001:0xD8634C39BBFd4033c0d3289C4515275102423681",
     "recipient": "eip155:42 or 80001:0xD8634C39BBFd4033c0d3289C4515275102423681",
-    "source": "ETH_TEST_KOVAN or POLYGON_TEST_MUMBAI or ETH_MAINNET",
+    "source": "ETH_TEST_GOERLI or POLYGON_TEST_MUMBAI or ETH_MAINNET",
     "identity": "2+<Payload-in-form-of-string>",
 }
 ```
@@ -138,7 +138,7 @@ This signifies the verification from the off-chain, the verification is done thr
     "verificationProof":"eip712v2:<Proof>",
     "channel": "eip155:42 or 80001:0xd8634c39bbfd4033c0d3289c4515275102423681",
     "recipient": "eip155:42 or 80001:0xd8634c39bbfd4033c0d3289c4515275102423681",
-	"source": "ETH_TEST_KOVAN or POLYGON_TEST_MUMBAI or ETH_MAINNET",
+	"source": "ETH_TEST_GOERLI or POLYGON_TEST_MUMBAI or ETH_MAINNET",
     "identity": "0+1+Test Title+Test Body"
 }
 ```
@@ -148,7 +148,7 @@ This signifies the verification from the off-chain, the verification is done thr
     "verificationProof":"eip712v2:<Proof>",
     "channel": "eip155:42 or 80001:0xd8634c39bbfd4033c0d3289c4515275102423681",
     "recipient": "eip155:42 or 80001:0xd8634c39bbfd4033c0d3289c4515275102423681",
-	"source": "ETH_TEST_KOVAN or POLYGON_TEST_MUMBAI or ETH_MAINNET",
+	"source": "ETH_TEST_GOERLI or POLYGON_TEST_MUMBAI or ETH_MAINNET",
     "identity": "1+bafkreicuttr5gpbyzyn6cyapxctlr7dk2g6fnydqxy6lps424mcjcn73we"
 }
 ```
@@ -168,7 +168,7 @@ This signifies the verification from the off-chain, the verification is done thr
     "verificationProof": "eip712v1:<Proof>",
     "channel": "eip155:42 or 80001:0xD8634C39BBFd4033c0d3289C4515275102423681",
     "recipient": "eip155:42 or 80001:0xD8634C39BBFd4033c0d3289C4515275102423681",
-	"source": "ETH_TEST_KOVAN or POLYGON_TEST_MUMBAI or ETH_MAINNET",
+	"source": "ETH_TEST_GOERLI or POLYGON_TEST_MUMBAI or ETH_MAINNET",
     "identity": "2+{\\"notification\\":{\\"title\\":\\"TEST Title\\",\\"body\\":\\"Test Body\\"},\\"data\\":{\\"acta\\":\\"\\",\\"aimg\\":\\"\\",\\"amsg\\":\\"Test Message\\",\\"asub\\":\\"\\",\\"type\\":\\"3\\",\\"etime\\":\\"\\",\\"hidden\\":\\"\\"}}",
 }
 ```

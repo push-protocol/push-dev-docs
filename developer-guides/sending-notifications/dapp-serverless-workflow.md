@@ -1,6 +1,6 @@
 ---
 description: >-
-  In this tutorial, you will learn to send notifications from the Push dApp to
+  In this tutorial, you will learn to send notifications from the PUSH dapp to
   your subscribers. We will be using our Staging dApp & Goerli Network to
   deliver notifications.
 ---
