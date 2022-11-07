@@ -140,7 +140,7 @@ async  getContract(
 | abi       | Specify the abi of which the contract you seek                   | <p>N/A - required parameter<br></p> |
 
 {% hint style="info" %}
-Find all the Push Contract Addresses [here](../../../epns-smart-contracts/epns-contract-addresses.md)
+Find all the Push Contract Addresses [here](../../../push-smart-contracts/epns-contract-addresses.md)
 {% endhint %}
 
 ## Backend SDKs Packages

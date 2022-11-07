@@ -6,7 +6,7 @@ Push contracts are designed to act as a communication middleware for your smart 
 
 Ensure that you know the contract address of Push Communication smart contract based on the blockchain and network from which you are sending the communication out.&#x20;
 
-For example: Staging Ethereum contract address is `0x87da9Af1899ad477C67FeA31ce89c1d2435c77DC` while Staging Polygon contract address is `0xb3971BCef2D791bc4027BbfedFb47319A4AAaaAa`. List of all smart contract and their environment is available here :point\_right: [epns-smart-contracts](../../developer-tooling/epns-smart-contracts/ "mention")
+For example: Staging Ethereum contract address is `0x87da9Af1899ad477C67FeA31ce89c1d2435c77DC` while Staging Polygon contract address is `0xb3971BCef2D791bc4027BbfedFb47319A4AAaaAa`. List of all smart contract and their environment is available here :point\_right: [push-smart-contracts](../../developer-tooling/push-smart-contracts/ "mention")
 
 Start by importing the Push Comm Contract Interface :point\_down:
 

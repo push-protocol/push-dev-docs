@@ -10,7 +10,7 @@ description: >-
 
 Creating a channel is the very first step for sending notifications via Push. Having a Channel on Push dApp (_and Smart Contracts_) allows you to establish a communication pathway with your users in Web3.0
 
-While there are quite a few [protocol level details about channels](../../developer-tooling/epns-smart-contracts/epns-core-contract/channel-creation-process-on-smart-contract.md), let us first begin with understanding the overall Channel creation process.
+While there are quite a few [protocol level details about channels](../../developer-tooling/push-smart-contracts/epns-core-contract/channel-creation-process-on-smart-contract.md), let us first begin with understanding the overall Channel creation process.
 
 Using the Push dapp or smart contracts, anyone with a wallet address on the Ethereum network can create their own channel. It can be deployed on:
 
@@ -55,11 +55,11 @@ If you are setting up a Channel on Prod dApp (Ethereum Mainnet), you can request
 ## How to setup your channel
 
 1. Ensure that you have the above requirements ready.
-2. Head to the Push [Prod dapp ](https://app.push.org/#/channels)or [Staging dapp](https://staging.push.org/#/channels) based on your channel creation requirement. **Note:** Channel creation is a protocol-based event which means you can also create the channel by interacting with [EPNS Core Smart Contract](../../developer-tooling/epns-smart-contracts/epns-core-contract/channel-creation-process-on-smart-contract.md).
+2. Head to the Push [Prod dapp ](https://app.push.org/#/channels)or [Staging dapp](https://staging.push.org/#/channels) based on your channel creation requirement. **Note:** Channel creation is a protocol-based event which means you can also create the channel by interacting with [EPNS Core Smart Contract](../../developer-tooling/push-smart-contracts/epns-core-contract/channel-creation-process-on-smart-contract.md).
 3. Visit Create Channel and follow the instructions to create your channel. _Optionally you can visit_  [deploying-your-first-channel.md](../examples/deploying-your-first-channel.md "mention") _guide for step-by-step tutorial._
 4. If you wish to create a channel using a Gnosis safe, please visit[creating-a-channel-using-gnosis-safe.md](channel-creation-guides/creating-a-channel-using-gnosis-safe.md "mention") and follow the guide to create one.
 5. Ensure that you have the above requirements ready.
-6. Head to [the Push prod dapp](http://app.push.org/) or the staging dapp based on your channel creation requirement. **Note:** Channel creation is a protocol-based event which means you can also create the channel by interacting with [EPNS Core Smart Contract](../../developer-tooling/epns-smart-contracts/epns-core-contract/channel-creation-process-on-smart-contract.md).
+6. Head to [the Push prod dapp](http://app.push.org/) or the staging dapp based on your channel creation requirement. **Note:** Channel creation is a protocol-based event which means you can also create the channel by interacting with [EPNS Core Smart Contract](../../developer-tooling/push-smart-contracts/epns-core-contract/channel-creation-process-on-smart-contract.md).
 7. Visit Create Channel and follow the instructions to create your channel. _Optionally you can visit_  [deploying-your-first-channel.md](../examples/deploying-your-first-channel.md "mention") _guide for step-by-step tutorials._
 8. If you wish to create a channel using a Gnosis safe, please visit[creating-a-channel-using-gnosis-safe.md](channel-creation-guides/creating-a-channel-using-gnosis-safe.md "mention") and follow the guide to create one.
 

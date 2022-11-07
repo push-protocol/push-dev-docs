@@ -6,7 +6,7 @@ description: >-
 
 # Deploying your First Channel
 
-Any legitimate Ethereum Wallet address can activate itself in the protocol as a Channel, and start sending notifications. In order to set up a channel, a user can create one by using our Push [dapp ](https://app.push.org/)or directly interacting with our [EPNS Core Smart Contracts](../../developer-tooling/epns-smart-contracts/epns-core-contract/channel-creation-process-on-smart-contract.md).
+Any legitimate Ethereum Wallet address can activate itself in the protocol as a Channel, and start sending notifications. In order to set up a channel, a user can create one by using our Push [dapp ](https://app.push.org/)or directly interacting with our [EPNS Core Smart Contracts](../../developer-tooling/push-smart-contracts/epns-core-contract/channel-creation-process-on-smart-contract.md).
 
 In this tutorial, we will use the Push Staging dApp to launch our channel and test notifications features. It's incredibly simple and easy to deploy channels on the Push using our dApp. Without any further ado, let's set up our channel 🚀
 
