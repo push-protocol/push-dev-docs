@@ -3,7 +3,7 @@
 Integrating Push Chat for any functionality is extremely easy. The Push Chat SDK is divided into the following functionalities:
 
 {% hint style="success" %}
-This guide provides high-level knowledge about function calls and what they do, to dive into code :point\_right: [epnsproject-sdk-restapi](../developer-tooling/epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/ "mention")
+This guide provides high-level knowledge about function calls and what they do, to dive into code :point\_right: [epnsproject-sdk-restapi](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/ "mention")
 {% endhint %}
 
 {% hint style="info" %}
@@ -89,5 +89,5 @@ a. To approve a chat request (_only required for first time_)
 * Use this function to send messages to other addresses.
 
 {% hint style="success" %}
-To learn more about the API params and how to call the Restful API, please check :point\_right: [epnsproject-sdk-restapi](../developer-tooling/epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/ "mention")
+To learn more about the API params and how to call the Restful API, please check :point\_right: [epnsproject-sdk-restapi](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/ "mention")
 {% endhint %}

@@ -35,7 +35,7 @@ Being an open communication middleware, notifications can be integrated and show
 <!---->
 
 * Channels can send notifications to their users(wallet addresses) in a number of ways including:
-  * [**Backend SDK**](developer-tooling/epns-sdk/legacy-sdk/backend-sdk/) (**Gasless**, Best for automated logic from dApp / Backend)
+  * [**Backend SDK**](developer-tooling/push-sdk/legacy-sdk/backend-sdk/) (**Gasless**, Best for automated logic from dApp / Backend)
   * \*\*\*\*[**Showrunners Framework**](developer-tooling/showrunners-framework/) (**Scaffold / Gasless**, Best for automated logic via scaffold backend)
   * Smart contract to Smart contract (**requires gas**, \*\*\*\* Best for instant on-chain events, piggybacks on an on-chain transaction via Interface ABI call)
   * Manually from EPNS dApp (**Gasless**, Best for manual logic)
@@ -96,12 +96,12 @@ Being an open communication middleware, notifications can be integrated and show
 {% tab title="SDK" %}
 ⚙ _Understand the key features of EPNS SDK and how to use it in your own project easily._&#x20;
 
-{% content-ref url="developer-tooling/epns-sdk/" %}
-[epns-sdk](developer-tooling/epns-sdk/)
+{% content-ref url="developer-tooling/push-sdk/" %}
+[push-sdk](developer-tooling/push-sdk/)
 {% endcontent-ref %}
 
-{% content-ref url="developer-tooling/epns-sdk/epns-sdk-starter-kit.md" %}
-[epns-sdk-starter-kit.md](developer-tooling/epns-sdk/epns-sdk-starter-kit.md)
+{% content-ref url="developer-tooling/push-sdk/epns-sdk-starter-kit.md" %}
+[epns-sdk-starter-kit.md](developer-tooling/push-sdk/epns-sdk-starter-kit.md)
 {% endcontent-ref %}
 {% endtab %}
 
@@ -116,8 +116,8 @@ Being an open communication middleware, notifications can be integrated and show
 [integrating-push-chat.md](developer-guides/integrating-push-chat.md)
 {% endcontent-ref %}
 
-{% content-ref url="developer-tooling/epns-sdk/sdk-packages-details/epnsproject-sdk-uiweb/uiweb-0.2.3-push-support-chat.md" %}
-[uiweb-0.2.3-push-support-chat.md](developer-tooling/epns-sdk/sdk-packages-details/epnsproject-sdk-uiweb/uiweb-0.2.3-push-support-chat.md)
+{% content-ref url="developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-uiweb/uiweb-0.2.3-push-support-chat.md" %}
+[uiweb-0.2.3-push-support-chat.md](developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-uiweb/uiweb-0.2.3-push-support-chat.md)
 {% endcontent-ref %}
 {% endtab %}
 

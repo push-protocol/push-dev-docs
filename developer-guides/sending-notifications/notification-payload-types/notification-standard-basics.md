@@ -11,7 +11,7 @@ Verification Proof is usually handled automatically by the Smart Contract or the
 * **Notification Identity** - Each notification passed to the network is actually an identity which defines how the notification is formatted, where it's stored, etc.&#x20;
 
 {% hint style="success" %}
-For most part except for Smart Contracts, [epns-sdk](../../../developer-tooling/epns-sdk/ "mention")will abstract [notification-identity.md](notification-standard-advanced/notification-identity.md "mention")
+For most part except for Smart Contracts, [push-sdk](../../../developer-tooling/push-sdk/ "mention")will abstract [notification-identity.md](notification-standard-advanced/notification-identity.md "mention")
 {% endhint %}
 
 * **Identity Type** - Defines the format in which the notification json payload is sent to the network. Common types you need to know about.
@@ -136,7 +136,7 @@ IPUSHCommInterface(EPNS_COMM_CONTRACT_ADDRESS_FOR_SPECIFIC_BLOCKCHAIN).sendNotif
 Push SDK supports all Identity Types but it is recommended to use Identity Type 2 (Direct Payload) as it's blazingly fast!\
 \
 **What to call:** \
-****[epns-sdk](../../../developer-tooling/epns-sdk/ "mention")****\
+****[push-sdk](../../../developer-tooling/push-sdk/ "mention")****\
 ****\
 **Examples:**
 

@@ -114,6 +114,6 @@ Alright. Now that you have a clear picture of the Push Chat and its SDK, let's d
 [integrating-push-chat.md](../developer-guides/integrating-push-chat.md)
 {% endcontent-ref %}
 
-{% content-ref url="../developer-tooling/epns-sdk/sdk-packages-details/epnsproject-sdk-uiweb/uiweb-0.2.3-push-support-chat.md" %}
-[uiweb-0.2.3-push-support-chat.md](../developer-tooling/epns-sdk/sdk-packages-details/epnsproject-sdk-uiweb/uiweb-0.2.3-push-support-chat.md)
+{% content-ref url="../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-uiweb/uiweb-0.2.3-push-support-chat.md" %}
+[uiweb-0.2.3-push-support-chat.md](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-uiweb/uiweb-0.2.3-push-support-chat.md)
 {% endcontent-ref %}
