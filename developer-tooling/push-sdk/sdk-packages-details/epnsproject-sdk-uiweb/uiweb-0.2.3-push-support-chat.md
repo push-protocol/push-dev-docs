@@ -42,7 +42,7 @@ or
 
 
 
-Import the SDK package in the component file where you want to render notification(s)
+Import the SDK package in the component file where you want to render the support chat component.
 
 ```
 import { Chat } from "@pushprotocol/uiweb";
