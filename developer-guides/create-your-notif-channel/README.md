@@ -27,22 +27,13 @@ Ideally, there are six crucial requirements for creating a Channel. Make sure yo
 
 1. **A Channel Name**
 2. **Channel Logo (**_an image of size 128px \* 128px_**)**
-3. **Alias Network (**required for multi-chain, for example, if on Polygon, provide Polygon address of your contract, else can be left blank, currently supports only Polygon**)**. \
-   \
-   **Important:** This field needs to be provided at the very start in case you want to enable your channel on other blockchain networks, see [enabling-channel-on-other-chains](enabling-channel-on-other-chains/ "mention") for guides and to understand the process.\
-
-4. **A brief Channel Description (**250 Characters**)**
-5. **Channel CTA** (Call To Action link)
-6. **An amount of 50 DAI in your Wallet (**and some ETH :innocent:**)**
-7. **A Channel Name**
-8. **Channel Logo (**_an image of size 128px \* 128px_**)**
-9. **Alias Network (**required for multi-chain, for example, if on Polygon, provide Polygon address of your contract, else can be left blank, currently supports only Polygon**)**. \
+3. **An amount of 50 DAI in your Wallet (**and some ETH :innocent:**)**
+4. **Alias Network (**required for multi-chain, for example, if on Polygon, provide Polygon address of your contract, else can be left blank, currently supports only Polygon**)**.&#x20;
+5. **A brief Channel Description (**250 Characters**)**
+6. **Channel CTA** (Call To Action link).\
    \
    **Important:** This field needs to be provided at the very start in case you want to enable your channel on other blockchain networks, see [enabling-channel-on-other-chains](enabling-channel-on-other-chains/ "mention") for guides, and to understand the process.\
 
-10. **A brief Channel Description (**250 Characters**)**
-11. **Channel CTA** (Call To Action link)
-12. **An amount of 50 DAI in your Wallet (**and some ETH :innocent:**)**
 
 {% hint style="info" %}
 If you are setting up a Channel on Staging dApp, you can get Free DAI and Kovan ETH from the dApp & online faucets. No need for real DAI/ETH on the Staging app 😁
