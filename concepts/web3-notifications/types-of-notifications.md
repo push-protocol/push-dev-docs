@@ -6,9 +6,9 @@ description: Quick explainer of the different types of Notifications
 
 Below listed are the different types of notifications you can send to the subscribers of your channel on Push protocol. 👇🏼
 
-1. **Broadcast Notifications:** This type of notification is basically broadcasted or sent to all the subscribers of a channel at once.
-2. **Targeted Notifications:** As the name suggests, this type of notification allows channel owners to notify a specific wallet address.
-3. **Subset Notifications:** Subset notifications are quite helpful when a particular group of subscribers of a channel is supposed to be notified.
+* **Broadcast Notifications:** This type of notification is basically broadcasted or sent to all the subscribers of a channel at once.
+* **Targeted Notifications:** As the name suggests, this type of notification allows channel owners to notify a specific wallet address.
+* **Subset Notifications:** Subset notifications are quite helpful when a particular group of subscribers of a channel is supposed to be notified.
 
 This list will keep on expanding as Push Protocol adds more and more notification types. For instance:
 
