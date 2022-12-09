@@ -10,11 +10,11 @@ description: The table of important PUSH contract addresses, you might need.
 {% tab title="ETH-Mainnet" %}
 
 
-| Contract Name     |                                                          Contract Address                                                         |
-| ----------------- | :-------------------------------------------------------------------------------------------------------------------------------: |
-| _**Push Token**_  |    [0x2b9bE9259a4F5Ba6344c1b1c07911539642a2D33](https://goerli.etherscan.io/address/0x2b9be9259a4f5ba6344c1b1c07911539642a2d33)   |
-| _**EPNS CoreV1**_ |    [0xd4E3ceC407cD36d9e3767cD189ccCaFBF549202C](https://goerli.etherscan.io/address/0xd4e3cec407cd36d9e3767cd189cccafbf549202c)   |
-| _**EPNS CommV1**_ | [0xb3971BCef2D791bc4027BbfedFb47319A4AAaaAa](https://goerli.etherscan.io/address/0xb3971bcef2d791bc4027bbfedfb47319a4aaaaaa#code) |
+| Contract Name     |                                                    Contract Address                                                   |
+| ----------------- | :-------------------------------------------------------------------------------------------------------------------: |
+| _**Push Token**_  |  [0xf418588522d5dd018b425E472991E52EBBeEEEEE](https://etherscan.io/token/0xf418588522d5dd018b425e472991e52ebbeeeeee)  |
+| _**EPNS CoreV1**_ | [0x66329Fdd4042928BfCAB60b179e1538D56eeeeeE](https://etherscan.io/address/0x66329Fdd4042928BfCAB60b179e1538D56eeeeeE) |
+| _**EPNS CommV1**_ | [0xb3971BCef2D791bc4027BbfedFb47319A4AAaaAa](https://etherscan.io/address/0xb3971BCef2D791bc4027BbfedFb47319A4AAaaAa) |
 {% endtab %}
 
 {% tab title="ETH-Goerli" %}
