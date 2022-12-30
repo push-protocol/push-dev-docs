@@ -66,6 +66,7 @@ await PushAPI.channels.unsubscribe({
     console.error('opt out error');
   },
   env: 'staging'
+  })
 ```
 
 Allowed Options (params with \* are mandatory)
