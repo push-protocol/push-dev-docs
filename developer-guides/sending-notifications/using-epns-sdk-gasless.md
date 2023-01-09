@@ -36,6 +36,10 @@ npm install @pushprotocol/restapi ethers
 
 ### Sample Usage
 
+{% hint style="warning" %}
+While using the SDK, you will need to provide the environment settings in env, the only acceptable values for them are  '**prod**', '**staging**' or '**dev**'. Using other values might result in validation errors.&#x20;
+{% endhint %}
+
 The below snippet will help us to send notification to the user **0xCdBE6D076e05c5875D90fa35cc85694E1EAFBBd1** from the channel **0xD8634C39BBFd4033c0d3289C4515275102423681**
 
 ```typescript
