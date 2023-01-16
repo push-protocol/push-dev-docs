@@ -1,5 +1,5 @@
 ---
-description: Brief glance at the PUSH Smart Contracts
+description: Brief glance at the Push Smart Contracts
 ---
 
 # Push Smart Contracts

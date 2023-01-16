@@ -17,7 +17,7 @@ The whole process is aligned in this manner to maintain the flow of control from
 
 ## Fetching and Parsing Notifications from the API
 
-This is short summary on how to setup fetching and parsing notifications via Frontend SDK. A detailed demo guide can be found here at [`epns-frontend-sdk/sample_code/loadNotifications`](https://github.com/ethereum-push-notification-service/epns-frontend-sdk/tree/main/sample\_codes/loadNotifications)``
+This is short summary on how to setup fetching and parsing notifications via Frontend SDK. A detailed demo guide can be found here at [`push-frontend-sdk/sample_code/loadNotifications`](https://github.com/ethereum-push-notification-service/push-frontend-sdk/tree/main/sample\_codes/loadNotifications)``
 
 ```cpp
 import { api, utils } from "@epnsproject/frontend-sdk";

@@ -166,9 +166,9 @@ cd iOS && pod install
 yarn iOS
 ```
 
-Similarly, if you get this [ViewPropTypes error](https://github.com/ethereum-push-notification-service/sdk/tree/main/packages/reactnative#viewproptypes-errorhttpsgithubcomfacebookreact-nativeissues33734issuecomment-1190506381) then use this [fix](https://github.com/ethereum-push-notification-service/sdk/tree/main/packages/reactnative#viewproptypes-error-fix)
+Similarly, if you get this [ViewPropTypes error](https://github.com/ethereum-push-notification-service/push-sdk/tree/main/packages/reactnative#viewproptypes-error--) then use this [fix](https://github.com/ethereum-push-notification-service/push-sdk/tree/main/packages/reactnative#viewproptypes-error-fix)
 
-and [ImagePropTypes error](https://github.com/ethereum-push-notification-service/sdk/tree/main/packages/reactnative#imageproptypesresizemode-errorhttpsgithubcomreact-native-videoreact-native-videoissues2714) then use this [fix](https://github.com/react-native-video/react-native-video/pull/2795/files)
+and [ImagePropTypes error](https://github.com/ethereum-push-notification-service/push-sdk/tree/main/packages/reactnative#imageproptypesresizemode-error) then use this [fix](https://github.com/react-native-video/react-native-video/pull/2795/files)
 
 ### Notification Item View
 

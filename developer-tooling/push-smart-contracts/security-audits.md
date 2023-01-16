@@ -1,7 +1,3 @@
----
-description: List of audit reports of Push Smart Contracts
----
-
 # Security Audits
 
 

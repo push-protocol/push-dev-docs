@@ -1,5 +1,5 @@
 ---
-description: The table of important PUSH contract addresses, you might need.
+description: The table of important Push contract addresses, you might need.
 ---
 
 # Push Contract Addresses

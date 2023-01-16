@@ -1,6 +1,6 @@
 ---
 description: >-
-  Brief overview of all the imperative functionalities of the EPNS Communicator
+  Brief overview of all the imperative functionalities of the Push Communicator
   smart contract
 ---
 

@@ -47,7 +47,7 @@ Allowed Options (params with \* are mandatory)
 | signer\*                 | -        | -       | Signer object                      |
 | channelAddress\*         | string   | -       | channel address (CAIP)             |
 | userAddress\*            | string   | -       | user address (CAIP)                |
-| verifyingContractAddress | string   | -       | EPNS communicator contract address |
+| verifyingContractAddress | string   | -       | Push communicator contract address |
 | onSuccess                | function | -       | on success callback                |
 | onError                  | function | -       | on error callback                  |
 | env                      | string   | ‘prod’  | API env - ‘prod’, ‘staging’, ‘dev’ |

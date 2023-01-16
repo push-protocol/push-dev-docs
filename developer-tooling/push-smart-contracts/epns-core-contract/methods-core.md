@@ -149,7 +149,7 @@ function transferPushChannelAdminControl(address _newAdmin) public onlyPushChann
 
 * Channel's state is changed from **Active to DeActivated state**
 * **Channel Deactivation Fees** of 10 DAI are deducted.
-* The remaining amount of DAI after fee deduction is Swapped to Push Tokens and refunded back to the Channel Owner
+* The remaining amount of DAI after fee deduction is Swapped to PUSH Tokens and refunded back to the Channel Owner
 * Imperative on-chain details about the channel like _new Channel pool contribution, new Channel weight ,etc_ are updated in the contract
 * Emits out a _**DeactivateChannel()**_ event with the _Channel's address, Total Refund amount value_
 
@@ -170,9 +170,9 @@ function transferPushChannelAdminControl(address _newAdmin) public onlyPushChann
 
 **Description:**
 
-* Channel's state is changed from **DeActivated to ACTIVE state**
+* Channel's state is changed from **DEACTIVATED to ACTIVE state**
 * Amount of DAI deposited for Channel reactivation is stored.
-* Remaining amount of DAI after fee deduction is Swapped to PUSH Tokens and refunded back to the Chanenl Owner
+* Remaining amount of DAI after fee deduction is Swapped to PUSH Tokens and refunded back to the Channel Owner.
 * Channel's new pool contribution and weight is updated
 * Emits out a _**ReactivateChannel()**_ event with the _Channel's address, Total Deposited amount value_
 
@@ -254,7 +254,7 @@ function transferPushChannelAdminControl(address _newAdmin) public onlyPushChann
 |       Description       |    Type   |                     Description                    |
 | :---------------------: | :-------: | :------------------------------------------------: |
 |       _**\_user**_      | _address_ |                 address of the user                |
-|    _**\_userAmount**_   | _uint256_ |      User's amount to be swapped to Push token     |
+|    _**\_userAmount**_   | _uint256_ |      User's amount to be swapped to PUSH token     |
 | _**\_amountsOutValue**_ | _uint256_ | amountsOut value for Uniswap while swapping tokens |
 
 _**Description:**_
