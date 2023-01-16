@@ -35,7 +35,7 @@ Once Connected, go to the **Developer** > **Create Channel**
 {% hint style="warning" %}
 If you are on a staging environment, don't forget to mint:\
 \- [Testnet Ethereum](https://faucet.paradigm.xyz/)\
-\- [Testnet Dai](https://staging.epns.io/#/dashboard)\
+\- [Goerli Testnet PUSH Tokens](https://goerli.etherscan.io/address/0x2b9bE9259a4F5Ba6344c1b1c07911539642a2D33)\
 \- [Testnet Matic (If Multichain)](https://faucet.polygon.technology/)
 {% endhint %}
 
@@ -73,7 +73,7 @@ Read the section attached below to learn more about channel alias addresses.
 
 You will need to do two transactions (and optionally the third one if you are creating a multi-chain channel, more on that in step 6).
 
-1. **Approval of DAI** -> This transaction ensures that your wallet address has successfully approved the EPNSCore contract to use 50 DAI on your behalf.
+1. **Approval of PUSH tokens** -> This transaction ensures that your wallet address has successfully approved the EPNSCore contract to use 50 PUSH tokens on your behalf.
 2. **Channel Creation on EPNSCore ->** Once approved, the 2nd transaction calls the channel creation function on EPNSCore smart contract to create the channel.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-09-05 at 2.27.04 AM.png" alt=""><figcaption></figcaption></figure>

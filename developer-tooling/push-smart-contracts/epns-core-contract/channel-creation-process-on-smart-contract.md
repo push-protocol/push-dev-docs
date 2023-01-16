@@ -15,7 +15,7 @@ Channel Creation mainly requires 4 crucial actions:
 1. **Checkpoints and Validations:**\
    _a. A channel must not be in an **Active** state before the channel creation process starts._\
    _b. Channel addresses that are already in a **blocked** state should never be allowed to create channels again._\
-   _c. The amount of Dai being deposited for channel creation must be above the minimum threshold, etc._
+   _c. The amount of PUSH being deposited for channel creation must be above the minimum threshold, etc._
 2. **Deposit of Channel Creation Fee:** \
    ****Creating a channel on Push Core requires a channel creation fee of at least 50 PUSH, which the Channel Owner must deposit.\
    \

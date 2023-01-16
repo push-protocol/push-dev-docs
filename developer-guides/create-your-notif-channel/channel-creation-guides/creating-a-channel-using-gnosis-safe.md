@@ -15,16 +15,16 @@ In this quick example, we shall learn to create a channel on Push using a Gnosis
 Before we proceed with the actual steps of connecting the safe to the Push dapp and creating a channel, let's quickly understand the prerequisites:
 
 1. Create your own gnosis safe with the right set of owners and policies.
-2. Fund your safe with at least 50 DAI. _This amount of DAI is required for channel creation._
-3.  Initiate a **contract interaction** from your safe itself to trigger the _**approve()**_** ** function of the [DAI Token](https://etherscan.io/address/0x6B175474E89094C44Da98b954EedeAC495271d0F) with the following values for the argument.
+2. Fund your safe with at least 50 PUSH tokens. _This amount of PUSH is required for channel creation._
+3.  Initiate a **contract interaction** from your safe itself to trigger the _**approve()**_** ** function of the [PUSH Token](https://etherscan.io/token/0xf418588522d5dd018b425e472991e52ebbeeeeee) with the following values for the argument:
 
-    `a.`` `_`usr (address) :`_`0x66329Fdd4042928BfCAB60b179e1538D56eeeeeE - EPNSCore Contract`
+    `a.`` `_`spender (address) :`_`0x66329Fdd4042928BfCAB60b179e1538D56eeeeeE - EPNSCore Contract`
 
-    `b. wad (uint256) - 50 DAI -> Channel Creation Fees`
+    `b.` rawAmount `(uint256) - 50 * 10^18 PUSH tokens -> Channel Creation Fees`
 
-This is important to ensure that the EPNSCore contract is allowed to use 50 DAI from the safe for the successful creation of the channel.
+This is important to ensure that the EPNSCore contract is allowed to use 50 PUSH tokens from the safe for the successful creation of the channel.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>A sample of how DAI approval transaction</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>A sample of how PUSH approval transaction looks like from SAFE</p></figcaption></figure>
 
 {% hint style="info" %}
 If you are setting up a Channel on Prod dApp (Ethereum Mainnet), you can request for **channel creation gas fee reimbursement** within 24 hrs by [filling out this form](https://docs.google.com/forms/d/e/1FAIpQLScNQ2\_mACRQgyIPsr47woE69\_FOds8aLIGupT20QIEUMfgnQw/viewform). See [this medium article for more information](https://medium.com/ethereum-push-notification-service/calling-all-hobbyist-devs-channel-creation-gas-fee-is-now-refundable-6631ccd01baf).

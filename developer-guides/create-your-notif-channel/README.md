@@ -17,7 +17,7 @@ Using the Push dapp or smart contracts, anyone with a wallet address on the Ethe
 1. The Ethereum Mainnet ([via Prod dApp](http://app.push.org/)), or
 2. Goerli Test Network ([via Staging dApp](https://staging.push.org/))
 
-The Prod dApp is mainly useful for fully functional dapps & smart contracts that are live on Blockchain networks. Creating your channel on Prod requires 50 DAI (yes, the real ones), and it's recommended if you have a good user base or active community who wants notifications.
+The Prod dApp is mainly useful for fully functional dapps & smart contracts that are live on Blockchain networks. Creating your channel on Prod requires 50 PUSH, and it's recommended if you have a good user base or active community who wants notifications.
 
 The Staging dapp is very useful for Builders/Developers to test out channels, send dummy notifications, and understand the functionalities of the Push Protocol. In the upcoming sections, we will set up a channel on Staging App.
 
@@ -27,7 +27,7 @@ Ideally, there are six crucial requirements for creating a Channel. Make sure yo
 
 1. **A Channel Name**
 2. **Channel Logo (**_an image of size 128px \* 128px_**)**
-3. **An amount of 50 DAI in your Wallet (**and some ETH :innocent:**)**
+3. **An amount of 50 $PUSH tokens in your Wallet (**and some ETH :innocent:**)**
 4. **Alias Network (**required for multi-chain, for example, if on Polygon, provide Polygon address of your contract, else can be left blank, currently supports only Polygon**)**.&#x20;
 5. **A brief Channel Description (**250 Characters**)**
 6. **Channel CTA** (Call To Action link).\
@@ -36,7 +36,10 @@ Ideally, there are six crucial requirements for creating a Channel. Make sure yo
 
 
 {% hint style="info" %}
-If you are setting up a Channel on Staging dApp, you can get Free DAI and Kovan ETH from the dApp & online faucets. No need for real DAI/ETH on the Staging app 😁
+**Need Goerli-PUSH tokens for staging dapp?**
+
+If you are setting up a Channel on Staging dApp, you can get Free Goerli $PUSH tokens from the dApp & online faucets. Alternatively, you can also directly mint Goerli Push from [Etherscan](https://goerli.etherscan.io/address/0x2b9bE9259a4F5Ba6344c1b1c07911539642a2D33).\
+You won't need need for real PUSH or ETH on the Staging app 😁
 {% endhint %}
 
 {% hint style="info" %}

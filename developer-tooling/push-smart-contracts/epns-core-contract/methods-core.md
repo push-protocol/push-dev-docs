@@ -116,18 +116,18 @@ function transferPushChannelAdminControl(address _newAdmin) public onlyPushChann
 | :-----------------: | :-------: | :------------------------------------------: |
 | _**\_channelType**_ |    Enum   | Represents the type of Channel being created |
 |   _**\_identity**_  |  _bytes_  |        Identity bytes of the Channel.        |
-|    _**\_amount**_   | _uint256_ |       Total amount of Dai being deposit      |
+|    _**\_amount**_   | _uint256_ |      Total amount of PUSH being deposit      |
 
 **CheckPoints:**
 
 * Channel must already be in an **INACTIVE STATE**, i.e., _Channel is not already created on the protocol_
 * Channel type being passed as an argument must be of a valid type.
-* Total amount of DAI being deposited for Channel Creation must be greater than or equal to **50 DAI**
+* Total amount of PUSH being deposited for Channel Creation must be greater than or equal to **50 PUSH**
 
 \*_Description:_
 
 * Channel's state is changed from **Inactive to Active state**
-* All the imperative information of the channel such as the  _channel's creation block number, total amount of dai deposited, channel's type, etc_ are stored.
+* All the imperative information of the channel such as the  _channel's creation block number, total amount of PUSH deposited, channel's type, etc_ are stored.
 * Total **Channel count** of the protocol is incremented by 1.
 * Emits out an _**AddChannel()**_ event with the _Channel's address, Channel's Type and its Identity_
 
@@ -148,8 +148,8 @@ function transferPushChannelAdminControl(address _newAdmin) public onlyPushChann
 **Description:**
 
 * Channel's state is changed from **Active to DeActivated state**
-* **Channel Deactivation Fees** of 10 DAI are deducted.
-* The remaining amount of DAI after fee deduction is Swapped to PUSH Tokens and refunded back to the Channel Owner
+* **Channel Deactivation Fees** of 10 PUSH are deducted.
+* The remaining amount of PUSH after fee deduction is refunded back to the Channel Owner.
 * Imperative on-chain details about the channel like _new Channel pool contribution, new Channel weight ,etc_ are updated in the contract
 * Emits out a _**DeactivateChannel()**_ event with the _Channel's address, Total Refund amount value_
 
@@ -159,20 +159,20 @@ function transferPushChannelAdminControl(address _newAdmin) public onlyPushChann
   function reactivateChannel(uint256 _amount) external onlyDeactivatedChannels(msg.sender) {}
 ```
 
-|    Argument    |    Type   |                           Description                          |
-| :------------: | :-------: | :------------------------------------------------------------: |
-| _**\_amount**_ | _uint256_ | DAI amount to be deposited for the reactivation of the channel |
+|    Argument    |    Type   |                           Description                           |
+| :------------: | :-------: | :-------------------------------------------------------------: |
+| _**\_amount**_ | _uint256_ | PUSH amount to be deposited for the reactivation of the channel |
 
 **CheckPoints:**
 
 * Channel must already be in a **DEACTIVATED STATE**.
-* Total amount of DAI being deposited for Channel Reactivation must be greater than or equal to **50 DAI**
+* Total amount of PUSH being deposited for Channel Reactivation must be greater than or equal to **50 PUSH**
 
 **Description:**
 
 * Channel's state is changed from **DEACTIVATED to ACTIVE state**
-* Amount of DAI deposited for Channel reactivation is stored.
-* Remaining amount of DAI after fee deduction is Swapped to PUSH Tokens and refunded back to the Channel Owner.
+* Amount of PUSH deposited for Channel reactivation is stored.
+* Remaining amount of PUSH after fee deduction is refunded back to the Channel Owner.
 * Channel's new pool contribution and weight is updated
 * Emits out a _**ReactivateChannel()**_ event with the _Channel's address, Total Deposited amount value_
 

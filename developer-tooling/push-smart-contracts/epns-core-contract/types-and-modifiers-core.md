@@ -41,22 +41,22 @@ description: >-
 **A.1 To keep track of FUNDS and FEES in Push Core**
 
 * **POOL\_FUNDS:**
-  * Keeps track of the total amount of DAI in the protocol.
-  * Incremented whenever a new Channel is created by depositing some DAI or a channel is reactivated by paying Channel Reactivation fees in DAI.
+  * Keeps track of the total amount of PUSH in the protocol.
+  * Incremented whenever a new Channel is created by depositing some PUSH or a channel is reactivated by paying Channel Reactivation fees in PUSH.
   * Decremented whenever a specific amount of DAI is swapped to PUSH and given back to users.
 * **PROTOCOL\_POOL\_FEES:**
-  * Keeps track of the non-refundable amount of DAI whenever a channel is blocked.
+  * Keeps track of the non-refundable amount of PUSH whenever a channel is blocked.
 * **ADD\_CHANNEL\_MIN\_FEES:**
-  * The minimum amount of DAI that is required for creating or reactivating a channel.
-  * Current value of this state variable is **50 DAI.**
+  * The minimum amount of PUSH that is required for creating or reactivating a channel.
+  * Current value of this state variable is **50 PUSH.**
   * Can be updated only via on-chain governance using the _**setMinChannelCreationFees()**_ function.
-  * Can never be below **50 DAI**
+  * Can never be below **50 PUSH**
 * **CHANNEL\_DEACTIVATION\_FEES:**
   * Represents deactivation fee charged to a channel owner when the channel is Deactivated.
-  * Current value of this state variable is **10 DAI.**
+  * Current value of this state variable is **10 PUSH.**
   * Can be updated only via on-chain governance using the _**setChannelDeactivationFees()**_ function.
 * **ADD\_CHANNEL\_MIN\_POOL\_CONTRIBUTION:**
-  * Represents the constant value of 50 DAI used for the calculation of a channel's weight in the protocol.
+  * Represents the constant value of 50 PUSH used for the calculation of a channel's weight in the protocol.
 
 **A.2 Storage variables for FSRatio Calculation**
 
@@ -114,7 +114,7 @@ The **Channel** struct in the Push Core smart contract stores every crucial data
 * **verifiedBy**
   * Denotes the address of the verifier of the Channel
 * **poolContribution**
-  * Denotes the total amount of DAI deposited by the channel owner during Channel Creation\*\*
+  * Denotes the total amount of PUSH deposited by the channel owner during Channel Creation\*\*
 * **channelHistoricalZ**
   * Represents the Historical Constant
 * **channelFairShareCount**
