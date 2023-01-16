@@ -71,34 +71,35 @@ Here’s a timelapse of how everything works… see you on the other side 😃
 When converted to JSON, a sample message looks like the one below.
 
 ```
-  {
-  	"sid": 121,
-  	"users": ["0x35B84d6848D16415177c64D64504663b998A6ab4"],
-  	"payload": {
-  		"data": {
-  			"app": "Shunya",
-  			"sid": "121",
-  			"url": "https://shunya.fi/",
-  			"acta": "https://shunya.fi",
-  			"aimg": "https://shunya.fi/_nuxt/img/shunya.cfece51.png",
-  			"amsg": "Your portfolio is up by 0.08% since yesterday.",
-  			"asub": "Assets Daily",
-  			"icon": "https://gateway.ipfs.io/ipfs/QmQM97KUTGTT6nt6Xd7xAJpdGB8adiJ1LVUJoN8RoFUYfx",
-  			"type": "3",
-  			"epoch": "1660554419",
-  			"appbot": "0",
-  			"hidden": "0",
-  			"secret": ""
-  		},
-  		"notification": {
-  			"body": "Your portfolio is up by 0.08% since yesterday.",
-  			"title": "Shunya - Assets Daily"
-  		}
-  	},
-  	"epoch": "1660554419",
-  	"topic": "Notification",
-  	"subtopic": "Channel"
-  }
+{
+	"sid": 121,
+	"users": ["0x35B84d6848D16415177c64D64504663b998A6ab4"],
+	"sender": "0x35B84d6848D16415177c64D64504663b998A6ab4",
+	"payload": {
+		"data": {
+			"app": "Shunya",
+			"sid": "121",
+			"url": "https://shunya.fi/",
+			"acta": "https://shunya.fi",
+			"aimg": "https://shunya.fi/_nuxt/img/shunya.cfece51.png",
+			"amsg": "Your portfolio is up by 0.08% since yesterday.",
+			"asub": "Assets Daily",
+			"icon": "https://gateway.ipfs.io/ipfs/QmQM97KUTGTT6nt6Xd7xAJpdGB8adiJ1LVUJoN8RoFUYfx",
+			"type": "3",
+			"epoch": "1660554419",
+			"appbot": "0",
+			"hidden": "0",
+			"secret": ""
+		},
+		"notification": {
+			"body": "Your portfolio is up by 0.08% since yesterday.",
+			"title": "Shunya - Assets Daily"
+		}
+	},
+	"epoch": "1660554419",
+	"topic": "Notification",
+	"subtopic": "Channel"
+}
 ```
 
 \
