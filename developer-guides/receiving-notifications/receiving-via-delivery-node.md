@@ -37,7 +37,7 @@ FIREBASE_DATABASE_URL=<url>
 
 ```
 
-### Local Setup
+### For Local Setup
 
 To start the Delivery node with MYSQL and Redis :
 
@@ -46,31 +46,31 @@ docker compose up
 
 ```
 
-You should then be able to build the server using the following command :
+_Build the server using the following command :_
 
 ```
 npm install
 ```
 
-You should then be able to start the server using the following command :
+_Start the server using the following command :_
 
 ```
 npm start
 ```
 
-### Production Setup
+### For Production Setup
 
 * Host MYSQL and Redis Separately
 * Delivery node installation
 * Add MYSQL and Redis credentials in the .env file
 
-_You should then be able to build the server using the following:_
+_Build the server using the following command :_
 
 ```
 npm install
 ```
 
-You should then be able to start the server using the following command:
+_Start the server using the following command :_
 
 ```
 npm start
