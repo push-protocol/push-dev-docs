@@ -64,7 +64,7 @@ npm start
 * Delivery node installation
 * Add MYSQL and Redis credentials in the .env file
 
-You should then be able to build the server using the following:
+_You should then be able to build the server using the following:_
 
 ```
 npm install
@@ -98,23 +98,3 @@ curl --location --request POST 'https://<delivery_node_url>/apis/v1/pushtokens/r
 }'
 
 ```
-
-\
-\
-
-
-\
-
-
-\
-
-
-\
-\
-\
-\
-
-
-\
-
-
