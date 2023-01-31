@@ -121,7 +121,6 @@
 * [Push Roadmaps](additional-resources/push-roadmaps/README.md)
   * [🛣 Roadmap 2021](https://medium.com/ethereum-push-notification-service/epns-roadmap-2021-c4ededc57a12)
   * [🛣 Roadmap 2022](https://medium.com/ethereum-push-notification-service/epns-roadmap-2022-2698ab153c1a)
-* [User Docs - How to Guides](https://docs.epns.io/users)
 * [Hack Ideas](https://medium.com/p/8b3dc80145b1)
 * [Push Grants](https://medium.com/p/f2bfba29388f)
 * [Frequently Asked](https://medium.com/p/21062505f479)
