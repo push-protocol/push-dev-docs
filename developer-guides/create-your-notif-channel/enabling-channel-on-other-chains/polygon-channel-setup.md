@@ -9,7 +9,7 @@ description: >-
 ## Setting Up Channel Alias for Polygon
 
 {% hint style="info" %}
-**Important Note:** This part of the guide assumes that you have successfully created a channel and passed the right alias address during the channel creation process.
+**Important Note:** This part of the guide assumes that you have successfully created a channel and passed the correct Polygon address as the alias address during the channel creation process.
 
 If you haven't set up your channel yet, please read the [..](../ "mention") section and create your channel with the right alias address.
 {% endhint %}
@@ -18,7 +18,7 @@ Now that you have the channel created successfully on the Ethereum chain, and yo
 
 ### Channel Verification on Alias Network
 
-In order to ensure that the alias address provided (_during channel creation_) actually belongs to the owner of the channel, alias verification plays an imperative role.
+In order to ensure that the alias address provided (_during channel creation_) actually belongs to the owner of the channel, alias verification is included as a part of the channel creation procedure.
 
 Additionally, a channel owner can only use his alias address to communicate with its subscribers on Polygon after the alias verification is successfully executed on the Polygon chain itself.
 

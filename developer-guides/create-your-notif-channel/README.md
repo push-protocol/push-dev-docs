@@ -28,22 +28,24 @@ Ideally, there are six crucial requirements for creating a Channel. Make sure yo
 1. **A Channel Name**
 2. **Channel Logo (**_an image of size 128px \* 128px_**)**
 3. **An amount of 50 $PUSH tokens in your Wallet (**and some ETH :innocent:**)**
-4. **Alias Network (**required for multi-chain, for example, if on Polygon, provide Polygon address of your contract, else can be left blank, currently supports only Polygon**)**.&#x20;
-5. **A brief Channel Description (**250 Characters**)**
-6. **Channel CTA** (Call To Action link).\
-   \
-   **Important:** This field needs to be provided at the very start in case you want to enable your channel on other blockchain networks, see [enabling-channel-on-other-chains](enabling-channel-on-other-chains/ "mention") for guides, and to understand the process.\
+4. **A brief Channel Description (**250 Characters**)**
+5. **Channel CTA** (Call To Action link).
+6. **Network & Alias Address**
 
+**Quick Important Note on Network & Alias Address**
+
+* The **Network** dropdown allows you to select the network/chain on which you want to send notifications. It is set to **Ethereum chain** by default but allows you to select other chains as well. (_Currently Polygon & BSC_).
+* The **Alias Address** field appears only when you select any chain other than Ethereum for your channel's notification. Alias address is basically the representation of your original Ethereum channel on the selected chain of your choice.
+* The alias address basically allows you to provide an address that will represent your channel on the other chain selected in the **Network** dropdown section. It is imperative to note that the address you pass as an alias, must be your own as it will be further verified as a part of the channel creation process. Read more about Alias Addresses👇.
+
+{% content-ref url="../../concepts/create-your-notif-channel/what-is-a-channel-alias.md" %}
+[what-is-a-channel-alias.md](../../concepts/create-your-notif-channel/what-is-a-channel-alias.md)
+{% endcontent-ref %}
 
 {% hint style="info" %}
-**Need Goerli-PUSH tokens for staging dapp?**
+**Note:** You can pass the same Ethereum (EVM-compatible) address, being used for channel creation, as an alias address for other EVM-compatible chains as well.
 
-If you are setting up a Channel on Staging dApp, you can get Free Goerli $PUSH tokens from the dApp & online faucets. Alternatively, you can also directly mint Goerli Push from [Etherscan](https://goerli.etherscan.io/address/0x2b9bE9259a4F5Ba6344c1b1c07911539642a2D33).\
-You won't need need for real PUSH or ETH on the Staging app 😁
-{% endhint %}
-
-{% hint style="info" %}
-If you are setting up a Channel on Prod dApp (Ethereum Mainnet), you can request for **channel creation gas fee reimbursement** within 24 hrs by [filling out this form](https://docs.google.com/forms/d/e/1FAIpQLScNQ2\_mACRQgyIPsr47woE69\_FOds8aLIGupT20QIEUMfgnQw/viewform). See [this medium article for more information](https://medium.com/ethereum-push-notification-service/calling-all-hobbyist-devs-channel-creation-gas-fee-is-now-refundable-6631ccd01baf).
+The Alias address is quite crucial to activate your channel on other chains. Read more about it in [enabling-channel-on-other-chains](enabling-channel-on-other-chains/ "mention") page.
 {% endhint %}
 
 ## How to setup your channel
@@ -58,5 +60,12 @@ If you are setting up a Channel on Prod dApp (Ethereum Mainnet), you can request
 8. If you wish to create a channel using a Gnosis safe, please visit[creating-a-channel-using-gnosis-safe.md](channel-creation-guides/creating-a-channel-using-gnosis-safe.md "mention") and follow the guide to create one.
 
 {% hint style="warning" %}
-If you want to send notifications from other networks, please make sure to check and understand [enabling-channel-on-other-chains](enabling-channel-on-other-chains/ "mention") section as you need to provide that info during your channel creation process.
+**Need Goerli-PUSH tokens for staging dapp?**
+
+If you are setting up a Channel on Staging dApp, you can get Free Goerli $PUSH tokens from the dApp & online faucets. Alternatively, you can also directly mint Goerli Push from [Etherscan](https://goerli.etherscan.io/address/0x2b9bE9259a4F5Ba6344c1b1c07911539642a2D33).\
+You won't need for real PUSH or ETH on the Staging app 😁
+{% endhint %}
+
+{% hint style="success" %}
+If you are setting up a Channel on Prod dApp (Ethereum Mainnet), you can request for **channel creation gas fee reimbursement** within 24 hrs by [filling out this form](https://docs.google.com/forms/d/e/1FAIpQLScNQ2\_mACRQgyIPsr47woE69\_FOds8aLIGupT20QIEUMfgnQw/viewform). See [this medium article for more information](https://medium.com/ethereum-push-notification-service/calling-all-hobbyist-devs-channel-creation-gas-fee-is-now-refundable-6631ccd01baf).
 {% endhint %}

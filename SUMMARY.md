@@ -18,6 +18,7 @@
 * [Creating A Channel](developer-guides/create-your-notif-channel/README.md)
   * [Enabling Channel on other Chains](developer-guides/create-your-notif-channel/enabling-channel-on-other-chains/README.md)
     * [Polygon (Channel Setup)](developer-guides/create-your-notif-channel/enabling-channel-on-other-chains/polygon-channel-setup.md)
+    * [Binance Smart Chain (Channel Setup)](developer-guides/create-your-notif-channel/enabling-channel-on-other-chains/polygon-channel-setup-1.md)
   * [Adding Delegates For Channel](developer-guides/create-your-notif-channel/adding-delegates-for-channel.md)
   * [Channel Creation Guides](developer-guides/create-your-notif-channel/channel-creation-guides/README.md)
     * [Deploying your First Channel](developer-guides/examples/deploying-your-first-channel.md)
