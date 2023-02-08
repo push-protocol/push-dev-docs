@@ -8,7 +8,7 @@ The next step in the governance journey is discussion. Draft proposals from the 
 
 Draft proposals in this phase should initiate discussion. We expect and encourage the community to debate them and express approval or disapproval.
 
-### Submitting a Draft Proposals for Discussion
+### Submitting a Draft Proposal for Discussion
 
 * Only Champions can push draft proposals once they have met the criteria to Governance Discussion.
 * This section is intended to serve as the last step before submitting a proposal to [Snapshot](https://snapshot.org/#/epns.eth).
