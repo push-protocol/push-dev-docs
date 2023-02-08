@@ -248,7 +248,7 @@ const {
 
 ```
 
-_We get the above `keys` after the parsing of the API repsonse._
+_We get the above `keys` after the parsing of the API response._
 
 #### **SubscribedModal**
 
