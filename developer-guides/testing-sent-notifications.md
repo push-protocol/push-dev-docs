@@ -6,10 +6,6 @@ This can then fetched by any crypto frontend / wallet / software to display it o
 
 This means you can see notifications on any platform or frontend that integrates Push. You can test out how notifications come by using any of the crypto frontends listed below or any other third party ones that have integrated the Push protocol.
 
-{% hint style="info" %}
-The tutorial assumes you are a developer creating and sending notifications from a **staging environment**. If you are a user or have created notifications from the prod environment, then check out [https://docs.push.org/users/](https://docs.push.org/users/)
-{% endhint %}
-
 ## Push Protocol Integrated Mobile Apps / Wallets / Extensions and dApps
 
 {% hint style="success" %}
