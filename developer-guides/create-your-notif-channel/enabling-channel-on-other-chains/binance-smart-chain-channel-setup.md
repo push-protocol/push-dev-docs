@@ -34,7 +34,7 @@ Verification of alias address must happen on the selected chain (_in this case, 
 
 Once you initiate the channel creation procedure for your channel on Ethereum with the right BSC alias address, you will arrive at the page as can be seen below.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-01-27 at 5.14.16 PM.png" alt=""><figcaption><p>Channel Creation at Alias Network Setup pending</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Channel Creation at Alias Network Setup pending</p></figcaption></figure>
 
 As can be seen below the Channel's name, the **Alias Network Setup is Pending.**&#x20;
 
@@ -45,11 +45,10 @@ Therefore, as a part of the verification procedure, you need to switch your netw
 Once you have switched your network to Binance Smart Chain, follow the steps mentioned below:
 
 1. Log into the Dapp with the same address provided as the **Alias Address** during channel creation.
-2.  Go to the **Create Channel** menu in the sidebar. As your channel is not yet verified on Binance Smart Chain, you might see a page like the one attached below 👇.
+2. Go to the **Create Channel** menu in the sidebar. As your channel is not yet verified on Binance Smart Chain, you might see a page like the one attached below 👇.
 
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-
-    <figure><img src="../../../.gitbook/assets/Screenshot 2023-01-27 at 5.15.36 PM.png" alt=""><figcaption></figcaption></figure>
 3. Click the **Verify Alias Address** button.
 4. Approve the transaction required for Alias Verification, on the Binance Smart Chain.
 
@@ -57,4 +56,4 @@ That's it.&#x20;
 
 Once the transaction is approved, your alias address is verified on Binance Smart Chain and is now successfully set up and linked with your channel on the Ethereum chain.&#x20;
 
-You shall now be able to access your channel profile page and be able to send notifications from BSC using your alias address to notify your users on Binance smart chain
+You shall now be able to access your channel profile page and be able to send notifications from BSC using your alias address to notify your users on Binance smart chain.
