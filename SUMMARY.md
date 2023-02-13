@@ -124,5 +124,5 @@
   * [🛣 Roadmap 2022](https://medium.com/ethereum-push-notification-service/epns-roadmap-2022-2698ab153c1a)
 * [Hack Ideas](https://medium.com/p/8b3dc80145b1)
 * [Push Grants](https://medium.com/p/f2bfba29388f)
-* [Frequently Asked](https://medium.com/p/21062505f479)
+* [Frequently Asked](https://docs.push.org/hub/faq)
 * [Join our Discord](https://discord.com/invite/pushprotocol)
