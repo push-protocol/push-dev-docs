@@ -6,8 +6,12 @@ Integrating Push Chat for any functionality is extremely easy. The Push Chat SDK
 This guide provides high-level knowledge about function calls and what they do, to dive into code :point\_right: [epnsproject-sdk-restapi](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/ "mention")
 {% endhint %}
 
+{% hint style="success" %}
+Web sockets for Push Chat are live now :point\_right: [pushprotocol-socket](../developer-tooling/push-sdk/sdk-packages-details/pushprotocol-socket/ "mention")
+{% endhint %}
+
 {% hint style="info" %}
-Push Chat API is in alpha, please bookmark this page for the new APIs introduction. The chat socket API will also be released shortly.
+Push Chat API is in alpha, please bookmark this page for the new APIs introduction.
 {% endhint %}
 
 {% hint style="success" %}
@@ -22,72 +26,91 @@ Each User of Push Chat has a PGP key which is either created locally or stored e
 
 You are required to get the PGP key and decrypt it locally for which you can use the following SDK functions:
 
-#### **a.** To get the User
+<details>
 
-`sdk.user.get`
+<summary>To get the User (<code>sdk.user.get</code>)</summary>
 
-* This function will return all the user information, like the PGP keys. It takes as arguments the address of the wallet and the environment variable.
+This function will return all the user information, like the PGP keys. It takes as arguments the address of the wallet and the environment variable.
 
-**b. To create the User**
+</details>
 
-`sdk.user.create`
+<details>
 
-* This function will create a new user and **** return the created user’s information, like the PGP keys. It takes as arguments the address of the wallet and the environment variable.
+<summary><strong>To create the User (</strong><code>sdk.user.create</code>)</summary>
+
+This function will create a new user and **** return the created user’s information, like the PGP keys. It takes as arguments the address of the wallet and the environment variable.
+
+</details>
 
 ## Fetching Chats for a User
 
 All chats for a user or all chats request for a user can be fetched in a paginated fashion using the following SDK functions:
 
-**a. To Fetch  a list of all chats of a User**
+<details>
 
-`sdk.chat.chats`&#x20;
+<summary><strong>To Fetch  a list of all chats of a User (</strong><code>sdk.chat.chats</code>)</summary>
 
-* This function returns all the latest chats from each address the caller is talking to. It’s used to build the inbox on a chat application for an address
+This function returns all the latest chats from each address the caller is talking to. It’s used to build the inbox on a chat application for an address
 
-**b. To Fetch a list of all chats request of a User**
+</details>
 
-`sdk.chat.requests`&#x20;
+<details>
 
-* This function returns all the requests that wallet addresses sent to a particular address. In Push Chat, the receiver of the messages must always approve the request to start the chat with the other address.
+<summary><strong>To Fetch a list of all chats request of a User (</strong><code>sdk.chat.requests</code>)</summary>
+
+This function returns all the requests that wallet addresses sent to a particular address. In Push Chat, the receiver of the messages must always approve the request to start the chat with the other address.
+
+</details>
 
 ### Fetching individual messages in a specific Chat
 
 Each conversation between the users or group of users have a conversation hash which is a linked list of thread that contains the encrypted chat messages stored on IPFS, the SDK does the work of decryption, etc provided you give the SDK a conversation hash.
 
-**a. Getting conversation hash of a single chat**
+<details>
 
-`sdk.chat.conversationHash`
+<summary><strong>Getting conversation hash of a single chat (</strong><code>sdk.chat.conversationHash</code>)</summary>
 
-* This function returns the conversation hash of the latest message exchanged between the user and the conversation.
+This function returns the conversation hash of the latest message exchanged between the user and the conversation.
 
-**b. Getting the History of a single chat**
+</details>
 
-`sdk.chat.history`
+<details>
 
-* This function takes as `an the` argument the conversation hash from a message and the pagination and then returns the message content decrypted.
+<summary><strong>Getting the History of a single chat (</strong><code>sdk.chat.history</code>)</summary>
 
-**c. Getting just the latest message from a single chat**
+This function takes in an argument as the conversation hash from a message and the pagination and then returns the message content decrypted.
 
-`sdk.chat.latest`
+</details>
 
-* This function takes as an argument the conversation hash from a message and then returns the message content decrypted.
+<details>
+
+<summary><strong>Getting just the latest message from a single chat (</strong><code>sdk.chat.latest</code>)</summary>
+
+This function takes as an argument the conversation hash from a message and then returns the message content decrypted.
+
+</details>
 
 ## Replying to Chats
 
-theReplying chats require the user to approve the request if it's the first time and then interact normally via the send rest API call.
+Replying chats require the user to approve the request if it's the first time and then interact normally via the send rest API call.
 
-a. To approve a chat request (_only required for first time_)
+<details>
 
-`sdk.chat.send`
+<summary>To approve a chat request (<em>only required for first time</em>) (<code>sdk.chat.send</code>)</summary>
 
-* When receiving a Request, call this function to approve the request so you can start talking back to the address.
+When receiving a Request, call this function to approve the request so you can start talking back to the address.
 
-**b. To chat with a user or conversation id**
+</details>
 
-`sdk.chat.requests`
+<details>
 
-* Use this function to send messages to other addresses.
+<summary><strong>To chat with a user or conversation id (</strong><code>sdk.chat.requests</code>)</summary>
+
+Use this function to send messages to other addresses.
+
+</details>
 
 {% hint style="success" %}
-To learn more about the API params and how to call the Restful API, please check :point\_right: [epnsproject-sdk-restapi](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/ "mention")
+To learn more about the API params and how to call the Restful API, please check :point\_right: [epnsproject-sdk-restapi](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/ "mention")and :point\_right: [pushprotocol-socket](../developer-tooling/push-sdk/sdk-packages-details/pushprotocol-socket/ "mention")
 {% endhint %}
+
