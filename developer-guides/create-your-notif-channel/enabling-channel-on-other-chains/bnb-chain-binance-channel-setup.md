@@ -47,7 +47,7 @@ Once you have switched your network to BNB chain, follow the steps mentioned bel
 1. Log into the Dapp with the same address provided as the **Alias Address** during channel creation.
 2. Go to the **Create Channel** menu in the sidebar. As your channel is not yet verified on BNB chain, you might see a page like the one attached below 👇.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 3. Click the **Verify Alias Address** button.
 4. Approve the transaction required for Alias Verification, on the BNB chain.

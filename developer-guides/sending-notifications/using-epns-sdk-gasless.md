@@ -356,4 +356,4 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 | ipfsHash             | string              | -       | ipfsHash, required only if the identityType is 1                                                                                                  |
 | expiry               | number              | -       | (optional) epoch value if the notification has an expiry                                                                                          |
 | hidden               | boolean             | false   | (optional) true if we want to hide the notification                                                                                               |
-| env                  | string              | 'prod'  | API env - 'prod', 'staging', 'dev'                                                                                                                |
+| env                  | string              | 'prod'  | API env - 'prod', 'staging'                                                                                                                       |
