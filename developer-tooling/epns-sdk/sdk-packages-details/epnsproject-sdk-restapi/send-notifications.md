@@ -4,6 +4,10 @@ description: Send gasless notifications to wallet addresses
 
 # Send Notifications
 
+{% hint style="danger" %}
+All SDK functions require passing the parameter **env** which should either pass **staging** or **prod** based on the demand. Passing anything else in this param might result in unexpected results.
+{% endhint %}
+
 ## Introduction
 
 Once you have created a channel on Push, you can send notifications to your subscribers. There are 3 types of notifications:
@@ -300,4 +304,4 @@ Allowed Options (params with \* are mandatory)
 | ipfsHash             | string              | -      | ipfsHash, required only if the identityType is 1                                                                                                  |
 | expiry               | number              | -      | (optional) epoch value if the notification has an expiry                                                                                          |
 | hidden               | boolean             | false  | (optional) true if we want to hide the notification                                                                                               |
-| env                  | string              | ‘prod’ | API env - ‘prod’, ‘staging’, ‘dev’                                                                                                                |
+| env                  | string              | ‘prod’ | API env - ‘prod’, ‘staging’                                                                                                                       |

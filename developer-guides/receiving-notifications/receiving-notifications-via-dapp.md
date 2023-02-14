@@ -10,7 +10,7 @@ You can receive notifications on various platforms that include Push dApp, chrom
 
 ## Opt-In to a channel
 
-Opting-In means subscribing to a channel to receive notifications on dApp. For Opting-In simply go to [Push dApp](https://app.push.org/).\
+Opting-In means subscribing to a channel to receive notifications on dApp. For Opting-In simply go to [Push dApp ](https://app.push.org/).\
 \
 Once you are there, head over to [Channels](https://app.push.org/#/channels) section. In this section, you can see all the channels that are created on our dApp.
 
@@ -29,7 +29,7 @@ Henceforth, You will receive all the notifications that this channel will send ð
 **Note: **_**Opting-In**_** ** to a channel is a completely off-chain process and it doesn't require any _**gas fees**_ from you. All you need to do is simply sign the opt-in transaction. ****&#x20;
 {% endhint %}
 
-### Find your Favorite Channels using Search Bar
+### Find your Favority Channels using Search Bar
 
 Since there are quite a few channels on the PUSH dApp, you might not see your favourite channel at the very first glance.
 
@@ -70,7 +70,7 @@ A user can also search for a particular keyword in the notification they want. F
 
 ## Push Browser Extension
 
-Push also supports notifications via browser extensions. The Chrome browser extension can be downloaded and installed from the Google Chrome Store: [Download Push Browser Extension](https://chrome.google.com/webstore/detail/epns-protocol-beta/lbdcbpaldalgiieffakjhiccoeebchmg)
+Push also supports notifications via browser extensions. The Chrome browser extension can be downloaded and installed from the Google Chrome Store: [Download PUSH Browser Extension](https://chrome.google.com/webstore/detail/epns-protocol-beta/lbdcbpaldalgiieffakjhiccoeebchmg)
 
 * Open the extension and click on Get Started.
 * Enter the wallet address from which you subscribed to the channels.

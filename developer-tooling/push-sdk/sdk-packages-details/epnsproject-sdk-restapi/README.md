@@ -1,52 +1,25 @@
 ---
-description: This package gives access to Push Protocol backend APIs
+description: This package gives access to Push ptrotocol backend APIs
 ---
 
 # @pushprotocol/restapi
 
-## Installation <a href="#installation" id="installation"></a>
+### Installation <a href="#installation" id="installation"></a>
 
-{% tabs %}
-{% tab title="npm" %}
 ```bash
-npm install @pushprotocol/restapi ethers 
+  yarn add @pushprotocol/restapi ethers
 ```
-{% endtab %}
 
-{% tab title="yarn" %}
+or
+
 ```bash
-yarn add @pushprotocol/restapi ethers
+  npm install @pushprotocol/restapi ethers 
 ```
-{% endtab %}
-{% endtabs %}
 
-### I**mport in your file**
+I**mport in your file**
 
 ```typescript
 import * as PushAPI from "@pushprotocol/restapi";
-```
-
-#### About generating the `signer` object for different platforms
-
-When using SERVER-SIDE code:
-
-```typescript
-const ethers = require('ethers');
-const PK = 'your_channel_address_secret_key';
-const Pkey = `0x${PK}`;
-const signer = new ethers.Wallet(Pkey);
-```
-
-When using in FRONT-END code:
-
-```typescript
-// any other web3 ui lib is also acceptable
-import { useWeb3React } from "@web3-react/core";
-.
-.
-.
-const { account, library, chainId } = useWeb3React();
-const signer = library.getSigner(account);
 ```
 
 {% hint style="info" %}
@@ -88,25 +61,25 @@ In any of the `restapi` methods (unless explicitly stated otherwise) we accept e
 * ETH address format: only for backwards compatibility. (Example: `0xab16a96d359ec26a11e2c2b3d8f8b8942d5bfcdb`)
 {% endhint %}
 
-## Features
+### Features
 
-The `@pushprotocol/restapi` package provides us with the following features:
+As of now, the @pushprotocol/restapi package provides us with 3 imperative types of features:
 
-### Notifications
+1. **Fetching User/Channel Details**&#x20;
 
-* Get user notifications and spam notifications
-* Get channel information
-* Opt-in and opt-out to a channel
-* Send notifications
+It helps us with fetching the following data:
 
-### Chat
+* &#x20;User _notifications_
+* _User Spam Notifications_
+* _User Subscriptions_
+* _Channel Details_
+* _Channel(s) search_
 
-* Send messages to a wallet address
-* Get messages
-* Create user encryption keys
-* Create group chat
+**2. Opt-In and Opt-Out**&#x20;
 
-Here below, you can find more information on the features described:
+**3. Sending Notifications**
+
+_Let's explore each one of these._
 
 {% content-ref url="../../../epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/fetching-user-channel-details.md" %}
 [fetching-user-channel-details.md](../../../epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/fetching-user-channel-details.md)

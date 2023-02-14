@@ -1,33 +1,4 @@
----
-description: Opt-in to a channel to start receiving notifications
----
-
 # Opt-In and Opt-Out
-
-## Introduction
-
-To receive notifications, the user must opt-in to the channel. This is done only once and is gasless, the user only needs to sign a message.
-
-To see all the supported channels on Push, go to [Push Protocol dapp](https://app.push.org/#/channels) and opt-in to your favorite protocol to receive notifications.
-
-## Opt-in to a Channel
-
-In the example below, the user `eip155:5:0x52f856A160733A860ae7DC98DC71061bE33A28b3` will opt-in to the channel `eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681` on the testnet environment (`staging`).
-
-```typescript
-await PushAPI.channels.subscribe({
-  signer: signer,
-  channelAddress: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // channel address in CAIP
-  userAddress: 'eip155:5:0x52f856A160733A860ae7DC98DC71061bE33A28b3', // user address in CAIP
-  onSuccess: () => {
-   console.log('opt in success');
-  },
-  onError: () => {
-    console.error('opt in error');
-  },
-  env: 'staging'
-})
-```
 
 _**NOTE on generating the "signer" object for different platforms:**_
 
@@ -52,6 +23,23 @@ const { account, library, chainId } = useWeb3React();
 const signer = library.getSigner(account);
 ```
 
+### **opt in to a channel**
+
+```typescript
+await PushAPI.channels.subscribe({
+  signer: _signer,
+  channelAddress: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // channel address in CAIP
+  userAddress: 'eip155:5:0x52f856A160733A860ae7DC98DC71061bE33A28b3', // user address in CAIP
+  onSuccess: () => {
+   console.log('opt in success');
+  },
+  onError: () => {
+    console.error('opt in error');
+  },
+  env: 'staging'
+})
+```
+
 Allowed Options (params with \* are mandatory)
 
 | Param                    | Type     | Default | Remarks                            |
@@ -64,9 +52,7 @@ Allowed Options (params with \* are mandatory)
 | onError                  | function | -       | on error callback                  |
 | env                      | string   | ‘prod’  | API env - ‘prod’, ‘staging’, ‘dev’ |
 
-## **Opt-out to a channel**
-
-If you want to stop receiving notifications from a channel, you have to opt-out.
+### **opt out to a channel**
 
 ```typescript
 await PushAPI.channels.unsubscribe({
@@ -93,3 +79,10 @@ Allowed Options (params with \* are mandatory)
 | onSuccess                | function | -       | on success callback                |
 | onError                  | function | -       | on error callback                  |
 | env                      | string   | ‘prod’  | API env - ‘prod’, ‘staging’, ‘dev  |
+
+**Push communicator contract address**
+
+```
+ETH Mainnet - 0xb3971BCef2D791bc4027BbfedFb47319A4AAaaAa
+ETH Goerli - 0xb3971BCef2D791bc4027BbfedFb47319A4AAaaAa
+```
