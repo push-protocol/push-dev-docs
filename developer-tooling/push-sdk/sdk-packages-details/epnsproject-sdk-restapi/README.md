@@ -23,23 +23,37 @@ import * as PushAPI from "@pushprotocol/restapi";
 ```
 
 {% hint style="info" %}
-**Note on Addresses:**\
-****
+**Note on Addresses:**
 
-Push _SDK uses **CAIP10** format but defaults to Ethereum address format._\
-__\
-_CAIP 10 format is a way to identify multichain addresses which are extended from CAIP 2. Any blockchain address becomes namespace + “:” + chain\_id + “:” + account\_address._\
-__\
-_For instance:_
+PUSH SDK uses [**CAIP-10**](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-10.md) format but defaults to Ethereum address format.
 
-* The Polygon mainnet **namespace is** **eip155** _and its_ **chain\_id is 137** for the mainnet. Therefore, its CAIP10 address shall be
-  * P_olygon mainnet:_\
-    __**eip155:137:0x0000000000000000000000000000000000000000**
-  * _Ethereum mainnet:_\
-    **eip155:1:0x0000000000000000000000000000000000000000**
+CAIP-10 format is a way to identify multichain addresses. Any blockchain address becomes`namespace + “:” + chain_id + “:” + account_address`
 
-_0x0000000000000000000000000000000000000000 can be replaced by any address of the user through which you are communicating_\
-__
+
+
+**Example:**
+
+For both Ethereum and Polygon, the namespace is `eip155` and the chain\_id is `1` and `5` respectively:
+
+* Polygon mainnet:
+
+`eip155:137:0x20E0e045F1baB5CD9284602bdf24D050Dc8CB719`
+
+* Ethereum mainnet:
+
+`eip155:1:0x20E0e045F1baB5CD9284602bdf24D050Dc8CB719`
+
+For Goerli and Mumbai testnets, the namespace is `eip155` and the chain\_id is `5` and `80001` respectively:
+
+* Goerli testnet:
+
+`eip155:5:0x20E0e045F1baB5CD9284602bdf24D050Dc8CB719`
+
+* Mumbai testnet:
+
+`eip155:80001:0x20E0e045F1baB5CD9284602bdf24D050Dc8CB719`
+
+``
 
 In any of the `restapi` methods (unless explicitly stated otherwise) we accept either -
 
