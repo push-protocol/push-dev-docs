@@ -37,6 +37,7 @@
       * [Notification Payload](developer-guides/sending-notifications/notification-payload-types/notification-standard-advanced/notification-payload.md)
       * [Notification Content](developer-guides/sending-notifications/notification-payload-types/notification-standard-advanced/notification-content.md)
 * [Receiving Notifications](developer-guides/receiving-notifications/README.md)
+  * [Receiving Notifications via dApp](developer-guides/receiving-notifications/receiving-notifications-via-dapp.md)
   * [Receiving via Restful API](developer-guides/receiving-notifications/receiving-via-restful-api.md)
   * [Receiving via AWS SNS](developer-guides/receiving-notifications/receiving-via-aws-sns.md)
   * [Receiving via Delivery Node](developer-guides/receiving-notifications/receiving-via-delivery-node.md)

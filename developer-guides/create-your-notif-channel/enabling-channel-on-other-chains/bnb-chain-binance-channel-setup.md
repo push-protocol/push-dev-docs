@@ -34,7 +34,7 @@ Verification of alias address must happen on the selected chain (_in this case,_
 
 Once you initiate the channel creation procedure for your channel on Ethereum with the right BNB alias address, you will arrive at the page as can be seen below.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Channel Creation at Alias Network Setup pending</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Channel Creation at Alias Network Setup pending</p></figcaption></figure>
 
 As can be seen below the Channel's name, the **Alias Network Setup is Pending.**&#x20;
 
