@@ -4,8 +4,10 @@ In simpler terms, Push Delivery Nodes is a Whitelabel solution to enable any app
 
 These are decentralized solutions to enable web3 to web2 bridging. They allow any platform (whether centralized or decentralized) to receive communication from **Push storage nodes**, i.e., the nodes validating and indexing all communications and tying them to your wallet address (and multi-chain identity).&#x20;
 
+{% embed url="https://www.youtube.com/watch?v=OlRHL3qd4oY" %}
+
 {% hint style="info" %}
-The Whitelabel solution of Push delivery nodes can be found in GitHub [here](https://github.com/ethereum-push-notification-service/push-delivery-node)
+The Whitelabel solution of Push delivery nodes can be found at GitHub [here](https://github.com/ethereum-push-notification-service/push-delivery-node)
 {% endhint %}
 
 ## Steps for Getting Started With the Delivery Node Module <a href="#4da3" id="4da3"></a>
