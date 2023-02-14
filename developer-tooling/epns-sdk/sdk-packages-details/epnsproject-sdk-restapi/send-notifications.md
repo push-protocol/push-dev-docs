@@ -18,14 +18,32 @@ Once you have created a channel on Push, you can send notifications to your subs
 
 ## **Sending Notification**
 
-First, we'll need the `signer`:
+1. Requirements before using SDK calls, derive the `signer`
 
-```typescript
+{% tabs %}
+{% tab title="When using Frontend" %}
+```
+// any other web3 ui lib is also acceptable
+import { useWeb3React } from "@web3-react/core";
+.
+.
+.
+const { account, library, chainId } = useWeb3React();
+const signer = library.getSigner(account);
+```
+{% endtab %}
+
+{% tab title="When using Server" %}
+```
 const ethers = require('ethers');
 const PK = 'your_channel_address_secret_key';
 const Pkey = `0x${PK}`;
 const signer = new ethers.Wallet(Pkey);
 ```
+{% endtab %}
+{% endtabs %}
+
+2. Call the appropriate SDK function
 
 {% tabs %}
 {% tab title="Direct Payload" %}
