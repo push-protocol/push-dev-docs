@@ -1,24 +1,24 @@
 ---
-description: This package gives access to Push protocol backend APIs
+description: This package gives access to Push ptrotocol backend APIs
 ---
 
 # @pushprotocol/restapi
 
 ### Installation <a href="#installation" id="installation"></a>
 
-```
+```bash
   yarn add @pushprotocol/restapi ethers
 ```
 
 or
 
-```
+```bash
   npm install @pushprotocol/restapi ethers 
 ```
 
 I**mport in your file**
 
-```
+```typescript
 import * as PushAPI from "@pushprotocol/restapi";
 ```
 
