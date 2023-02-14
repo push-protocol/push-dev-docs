@@ -16,11 +16,11 @@ Step 1: Learn various ways by which content can be defined.
 
 Step 2: Test is out on Staging dApp > Send Notification which creates a real time preview of how notification will look
 
-{% embed url="https://staging.epns.io/#/dashboard" %}
+{% embed url="https://staging.push.org/#/dashboard" %}
 Staging dApp
 {% endembed %}
 
-{% embed url="https://app.epns.io/#/dashboard" %}
+{% embed url="https://app.push.org/#/dashboard" %}
 Production dApp
 {% endembed %}
 

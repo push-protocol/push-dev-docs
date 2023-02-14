@@ -35,7 +35,7 @@ Being an open communication middleware, notifications can be integrated and show
 <!---->
 
 * Channels can send notifications to their users(wallet addresses) in a number of ways including:
-  * [**Backend SDK**](developer-tooling/push-sdk/legacy-sdk/backend-sdk/) (**Gasless**, Best for automated logic from dApp / Backend)
+  * [**Backend SDK**](developer-tooling/epns-sdk/legacy-sdk/backend-sdk/) (**Gasless**, Best for automated logic from dApp / Backend)
   * \*\*\*\*[**Showrunners Framework**](developer-tooling/showrunners-framework/) (**Scaffold / Gasless**, Best for automated logic via scaffold backend)
   * Smart contract to Smart contract (**requires gas**, \*\*\*\* Best for instant on-chain events, piggybacks on an on-chain transaction via Interface ABI call)
   * Manually from EPNS dApp (**Gasless**, Best for manual logic)

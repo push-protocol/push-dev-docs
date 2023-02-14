@@ -30,6 +30,6 @@ The Push Communicator protocol is comparatively quite simple. The communicator p
 [epns-communicator-protocol](epns-communicator-protocol/)
 {% endcontent-ref %}
 
-{% content-ref url="epns-contract-addresses.md" %}
-[epns-contract-addresses.md](epns-contract-addresses.md)
+{% content-ref url="../push-smart-contracts/epns-contract-addresses.md" %}
+[epns-contract-addresses.md](../push-smart-contracts/epns-contract-addresses.md)
 {% endcontent-ref %}

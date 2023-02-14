@@ -29,14 +29,15 @@ yarn init
 </strong>
 # or, 
 
-npm install @pushprotocol/restapi ethers</code></pre>
+npm install @pushprotocol/restapi ethers
+</code></pre>
 
 ### Usage
 
 In order to demonstrate a simple example of how to use the SDK, we shall try to use a feature from our **@pushprotocol/restapi** package.
 
 > _Note: This is just one of the many features of our SDK for the sake of this example._ \
-> _You can refer to the_ _subsequent sections for details on all the_ [.](./ "mention")__
+> _You can refer to the_ _subsequent sections for details on all the_ [push-sdk](../push-sdk/ "mention")__
 
 #### Fetching Notifications
 

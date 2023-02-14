@@ -81,18 +81,18 @@ It helps us with fetching the following data:
 
 _Let's explore each one of these._
 
-{% content-ref url="fetching-user-channel-details.md" %}
-[fetching-user-channel-details.md](fetching-user-channel-details.md)
+{% content-ref url="../../../epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/fetching-user-channel-details.md" %}
+[fetching-user-channel-details.md](../../../epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/fetching-user-channel-details.md)
 {% endcontent-ref %}
 
 {% content-ref url="opt-in-and-opt-out.md" %}
 [opt-in-and-opt-out.md](opt-in-and-opt-out.md)
 {% endcontent-ref %}
 
-{% content-ref url="send-notifications.md" %}
-[send-notifications.md](send-notifications.md)
+{% content-ref url="../../../epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/send-notifications.md" %}
+[send-notifications.md](../../../epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/send-notifications.md)
 {% endcontent-ref %}
 
-{% content-ref url="utils.md" %}
-[utils.md](utils.md)
+{% content-ref url="../../../epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/utils.md" %}
+[utils.md](../../../epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/utils.md)
 {% endcontent-ref %}

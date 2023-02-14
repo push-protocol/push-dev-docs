@@ -58,8 +58,8 @@ _More details about this are in the_ [epnsproject-sdk-restapi](sdk-packages-deta
 [epnsproject-sdk-restapi](sdk-packages-details/epnsproject-sdk-restapi/)
 {% endcontent-ref %}
 
-{% content-ref url="sdk-packages-details/epnsproject-sdk-uiembed.md" %}
-[epnsproject-sdk-uiembed.md](sdk-packages-details/epnsproject-sdk-uiembed.md)
+{% content-ref url="../epns-sdk/sdk-packages-details/epnsproject-sdk-uiembed.md" %}
+[epnsproject-sdk-uiembed.md](../epns-sdk/sdk-packages-details/epnsproject-sdk-uiembed.md)
 {% endcontent-ref %}
 
 {% content-ref url="sdk-packages-details/epnsproject-sdk-uiweb/" %}

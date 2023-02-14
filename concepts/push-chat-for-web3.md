@@ -108,7 +108,7 @@ With the SDK, it will be easy for developers to integrate messaging into their d
 * DMs or DAO token gated conversation
 * Any other cool, crazy feature you can think of
 
-Alright. Now that you have a clear picture of the Push Chat and its SDK, let's dive in and try to integrate the push chat in your application.
+Alright. Now that you have a clear picture of the Push Chat and its SDK, let's dive in and try to integrate the push chat into your application.
 
 {% content-ref url="../developer-guides/integrating-push-chat.md" %}
 [integrating-push-chat.md](../developer-guides/integrating-push-chat.md)
