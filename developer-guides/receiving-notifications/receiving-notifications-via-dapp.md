@@ -10,7 +10,7 @@ You can receive notifications on various platforms that include Push dApp, chrom
 
 ## Opt-In to a channel
 
-Opting-In means subscribing to a channel to receive notifications on dApp. For Opting-In simply go to [Push dApp ](https://app.push.org/).\
+Opting-In means subscribing to a channel to receive notifications on dApp. For Opting-In simply go to [Push dApp](https://app.push.org/).\
 \
 Once you are there, head over to [Channels](https://app.push.org/#/channels) section. In this section, you can see all the channels that are created on our dApp.
 

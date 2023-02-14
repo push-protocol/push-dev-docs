@@ -1,8 +1,22 @@
+---
+description: Get notifications and channel information
+---
+
 # Fetching User / Channel Details
 
-### a. **fetching user notifications**&#x20;
+## Introduction
 
-This method allows us to fetch all the notifications that landed in the inbox of a user.
+To receive notifications, the user must opt-in to the channel. This is done only once and is gasless, the user only needs to sign a message.
+
+To see all the supported channels on Push, go to [Push Protocol dapp](https://app.push.org/#/channels) and opt-in to your favorite protocol to receive notifications.
+
+{% hint style="info" %}
+If the user hasn't opt-in to a channel, the notifications will land in **spam** instead of the **inbox**.
+{% endhint %}
+
+## Get **user notifications**&#x20;
+
+Get all the notifications from a user.
 
 ```typescript
 const notifications = await PushAPI.user.getFeeds({
@@ -11,9 +25,9 @@ const notifications = await PushAPI.user.getFeeds({
 });
 ```
 
-### **b. fetching user spam notifications**
+## **Get user spam notifications**
 
-Allows us to fetch all the spam notifications for a given user's wallet address.
+Get all the notifications from a user that are in the spam box. Notifications go to spam if the user hasn't opt-in to the channel.
 
 ```typescript
 const spams = await PushAPI.user.getFeeds({
@@ -34,9 +48,9 @@ Allowed Options (params with \* are mandatory)
 | env    | string  | ‘prod’  | API env - ‘prod’, ‘staging’, ‘dev’                            |
 | raw    | boolean | false   | if “true” the method will return unformatted raw API response |
 
-### **c. fetching user subscriptions**
+## **Get user subscriptions**
 
-&#x20;This method shall provide us with the list of addresses of channels subscribed by a user address
+This method provides us with the list of channel addresses subscribed by a user address
 
 ```typescript
 const subscriptions = await PushAPI.user.getSubscriptions({
@@ -45,7 +59,7 @@ const subscriptions = await PushAPI.user.getSubscriptions({
 });
 ```
 
-where `subscriptions` is a list of channels `[{ channel: '0xaddress', ... }]` subscribed by the user.
+where `subscriptions` variable is a list of channels `[{ channel: '0xaddress', ... }]` subscribed by the user.
 
 _Note: We can find out if a user is subscribed to a channel by checking if the channel address is present in the subscriptions list_
 
@@ -56,9 +70,9 @@ Allowed Options (params with \* are mandatory)
 | user\* | string | -       | user address (CAIP)                |
 | env    | string | ‘prod’  | API env - ‘prod’, ‘staging’, ‘dev’ |
 
-### **d. fetching channel details**
+## **Get channel details**
 
-this method will get channel data for any valid channel address
+This method will return the channel's data
 
 ```typescript
 const channelData = await PushAPI.channels.getChannel({
@@ -74,9 +88,9 @@ Allowed Options (params with \* are mandatory)
 | channel\* | string | -       | channel address (CAIP)             |
 | env       | string | ‘prod’  | API env - ‘prod’, ‘staging’, ‘dev’ |
 
-### **e. searching for channel(s)**
+## **Searching for channel(s)**
 
-&#x20;This method fetches the list of channels’ data which match the query in the search
+&#x20;This method fetches the list of channels’ data that match the query in the search
 
 ```typescript
 const channelsData = await PushAPI.channels.search({
