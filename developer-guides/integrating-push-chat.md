@@ -22,7 +22,23 @@ To get the API key, please join our discord and ask a CM or a Dev for one. :poin
 
 For an overview of Push Chat, please go to [https://docs.push.org/developers/concepts/push-chat-for-web3](https://docs.push.org/developers/concepts/push-chat-for-web3).
 
-## User Information
+## Rest API Calls
+
+### Installation
+
+Install in your project by using
+
+```
+yarn add @pushprotocol/restapi@latest
+```
+
+OR
+
+```
+npm install @pushprotocol/restapi@latest
+```
+
+### Get User Information
 
 Each User of Push Chat has a PGP key that is created locally and stored encrypted on Push nodes.&#x20;
 
@@ -44,7 +60,7 @@ This function will create a new user and **** return the created user’s inform
 
 </details>
 
-## Fetching Chats for a User
+### Fetching Chats for a User
 
 All chats for a user or all chats request for a user can be fetched in a paginated fashion using the following SDK functions:
 
@@ -68,7 +84,7 @@ This function returns all the requests that wallet addresses sent to a particula
 
 </details>
 
-### Fetching individual messages in a specific Chat
+#### Fetching individual messages in a specific Chat
 
 Each conversation between the users or group of users have a conversation hash which is a linked list that contains the encrypted chat messages stored on IPFS. The SDK does the work of fetching, decrypting, and verifying the signature for the messages.
 
@@ -98,11 +114,9 @@ This function takes as an argument the conversation hash from a message and then
 
 </details>
 
-## Replying to Chats
+### Replying to Chats
 
-The Replying chats require the user to approve the request if it's the first time and then interact normally via the send rest API call.
-
-a. To approve a chat request (_only required for the first time_)
+The Replying chats require the user to approve the request if it's their first time and then interact normally via the send rest API call.
 
 <details>
 
@@ -120,9 +134,128 @@ Use this function to send messages to other addresses.
 
 </details>
 
+### For Group Chat
+
+The group chats enables multiple wallet to talk to each other for the first time and enables a number of features and settings for group chat.
+
+<details>
+
+<summary>To fetch a group (<code>sdk.chat.getGroup</code>)</summary>
+
+To get info of the group including the chat id which is used to send messages in that group (instead of wallet address) for single user chats.
+
+</details>
+
+<details>
+
+<summary>To create a group (<code>sdk.chat.createGroup</code>)</summary>
+
+Use this function to create group chat between multiple wallets.
+
+</details>
+
+<details>
+
+<summary>To modify a group (<code>sdk.chat.updateGroup</code>)</summary>
+
+Use this function to modify a group name, description, members, etc.
+
+</details>
+
 {% hint style="success" %}
 To learn more about the API params and how to call the Restful API, please check :point\_right: [epnsproject-sdk-restapi](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/ "mention")and :point\_right: [pushprotocol-socket](../developer-tooling/push-sdk/sdk-packages-details/pushprotocol-socket/ "mention")
 {% endhint %}
+
+## Socket API Calls
+
+### Installation
+
+Install in your project by using
+
+```
+yarn add @pushprotocol/socket@latest ethers
+```
+
+OR
+
+```
+npm install @pushprotocol/socket@latest ethers
+```
+
+### Import
+
+```
+import {
+  createSocketConnection,
+  EVENTS
+} from '@pushprotocol/socket';
+```
+
+### **Creating a socket connection object**
+
+<details>
+
+<summary>To create a socket connection (<code>createSocketConnection</code>)</summary>
+
+To create a socket connection and retain the variable.
+
+```javascript
+const pushSDKSocket = createSocketConnection({
+    user: 'eip155:0xab16a96d359ec26a11e2c2b3d8f8b8942d5bfcdb',
+    env: 'staging',
+    apiKey: 'jVPMCRom1B.iDRMswdehJG7NpHDiECIHwYMMv6k2KzkPJscFIDyW8TtSnk4blYnGa8DIkfuacU0',
+    socketType: 'chat',
+    socketOptions: { autoConnect: true, reconnectionAttempts: 3 }
+});
+```
+
+</details>
+
+### Connect and Disconnect
+
+<details>
+
+<summary>To connect the socket (<code>pushSDKSocket.connect()</code>)</summary>
+
+Establishes a socket connection to stream all incoming chat requests, messages, etc.
+
+</details>
+
+<details>
+
+<summary>To disconnect the socket (<code>pushSDKSocket.connect()</code>)</summary>
+
+Disconnects the socket connection.
+
+</details>
+
+### **Subscribing to Socket Events**
+
+<details>
+
+<summary>To subscribe to and react to socket events (<code>pushSDKSocket.on</code>)</summary>
+
+* EVENTS.CONNECT - Whenever the socket is connected
+* EVENTS.DISCONNECT - Whenever the socket is connected
+* EVENTS.CHAT\_RECEIVED\_MESSAGE - Whenever the user recieves a message or chat requests
+
+**Sample Code**
+
+```javascript
+pushSDKSocket.on(EVENTS.CONNECT, () => {
+
+});
+
+pushSDKSocket.on(EVENTS.DISCONNECT, () => {
+
+});
+
+pushSDKSocket.on(EVENT.CHAT_RECEIVED_MESSAGE, (message) => {
+  // message is the message object data whenever a new message is received
+});
+```
+
+</details>
 
 ## Push Support Chat
 
@@ -132,28 +265,39 @@ A React component for integrating support chat in DApps.
 
 Installation:
 
-`yarn add @pushprotocol/uiweb@0.2.3`
+```
+yarn add @pushprotocol/uiweb@latest
+```
 
 or
 
-`npm install @pushprotocol/uiweb@0.2.3`
+```
+npm install @pushprotocol/uiweb@latest
+```
 
 Note: `styled-components` and `@pushprotocol/restapi@0.2.1` are peerDependencies. Please install them in your dApp if you don't have them already!
 
-`yarn add styled-components`\
-`yarn add @pushprotocol/restapi@0.2.1`
+```
+yarn add styled-components
+yarn add @pushprotocol/restapi@latest
+```
 
 or
 
-`npm install styled-components` \
-`npm install @pushprotocol/restapi@0.2.1`
+```
+npm install styled-components 
+npm install @pushprotocol/restapi@latest
+```
 
 #### Support Chat component Usage
 
-`import { Chat } from "@pushprotocol/uiweb";`\
-`<Chat account="0x6430C47973FA053fc8F055e7935EC6C2271D5174" //user address    supportAddress="0xd9c1CCAcD4B8a745e191b62BA3fcaD87229CB26d" //support address apiKey="jVPMCRom1B.iDRMswdehJG7NpHDiECIHwYMMv6k2KzkPJscFIDyW8TtSnk4blYnGa8DIkfuacU0" env="staging" />`
+{% code overflow="wrap" lineNumbers="true" %}
+```javascript
+import { Chat } from "@pushprotocol/uiweb";
 
-``
+<Chat account="0x6430C47973FA053fc8F055e7935EC6C2271D5174" //user address    supportAddress="0xd9c1CCAcD4B8a745e191b62BA3fcaD87229CB26d" //support address apiKey="jVPMCRom1B.iDRMswdehJG7NpHDiECIHwYMMv6k2KzkPJscFIDyW8TtSnk4blYnGa8DIkfuacU0" env="staging" />
+```
+{% endcode %}
 
 ![](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fdfbcd79-260b-45e7-818a-8d25979def7d/Untitled.png)
 
