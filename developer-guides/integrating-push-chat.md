@@ -1,3 +1,7 @@
+---
+description: Overview about Push Chat SDK
+---
+
 # Integrating Push Chat
 
 Integrating Push Chat for any functionality is extremely easy. The Push Chat SDK is divided into the following functionalities:
@@ -28,13 +32,13 @@ For an overview of Push Chat, please go to [https://docs.push.org/developers/con
 
 Install in your project by using
 
-```
+```bash
 yarn add @pushprotocol/restapi@latest
 ```
 
 OR
 
-```
+```bash
 npm install @pushprotocol/restapi@latest
 ```
 
@@ -172,19 +176,19 @@ To learn more about the API params and how to call the Restful API, please check
 
 Install in your project by using
 
-```
+```bash
 yarn add @pushprotocol/socket@latest ethers
 ```
 
 OR
 
-```
+```bash
 npm install @pushprotocol/socket@latest ethers
 ```
 
 ### Import
 
-```
+```typescript
 import {
   createSocketConnection,
   EVENTS
@@ -265,26 +269,26 @@ A React component for integrating support chat in DApps.
 
 Installation:
 
-```
+```bash
 yarn add @pushprotocol/uiweb@latest
 ```
 
 or
 
-```
+```bash
 npm install @pushprotocol/uiweb@latest
 ```
 
 Note: `styled-components` and `@pushprotocol/restapi@0.2.1` are peerDependencies. Please install them in your dApp if you don't have them already!
 
-```
+```bash
 yarn add styled-components
 yarn add @pushprotocol/restapi@latest
 ```
 
 or
 
-```
+```bash
 npm install styled-components 
 npm install @pushprotocol/restapi@latest
 ```
@@ -292,7 +296,7 @@ npm install @pushprotocol/restapi@latest
 #### Support Chat component Usage
 
 {% code overflow="wrap" lineNumbers="true" %}
-```javascript
+```typescript
 import { Chat } from "@pushprotocol/uiweb";
 
 <Chat account="0x6430C47973FA053fc8F055e7935EC6C2271D5174" //user address    supportAddress="0xd9c1CCAcD4B8a745e191b62BA3fcaD87229CB26d" //support address apiKey="jVPMCRom1B.iDRMswdehJG7NpHDiECIHwYMMv6k2KzkPJscFIDyW8TtSnk4blYnGa8DIkfuacU0" env="staging" />
