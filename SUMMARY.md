@@ -73,6 +73,7 @@
       * [Fetching User / Channel Details](developer-tooling/epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/fetching-user-channel-details.md)
       * [Opt-In and Opt-Out](developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/opt-in-and-opt-out.md)
       * [Send Notifications](developer-tooling/epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/send-notifications.md)
+      * [Chat](developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/chat.md)
       * [Utils](developer-tooling/epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/utils.md)
     * [@pushprotocol/socket](developer-tooling/push-sdk/sdk-packages-details/pushprotocol-socket/README.md)
       * [Example - SDK Sockets](developer-tooling/epns-sdk/sdk-packages-details/pushprotocol-socket/example-sdk-sockets.md)

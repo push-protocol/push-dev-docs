@@ -1,6 +1,10 @@
+---
+description: Helper functions
+---
+
 # Utils
 
-### **parsing notifications**
+## **Parse notifications**
 
 Utils method to parse raw Push Feeds API response into a pre-defined shape as below.
 
@@ -17,7 +21,6 @@ const parsedResults = PushAPI.utils.parseApiResponse(apiResponse);
 const [oneNotification] = parsedResults;
 
 // Now this object can be directly used by for e.g. "@pushprotocol/uiweb"  NotificationItem component as props.
-
 const {
   cta,
   title,
@@ -32,4 +35,4 @@ const {
 } = oneNotification;
 ```
 
-_We get the above `keys` after the parsing of the API repsonse._
+_We get the above `keys` after the parsing of the API response._

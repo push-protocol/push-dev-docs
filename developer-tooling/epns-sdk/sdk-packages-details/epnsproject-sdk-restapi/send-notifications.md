@@ -22,7 +22,7 @@ Once you have created a channel on Push, you can send notifications to your subs
 
 {% tabs %}
 {% tab title="When using Frontend" %}
-```
+```typescript
 // any other web3 ui lib is also acceptable
 import { useWeb3React } from "@web3-react/core";
 .
@@ -34,7 +34,7 @@ const signer = library.getSigner(account);
 {% endtab %}
 
 {% tab title="When using Server" %}
-```
+```typescript
 const ethers = require('ethers');
 const PK = 'your_channel_address_secret_key';
 const Pkey = `0x${PK}`;
