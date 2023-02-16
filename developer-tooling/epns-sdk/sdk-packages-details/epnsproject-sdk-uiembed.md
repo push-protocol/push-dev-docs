@@ -4,17 +4,21 @@ description: This package helps to embed sidebar notifications to any dApp
 
 # @pushprotocol/uiembed
 
-### Installation
+## Installation
 
+{% tabs %}
+{% tab title="npm" %}
+```bash
+npm install @pushprotocol/uiembed
 ```
-  yarn add @pushprotocol/uiembed
-```
+{% endtab %}
 
-or,
-
+{% tab title="yarn" %}
+```bash
+yarn add @pushprotocol/uiembed
 ```
-  npm install @pushprotocol/uiembed
-```
+{% endtab %}
+{% endtabs %}
 
 ### Importing and Setting Up
 

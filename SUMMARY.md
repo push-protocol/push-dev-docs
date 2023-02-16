@@ -80,7 +80,7 @@
     * [@pushprotocol/uiembed](developer-tooling/epns-sdk/sdk-packages-details/epnsproject-sdk-uiembed.md)
     * [@pushprotocol/reactnative](developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-uiembed-1.md)
     * [@pushprotocol/uiweb](developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-uiweb/README.md)
-      * [uiweb@0.2.3-Push Support Chat](developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-uiweb/uiweb-0.2.3-push-support-chat.md)
+      * [Push Support Chat](developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-uiweb/push-support-chat.md)
   * [Legacy SDK](developer-tooling/epns-sdk/legacy-sdk/README.md)
     * [Frontend SDK](developer-tooling/epns-sdk/legacy-sdk/frontend-sdk/README.md)
       * [Installation](developer-tooling/epns-sdk/legacy-sdk/frontend-sdk/installation.md)
