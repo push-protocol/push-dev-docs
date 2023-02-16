@@ -92,6 +92,26 @@ Allowed Options (params with \* are mandatory)
 | channel\* | string | -       | channel address (CAIP)             |
 | env       | string | ‘prod’  | API env - ‘prod’, ‘staging’, ‘dev’ |
 
+### **Get Subscribers of a Channel**
+
+This method fetches the subscribers of a channel.
+
+```typescript
+const subscribers = await PushAPI.user.getSubscribers({
+  channel: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // channel address in CAIP
+  page: 1, // Optional, defaults to 1
+  limit: 10, // Optional, defaults to 10
+  env: 'prod' // Optional, defaults to 'prod'
+});
+```
+
+| Param   | Type    | Default | Remarks                                                                       |
+| ------- | ------- | ------- | ----------------------------------------------------------------------------- |
+| channel | string  | -       | Mandatory                                                                     |
+| page    | number  | 1       | <p>Optional: <br><br>page index of the results, greater than 0</p>            |
+| limit   | number  | 10      | <p>Optional: <br><br>number of items in 1 page, greater than 0 and max 30</p> |
+| env     | string  | prod    | <p>Optional:<br><br>API env - 'prod', 'staging', 'dev'</p>                    |
+
 ## **Searching for channel(s)**
 
 &#x20;This method fetches the list of channels’ data that match the query in the search
