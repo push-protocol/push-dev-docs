@@ -4,7 +4,9 @@ description: Helper functions
 
 # Utils
 
-## **Parse notifications**
+## **Notifications**
+
+### **Parse notifications**
 
 Utils method to parse raw Push Feeds API response into a pre-defined shape as below.
 
@@ -36,3 +38,36 @@ const {
 ```
 
 _We get the above `keys` after the parsing of the API response._
+
+## Chat
+
+### **Decrypting encrypted pgp private key**
+
+```typescript
+import { IUser } from '@pushprotocol/restapi';
+
+const decryptedPvtKey = await PushAPI.chat.decryptWithWalletRPCMethod(
+          (connectedUser as IUser).encryptedPrivateKey, //encrypted private key 
+          '0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7' //user address
+        );
+```
+
+### **Decrypting messages**
+
+```typescript
+import { IUser } from '@pushprotocol/restapi';
+
+const decryptedChat = await PushAPI.chat.decryptConversation({
+    messages: chatHistory, //array of message object fetched from chat.history method
+    connectedUser, // user meta data object fetched from chat.get method
+    pgpPrivateKey:decryptedPvtKey, //decrypted private key
+    env:'staging',
+  });
+```
+
+| Param           | Type   | Default  | Remarks                                                  |
+| --------------- | ------ | -------- | -------------------------------------------------------- |
+| env             | string | `'prod'` | API env: `'prod'`, `'staging'`, `'dev'`                  |
+| messages\*      | string | -        | array of message object fetched from chat.history method |
+| connectedUser\* | IUser  | `false`  | user meta data object                                    |
+| pgpPrivateKey   | string | `null`   | mandatory for users having pgp keys                      |

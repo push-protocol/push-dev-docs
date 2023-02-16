@@ -157,3 +157,58 @@ const response = await PushAPI.chat.send({
 | pgpPrivateKey   | string                            | `null`   | mandatory for users having pgp keys     |
 | apiKey          | string                            | `''`     | apiKey for using chat                   |
 
+## Create Group
+
+Create Group Chats to interact with your friends and community
+
+```typescript
+const response = await PushAPI.chat.createGroup({
+        groupName:'Push Protocol group',
+        groupDescription:'This is the oficial group for Push Protocol,
+        members: ['0x9e60c47edF21fa5e5Af33347680B3971F2FfD464','0x3829E53A15856d1846e1b52d3Bdf5839705c29e5'],
+        groupImage:  'group image link',
+        admins: ['0x3829E53A15856d1846e1b52d3Bdf5839705c29e5'],
+        isPublic: true,
+        groupCreator: '0xD993eb61B8843439A23741C0A3b5138763aE11a4' ,
+        account: '0xD993eb61B8843439A23741C0A3b5138763aE11a4',
+        env: 'staging',
+        pgpPrivateKey: decryptedPvtKey, //decrypted private key
+      });
+```
+
+## Get Group
+
+Get Group information
+
+```typescript
+const response = await PushAPI.chat.getGroup({
+  chatId: '190591e84108cdf12e62eecabf02ddb123ea92f1c06fb98ee9b5cf3871f46fa9',
+  env: 'staging',
+});
+```
+
+## Update Group
+
+```typescript
+const response = await PushAPI.chat.updateGroup({
+        groupName:'Push Chat group',
+        groupDescription:'This is the updated description for Push Chat,
+        members: ['0x2e60c47edF21fa5e5A333347680B3971F1FfD456','0x3829E53A15856d1846e1b52d3Bdf5839705c29e5'],
+        groupImage: &lt;group image link&gt; ,
+        admins: ['0x3829E53A15856d1846e1b52d3Bdf5839705c29e5'],
+        account: '0xD993eb61B8843439A23741C0A3b5138763aE11a4',
+        env: 'staging',
+        pgpPrivateKey: decryptedPvtKey, //decrypted private key
+});
+```
+
+| Param              | Type   | Default	 | Remarks                                                        |
+| ------------------ | ------ | -------- | -------------------------------------------------------------- |
+| account\*          | string | -        | user address                                                   |
+| env                | string | `'prod'` | API env: `'prod'`, `'staging'`, `'dev'`                        |
+| groupName\*        | string | -        | group name                                                     |
+| groupDescription\* | string | -        | group description                                              |
+| groupImage\*       | string | -        | group image link                                               |
+| members\*          | Array  | -        | wallet addresses of all members except admins and groupCreator |
+| admins\*           | Array  | -        | wallet addresses of all admins except members and groupCreator |
+| pgpPrivateKey      | string | `null`   | mandatory for users having pgp keys                            |
