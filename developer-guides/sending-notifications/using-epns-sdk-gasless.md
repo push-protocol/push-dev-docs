@@ -4,41 +4,41 @@ description: This section describes how to send a notification using the Push SD
 
 # Using Push SDK (Gasless)
 
-### Installation
+{% hint style="info" %}
+Checkout [**push-for-hackers/sdk-functionality**](https://github.com/ethereum-push-notification-service/push-for-hackers/tree/main/sdk-functionality) repo for code coverage of all SDK functions. Checkout [**@pushprotocol/restapi**](https://www.npmjs.com/package/@pushprotocol/restapi) or [**@pushprotocol/socket**](https://www.npmjs.com/package/@pushprotocol/socket) for more examples.
+{% endhint %}
 
-Let's create a basic app by entering the following in the terminal.
+## Installation
 
-```bash
-mkdir sdk-quickstart
+Install the sdk "restapi" package & its peer dependencies in your app
 
-cd sdk-quickstart
+```
+  yarn add @pushprotocol/restapi@latest ethers@^5.6
+```
 
-# at sdk-quickstart, hit enter for all if no change from the default intended
-yarn init
+or
 
-# or, 
-
-npm init 
+```
+  npm install @pushprotocol/restapi@latest ethers@^5.6
 ```
 
 {% hint style="warning" %}
 _**Note**:_ If you wish to use ES6 Modules syntax, then inside `package.json` set **“type” to “module”.**
 {% endhint %}
 
-```bash
-# install the sdk "restapi" package & its peer dependencies in your app
-yarn add @pushprotocol/restapi ethers
+## Import
 
-# or, 
-
-npm install @pushprotocol/restapi ethers
+```
+import * as PushAPI from "@pushprotocol/restapi";
 ```
 
-### Sample Usage
+## Sample Usage
 
 {% hint style="warning" %}
 While using the SDK, you will need to provide the environment settings in env, the only acceptable values for them are  '**prod**', '**staging**' or '**dev**'. Using other values might result in validation errors.&#x20;
 {% endhint %}
+
+### Send Notification
 
 The below snippet will help us to send notification to the user **0xCdBE6D076e05c5875D90fa35cc85694E1EAFBBd1** from the channel **0xD8634C39BBFd4033c0d3289C4515275102423681**
 
@@ -49,12 +49,12 @@ import * as ethers from "ethers";
 
 const PK = 'your_channel_address_secret_key'; // channel private key
 const Pkey = `0x${PK}`;
-const signer = new ethers.Wallet(Pkey);
+const _signer = new ethers.Wallet(Pkey);
 
 const sendNotification = async() => {
   try {
     const apiResponse = await PushAPI.payloads.sendNotification({
-      signer,
+      signer: _signer,
       type: 3, // target
       identityType: 2, // direct payload
       notification: {
@@ -84,12 +84,12 @@ sendNotification();
 
 Similarly we have _**different use cases**_ for sending notifications as follows -&#x20;
 
-**direct payload for single recipient(target)**
+### **Direct payload for single recipient(target)**
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 3, // target
   identityType: 2, // direct payload
   notification: {
@@ -108,12 +108,12 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 });
 ```
 
-**direct payload for group of recipients(subset)**
+### **Direct payload for group of recipients(subset)**
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 4, // subset
   identityType: 2, // direct payload
   notification: {
@@ -132,12 +132,12 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 });
 ```
 
-**direct payload for all recipients(broadcast)**
+### **Direct payload for all recipients(broadcast)**
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 1, // broadcast
   identityType: 2, // direct payload
   notification: {
@@ -155,12 +155,12 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 });
 ```
 
-**IPFS payload for single recipient(target)**
+### **IPFS payload for single recipient(target)**
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 3, // target
   identityType: 1, // ipfs payload
   ipfsHash: 'bafkreicuttr5gpbyzyn6cyapxctlr7dk2g6fnydqxy6lps424mcjcn73we', // IPFS hash of the payload
@@ -170,12 +170,12 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 });
 ```
 
-**IPFS payload for group of recipients(subset)**
+### **IPFS payload for group of recipients(subset)**
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 4, // subset
   identityType: 1, // ipfs payload
   ipfsHash: 'bafkreicuttr5gpbyzyn6cyapxctlr7dk2g6fnydqxy6lps424mcjcn73we', // IPFS hash of the payload
@@ -185,12 +185,12 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 });
 ```
 
-**IPFS payload for all recipients(broadcast)**
+### **IPFS payload for all recipients(broadcast)**
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 1, // broadcast
   identityType: 1, // direct payload
   ipfsHash: 'bafkreicuttr5gpbyzyn6cyapxctlr7dk2g6fnydqxy6lps424mcjcn73we', // IPFS hash of the payload
@@ -199,12 +199,12 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 });
 ```
 
-**minimal payload for single recipient(target)**
+### **Minimal payload for single recipient(target)**
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 3, // target
   identityType: 0, // Minimal payload
   notification: {
@@ -223,12 +223,12 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 });
 ```
 
-**minimal payload for a group of recipient(subset)**
+### **Minimal payload for a group of recipient(subset)**
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 4, // subset
   identityType: 0, // Minimal payload
   notification: {
@@ -247,12 +247,12 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 });
 ```
 
-**minimal payload for all recipients(broadcast)**
+### **Minimal payload for all recipients(broadcast)**
 
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 1, // broadcast
   identityType: 0, // Minimal payload
   notification: {
@@ -270,7 +270,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 });
 ```
 
-**graph payload for single recipient(target)**
+### **Graph payload for single recipient(target)**
 
 {% hint style="warning" %}
 _**Make sure the channel has the graph id you are providing!!**_
@@ -279,7 +279,7 @@ _**Make sure the channel has the graph id you are providing!!**_
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 3, // target
   identityType: 3, // Subgraph payload
   graph: {
@@ -292,7 +292,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 });
 ```
 
-**graph payload for group of recipients(subset)**
+### **Graph payload for group of recipients(subset)**
 
 {% hint style="warning" %}
 _**Make sure the channel has the graph id you are providing!!**_
@@ -301,7 +301,7 @@ _**Make sure the channel has the graph id you are providing!!**_
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 4, // subset
   identityType: 3, // graph payload
   graph: {
@@ -314,7 +314,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 });
 ```
 
-**graph payload for all recipients(broadcast)**
+### **Graph payload for all recipients(broadcast)**
 
 {% hint style="warning" %}
 _**Make sure the channel has the graph id you are providing!!**_
@@ -323,7 +323,7 @@ _**Make sure the channel has the graph id you are providing!!**_
 ```typescript
 // apiResponse?.status === 204, if sent successfully!
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 1, // broadcast
   identityType: 3, // graph payload
   graph: {
@@ -335,7 +335,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 });
 ```
 
-#### Allowed Options (params with \* are mandatory)
+### Allowed Options (params with \* are mandatory)
 
 | Param                | Type                | Default | Remarks                                                                                                                                           |
 | -------------------- | ------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
