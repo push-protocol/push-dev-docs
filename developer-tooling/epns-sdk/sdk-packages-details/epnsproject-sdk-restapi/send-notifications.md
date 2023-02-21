@@ -8,6 +8,10 @@ description: Send gasless notifications to wallet addresses
 All SDK functions require passing the parameter **env** which should either pass **staging** or **prod** based on the demand. Passing anything else in this param might result in unexpected results.
 {% endhint %}
 
+{% hint style="warning" %}
+Latest version of Ethers (v6) introduces some breaking changes, for best results use Ethers v5 (ethers@^5.6)
+{% endhint %}
+
 ## Introduction
 
 Once you have created a channel on Push, you can send notifications to your subscribers. There are 3 types of notifications:
