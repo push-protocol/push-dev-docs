@@ -29,7 +29,7 @@ import { useWeb3React } from "@web3-react/core";
 .
 .
 const { account, library, chainId } = useWeb3React();
-const signer = library.getSigner(account);
+const _signer = library.getSigner(account);
 ```
 {% endtab %}
 
@@ -38,7 +38,7 @@ const signer = library.getSigner(account);
 const ethers = require('ethers');
 const PK = 'your_channel_address_secret_key';
 const Pkey = `0x${PK}`;
-const signer = new ethers.Wallet(Pkey);
+const _signer = new ethers.Wallet(Pkey);
 ```
 {% endtab %}
 {% endtabs %}
@@ -51,7 +51,7 @@ const signer = new ethers.Wallet(Pkey);
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 3, // target
   identityType: 2, // direct payload
   notification: {
@@ -76,7 +76,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 4, // subset
   identityType: 2, // direct payload
   notification: {
@@ -101,7 +101,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 1, // broadcast
   identityType: 2, // direct payload
   notification: {
@@ -125,7 +125,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 3, // target
   identityType: 1, // ipfs payload
   ipfsHash: 'bafkreicuttr5gpbyzyn6cyapxctlr7dk2g6fnydqxy6lps424mcjcn73we', // IPFS hash of the payload
@@ -141,7 +141,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 4, // subset
   identityType: 1, // ipfs payload
   ipfsHash: 'bafkreicuttr5gpbyzyn6cyapxctlr7dk2g6fnydqxy6lps424mcjcn73we', // IPFS hash of the payload
@@ -157,7 +157,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 1, // broadcast
   identityType: 1, // direct payload
   ipfsHash: 'bafkreicuttr5gpbyzyn6cyapxctlr7dk2g6fnydqxy6lps424mcjcn73we', // IPFS hash of the payload
@@ -172,7 +172,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 3, // target
   identityType: 0, // Minimal payload
   notification: {
@@ -197,7 +197,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 4, // subset
   identityType: 0, // Minimal payload
   notification: {
@@ -222,7 +222,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 1, // broadcast
   identityType: 0, // Minimal payload
   notification: {
@@ -250,7 +250,7 @@ Ensure that the channel has the `graphId` **** being provided
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 3, // target
   identityType: 3, // Subgraph payload
   graph: {
@@ -269,7 +269,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 4, // subset
   identityType: 3, // graph payload
   graph: {
@@ -288,7 +288,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer,
+  signer: _signer,
   type: 1, // broadcast
   identityType: 3, // graph payload
   graph: {
