@@ -227,7 +227,7 @@ Establishes a socket connection to stream all incoming chat requests, messages, 
 
 <details>
 
-<summary>To disconnect the socket (<code>pushSDKSocket.connect()</code>)</summary>
+<summary>To disconnect the socket (<code>pushSDKSocket.disconnect()</code>)</summary>
 
 Disconnects the socket connection.
 
