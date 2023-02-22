@@ -8,10 +8,6 @@ description: Send gasless notifications to wallet addresses
 All SDK functions require passing the parameter **env** which should either pass **staging** or **prod** based on the demand. Passing anything else in this param might result in unexpected results.
 {% endhint %}
 
-{% hint style="warning" %}
-Latest version of Ethers (v6) introduces some breaking changes, for best results use Ethers v5 (ethers@^5.6)
-{% endhint %}
-
 ## Introduction
 
 Once you have created a channel on Push, you can send notifications to your subscribers. There are 3 types of notifications:
@@ -33,7 +29,7 @@ import { useWeb3React } from "@web3-react/core";
 .
 .
 const { account, library, chainId } = useWeb3React();
-const _signer = library.getSigner(account);
+const signer = library.getSigner(account);
 ```
 {% endtab %}
 
@@ -42,7 +38,7 @@ const _signer = library.getSigner(account);
 const ethers = require('ethers');
 const PK = 'your_channel_address_secret_key';
 const Pkey = `0x${PK}`;
-const _signer = new ethers.Wallet(Pkey);
+const signer = new ethers.Wallet(Pkey);
 ```
 {% endtab %}
 {% endtabs %}
@@ -55,7 +51,7 @@ const _signer = new ethers.Wallet(Pkey);
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer: _signer,
+  signer,
   type: 3, // target
   identityType: 2, // direct payload
   notification: {
@@ -80,7 +76,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer: _signer,
+  signer,
   type: 4, // subset
   identityType: 2, // direct payload
   notification: {
@@ -105,7 +101,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer: _signer,
+  signer,
   type: 1, // broadcast
   identityType: 2, // direct payload
   notification: {
@@ -129,7 +125,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer: _signer,
+  signer,
   type: 3, // target
   identityType: 1, // ipfs payload
   ipfsHash: 'bafkreicuttr5gpbyzyn6cyapxctlr7dk2g6fnydqxy6lps424mcjcn73we', // IPFS hash of the payload
@@ -145,7 +141,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer: _signer,
+  signer,
   type: 4, // subset
   identityType: 1, // ipfs payload
   ipfsHash: 'bafkreicuttr5gpbyzyn6cyapxctlr7dk2g6fnydqxy6lps424mcjcn73we', // IPFS hash of the payload
@@ -161,7 +157,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer: _signer,
+  signer,
   type: 1, // broadcast
   identityType: 1, // direct payload
   ipfsHash: 'bafkreicuttr5gpbyzyn6cyapxctlr7dk2g6fnydqxy6lps424mcjcn73we', // IPFS hash of the payload
@@ -176,7 +172,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer: _signer,
+  signer,
   type: 3, // target
   identityType: 0, // Minimal payload
   notification: {
@@ -201,7 +197,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer: _signer,
+  signer,
   type: 4, // subset
   identityType: 0, // Minimal payload
   notification: {
@@ -226,7 +222,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer: _signer,
+  signer,
   type: 1, // broadcast
   identityType: 0, // Minimal payload
   notification: {
@@ -254,7 +250,7 @@ Ensure that the channel has the `graphId` **** being provided
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer: _signer,
+  signer,
   type: 3, // target
   identityType: 3, // Subgraph payload
   graph: {
@@ -273,7 +269,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer: _signer,
+  signer,
   type: 4, // subset
   identityType: 3, // graph payload
   graph: {
@@ -292,7 +288,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 ```typescript
 const apiResponse = await PushAPI.payloads.sendNotification({
-  signer: _signer,
+  signer,
   type: 1, // broadcast
   identityType: 3, // graph payload
   graph: {

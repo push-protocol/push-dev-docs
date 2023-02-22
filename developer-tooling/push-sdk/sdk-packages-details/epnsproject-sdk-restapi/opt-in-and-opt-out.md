@@ -4,12 +4,8 @@ description: Opt-in to a channel to start receiving notifications
 
 # Opt-In and Opt-Out
 
-{% hint style="danger" %}
-All SDK functions require passing the parameter **env** which should either pass **staging** or **prod** based on the demand. Passing anything else in this param might result in unexpected results.
-{% endhint %}
-
 {% hint style="warning" %}
-Latest version of Ethers (v6) introduces some breaking changes, for best results use Ethers v5 (ethers@^5.6)
+All SDK functions require passing the parameter **env** which should either pass **staging** or **prod** based on the demand. Passing anything else in this param might result in unexpected results.
 {% endhint %}
 
 ## Introduction
@@ -24,7 +20,7 @@ In the example below, the user `eip155:5:0x52f856A160733A860ae7DC98DC71061bE33A2
 
 ```typescript
 await PushAPI.channels.subscribe({
-  signer: _signer,
+  signer: signer,
   channelAddress: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // channel address in CAIP
   userAddress: 'eip155:5:0x52f856A160733A860ae7DC98DC71061bE33A28b3', // user address in CAIP
   onSuccess: () => {
@@ -45,7 +41,7 @@ When using in SERVER-SIDE code:
 const ethers = require('ethers');
 const PK = 'your_channel_address_secret_key';
 const Pkey = `0x${PK}`;
-const _signer = new ethers.Wallet(Pkey);
+const signer = new ethers.Wallet(Pkey);
 ```
 
 When using in FRONT-END code:
@@ -57,7 +53,7 @@ import { useWeb3React } from "@web3-react/core";
 .
 .
 const { account, library, chainId } = useWeb3React();
-const _signer = library.getSigner(account);
+const signer = library.getSigner(account);
 ```
 
 Allowed Options (params with \* are mandatory)

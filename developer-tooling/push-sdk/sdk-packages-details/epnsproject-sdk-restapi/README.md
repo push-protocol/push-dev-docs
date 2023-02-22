@@ -124,6 +124,10 @@ Here below, you can find more information on the features described:
 [send-notifications.md](../../../epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/send-notifications.md)
 {% endcontent-ref %}
 
+{% content-ref url="chat.md" %}
+[chat.md](chat.md)
+{% endcontent-ref %}
+
 {% content-ref url="../../../epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/utils.md" %}
 [utils.md](../../../epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/utils.md)
 {% endcontent-ref %}
