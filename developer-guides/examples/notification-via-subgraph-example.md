@@ -13,11 +13,19 @@ In this example, we integrate PUSH protocol with an ERC-20 contract subgraph and
 1. Have an Push protocol notification Channel ready - see the docs [here](https://docs.epns.io/developers/developer-zone/create-your-notif-channel) to create a channel
 2. Install the **graph CLI**
 
-```jsx
+{% tabs %}
+{% tab title="npm" %}
+```bash
 npm install -g @graphprotocol/graph-cli
-
-yarn global add @graphprotocol/graph-cli
 ```
+{% endtab %}
+
+{% tab title="yarn" %}
+```bash
+yarn global add @graphprotocol/graph-clias
+```
+{% endtab %}
+{% endtabs %}
 
 3\. Link your Github to the graph website -[https://thegraph.com/hosted-service/](https://thegraph.com/hosted-service/)
 
@@ -36,22 +44,22 @@ yarn global add @graphprotocol/graph-cli
 2. In `subgraph.yaml` update the contract address to the one you just deployed
 3.  Install packages
 
-    ```jsx
+    ```bash
     yarn install
     ```
 4.  Generate code
 
-    ```jsx
+    ```bash
     graph codegen
     ```
 5.  Get the access token from the Graph dashboard & authenticate
 
-    ```jsx
+    ```bash
     graph auth --product hosted-service <ACCESS_TOKEN>
     ```
 6.  Deploy the subgraph
 
-    ```jsx
+    ```bash
     graph deploy --product hosted-service <GITHUB_USER>/<SUBGRAPH NAME>
     ```
 7. See the subgraph playground
@@ -75,7 +83,7 @@ yarn global add @graphprotocol/graph-cli
     ```
 2.  In `mapping.ts`, export the subgraph ID
 
-    ```jsx
+    ```typescript
     //Note: EPNS supports only The Graph Hosted Service at present
 
     export const subgraphID = "aiswaryawalter/push-token"

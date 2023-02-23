@@ -27,4 +27,6 @@ While the first step is quite simple and happens right at the time of channel cr
 [polygon-channel-setup.md](polygon-channel-setup.md)
 {% endcontent-ref %}
 
-##
+{% content-ref url="bnb-chain.md" %}
+[bnb-chain.md](bnb-chain.md)
+{% endcontent-ref %}

@@ -18,7 +18,7 @@ _You should have the following installed on your system_
 
 The initial step in setting up the showrunners is cloning the showrunners-HelloWorld repo
 
-```jsx
+```bash
 git clone https://github.com/ethereum-push-notification-service/epns-showrunners-framework
 ```
 
@@ -67,7 +67,7 @@ Now that you have set up the showrunners .env file, you are all set to run the s
 
 * All dependencies are installed, open the terminal (or command prompt), and go to the root of the cloned repo, `npm install` or `yarn install` to install dependencies.
 
-```
+```bash
 npm install
 ```
 

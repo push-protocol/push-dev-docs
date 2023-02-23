@@ -10,7 +10,7 @@ Any legitimate Ethereum Wallet address can activate itself in the protocol as a 
 
 In this tutorial, we will use the Push Staging dApp to launch our channel and test notifications features. It's incredibly simple and easy to deploy channels on the Push using our dApp. Without any further ado, let's set up our channel 🚀
 
-## 5 Steps to Create Channel
+## 6 Steps to Create Channel
 
 {% hint style="info" %}
 Make sure you are ready with your wallet. Push protocol supports both EOA & Multisig wallets.

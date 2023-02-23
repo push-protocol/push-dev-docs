@@ -30,17 +30,19 @@ For an overview of Push Chat, please go to [https://docs.push.org/developers/con
 
 ### Installation
 
-Install in your project by using
+{% tabs %}
+{% tab title="npm" %}
+```bash
+npm install @pushprotocol/restapi
+```
+{% endtab %}
 
+{% tab title="yarn" %}
 ```bash
 yarn add @pushprotocol/restapi@latest
 ```
-
-OR
-
-```bash
-npm install @pushprotocol/restapi@latest
-```
+{% endtab %}
+{% endtabs %}
 
 ### Get User Information
 
@@ -88,7 +90,7 @@ This function returns all the requests that wallet addresses sent to a particula
 
 </details>
 
-#### Fetching individual messages in a specific Chat
+### Fetching individual messages in a specific Chat
 
 Each conversation between the users or group of users have a conversation hash which is a linked list that contains the encrypted chat messages stored on IPFS. The SDK does the work of fetching, decrypting, and verifying the signature for the messages.
 
@@ -174,17 +176,19 @@ To learn more about the API params and how to call the Restful API, please check
 
 ### Installation
 
-Install in your project by using
-
+{% tabs %}
+{% tab title="npm" %}
 ```bash
-yarn add @pushprotocol/socket@latest ethers
+npm install @pushprotocol/socket ethers
 ```
+{% endtab %}
 
-OR
-
+{% tab title="yarn" %}
 ```bash
-npm install @pushprotocol/socket@latest ethers
+yarn add @pushprotocol/socket ethers
 ```
+{% endtab %}
+{% endtabs %}
 
 ### Import
 
@@ -281,35 +285,33 @@ npm install @pushprotocol/uiweb@latest
 
 Note: `styled-components` and `@pushprotocol/restapi@0.2.1` are peerDependencies. Please install them in your dApp if you don't have them already!
 
-```bash
-yarn add styled-components
-yarn add @pushprotocol/restapi@latest
-```
-
-or
-
+{% tabs %}
+{% tab title="npm" %}
 ```bash
 npm install styled-components 
 npm install @pushprotocol/restapi@latest
 ```
+{% endtab %}
 
-#### Support Chat component Usage
+{% tab title="yarn" %}
+```bash
+yarn add styled-components
+yarn add @pushprotocol/restapi@latest
+```
+{% endtab %}
+{% endtabs %}
+
+## Support Chat component Usage
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```typescript
 import { Chat } from "@pushprotocol/uiweb";
 
-<Chat account="0x6430C47973FA053fc8F055e7935EC6C2271D5174" //user address    supportAddress="0xd9c1CCAcD4B8a745e191b62BA3fcaD87229CB26d" //support address apiKey="jVPMCRom1B.iDRMswdehJG7NpHDiECIHwYMMv6k2KzkPJscFIDyW8TtSnk4blYnGa8DIkfuacU0" env="staging" />
+<Chat 
+    account="0x6430C47973FA053fc8F055e7935EC6C2271D5174" //user address             
+    supportAddress="0xd9c1CCAcD4B8a745e191b62BA3fcaD87229CB26d" //support address          
+    apiKey="your-api-key"
+    env="staging"
+/>
 ```
 {% endcode %}
-
-![](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fdfbcd79-260b-45e7-818a-8d25979def7d/Untitled.png)
-
-![](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4bea49f3-f2e8-4f03-920e-984e8681b087/Untitled.png)
-
-
-
-![](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c9085298-7013-4d6d-9d95-c7f3094624d5/Untitled.png)
-
-``
-

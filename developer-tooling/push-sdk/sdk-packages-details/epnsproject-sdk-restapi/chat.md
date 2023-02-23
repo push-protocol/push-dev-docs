@@ -89,7 +89,6 @@ const threadhash = await PushAPI.chat.conversationHash({
 Get all the messages exchanged between users after the `threadhash.`
 
 ```typescript
-
 const chatHistory = await PushAPI.chat.history({
   threadhash:threadhash.threadHash,
   account: '0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7',
@@ -119,7 +118,7 @@ const chatHistory = await PushAPI.chat.latest({
     limit:2,
     toDecrypt:true,
     env:'staging',
-  });
+});
 ```
 
 ## Approve Chat Request
@@ -163,17 +162,17 @@ Create Group Chats to interact with your friends and community
 
 ```typescript
 const response = await PushAPI.chat.createGroup({
-        groupName:'Push Protocol group',
-        groupDescription:'This is the oficial group for Push Protocol,
-        members: ['0x9e60c47edF21fa5e5Af33347680B3971F2FfD464','0x3829E53A15856d1846e1b52d3Bdf5839705c29e5'],
-        groupImage:  'group image link',
-        admins: ['0x3829E53A15856d1846e1b52d3Bdf5839705c29e5'],
-        isPublic: true,
-        groupCreator: '0xD993eb61B8843439A23741C0A3b5138763aE11a4' ,
-        account: '0xD993eb61B8843439A23741C0A3b5138763aE11a4',
-        env: 'staging',
-        pgpPrivateKey: decryptedPvtKey, //decrypted private key
-      });
+    groupName: 'Push Protocol group',
+    groupDescription: 'This is the oficial group for Push Protocol',
+    members: ['0x9e60c47edF21fa5e5Af33347680B3971F2FfD464','0x3829E53A15856d1846e1b52d3Bdf5839705c29e5'],
+    groupImage: 'group image link',
+    admins: ['0x3829E53A15856d1846e1b52d3Bdf5839705c29e5'],
+    isPublic: true,
+    groupCreator: '0xD993eb61B8843439A23741C0A3b5138763aE11a4',
+    account: '0xD993eb61B8843439A23741C0A3b5138763aE11a4',
+    env: 'staging',
+    pgpPrivateKey: decryptedPvtKey, //decrypted private key
+});
 ```
 
 ## Get Group

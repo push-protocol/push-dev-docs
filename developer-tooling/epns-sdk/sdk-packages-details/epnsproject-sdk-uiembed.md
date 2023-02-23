@@ -41,34 +41,34 @@ After the wallet is connected to your app flow, trigger the below code snippet.
 > **Note:** _You have to have the wallet connected with an account to execute the below code because internally the SDK calls the Push `FeedsAPI` which needs the account address. You will see notifications if you have opted-in to a channel using_ [_Push_](https://staging.push.org/#/channels)__
 
 ```typescript
-  useEffect(() => {
-    if (account) { // 'your connected wallet address'
-      EmbedSDK.init({
-        headerText: 'Hello DeFi', // optional
-        targetID: 'sdk-trigger-id', // mandatory
-        appName: 'consumerApp', // mandatory
-        user: account, // mandatory
-        chainId: 1, // mandatory
-        viewOptions: {
-            type: 'sidebar', // optional [default: 'sidebar', 'modal']
-            showUnreadIndicator: true, // optional
-            unreadIndicatorColor: '#cc1919',
-            unreadIndicatorPosition: 'bottom-right',
-        },
-        theme: 'light',
-        onOpen: () => {
-          console.log('-> client dApp onOpen callback');
-        },
-        onClose: () => {
-          console.log('-> client dApp onClose callback');
-        }
-      });
-    }
+useEffect(() => {
+  if (account) { // 'your connected wallet address'
+    EmbedSDK.init({
+      headerText: 'Hello DeFi', // optional
+      targetID: 'sdk-trigger-id', // mandatory
+      appName: 'consumerApp', // mandatory
+      user: account, // mandatory
+      chainId: 1, // mandatory
+      viewOptions: {
+          type: 'sidebar', // optional [default: 'sidebar', 'modal']
+          showUnreadIndicator: true, // optional
+          unreadIndicatorColor: '#cc1919',
+          unreadIndicatorPosition: 'bottom-right',
+      },
+      theme: 'light',
+      onOpen: () => {
+        console.log('-> client dApp onOpen callback');
+      },
+      onClose: () => {
+        console.log('-> client dApp onClose callback');
+      }
+    });
+  }
 
-    return () => {
-      EmbedSDK.cleanup();
-    };
-  }, []);
+  return () => {
+    EmbedSDK.cleanup();
+  };
+}, []);
 ```
 
 #### **Init Config Options**

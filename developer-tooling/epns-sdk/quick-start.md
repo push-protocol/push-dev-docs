@@ -4,71 +4,54 @@ description: A super quick guide to get you started with Push SDK
 
 # Quick Start
 
-Now that you have a basic understanding of what Push SDK is, let's go through an absolutely easy procedure of how to set it up and use the package in your code.
+Now that you have a basic understanding of what Push SDK is, let's go through an absolutely easy procedure of how to set it up and fetch notifications from an address.
 
-### Installation and Set-Up
+## Installation and Set-Up
 
-1. Let's start by creating new project set-up
+Let's start by creating a new project
 
-```
+```bash
 mkdir sdk-quickstart
-
 cd sdk-quickstart
-
-# at sdk-quickstart, hit enter for all if no change from the default intended
-yarn init 
+npm init -y
 ```
 
 > _**Note**:_ If you wish to use ES6 Modules syntax, then inside package.json set **“type” to “module”.**
 
-2\. **Installation**
+Install the Push SDK and `ethers`
 
-<pre><code># install the sdk "restapi" package &#x26; its peer dependencies in your app
-<strong>
-</strong><strong>yarn add @pushprotocol/restapi ethers
-</strong>
-# or, 
-
+```bash
 npm install @pushprotocol/restapi ethers
-</code></pre>
+```
 
-### Usage
+## Fetch Notifications
 
-In order to demonstrate a simple example of how to use the SDK, we shall try to use a feature from our **@pushprotocol/restapi** package.
-
-> _Note: This is just one of the many features of our SDK for the sake of this example._ \
-> _You can refer to the_ _subsequent sections for details on all the_ [push-sdk](../push-sdk/ "mention")__
-
-#### Fetching Notifications
-
-For this example, we shall try to use the **getFeeds()** feature from the **restapi** package.&#x20;
-
-This simply allows us to get all the notifications for a particular user address on a specific chain.
+For this example, we will use the `getFeeds` function from the `restapi` **** package to fetch all the notifications from an address on a specific chain.
 
 ```typescript
 import * as PushAPI from "@pushprotocol/restapi";
 
 const fetchNotifs = async() => {
     const notifications = await PushAPI.user.getFeeds({
-        user: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
+        user: 'eip155:42:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP-10
         env: 'staging'
     });
 
-    console.log('Notifications: \n\n', notifications);
+    console.log('Notifications: \n', notifications);
 }
 
 fetchNotifs();
 ```
 
-#### Note on CAIP
+{% hint style="info" %}
+Note on CAIP-10: We use [CAIP-10](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-10.md) format for any on-chain addresses to pass to the SDK methods.
+{% endhint %}
 
-We use [CAIP](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-10.md) format for any on-chain addresses to pass to the SDK methods.
+## Fetching Spam Notifications
 
-#### Fetching Spam Notifications
+In the example above, we got the notifications that an address received on the inbox. If the address hasn't opted-in to the channel, the notifications will land in the **spam box**.
 
-The above-mentioned example gives you all the notifications that a given user received in his/her inbox.&#x20;
-
-However, now let's fetch the spam notification received by a given user address.
+To fetch spam notifications:
 
 ```typescript
 import * as PushAPI from "@pushprotocol/restapi";
@@ -80,14 +63,10 @@ const fetchSpam = async() => {
         env: 'staging'
     });
 
-    console.log('Spams: \n\n', spams);
+    console.log('Spams: \n', spams);
 }
 
 fetchSpam();
 ```
 
 Notice, how we simply need to add an additional argument, i.e., _**`spam: true`**_to get the spam notifications for the given address.
-
-Perfect! 👏
-
-Now that you have a good understanding of how to use the SDK, you are all set to explore the other interesting features of the SDK and build incredibly amazing tools using the same. 🦾
