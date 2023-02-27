@@ -17,7 +17,6 @@ Hello World channel exists to simply demonstrate how easy it is to send notifica
 2. Head to `src/sample_showrunners` from the git clone of **push-showrunners-framework** which you had done earlier.
 3. Copy the folder `helloWorld` and drop it in `src/showrunners` folder.
    1. You might notice that the showrunners has already moved to complain about `helloWorldKeys.json` not containing the correct private key.\
-      \
       `{` \
       &#x20;   `"PRIVATE_KEY_NEW_STANDARD_1":` \
       &#x20;   `{` \
@@ -31,10 +30,10 @@ Hello World channel exists to simply demonstrate how easy it is to send notifica
    For `CHAIN_ID_HERE`, You will need to paste the multi chain id format, current supported formats are:
 
 {% tabs %}
-{% tab title="Ethereum Testnet" %}
-`"CHAIN_ID": "eip155:42"`\
+{% tab title="Ethereum Goerli Testnet" %}
+`"CHAIN_ID": "eip155:5"`\
 ``\
-``**Note:** Use `eip155:42` if you deployed your channel on Ethereum Testnet\
+``**Note:** Use `eip155:5` if you deployed your channel on Ethereum Goerli Testnet\
 
 
 {% hint style="info" %}
@@ -42,7 +41,7 @@ Will only work if .env also has SHOWRUNNERS\_ENV=staging
 {% endhint %}
 {% endtab %}
 
-{% tab title="Matic Testnet" %}
+{% tab title="Polygon Mumbai Testnet" %}
 `"CHAIN_ID": "eip155:80001"`\
 ``\
 ``**Note:** Use `eip155:80001` if you deployed your channel on Matic Mumbai Testnet\

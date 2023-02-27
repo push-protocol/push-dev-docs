@@ -50,7 +50,6 @@
   * [Notification Via Smart Contract examples](developer-guides/examples/notification-via-smart-contract-examples/README.md)
     * [Token transfer notification via Smart Contract example](developer-guides/examples/notification-via-smart-contract-examples/token-transfer-notification-via-smart-contract-example.md)
     * [Channel Creation and Notifications via smart contract example (Advance)](developer-guides/examples/notification-via-smart-contract-examples/channel-creation-and-notifications-via-smart-contract-example-advance.md)
-  * [Notification via Subgraph example](developer-guides/examples/notification-via-subgraph-example.md)
   * [Showrunners Examples](developer-guides/examples/showrunners-examples/README.md)
     * [NFT transfer notification via Showrunner example](developer-guides/examples/showrunners-examples/nft-transfer-notification-via-showrunner-example.md)
     * [NFT-Based notification via Showrunner example](developer-guides/examples/showrunners-examples/nft-based-notification-via-showrunner-example.md)

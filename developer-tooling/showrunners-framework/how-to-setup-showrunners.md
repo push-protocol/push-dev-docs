@@ -19,7 +19,7 @@ _You should have the following installed on your system_
 The initial step in setting up the showrunners is cloning the showrunners-HelloWorld repo
 
 ```bash
-git clone https://github.com/ethereum-push-notification-service/epns-showrunners-framework
+git clone https://github.com/ethereum-push-notification-service/push-showrunners-framework
 ```
 
 This repository will contain the showrunner framework that you require to instantly build your channels logic.
@@ -65,11 +65,25 @@ At least INFURA\_PROJECT, INFURA\_PROJECT\_SECRET or ETHERSCAN\_API or ALCHEMY\_
 
 Now that you have set up the showrunners .env file, you are all set to run the showrunners. To do that first ensure:
 
+#### Install dependancies
+
 * All dependencies are installed, open the terminal (or command prompt), and go to the root of the cloned repo, `npm install` or `yarn install` to install dependencies.
 
+{% tabs %}
+{% tab title="npm" %}
 ```bash
 npm install
 ```
+{% endtab %}
+
+{% tab title="yarn" %}
+```bash
+yarn install
+```
+{% endtab %}
+{% endtabs %}
+
+#### Run Docker Image
 
 * Next, type `docker-compose up` to start running docker image
 
@@ -77,11 +91,23 @@ npm install
 docker-compose up
 ```
 
+#### Start the server
+
 * Finally, open another terminal and ensure you are still at the root of the cloned repo and fire `npm start`  or `yarn start`
 
+{% tabs %}
+{% tab title="npm" %}
 ```bash
 npm start
 ```
+{% endtab %}
+
+{% tab title="yarn" %}
+```bash
+yarn start
+```
+{% endtab %}
+{% endtabs %}
 
 If everything is good, this is the output that you should see! Congrats, you just installed Showrunners framework :relaxed::relaxed: running on the port`:5432` :mechanical\_arm:
 
