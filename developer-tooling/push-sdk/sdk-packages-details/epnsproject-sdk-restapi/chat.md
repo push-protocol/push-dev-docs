@@ -10,8 +10,7 @@ To start messaging wallet addresses, you need to create your encryption keys.
 
 ```typescript
 const user = await PushAPI.user.create({
-   account: '0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7',
-   env: 'staging',
+   account: '0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7'
 });
 ```
 
@@ -21,8 +20,7 @@ Get user data such as name, profile picture, and encryption keys.
 
 ```typescript
 const user = await PushAPI.user.get({
-   account: '0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7',
-   env: 'staging',
+   account: '0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7'
 });
 ```
 
@@ -34,8 +32,7 @@ Return the **latest message** from all wallet addresses you have talked to. This
 const chats = await PushAPI.chat.chats({
     account: 0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7,
     pgpPrivateKey: decryptedPvtKey,
-    toDecrypt: true,
-    env: 'staging',
+    toDecrypt: true
 });
 ```
 
@@ -58,8 +55,7 @@ This function will return all the chats that landed on the address' Request box.
 const chats = await PushAPI.chat.requests({
     account: 0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7,
     pgpPrivateKey: decryptedPvtKey,
-    toDecrypt: true,
-    env: 'staging',
+    toDecrypt: true
 });
 ```
 
@@ -80,7 +76,6 @@ All chat messages are stored on IPFS. This function will return the latest messa
 const threadhash = await PushAPI.chat.conversationHash({
         account: '20x18C0Ab0809589c423Ac9eb42897258757b6b3d3d',
         conversationId: '0xFA3F8E79fb9B03e7a04295594785b91588Aa4DC8', // receiver's address or chatId of a group
-        env,
 });
 ```
 
@@ -94,8 +89,7 @@ const chatHistory = await PushAPI.chat.history({
   account: '0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7',
   pgpPrivateKey: decryptedPvtKey,
   limit:2,
-  toDecrypt:true,
-  env:'staging',
+  toDecrypt:true
 });
 ```
 
@@ -116,8 +110,7 @@ const chatHistory = await PushAPI.chat.latest({
     account: '0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7',
     pgpPrivateKey: decryptedPvtKey,
     limit:2,
-    toDecrypt:true,
-    env:'staging',
+    toDecrypt:true
 });
 ```
 
@@ -128,7 +121,6 @@ const response = await PushAPI.chat.approve({
         status: 'Approved',
         account: '0x18C0Ab0809589c423Ac9eb42897258757b6b3d3d',
         senderAddress : '0x873a538254f8162377296326BB3eDDbA7d00F8E9', // receiver's address or chatId of a group
-        env:'staging',
 });
 ```
 
@@ -142,7 +134,6 @@ const response = await PushAPI.chat.send({
         account: '0x57eAd5826B1E0A7074E1aBf1A062714A2dE0f8B4',
         pgpPrivateKey: decryptedPvtKey,
         apiKey:"tAWEnggQ9Z.UaDBNjrvlJZx3giBTIQDcT8bKQo1O1518uF1Tea7rPwfzXv2ouV5rX9ViwgJUrXm"
-        env: 'staging',
 });
 ```
 
@@ -170,8 +161,7 @@ const response = await PushAPI.chat.createGroup({
     isPublic: true,
     groupCreator: '0xD993eb61B8843439A23741C0A3b5138763aE11a4',
     account: '0xD993eb61B8843439A23741C0A3b5138763aE11a4',
-    env: 'staging',
-    pgpPrivateKey: decryptedPvtKey, //decrypted private key
+    pgpPrivateKey: decryptedPvtKey //decrypted private key
 });
 ```
 
@@ -181,8 +171,7 @@ Get Group information
 
 ```typescript
 const response = await PushAPI.chat.getGroup({
-  chatId: '190591e84108cdf12e62eecabf02ddb123ea92f1c06fb98ee9b5cf3871f46fa9',
-  env: 'staging',
+  chatId: '190591e84108cdf12e62eecabf02ddb123ea92f1c06fb98ee9b5cf3871f46fa9'
 });
 ```
 
@@ -196,7 +185,6 @@ const response = await PushAPI.chat.updateGroup({
         groupImage: &lt;group image link&gt; ,
         admins: ['0x3829E53A15856d1846e1b52d3Bdf5839705c29e5'],
         account: '0xD993eb61B8843439A23741C0A3b5138763aE11a4',
-        env: 'staging',
         pgpPrivateKey: decryptedPvtKey, //decrypted private key
 });
 ```
