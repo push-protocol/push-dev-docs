@@ -33,13 +33,13 @@ For an overview of Push Chat, please go to [https://docs.push.org/developers/con
 {% tabs %}
 {% tab title="npm" %}
 ```bash
-npm install @pushprotocol/restapi
+npm install @pushprotocol/restapi@latest ethers@^5.6
 ```
 {% endtab %}
 
 {% tab title="yarn" %}
 ```bash
-yarn add @pushprotocol/restapi@latest
+yarn add @pushprotocol/restapi@latest ethers@^5.6
 ```
 {% endtab %}
 {% endtabs %}
@@ -48,21 +48,21 @@ yarn add @pushprotocol/restapi@latest
 
 Each User of Push Chat has a PGP key that is created locally and stored encrypted on Push nodes.&#x20;
 
-You are required to get the PGP key and decrypt it locally, for which you can use the following SDK functions:
-
-<details>
-
-<summary>To get the User (<code>sdk.user.get</code>)</summary>
-
-This function will return all the user information, like the PGP keys. It takes as arguments the address of the wallet and the environment variable.
-
-</details>
+You are required to get the PGP key and decrypt it locally, for which you can use the following SDK functions.
 
 <details>
 
 <summary><strong>To create the User (</strong><code>sdk.user.create</code>)</summary>
 
 This function will create a new user and **** return the created user’s information, like the PGP keys. It takes as arguments the address of the wallet and the environment variable.
+
+</details>
+
+<details>
+
+<summary>To get the User (<code>sdk.user.get</code>)</summary>
+
+This function will return all the user information, like the PGP keys. It takes as arguments the address of the wallet and the environment variable.
 
 </details>
 
