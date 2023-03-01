@@ -2,7 +2,7 @@
 description: Get notifications and channel information
 ---
 
-# Fetching User / Channel Details
+# Fetching User and Channel Details
 
 {% hint style="warning" %}
 All SDK functions require passing the parameter **env** which should either pass **staging** or **prod** based on the demand. Passing anything else in this param might result in unexpected results.
@@ -41,7 +41,7 @@ const spams = await PushAPI.user.getFeeds({
 });
 ```
 
-Allowed Options (params with \* are mandatory)
+#### Allowed Options (params with \* are mandatory)
 
 | Param  | Type    | Default | Remarks                                                       |
 | ------ | ------- | ------- | ------------------------------------------------------------- |
@@ -67,7 +67,7 @@ where `subscriptions` variable is a list of channels `[{ channel: '0xaddress', .
 
 _Note: We can find out if a user is subscribed to a channel by checking if the channel address is present in the subscriptions list_
 
-Allowed Options (params with \* are mandatory)
+#### Allowed Options (params with \* are mandatory)
 
 | Param  | Type   | Default | Remarks                            |
 | ------ | ------ | ------- | ---------------------------------- |
@@ -85,7 +85,7 @@ const channelData = await PushAPI.channels.getChannel({
 });
 ```
 
-Allowed Options (params with \* are mandatory)
+#### Allowed Options (params with \* are mandatory)
 
 | Param     | Type   | Default | Remarks                            |
 | --------- | ------ | ------- | ---------------------------------- |
@@ -104,6 +104,8 @@ const subscribers = await PushAPI.user.getSubscribers({
   env: 'prod' // Optional, defaults to 'prod'
 });
 ```
+
+#### Allowed Options (params with \* are mandatory)
 
 | Param   | Type    | Default | Remarks                                                                       |
 | ------- | ------- | ------- | ----------------------------------------------------------------------------- |
@@ -125,7 +127,7 @@ const channelsData = await PushAPI.channels.search({
 });
 ```
 
-Allowed Options (params with \* are mandatory)
+#### Allowed Options (params with \* are mandatory)
 
 | Param   | Type   | Default | Remarks                            |
 | ------- | ------ | ------- | ---------------------------------- |

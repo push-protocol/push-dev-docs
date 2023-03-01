@@ -1,6 +1,14 @@
 # Example - SDK Sockets
 
-### Basic example of using SDK sockets in a React App
+{% hint style="info" %}
+Push for hackers repo contains all code coverage and examples of @pushprotocol/restapi and @pushprotocol/socket [👇](https://emojipedia.org/emoji/%F0%9F%91%87/)
+{% endhint %}
+
+{% embed url="https://github.com/ethereum-push-notification-service/push-for-hackers/tree/main/sdk-functionality" %}
+Push for Hackers repo containing code coverage for all sdk functionality with examples
+{% endembed %}
+
+## Basic example of using SDK sockets in a React App
 
 ```typescript
 import { useState, useEffect } from "react";

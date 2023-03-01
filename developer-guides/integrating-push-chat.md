@@ -56,6 +56,8 @@ You are required to get the PGP key and decrypt it locally, for which you can us
 
 This function will create a new user and **** return the created user’s information, like the PGP keys. It takes as arguments the address of the wallet and the environment variable.
 
+Read in detail [👉](https://emojipedia.org/backhand-index-pointing-right/) [initializing-user.md](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-chat/initializing-user.md "mention")
+
 </details>
 
 <details>
@@ -64,21 +66,21 @@ This function will create a new user and **** return the created user’s inform
 
 This function will return all the user information, like the PGP keys. It takes as arguments the address of the wallet and the environment variable.
 
+Read in detail [👉](https://emojipedia.org/backhand-index-pointing-right/) [initializing-user.md](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-chat/initializing-user.md "mention")
+
 </details>
 
 ### Fetching Chats for a User
 
 All chats for a user or all chats request for a user can be fetched in a paginated fashion using the following SDK functions:
 
-`sdk.chat.chats`
-
-`sdk.chat.requests`
-
 <details>
 
 <summary><strong>To Fetch  a list of all chats of a User (</strong><code>sdk.chat.chats</code>)</summary>
 
-This function returns all the latest chats from each address the caller is talking to. It’s used to build the inbox on a chat application for an address
+This function returns all the latest chats from each address the caller is talking to. It’s used to build the inbox on a chat application for an address.
+
+Read in detail [👉](https://emojipedia.org/backhand-index-pointing-right/) [fetching-chats.md](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-chat/fetching-chats.md "mention")
 
 </details>
 
@@ -88,35 +90,41 @@ This function returns all the latest chats from each address the caller is talki
 
 This function returns all the requests that wallet addresses sent to a particular address. In Push Chat, the receiver of the messages must always approve the request to start the chat with the other address.
 
+Read in detail [👉](https://emojipedia.org/backhand-index-pointing-right/) [fetching-chats.md](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-chat/fetching-chats.md "mention")
+
 </details>
 
 ### Fetching individual messages in a specific Chat
 
 Each conversation between the users or group of users have a conversation hash which is a linked list that contains the encrypted chat messages stored on IPFS. The SDK does the work of fetching, decrypting, and verifying the signature for the messages.
 
-* This function takes as an argument the conversation hash from a message and the pagination and then returns the message content decrypted.
-
 <details>
 
-<summary><strong>Getting conversation hash of a single chat (</strong><code>sdk.chat.conversationHash</code>)</summary>
+<summary><strong>Getting conversation hash of a single chat or group (</strong><code>sdk.chat.conversationHash</code>)</summary>
 
 This function returns the conversation hash of the latest message exchanged between the user and the conversation.
 
+Read in detail [👉](https://emojipedia.org/backhand-index-pointing-right/) [fetching-chats.md](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-chat/fetching-chats.md "mention")
+
 </details>
 
 <details>
 
-<summary><strong>Getting the History of a single chat (</strong><code>sdk.chat.history</code>)</summary>
+<summary><strong>Getting just the latest message from a single chat or group (</strong><code>sdk.chat.latest</code>)</summary>
+
+This function takes as an argument the conversation hash from a message and then returns the message content decrypted.
+
+Read in detail [👉](https://emojipedia.org/backhand-index-pointing-right/) [fetching-chats.md](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-chat/fetching-chats.md "mention")
+
+</details>
+
+<details>
+
+<summary><strong>Getting the history of a single chat or group (</strong><code>sdk.chat.history</code>)</summary>
 
 This function takes in an argument as the conversation hash from a message and the pagination and then returns the message content decrypted.
 
-</details>
-
-<details>
-
-<summary><strong>Getting just the latest message from a single chat (</strong><code>sdk.chat.latest</code>)</summary>
-
-This function takes as an argument the conversation hash from a message and then returns the message content decrypted.
+Read in detail [👉](https://emojipedia.org/backhand-index-pointing-right/) [fetching-chats.md](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-chat/fetching-chats.md "mention")
 
 </details>
 
@@ -126,37 +134,39 @@ The Replying chats require the user to approve the request if it's their first t
 
 <details>
 
-<summary>To approve a chat request (<em>only required for first time</em>) (<code>sdk.chat.send</code>)</summary>
+<summary><strong>To chat with a user or group (</strong><code>sdk.chat.send</code>)</summary>
 
-When receiving a Request, call this function to approve the request so you can start talking back to the address.
+Use this function to send messages to other addresses.
+
+Read in detail [👉](https://emojipedia.org/backhand-index-pointing-right/) [sending-chat.md](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-chat/sending-chat.md "mention")
 
 </details>
 
 <details>
 
-<summary><strong>To chat with a user or conversation id (</strong><code>sdk.chat.requests</code>)</summary>
+<summary>To approve a chat request of user or group (<em>only required for first time</em>) (<code>sdk.chat.approve</code>)</summary>
 
-Use this function to send messages to other addresses.
+When receiving a Request, call this function to approve the request so you can start talking back to the address.
+
+Read in detail [👉](https://emojipedia.org/backhand-index-pointing-right/) [sending-chat.md](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-chat/sending-chat.md "mention")
 
 </details>
 
 ### For Group Chat
 
-The group chats enables multiple wallet to talk to each other for the first time and enables a number of features and settings for group chat.
+Group chats enable multiple wallet to talk to each other for the first time and provide a number of features (Public, Private, Token Gated, NFT Gated, Transaction Gated, Message Gated) for developers to integrate/build on their dApp.
 
-<details>
-
-<summary>To fetch a group (<code>sdk.chat.getGroup</code>)</summary>
-
-To get info of the group including the chat id which is used to send messages in that group (instead of wallet address) for single user chats.
-
-</details>
+{% hint style="info" %}
+Each group has a chat id associated with them. The chat id is used to do modifications to a group or send messages or approve a group chat request.
+{% endhint %}
 
 <details>
 
 <summary>To create a group (<code>sdk.chat.createGroup</code>)</summary>
 
 Use this function to create group chat between multiple wallets.
+
+Read in detail [👉](https://emojipedia.org/backhand-index-pointing-right/) [group-chat.md](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-chat/group-chat.md "mention")
 
 </details>
 
@@ -165,6 +175,28 @@ Use this function to create group chat between multiple wallets.
 <summary>To modify a group (<code>sdk.chat.updateGroup</code>)</summary>
 
 Use this function to modify a group name, description, members, etc.
+
+Read in detail [👉](https://emojipedia.org/backhand-index-pointing-right/) [group-chat.md](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-chat/group-chat.md "mention")
+
+</details>
+
+<details>
+
+<summary>To fetch a group by group name (<code>sdk.chat.getGroupByName</code>)</summary>
+
+To get info of the group including the chat id which is used to send messages in that group.
+
+Read in detail [👉](https://emojipedia.org/backhand-index-pointing-right/) [group-chat.md](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-chat/group-chat.md "mention")
+
+</details>
+
+<details>
+
+<summary>To fetch a group by chat id (<code>sdk.chat.getGroup</code>)</summary>
+
+To get info of the group including by providing chat id of the group.
+
+Read in detail [👉](https://emojipedia.org/backhand-index-pointing-right/) [group-chat.md](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-chat/group-chat.md "mention")
 
 </details>
 

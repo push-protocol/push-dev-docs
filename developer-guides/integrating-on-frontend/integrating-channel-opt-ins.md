@@ -8,6 +8,6 @@ For a detailed view of how to integrate various part of Push SDK, please goto th
 
 To learn specifics about how to enable opt in / opt out for your users right from the dApp, please follow the guide below :point\_down:
 
-{% content-ref url="../../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/opt-in-and-opt-out.md" %}
-[opt-in-and-opt-out.md](../../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/opt-in-and-opt-out.md)
+{% content-ref url="../../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-notification/opt-in-and-opt-out.md" %}
+[opt-in-and-opt-out.md](../../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-notification/opt-in-and-opt-out.md)
 {% endcontent-ref %}

@@ -13,13 +13,13 @@ All SDK functions require passing the parameter **env** which should either pass
 {% tabs %}
 {% tab title="npm" %}
 ```bash
-npm install @pushprotocol/restapi ethers 
+npm install @pushprotocol/restapi@latest ethers^5.6
 ```
 {% endtab %}
 
 {% tab title="yarn" %}
 ```bash
-yarn add @pushprotocol/restapi ethers
+yarn add @pushprotocol/restapi@latest ethers^5.6
 ```
 {% endtab %}
 {% endtabs %}
@@ -112,26 +112,26 @@ The `@pushprotocol/restapi` package provides us with the following features:
 
 Here below, you can find more information on the features described:
 
-{% content-ref url="../../../epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/fetching-user-channel-details.md" %}
-[fetching-user-channel-details.md](../../../epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/fetching-user-channel-details.md)
+{% content-ref url="for-notification/fetching-user-channel-details.md" %}
+[fetching-user-channel-details.md](for-notification/fetching-user-channel-details.md)
 {% endcontent-ref %}
 
-{% content-ref url="opt-in-and-opt-out.md" %}
-[opt-in-and-opt-out.md](opt-in-and-opt-out.md)
+{% content-ref url="for-notification/opt-in-and-opt-out.md" %}
+[opt-in-and-opt-out.md](for-notification/opt-in-and-opt-out.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../../epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/send-notifications.md" %}
-[send-notifications.md](../../../epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/send-notifications.md)
+{% content-ref url="for-notification/send-notifications.md" %}
+[send-notifications.md](for-notification/send-notifications.md)
 {% endcontent-ref %}
 
-{% content-ref url="chat.md" %}
-[chat.md](chat.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="chat.md" %}
-[chat.md](chat.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="../../../epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/utils.md" %}
-[utils.md](../../../epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/utils.md)
+{% content-ref url="for-notification/utils.md" %}
+[utils.md](for-notification/utils.md)
 {% endcontent-ref %}

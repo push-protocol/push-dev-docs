@@ -4,8 +4,8 @@
 [deploying-your-first-channel.md](deploying-your-first-channel.md)
 {% endcontent-ref %}
 
-{% content-ref url="notification-via-subgraph-example.md" %}
-[notification-via-subgraph-example.md](notification-via-subgraph-example.md)
+{% content-ref url="notification-via-smart-contract-examples/" %}
+[notification-via-smart-contract-examples](notification-via-smart-contract-examples/)
 {% endcontent-ref %}
 
 {% content-ref url="showrunners-examples/" %}

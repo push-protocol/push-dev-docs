@@ -18,6 +18,31 @@ To receive notifications, the user must opt-in to the channel. This is done only
 
 To see all the supported channels on Push, go to [Push Protocol dapp](https://app.push.org/#/channels) and opt-in to your favorite protocol to receive notifications.
 
+## Pre-requisite: Deriving the signer
+
+{% tabs %}
+{% tab title="When using Frontend" %}
+```typescript
+// any other web3 ui lib is also acceptable
+import { useWeb3React } from "@web3-react/core";
+.
+.
+.
+const { account, library, chainId } = useWeb3React();
+const signer = library.getSigner(account);
+```
+{% endtab %}
+
+{% tab title="When using Backend" %}
+```typescript
+const ethers = require('ethers');
+const PK = 'your_channel_address_secret_key';
+const Pkey = `0x${PK}`;
+const signer = new ethers.Wallet(Pkey);
+```
+{% endtab %}
+{% endtabs %}
+
 ## Opt-in to a Channel
 
 In the example below, the user `eip155:5:0x52f856A160733A860ae7DC98DC71061bE33A28b3` will opt-in to the channel `eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681` on the testnet environment (`staging`).
@@ -37,30 +62,7 @@ await PushAPI.channels.subscribe({
 })
 ```
 
-_**NOTE on generating the "signer" object for different platforms:**_
-
-When using in SERVER-SIDE code:
-
-```typescript
-const ethers = require('ethers');
-const PK = 'your_channel_address_secret_key';
-const Pkey = `0x${PK}`;
-const _signer = new ethers.Wallet(Pkey);
-```
-
-When using in FRONT-END code:
-
-```typescript
-// any other web3 ui lib is also acceptable
-import { useWeb3React } from "@web3-react/core";
-.
-.
-.
-const { account, library, chainId } = useWeb3React();
-const _signer = library.getSigner(account);
-```
-
-Allowed Options (params with \* are mandatory)
+#### Allowed Options (params with \* are mandatory)
 
 | Param                    | Type     | Default | Remarks                            |
 | ------------------------ | -------- | ------- | ---------------------------------- |
@@ -91,7 +93,7 @@ await PushAPI.channels.unsubscribe({
 })
 ```
 
-Allowed Options (params with \* are mandatory)
+#### Allowed Options (params with \* are mandatory)
 
 | Param                    | Type     | Default | Remarks                            |
 | ------------------------ | -------- | ------- | ---------------------------------- |

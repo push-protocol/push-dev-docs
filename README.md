@@ -20,7 +20,7 @@ Being an open communication middleware, notifications can be integrated and show
 * A channel is free to delegate (or revoke delegates) sending notifications functionality to any other wallet addresses on their behalf.
 * Creating a channel requires 50 **PUSH**, Channel info (Channel name, Image, description, CTA), and some **ETH**.
 * Channels can send notifications to their users(wallet addresses) in a number of ways, including:
-  * [Javascript SDK](developer-tooling/epns-sdk/sdk-packages-details/epnsproject-sdk-restapi/send-notifications.md) (**Gasless.** Best for automated logic from dApp / Backend)
+  * [Javascript SDK](developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-notification/send-notifications.md) (**Gasless.** Best for automated logic from dApp / Backend)
   * [**Showrunners Framework**](developer-tooling/showrunners-framework/) (**Scaffold/Gasless.** Best for automated logic via scaffold backend)
   * Smart contract to Smart contract (**requires gas**, Best for instant on-chain events, piggybacks on an on-chain transaction via Interface ABI call)
   * Manually from Push dApp (**Gasless**, Best for manual logic)

@@ -6,11 +6,21 @@ description: >-
 
 # @pushprotocol/socket
 
+{% hint style="info" %}
+Push for hackers repo contains all code coverage and examples of @pushprotocol/restapi and @pushprotocol/socket [👇](https://emojipedia.org/emoji/%F0%9F%91%87/)
+{% endhint %}
+
+{% embed url="https://github.com/ethereum-push-notification-service/push-for-hackers/tree/main/sdk-functionality" %}
+Push for Hackers repo containing code coverage for all sdk functionality with examples
+{% endembed %}
+
 ## Introduction
 
 The [`@pushprotocol/socket`](https://github.com/ethereum-push-notification-service/push-sdk/tree/main/packages/socket) package contains all the WebSocket implementation for Push Protocol.
 
 The socket client will allow you to receive both notifications and chat messages.
+
+## Chat SDK Features
 
 ### Events
 
@@ -104,7 +114,6 @@ For now, when instantiating the socket client, you should define the socket type
 const pushSDKSocket = createSocketConnection({
     user: 'eip155:0xFd6C2fE69bE13d8bE379CCB6c9306e74193EC1A9', // Not CAIP-10 format
     env: 'staging',
-    apiKey: 'jVPMCRom1B.iDRMswdehJG7NpHDiECIHwYMMv6k2KzkPJscFIDyW8TtSnk4blYnGa8DIkfuacU0',
     socketType: 'chat',
     socketOptions: { autoConnect: true, reconnectionAttempts: 3 }
 });

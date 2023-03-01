@@ -33,16 +33,16 @@ import { useWeb3React } from "@web3-react/core";
 .
 .
 const { account, library, chainId } = useWeb3React();
-const _signer = library.getSigner(account);
+const signer = library.getSigner(account);
 ```
 {% endtab %}
 
-{% tab title="When using Server" %}
+{% tab title="When using Backend" %}
 ```typescript
 const ethers = require('ethers');
 const PK = 'your_channel_address_secret_key';
 const Pkey = `0x${PK}`;
-const _signer = new ethers.Wallet(Pkey);
+const signer = new ethers.Wallet(Pkey);
 ```
 {% endtab %}
 {% endtabs %}
@@ -306,7 +306,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 {% endtab %}
 {% endtabs %}
 
-Allowed Options (params with \* are mandatory)
+#### Allowed Options (params with \* are mandatory)
 
 | Param                | Type                | Default | Remarks                                                                                                                                           |
 | -------------------- | ------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
