@@ -13,13 +13,13 @@ All SDK functions require passing the parameter **env** which should either pass
 {% tabs %}
 {% tab title="npm" %}
 ```bash
-npm install @pushprotocol/restapi@latest ethers^5.6
+npm install @pushprotocol/restapi@latest ethers
 ```
 {% endtab %}
 
 {% tab title="yarn" %}
 ```bash
-yarn add @pushprotocol/restapi@latest ethers^5.6
+yarn add @pushprotocol/restapi@latest ethers
 ```
 {% endtab %}
 {% endtabs %}

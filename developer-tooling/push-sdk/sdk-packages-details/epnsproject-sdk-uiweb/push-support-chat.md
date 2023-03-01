@@ -9,13 +9,13 @@ description: A React component for integrating Support Chat in DApps.
 {% tabs %}
 {% tab title="npm" %}
 ```bash
-npm install @pushprotocol/uiweb@0.2.3
+npm install @pushprotocol/uiweb
 ```
 {% endtab %}
 
 {% tab title="yarn" %}
 ```bash
-yarn add @pushprotocol/uiweb@0.2.3
+yarn add @pushprotocol/uiweb
 ```
 {% endtab %}
 {% endtabs %}
@@ -29,7 +29,7 @@ We'll need the `@pushprotocol/restapi` package as well.
 ```bash
 npm install styled-components
 
-npm install @pushprotocol/restapi@0.2.1 
+npm install @pushprotocol/restapi
 ```
 {% endtab %}
 
@@ -37,7 +37,7 @@ npm install @pushprotocol/restapi@0.2.1
 ```bash
 yarn add styled-components
 
-yarn add @pushprotocol/restapi@0.2.1 
+yarn add @pushprotocol/restapi
 ```
 {% endtab %}
 {% endtabs %}
