@@ -8,7 +8,7 @@ A user generally will have multiple chats associated with them (ie: them talking
 ```typescript
 // pre-requisite API calls that should be made before
 // need to get user and through it, the encryptedPvtKey of the user
-const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7', env: 'staging');
+const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7');
   
 // need to decrypt the encryptedPvtKey to pass in the api using helper function
 const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey(encryptedPGPPrivateKey: user.encryptedPrivateKey, signer: _signer);
@@ -17,8 +17,7 @@ const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey(encryptedPGPPrivateK
 const chats = await PushAPI.chat.chats({
     account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7',
     toDecrypt: true,
-    pgpPrivateKey: pgpDecryptedPvtKey,
-    env: 'staging',
+    pgpPrivateKey: pgpDecryptedPvtKey
 });
 ```
 {% endcode %}
@@ -44,7 +43,7 @@ Until the user approves a chat, it shows up in their chat requests folder. Use t
 ```typescript
 // pre-requisite API calls that should be made before
 // need to get user and through that encryptedPvtKey of the user
-const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7', env: 'staging');
+const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7');
   
 // need to decrypt the encryptedPvtKey to pass in the api using helper function
 const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey(encryptedPGPPrivateKey: user.encryptedPrivateKey, signer: _signer);
@@ -53,8 +52,7 @@ const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey(encryptedPGPPrivateK
 const chats = await PushAPI.chat.requests({
     account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7',
     toDecrypt: true,
-    pgpPrivateKey: pgpDecryptedPvtKey,
-    env: 'staging',
+    pgpPrivateKey: pgpDecryptedPvtKey
 });
 ```
 {% endcode %}
@@ -80,8 +78,7 @@ Conversation hash (also known as threadhash or link) is the conversation pointer
 // conversation hash is also called link inside chat messages
 const conversationHash = await PushAPI.chat.conversationHash({
   account: 'eip155:0xb340E384FC4549591bc7994b0f90074753dEC72a',
-  conversationId: 'eip155:0x0F1AAC847B5720DDf01BFa07B7a8Ee641690816d', // receiver's address or chatId of a group
-  env: 'staging'
+  conversationId: 'eip155:0x0F1AAC847B5720DDf01BFa07B7a8Ee641690816d' // receiver's address or chatId of a group
 });
 ```
 
@@ -104,7 +101,7 @@ Enables fetching the latest chat message between two users (or user and group). 
 ```javascript
 // pre-requisite API calls that should be made before
 // need to get user and through that encryptedPvtKey of the user
-const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7', env: 'staging');
+const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7');
   
 // need to decrypt the encryptedPvtKey to pass in the api using helper function
 const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey(encryptedPGPPrivateKey: user.encryptedPrivateKey, signer: _signer);
@@ -112,8 +109,7 @@ const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey(encryptedPGPPrivateK
 // conversation hash are also called link inside chat messages
 const conversationHash = await PushAPI.chat.conversationHash({
   account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7',
-  conversationId: 'eip155:0x0F1AAC847B5720DDf01BFa07B7a8Ee641690816d', // receiver's address or chatId of a group
-  env: 'staging'
+  conversationId: 'eip155:0x0F1AAC847B5720DDf01BFa07B7a8Ee641690816d' // receiver's address or chatId of a group
 });
   
 // actual api
@@ -121,8 +117,7 @@ const chatHistory = await PushAPI.chat.latest({
   threadhash: conversationHash.threadHash,
   account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7',
   toDecrypt: true,
-  pgpPrivateKey: decryptedPvtKey,
-  env: 'staging',
+  pgpPrivateKey: decryptedPvtKey
 });
 ```
 
@@ -147,7 +142,7 @@ Enables fetching chat history between two users (or group), useful in displaying
 ```javascript
 // pre-requisite API calls that should be made before
 // need to get user and through that encryptedPvtKey of the user
-const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7', env: 'staging');
+const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7');
   
 // need to decrypt the encryptedPvtKey to pass in the api using helper function
 const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey(encryptedPGPPrivateKey: user.encryptedPrivateKey, signer: _signer);
@@ -157,8 +152,7 @@ const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey(encryptedPGPPrivateK
 // conversation hash are also called link inside chat messages
 const conversationHash = await PushAPI.chat.conversationHash({
   account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7',
-  conversationId: 'eip155:0x0F1AAC847B5720DDf01BFa07B7a8Ee641690816d', // receiver's address or chatId of a group
-  env: 'staging'
+  conversationId: 'eip155:0x0F1AAC847B5720DDf01BFa07B7a8Ee641690816d' // receiver's address or chatId of a group
 });
   
 // actual api
@@ -167,8 +161,7 @@ const chatHistory = await PushAPI.chat.history({
   account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7',
   limit: 2,
   toDecrypt: true,
-  pgpPrivateKey: pgpDecryptedPvtKey,
-  env: 'staging',
+  pgpPrivateKey: pgpDecryptedPvtKey
 });
 ```
 

@@ -1,9 +1,5 @@
 # Initializing User
 
-{% hint style="warning" %}
-All SDK functions require passing the parameter **env** which should either pass **staging** or **prod** based on the demand. Passing anything else in this param might result in unexpected results.
-{% endhint %}
-
 ## Pre-requisite: Deriving the signer
 
 Some functions require passing the signer object with the API call. fetching signer for web3 wallets is quite easy.
@@ -37,8 +33,7 @@ To start messaging wallet addresses, you need to get encryption keys attached to
 
 ```typescript
 const user = await PushAPI.user.create({
-   account: '0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7',
-   env: 'staging',
+   account: '0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7'
 });
 ```
 
@@ -52,8 +47,7 @@ Once the user is created, you can fetch details about the user including their e
 
 ```javascript
 const user = await PushAPI.user.get({
-   account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7',
-   env: 'staging',
+   account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7'
 });
 ```
 

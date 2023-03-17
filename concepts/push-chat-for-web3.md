@@ -86,18 +86,6 @@ A different AES secret key is generated for each message. This secret key is the
 
 The message payload content also contains the encrypted AES key in order to decrypt the message.
 
-## Whitelist access
-
-Push Chat launched as an Alpha version on Devcon in Bogota, and its access is limited as of now. To start messaging, addresses need to have POAPs that are getting distributed to the community. If you haven’t had the chance to take one, stay tuned on our socials for more information.
-
-For whitelisted addresses, they can message up to 10 other addresses, regardless if those addresses are whitelisted or not. The receiver of the message can then approve the intent and start messaging back.
-
-{% hint style="success" %}
-To enable dApps to adopt Push Chat while it's closed, we have enabled an optional API key that bypasses the whitelisted access for the dApp and their users. The API key will not be required when Push Chat access becomes public.\
-\
-To get the API key, please join our discord and ask a CM or a Dev for one. :point\_right: [https://discord.com/invite/pushprotocol](https://discord.com/invite/pushprotocol)
-{% endhint %}
-
 ## Push Chat SDK
 
 With the SDK, it will be easy for developers to integrate messaging into their dapps. The use cases are endless:

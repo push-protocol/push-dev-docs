@@ -11,7 +11,7 @@ SDK functions provide params to automatically do this for you (via **toDecrypt**
 ```typescript
 // pre-requisite API calls that should be made before
 // need to get user and through that encryptedPvtKey of the user
-const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7', env: 'staging');
+const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7');
   
 // need to decrypt the encryptedPvtKey to pass in the api using helper function
 const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey(encryptedPGPPrivateKey: user.encryptedPrivateKey, signer: _signer);
@@ -21,8 +21,7 @@ const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey(encryptedPGPPrivateK
 // conversation hash are also called link inside chat messages
 const conversationHash = await PushAPI.chat.conversationHash({
   account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7',
-  conversationId: 'eip155:0x0F1AAC847B5720DDf01BFa07B7a8Ee641690816d', // receiver's address or chatId of a group
-  env: 'staging'
+  conversationId: 'eip155:0x0F1AAC847B5720DDf01BFa07B7a8Ee641690816d' // receiver's address or chatId of a group
 });
   
 // chat history but with decrypt helper so everything is encrypted
@@ -31,16 +30,14 @@ const encryptedChats = await PushAPI.chat.history({
   account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7',
   limit: 2,
   toDecrypt: false,
-  pgpPrivateKey: pgpDecryptedPvtKey,
-  env: 'staging',
+  pgpPrivateKey: pgpDecryptedPvtKey
 });
   
 // actual api
 const decryptedChat = await PushAPI.chat.decryptConversation({
   messages: encryptedChats, // array of message object fetched from chat.history method
   connectedUser: user, // user meta data object fetched from chat.get method
-  pgpPrivateKey: pgpDecrpyptedPvtKey, //decrypted private key
-  env: _env,
+  pgpPrivateKey: pgpDecrpyptedPvtKey //decrypted private key
 });
 ```
 

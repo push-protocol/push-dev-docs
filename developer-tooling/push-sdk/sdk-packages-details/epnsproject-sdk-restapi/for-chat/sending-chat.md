@@ -1,9 +1,5 @@
 # Sending Chat
 
-{% hint style="warning" %}
-All SDK functions require passing the parameter **env** which should either pass **staging** or **prod** based on the demand. Passing anything else in this param might result in unexpected results.
-{% endhint %}
-
 ## Pre-requisite: Deriving the signer
 
 Some functions require passing the signer object with the API call. fetching signer for web3 wallets is quite easy.
@@ -39,7 +35,7 @@ Enables sending messages to a user or a group (via chat id).
 ```javascript
 // pre-requisite API calls that should be made before
 // need to get user and through that encryptedPvtKey of the user
-const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7', env: 'staging');
+const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7');
   
 // need to decrypt the encryptedPvtKey to pass in the api using helper function
 const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey(encryptedPGPPrivateKey: user.encryptedPrivateKey, signer: _signer);
@@ -50,8 +46,7 @@ const response = await PushAPI.chat.send({
   messageType: 'Text', // can be "Text" | "Image" | "File" | "GIF" 
   receiverAddress: 'eip155:0x0F1AAC847B5720DDf01BFa07B7a8Ee641690816d',
   signer: _signer,
-  pgpPrivateKey: pgpDecrpyptedPvtKey,
-  env: 'staging',
+  pgpPrivateKey: pgpDecrpyptedPvtKey
 });
 ```
 {% endcode %}
@@ -80,8 +75,7 @@ Approves a chat request from a user or group (one-time process). Enables native 
 const response = await PushAPI.chat.approve({
   status: 'Approved',
   account: '0x18C0Ab0809589c423Ac9eb42897258757b6b3d3d',
-  senderAddress : '0x873a538254f8162377296326BB3eDDbA7d00F8E9', // receiver's address or chatId of a group
-  env:'staging',
+  senderAddress : '0x873a538254f8162377296326BB3eDDbA7d00F8E9' // receiver's address or chatId of a group
 });
 ```
 {% endcode %}

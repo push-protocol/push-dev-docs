@@ -1,9 +1,5 @@
 # Group Chat
 
-{% hint style="warning" %}
-All SDK functions require passing the parameter **env** which should either pass **staging** or **prod** based on the demand. Passing anything else in this param might result in unexpected results.
-{% endhint %}
-
 ## **About Group Chat**
 
 Group chat is the latest exciting addition to Push suite, for the first time ever, web3 users are finally able to talk to each other in groups and have fine-grained controls over them. Group chat is a part of Push Chat protocol with the vision of enabling protocols to finally build:
@@ -55,7 +51,7 @@ Enables creation of the group, group (and even DMs) have chat ids. For group con
 ```javascript
 // pre-requisite API calls that should be made before
 // need to get user and through that encryptedPvtKey of the user
-const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7', env: 'staging');
+const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7');
   
 // need to decrypt the encryptedPvtKey to pass in the api using helper function
 const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey(encryptedPGPPrivateKey: user.encryptedPrivateKey, signer: _signer);
@@ -69,7 +65,6 @@ const response = await PushAPI.chat.createGroup({
   admins: ['0x3829E53A15856d1846e1b52d3Bdf5839705c29e5'],
   isPublic: true,
   account: '0xD993eb61B8843439A23741C0A3b5138763aE11a4',
-  env: 'staging',
   pgpPrivateKey: pgpDecryptedPvtKey, //decrypted private key
 });
 ```
@@ -99,7 +94,7 @@ Enables updating group details (is an idempotent operation). Idempotent means th
 ```javascript
 // pre-requisite API calls that should be made before
 // need to get user and through that encryptedPvtKey of the user
-const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7', env: 'staging');
+const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7');
   
 // need to decrypt the encryptedPvtKey to pass in the api using helper function
 const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey(encryptedPGPPrivateKey: user.encryptedPrivateKey, signer: _signer);
@@ -113,7 +108,6 @@ const response = await PushAPI.chat.updateGroup({
     groupImage: &lt;group image link&gt; ,
     admins: ['0x3829E53A15856d1846e1b52d3Bdf5839705c29e5'],
     account: '0xD993eb61B8843439A23741C0A3b5138763aE11a4',
-    env: 'staging',
     pgpPrivateKey: pgpDecryptedPvtKey, //decrypted private key
 });
 ```
@@ -142,8 +136,7 @@ Enables fetching group details by group name.
 
 ```javascript
 const response = await PushAPI.chat.getGroupByName({
-  groupName: "Push Group Chat 3",
-  env: 'staging',
+  groupName: "Push Group Chat 3"
 });
 ```
 
@@ -164,8 +157,7 @@ Enables fetching group details by chat id.
 
 ```javascript
 const response = await PushAPI.chat.getGroup({
-  chatId: '190591e84108cdf12e62eecabf02ddb123ea92f1c06fb98ee9b5cf3871f46fa9',
-  env: 'staging',
+  chatId: '190591e84108cdf12e62eecabf02ddb123ea92f1c06fb98ee9b5cf3871f46fa9'
 });
 ```
 

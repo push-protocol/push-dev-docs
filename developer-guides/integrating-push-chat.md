@@ -18,12 +18,6 @@ Web sockets for Push Chat are live now :point\_right: [pushprotocol-socket](../d
 Push Chat API is in alpha, please bookmark this page for the new APIs introduction.
 {% endhint %}
 
-{% hint style="success" %}
-To enable dApps to adopt Push Chat while it's closed, we have enabled an optional API key that bypasses the whitelisted access for the dApp and their users. The API key will not be required when Push Chat access becomes public.\
-\
-To get the API key, please join our discord and ask a CM or a Dev for one. :point\_right: [https://discord.com/invite/pushprotocol](https://discord.com/invite/pushprotocol)
-{% endhint %}
-
 For an overview of Push Chat, please go to [https://docs.push.org/developers/concepts/push-chat-for-web3](https://docs.push.org/developers/concepts/push-chat-for-web3).
 
 ## Rest API Calls
@@ -243,7 +237,6 @@ To create a socket connection and retain the variable.
 const pushSDKSocket = createSocketConnection({
     user: 'eip155:0xab16a96d359ec26a11e2c2b3d8f8b8942d5bfcdb',
     env: 'staging',
-    apiKey: 'jVPMCRom1B.iDRMswdehJG7NpHDiECIHwYMMv6k2KzkPJscFIDyW8TtSnk4blYnGa8DIkfuacU0',
     socketType: 'chat',
     socketOptions: { autoConnect: true, reconnectionAttempts: 3 }
 });
@@ -342,8 +335,6 @@ import { Chat } from "@pushprotocol/uiweb";
 <Chat 
     account="0x6430C47973FA053fc8F055e7935EC6C2271D5174" //user address             
     supportAddress="0xd9c1CCAcD4B8a745e191b62BA3fcaD87229CB26d" //support address          
-    apiKey="your-api-key"
-    env="staging"
 />
 ```
 {% endcode %}
