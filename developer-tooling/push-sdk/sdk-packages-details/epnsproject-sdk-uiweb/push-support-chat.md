@@ -57,7 +57,6 @@ Render the Chat Component as follows
 <Chat
    account="0x6430C47973FA053fc8F055e7935EC6C2271D5174" //user address
    supportAddress="0xd9c1CCAcD4B8a745e191b62BA3fcaD87229CB26d" //support address
-   apiKey="jVPMCRom1B.iDRMswdehJG7NpHDiECIHwYMMv6k2KzkPJscFIDyW8TtSnk4blYnGa8DIkfuacU0"
    env="staging"
  />
 ```
@@ -94,7 +93,6 @@ export const ChatSupportTest = () => {
     <Chat
       account='0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7'
       supportAddress="0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7"
-      apiKey="tAWEnggQ9Z.UaDBNjrvlJZx3giBTIQDcT8bKQo1O1518uF1Tea7rPwfzXv2ouV5rX9ViwgJUrXm"
       env='staging'
       theme={theme}
     />
