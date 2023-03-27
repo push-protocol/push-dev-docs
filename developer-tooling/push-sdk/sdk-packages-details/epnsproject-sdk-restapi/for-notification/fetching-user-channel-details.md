@@ -57,7 +57,7 @@ const spams = await PushAPI.user.getFeeds({
 This method provides us with the list of channel addresses subscribed by a user address
 
 ```typescript
-const subscriptions = await PushAPI.channels.getSubscriptions({
+const subscriptions = await PushAPI.user.getSubscriptions({
   user: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // user address in CAIP
   env: 'staging'
 });
@@ -97,7 +97,7 @@ const channelData = await PushAPI.channels.getChannel({
 This method fetches the subscribers of a channel.
 
 ```typescript
-const subscribers = await PushAPI.user.getSubscribers({
+const subscribers = await PushAPI.channels.getSubscribers({
   channel: 'eip155:5:0xD8634C39BBFd4033c0d3289C4515275102423681', // channel address in CAIP
   page: 1, // Optional, defaults to 1
   limit: 10, // Optional, defaults to 10
