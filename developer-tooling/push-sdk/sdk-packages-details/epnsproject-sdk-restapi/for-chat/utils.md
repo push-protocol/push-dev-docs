@@ -11,10 +11,15 @@ SDK functions provide params to automatically do this for you (via **toDecrypt**
 ```typescript
 // pre-requisite API calls that should be made before
 // need to get user and through that encryptedPvtKey of the user
-const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7');
+const user = await PushAPI.user.get({
+    account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7'
+  });
   
 // need to decrypt the encryptedPvtKey to pass in the api using helper function
-const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey(encryptedPGPPrivateKey: user.encryptedPrivateKey, signer: _signer);
+const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey({
+    encryptedPGPPrivateKey: user.encryptedPrivateKey, 
+    signer: _signer
+});
 
 // get threadhash, this will fetch the latest conversation hash
 // you can also use older conversation hash (called link) by iterating over to fetch more historical messages

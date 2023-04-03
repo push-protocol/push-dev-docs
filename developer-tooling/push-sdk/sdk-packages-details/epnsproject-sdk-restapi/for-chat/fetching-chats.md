@@ -8,10 +8,15 @@ A user generally will have multiple chats associated with them (ie: them talking
 ```typescript
 // pre-requisite API calls that should be made before
 // need to get user and through it, the encryptedPvtKey of the user
-const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7');
+const user = await PushAPI.user.get({
+    account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7'
+});
   
 // need to decrypt the encryptedPvtKey to pass in the api using helper function
-const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey(encryptedPGPPrivateKey: user.encryptedPrivateKey, signer: _signer);
+const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey({
+    encryptedPGPPrivateKey: user.encryptedPrivateKey, 
+    signer: _signer
+});
   
 // actual api
 const chats = await PushAPI.chat.chats({
@@ -106,10 +111,15 @@ Enables fetching the latest chat message between two users (or user and group). 
 ```javascript
 // pre-requisite API calls that should be made before
 // need to get user and through that encryptedPvtKey of the user
-const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7');
+const user = await PushAPI.user.get({
+    account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7'
+});
   
 // need to decrypt the encryptedPvtKey to pass in the api using helper function
-const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey(encryptedPGPPrivateKey: user.encryptedPrivateKey, signer: _signer);
+const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey({
+    encryptedPGPPrivateKey: user.encryptedPrivateKey, 
+    signer: _signer
+  });
 
 // conversation hash are also called link inside chat messages
 const conversationHash = await PushAPI.chat.conversationHash({

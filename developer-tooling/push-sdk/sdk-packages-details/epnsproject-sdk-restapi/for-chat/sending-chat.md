@@ -35,10 +35,15 @@ Enables sending messages to a user or a group (via chat id).
 ```javascript
 // pre-requisite API calls that should be made before
 // need to get user and through that encryptedPvtKey of the user
-const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7');
+const user = await PushAPI.user.get({
+    account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7'
+});
   
 // need to decrypt the encryptedPvtKey to pass in the api using helper function
-const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey(encryptedPGPPrivateKey: user.encryptedPrivateKey, signer: _signer);
+const pgpDecryptedPvtKey = await PushAPI.chat.decryptPGPKey({
+    encryptedPGPPrivateKey: user.encryptedPrivateKey, 
+    signer: _signer
+});
 
 // actual api
 const response = await PushAPI.chat.send({

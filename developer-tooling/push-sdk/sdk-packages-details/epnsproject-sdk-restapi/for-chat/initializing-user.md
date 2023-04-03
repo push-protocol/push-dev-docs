@@ -68,13 +68,16 @@ Push chat is encrypted and only the users are able to decrypt chats, send messag
 
 ```javascript
 // pre-requisite API calls that should be made before
-const user = await PushAPI.user.get(account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7', env: 'staging');
+const user = await PushAPI.user.get({
+    account: 'eip155:0xFe6C8E9e25f7bcF374412c5C81B2578aC473C0F7', 
+    env: 'staging'
+});
   
 // actual api
-const decryptedPvtKey = await PushAPI.chat.decryptPGPKey(
+const decryptedPvtKey = await PushAPI.chat.decryptPGPKey({
     encryptedPGPPrivateKey: user.encryptedPrivateKey,
     signer: _signer
-);
+});
 ```
 
 {% embed url="https://www.npmjs.com/package/@pushprotocol/restapi#decrypting-encrypted-pgp-private-key-from-user-data" %}
