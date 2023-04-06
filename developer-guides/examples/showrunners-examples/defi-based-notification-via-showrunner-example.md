@@ -14,7 +14,7 @@ We will walk through coding and interacting with the [aave ](https://aave.com/)s
 \
 And don’t worry if you don’t understand what any these words mean yet, I'll explain everything!
 
-You can access the [code ](https://github.com/ethereum-push-notification-service/epns-showrunners-framework-staging/tree/main/src/sample\_showrunners/aave)for the channel and get some vibe for how the code is looking !!
+You can access the [code ](https://github.com/ethereum-push-notification-service/epns-showrunners-framework-staging/tree/main/src/sample_showrunners/aave)for the channel and get some vibe for how the code is looking !!
 
 #### Here are the list of things you will require to make the channel up into the showrunners
 

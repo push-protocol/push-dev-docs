@@ -23,7 +23,7 @@ Once opted in, the subscriber shall receive notifications from that channel dire
 {% hint style="info" %}
 _**Opting In or Opting out of a Channel is a completely gasless transaction and requires no fees.**_
 
-How to Opt-In to a Channel? 👉  [**Opting-Into a Channel**](https://docs.epns.io/users/epns-dapp/opting-in-to-a-channel)****
+How to Opt-In to a Channel? 👉  [**Opting-Into a Channel**](https://docs.push.org/users/basics/how-to-start-using-push-notifications)****
 {% endhint %}
 
 Moreover, the owner of a channel can also choose to _**delegate his/her notification sending power to any other wallet address**_. This enables the selected wallet address to send notifications on behalf of the channel. The channel owner, however, can choose to remove the delegate at any given time.&#x20;
