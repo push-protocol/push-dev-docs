@@ -55,11 +55,11 @@ contract Push is ERC20 {
             to, // to recipient, put address(this) in case you want Broadcast or Subset. For Targetted put the address to which you want to send
             bytes(
                 string(
-                    // We are passing identity here: https://docs.epns.io/developers/developer-guides/sending-notifications/advanced/notification-payload-types/identity/payload-identity-implementations
+                    // We are passing identity here: https://docs.push.org/developers/developer-guides/sending-notifications/notification-payload-types/notification-standard-advanced/notification-identity
                     abi.encodePacked(
-                        "0", // this is notification identity: https://docs.epns.io/developers/developer-guides/sending-notifications/advanced/notification-payload-types/identity/payload-identity-implementations
+                        "0", // this is notification identity: https://docs.push.org/developers/developer-guides/sending-notifications/notification-payload-types/notification-standard-advanced/notification-identity
                         "+", // segregator
-                        "3", // this is payload type: https://docs.epns.io/developers/developer-guides/sending-notifications/advanced/notification-payload-types/payload (1, 3 or 4) = (Broadcast, targetted or subset)
+                        "3", // this is payload type: https://docs.push.org/developers/developer-guides/sending-notifications/notification-payload-types/notification-standard-advanced/notification-payload (1, 3 or 4) = (Broadcast, targetted or subset)
                         "+", // segregator
                         "Tranfer Alert", // this is notificaiton title
                         "+", // segregator
