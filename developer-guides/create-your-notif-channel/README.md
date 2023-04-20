@@ -42,10 +42,14 @@ Ideally, there are six crucial requirements for creating a Channel. Make sure yo
 [what-is-a-channel-alias.md](../../concepts/create-your-notif-channel/what-is-a-channel-alias.md)
 {% endcontent-ref %}
 
-{% hint style="info" %}
+{% hint style="success" %}
 **Note:** You can pass the same Ethereum (EVM-compatible) address, being used for channel creation, as an alias address for other EVM-compatible chains as well.
 
 The Alias address is quite crucial to activate your channel on other chains. Read more about it in [enabling-channel-on-other-chains](enabling-channel-on-other-chains/ "mention") page.
+{% endhint %}
+
+{% hint style="info" %}
+**Note:** The channel address is basically the account(wallet) address you use when creating the channel.
 {% endhint %}
 
 ## How to setup your channel
