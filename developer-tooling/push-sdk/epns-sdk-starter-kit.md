@@ -46,9 +46,9 @@ yarn add styled-components
 ```
 
 2\. Since its a dapp, the following are the **web3** dependencies that you can install for wallet connection
-
+**version of Ethers (v6) introduces some breaking changes, for best results use Ethers v5 (ethers@^5.6)**
 ```
- yarn add ethers
+yarn add ethers@5.6.9
 ```
 
 3\.  The next package might only be needed if you are using web3-react. _You are free to use any other React-based web3 solution._
