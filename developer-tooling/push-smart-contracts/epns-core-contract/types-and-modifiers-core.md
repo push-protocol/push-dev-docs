@@ -250,26 +250,14 @@ enum ChannelAction {
 
 #### Deprecated State Variables
 
-**groupNormalizedWeight:**
+**groupNormalizedWeight**
 
-* Used to Represent the normalized weight of all channels available in the smart contract
+**groupHistoricalZ**
 
-**groupHistoricalZ:**
+**groupLastUpdate**
 
-* A historical constant used for fair share ratio calculation
-
-**groupLastUpdate:**
-
-* Used to Represent the last channel Update block number
-
-**groupFairShareCount:**
-
-* Indicated the FS count in the protocol
+**groupFairShareCount**
 
 **channelHistoricalZ**
 
-* Used to represent the Historical Constant in version 1 but now this concept is removed, the variable is still present to avoid storage collisions.
-
 **channelFairShareCount**
-
-* Used to represent the FS Count of the channel in version 1 but now this concept is removed, the variable is still present to avoid storage collisions.
