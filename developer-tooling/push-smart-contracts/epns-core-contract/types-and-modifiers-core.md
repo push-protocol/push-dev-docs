@@ -250,14 +250,9 @@ enum ChannelAction {
 
 #### Deprecated State Variables
 
-**groupNormalizedWeight**
-
-**groupHistoricalZ**
-
-**groupLastUpdate**
-
-**groupFairShareCount**
-
-**channelHistoricalZ**
-
-**channelFairShareCount**
+* **groupNormalizedWeight**
+* **groupHistoricalZ**
+* **groupLastUpdate**
+* **groupFairShareCount**
+* **channelHistoricalZ**
+* **channelFairShareCount**
