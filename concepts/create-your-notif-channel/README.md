@@ -8,12 +8,12 @@ Any user who activates themselves as a service on the protocol to send notificat
 
 In other words, any service, i.e., a dapp, protocol, or even a web2 service, that wants to send notifications out to its web3 users can choose to become a channel and establish an adequate communication bridge with its users.
 
-The creation of a channel is just a one-time simple procedure. It must be noted that channel creation only happens on the **Ethereum** blockchain and one wallet address can only create one channel only the protocol.
+The creation of a channel is just a one-time simple procedure. It must be noted that channel creation only happens on the **Ethereum** blockchain and one wallet address can only create one channel on the protocol.
 
 {% hint style="info" %}
 **Note:** _Although channel creation only happens on the Ethereum blockchain, the protocol is designed to be chain-agnostic, i.e., channel owners can choose to send notification on any chain of their choice and not just Ethereum network_\
-__\
-_This is discussed extensively in the following section 👉_ [enabling-channel-on-other-chains](../../developer-guides/create-your-notif-channel/enabling-channel-on-other-chains/ "mention")__
+**\
+_This is discussed extensively in the following section 👉_ [enabling-channel-on-other-chains](../../developer-guides/create-your-notif-channel/enabling-channel-on-other-chains/ "mention")**
 {% endhint %}
 
 A successfully created channel is capable of _**sending notifications**_ to its subscribers, directly tied to their wallet addresses. Any wallet address can become a subscriber of a particular channel by simply **opting into** that channel.&#x20;
@@ -23,7 +23,7 @@ Once opted in, the subscriber shall receive notifications from that channel dire
 {% hint style="info" %}
 _**Opting In or Opting out of a Channel is a completely gasless transaction and requires no fees.**_
 
-How to Opt-In to a Channel? 👉  [**Opting-Into a Channel**](https://docs.epns.io/users/epns-dapp/opting-in-to-a-channel)****
+How to Opt-In to a Channel? 👉 [**Opting-Into a Channel**](https://docs.epns.io/users/epns-dapp/opting-in-to-a-channel)\*\*\*\*
 {% endhint %}
 
 Moreover, the owner of a channel can also choose to _**delegate his/her notification sending power to any other wallet address**_. This enables the selected wallet address to send notifications on behalf of the channel. The channel owner, however, can choose to remove the delegate at any given time.&#x20;
