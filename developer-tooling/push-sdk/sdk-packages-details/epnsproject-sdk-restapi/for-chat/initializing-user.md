@@ -41,7 +41,11 @@ const user = await PushAPI.user.create({
   account?: string;
   signer?: SignerType;
   version?: typeof Constants.ENC_TYPE_V1 | typeof Constants.ENC_TYPE_V3;
-  additionalMeta?: { password?: string };
+  additionalMeta?: {
+    NFTPGP_V1?: {
+      password: string;
+    };
+  };
   progressHook?: (progress: ProgressHookType) => void;
 })
 ```
@@ -58,6 +62,19 @@ const user = await PushAPI.user.create({
 {% embed url="https://www.npmjs.com/package/@pushprotocol/restapi#create-user-for-chat" %}
 Create User Example
 {% endembed %}
+
+### Example Request
+
+In the example below, we'll create an NFT user:
+
+```typescript
+const user = await PushAPI.user.create({
+  account: `nft:eip155:${nftChainId}:${nftContractAddress}:${nftTokenId}`,
+  signer: new ethers.Wallet(`0x${privateKey}`),
+  env: ENV.STAGING,
+  additionalMeta: { NFTPGP_V1: { password: '@Test0i1223de' } },
+});
+```
 
 ### Response
 
@@ -162,6 +179,15 @@ const user = await PushAPI.user.get({
 Get User Example
 {% endembed %}
 
+### Example Request
+
+```typescript
+const user = await PushAPI.user.get({
+  account: `nft:eip155:${nftChainId}:${nftContractAddress}:${nftTokenId}`,
+  env: ENV.STAGING,
+});
+```
+
 ### Response
 
 ```typescript
@@ -245,7 +271,7 @@ Example response
 
 ## Decrypt PGP Keys
 
-Push chat is encrypted and only the users are able to decrypt chats, send messages, approve chat, etc. This means that you need to decrypt PGP keys after you have fetched user info for most of the features. Decrypting is easy and requires you to pass the user object and the signer.
+Push chat is encrypted, and only the users are able to decrypt chats, send messages, approve chats, etc. This means that you need to decrypt PGP keys after you have fetched user info for most of the features. Decrypting is easy and requires you to pass the user object and the signer.
 
 ```javascript
 // pre-requisite API calls that should be made before
@@ -256,14 +282,18 @@ const user = await PushAPI.user.get({
   
 // actual api
 const response = await PushAPI.chat.decryptPGPKey({
-    encryptedPGPPrivateKey: string;
-    account?: string;
-    signer?: SignerType;
-    additionalMeta?: { password?: string }; 
-    env?: ENV;
-    toUpgrade?: boolean;
-    progressHook?: (progress: ProgressHookType) => void;
-  })
+  encryptedPGPPrivateKey: string;
+  account?: string;
+  signer?: SignerType;
+  additionalMeta?: {
+    NFTPGP_V1?: {
+      password: string;
+    };
+  };
+  env?: ENV;
+  toUpgrade?: boolean;
+  progressHook?: (progress: ProgressHookType) => void;
+})
 ```
 
 | Property               | Description                                                                                                       |
