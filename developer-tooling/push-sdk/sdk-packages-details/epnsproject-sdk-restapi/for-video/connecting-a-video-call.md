@@ -8,7 +8,7 @@ description: Finally we connect the video call.
 
 Now, to finally connect a video call on the initiator's end, we need to listen for the `USER_FEEDS` event from `@pushprotocol/socket` and use the following code inside of the event listener:
 
-<pre class="language-typescript"><code class="lang-typescript"><strong>epnsSDKSocket?.on(EVENTS.USER_FEEDS, (feedItem: any) => {
+<pre class="language-typescript"><code class="lang-typescript"><strong>pushSDKSocket?.on(EVENTS.USER_FEEDS, (feedItem: any) => {
 </strong>    const { payload } = feedItem || {};
     // we check for the additionalMeta property in payload.data
     if (payload.hasOwnProperty('data') &#x26;&#x26; payload['data'].hasOwnProperty('additionalMeta')) {

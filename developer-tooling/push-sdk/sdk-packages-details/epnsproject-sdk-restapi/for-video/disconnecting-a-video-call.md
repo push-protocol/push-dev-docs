@@ -14,7 +14,7 @@ To disconnect a call we use the `disconnect()` method on the videoObject.
 And add this to the event handler of the`USER_FEEDS` event from `@pushprotocol/socket`:
 
 ```typescript
-epnsSDKSocket?.on(EVENTS.USER_FEEDS, (feedItem: any) => {
+pushSDKSocket?.on(EVENTS.USER_FEEDS, (feedItem: any) => {
     const { payload } = feedItem || {};
     // we check for the additionalMeta property in payload.data
     if (payload.hasOwnProperty('data') && payload['data'].hasOwnProperty('additionalMeta')) {

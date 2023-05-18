@@ -11,7 +11,7 @@ In order to receive a video call request need to listen for the `USER_FEEDS` eve
 ```typescript
 import { VideoCallStatus } from '@pushprotocol/restapi';
 
-epnsSDKSocket?.on(EVENTS.USER_FEEDS, (feedItem: any) => {
+pushSDKSocket?.on(EVENTS.USER_FEEDS, (feedItem: any) => {
     const { payload } = feedItem || {};
     // we check for the additionalMeta property in payload.data
     if (payload.hasOwnProperty('data') && payload['data'].hasOwnProperty('additionalMeta')) {
@@ -49,9 +49,39 @@ epnsSDKSocket?.on(EVENTS.USER_FEEDS, (feedItem: any) => {
 });
 ```
 
+The `additionalMeta` property has the following type:
+
+```typescript
+interface VideoPayloadType {
+  recipientAddress: string;
+  senderAddress: string;
+  chatId: string;
+  signalingData?: any;
+  status: VideoCallStatus;
+}
+
+export enum VideoCallStatus {
+  UNINITIALIZED,
+  INITIALIZED,
+  RECEIVED,
+  CONNECTED,
+  DISCONNECTED,
+  RETRY_INITIALIZED,
+  RETRY_RECEIVED,
+}
+```
+
+| Property         | Description                                                                                             |
+| ---------------- | ------------------------------------------------------------------------------------------------------- |
+| recipientAddress | Wallet address of remote peer/user ie the address which you want to call                                |
+| senderAddress    | Wallet address of the local peer/user                                                                   |
+| chatId           | Unique identifier for every push chat, here, the one between the senderAddress and the recipientAddress |
+| signalingData    | WebRTC signal data received from the peer which sent this notification                                  |
+| status           | Current status of the video call, can be found from VideoCallStatus enum                                |
+
 ## Accept Request for a Video Call
 
-After receiving a request for video call, its time to accept the request on the receiver's end. For this we'll need the `signalData` we received from the event handler of the `USER_FEEDS` event above.
+After receiving a request for a video call, it's time to accept the request on the receiver's end. For this, we'll need the `signalData` we received from the event handler of the `USER_FEEDS` event above.
 
 <pre class="language-typescript"><code class="lang-typescript"><strong>await videoObject.acceptRequest({
 </strong><strong>  signalData: any;

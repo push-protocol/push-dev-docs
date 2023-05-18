@@ -9,7 +9,7 @@ description: Retrying...
 Push video automatically handles the possibility of call not connecting by retrying the connection, inorder to make sure that call retrying works for your dapp, you just need to add the following to our good ol' event handler of the`USER_FEEDS` event from `@pushprotocol/socket`:
 
 ```typescript
-epnsSDKSocket?.on(EVENTS.USER_FEEDS, (feedItem: any) => {
+pushSDKSocket?.on(EVENTS.USER_FEEDS, (feedItem: any) => {
     const { payload } = feedItem || {};
     // we check for the additionalMeta property in payload.data
     if (payload.hasOwnProperty('data') && payload['data'].hasOwnProperty('additionalMeta')) {
