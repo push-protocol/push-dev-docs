@@ -11,10 +11,6 @@ To disconnect a call we use the `disconnect()` method on the videoObject.
 <pre class="language-typescript"><code class="lang-typescript"><strong>videoObject.disconnect();
 </strong></code></pre>
 
-| Property | Description |
-| -------- | ----------- |
-| -        | -           |
-
 And add this to the event handler of the`USER_FEEDS` event from `@pushprotocol/socket`:
 
 ```typescript

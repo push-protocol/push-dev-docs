@@ -12,10 +12,6 @@ To toggle your video we'll call the `toggleVideo()` method on the videoObject.
 videoObject.toggleVideo();
 ```
 
-| Property | Description |
-| -------- | ----------- |
-| -        | -           |
-
 ## Toggle Local Audio
 
 To toggle your video we'll call the `toggleAudio()` method on the videoObject.
@@ -23,10 +19,6 @@ To toggle your video we'll call the `toggleAudio()` method on the videoObject.
 ```typescript
 videoObject.toggleAudio();
 ```
-
-| Property | Description |
-| -------- | ----------- |
-| -        | -           |
 
 ## ℹ️ How to know the current status of local audio/video?
 
