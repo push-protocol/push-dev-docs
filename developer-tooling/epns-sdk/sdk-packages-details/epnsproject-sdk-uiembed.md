@@ -38,7 +38,7 @@ or any component with the ID _**sdk-trigger-id**_
 
 After the wallet is connected to your app flow, trigger the below code snippet.
 
-> **Note:** _You have to have the wallet connected with an account to execute the below code because internally the SDK calls the Push `FeedsAPI` which needs the account address. You will see notifications if you have opted-in to a channel using_ [_Push_](https://staging.push.org/#/channels)__
+> **Note:** _You have to have the wallet connected with an account to execute the below code because internally the SDK calls the Push `FeedsAPI` which needs the account address. You will see notifications if you have opted-in to a channel using_ [_Push_](https://staging.push.org/#/channels)
 
 ```typescript
 useEffect(() => {

@@ -14,7 +14,7 @@ Integrating the SNS module into your code takes less than 10 mins and contains j
 
 **Step 2:** You will need to open an endpoint either at a dedicated IP that listens to SNS or, if you are testing locally, have to expose the public endpoint for which tons of software is available.\
 \
-_**Hint:**_** ** For testing locally, You can also use [ngrok](https://ngrok.com/download) to expose the public endpoint. If you use this with the boilerplate, the port needs to be 6000. The ngrok URL is now the SNS endpoint required in step 3.
+_**Hint:**_ For testing locally, You can also use [ngrok](https://ngrok.com/download) to expose the public endpoint. If you use this with the boilerplate, the port needs to be 6000. The ngrok URL is now the SNS endpoint required in step 3.
 
 {% hint style="info" %}
 **Important:** Once you set up this, you need to contact us by either shouting / tagging us on [Discord](https://discord.com/invite/YVPB99F9W5) or reaching out via the [contact form](mailto:support@epns.io). We need this as the SNS module requires whitelisting of your webhook endpoint.

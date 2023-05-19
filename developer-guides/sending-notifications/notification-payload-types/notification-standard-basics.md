@@ -81,7 +81,7 @@ One exception to CAIP-10 format is for smart contract to smart contract interact
 Source is abstracted away unless you are interacting directly with Push Nodes, it's verified mostly through verification proof on push nodes to ensure it can't be spoofed.
 {% endhint %}
 
-* **Recipient(s)** - **** The address to the notification should reach. The address is represented in CAIP-10 format. For now, Push supports Ethereum and Polygon chain. Their respective CAIP-10 format can be represented as:\
+* **Recipient(s)** - The address to the notification should reach. The address is represented in CAIP-10 format. For now, Push supports Ethereum and Polygon chain. Their respective CAIP-10 format can be represented as:\
 
   * Ethereum(Goerli): `eip155:42:<Address>`
   * Polygon(Mumbai): `eip155:80001:<Address>`&#x20;
@@ -100,13 +100,13 @@ While any Notification Identity can be passed in any of the interactions, It's r
 
 
 **What to call:** `sendNotification(address _channel, address _recipient, bytes calldata _identity)`\
-``\
-``**Additional Rules:**
+\
+**Additional Rules:**
 
 * Notification Type 1 (Broadcast): Pass _recipient as \_channel_
 * Notification Type 3 (Targeted): Pass recipient as intended recipient
 * Notification Type 4 (Subset): **Not Supported Yet**\
-  ****
+
 
 **Example:**&#x20;
 
@@ -136,8 +136,8 @@ IPUSHCommInterface(EPNS_COMM_CONTRACT_ADDRESS_FOR_SPECIFIC_BLOCKCHAIN).sendNotif
 Push SDK supports all Identity Types but it is recommended to use Identity Type 2 (Direct Payload) as it's blazingly fast!\
 \
 **What to call:** \
-****[push-sdk](../../../developer-tooling/push-sdk/ "mention")****\
-****\
+[push-sdk](../../../developer-tooling/push-sdk/ "mention")\
+\
 **Examples:**
 
 ```json

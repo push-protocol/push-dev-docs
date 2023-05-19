@@ -68,8 +68,8 @@ For Goerli and Mumbai testnets, the namespace is `eip155` and the chain\_id is `
 
 {% hint style="info" %}
 **Push Chat:**\
-****\
-****For Push Chat related APIs, the address is in the format:&#x20;
+\
+For Push Chat related APIs, the address is in the format:&#x20;
 
 **eip155:\<address>** instead of **eip155:\<chain\_id>:\<address>**
 {% endhint %}

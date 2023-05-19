@@ -9,7 +9,7 @@ The protocol is designed to enable your channel to send notifications on multipl
 However, to enable a channel for sending notifications on chains other than Ethereum, the concept of **channel alias** plays a major role.
 
 {% hint style="info" %}
-_Check out this section to get an introduction to_ [_channel alias_](../../../concepts/create-your-notif-channel/what-is-a-channel-alias.md)__
+_Check out this section to get an introduction to_ [_channel alias_](../../../concepts/create-your-notif-channel/what-is-a-channel-alias.md)
 {% endhint %}
 
 ## How to set up Channel Alias?

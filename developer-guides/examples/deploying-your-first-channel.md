@@ -47,7 +47,7 @@ Currently, Channel Alias is the only way to enable multi-chain communication and
 Faucets giving you trouble? Head to our :point\_right: Push [Discord Channel](https://discord.com/invite/pushprotocol) and ask an admin to send you some.
 {% endhint %}
 
-### in Step 4️⃣ - Understand and fill details (Especially Channel Alias) ****&#x20;
+### in Step 4️⃣ - Understand and fill details (Especially Channel Alias)&#x20;
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-09-05 at 2.30.03 AM.png" alt=""><figcaption><p>Channel Alias is immutable in Push Protocol v1 and can't be changed later</p></figcaption></figure>
 
@@ -78,7 +78,7 @@ You will need to do two transactions (and optionally the third one if you are cr
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-09-05 at 2.27.04 AM.png" alt=""><figcaption></figcaption></figure>
 
-### **Step** 6️⃣ **** - Verify Channel on another Blockchain
+### **Step** 6️⃣ - Verify Channel on another Blockchain
 
 If you have created a multichain channel then you need to switch to that blockchain network and do another tx that verifies your channel on that network.
 

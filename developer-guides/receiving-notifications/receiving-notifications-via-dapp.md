@@ -26,7 +26,7 @@ On the right-hand side of every channel, you can see an _**Opt-In**_ button.&#x2
 Henceforth, You will receive all the notifications that this channel will send 🥳.
 
 {% hint style="info" %}
-**Note: **_**Opting-In**_** ** to a channel is a completely off-chain process and it doesn't require any _**gas fees**_ from you. All you need to do is simply sign the opt-in transaction. ****&#x20;
+**Note: **_**Opting-In**_ to a channel is a completely off-chain process and it doesn't require any _**gas fees**_ from you. All you need to do is simply sign the opt-in transaction.&#x20;
 {% endhint %}
 
 ### Find your Favorite Channels using Search Bar

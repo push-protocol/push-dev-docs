@@ -48,7 +48,7 @@ You are required to get the PGP key and decrypt it locally, for which you can us
 
 <summary><strong>To create the User (</strong><code>sdk.user.create</code>)</summary>
 
-This function will create a new user and **** return the created user’s information, like the PGP keys. It takes as arguments the address of the wallet and the environment variable.
+This function will create a new user and return the created user’s information, like the PGP keys. It takes as arguments the address of the wallet and the environment variable.
 
 Read in detail [👉](https://emojipedia.org/backhand-index-pointing-right/) [initializing-user.md](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-chat/initializing-user.md "mention")
 

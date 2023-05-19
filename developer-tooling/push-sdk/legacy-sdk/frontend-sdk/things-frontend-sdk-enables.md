@@ -17,7 +17,7 @@ The whole process is aligned in this manner to maintain the flow of control from
 
 ## Fetching and Parsing Notifications from the API
 
-This is short summary on how to setup fetching and parsing notifications via Frontend SDK. A detailed demo guide can be found here at [`push-frontend-sdk/sample_code/loadNotifications`](https://github.com/ethereum-push-notification-service/push-frontend-sdk/tree/main/sample\_codes/loadNotifications)``
+This is short summary on how to setup fetching and parsing notifications via Frontend SDK. A detailed demo guide can be found here at [`push-frontend-sdk/sample_code/loadNotifications`](https://github.com/ethereum-push-notification-service/push-frontend-sdk/tree/main/sample\_codes/loadNotifications)
 
 ```cpp
 import { api, utils } from "@epnsproject/frontend-sdk";
@@ -81,7 +81,7 @@ import { NotificationItem } from '@epnsproject/frontend-sdk/dist/native';
 
 ## Markdown Reference
 
-This section contains several markdown formats available and how to use them. They can be viewed live by running the React app in [`src/sample_codes/parseNotificationMarkdown`](https://github.com/ethereum-push-notification-service/epns-frontend-sdk/tree/main/sample\_codes/parseNotificationMarkdown)``
+This section contains several markdown formats available and how to use them. They can be viewed live by running the React app in [`src/sample_codes/parseNotificationMarkdown`](https://github.com/ethereum-push-notification-service/epns-frontend-sdk/tree/main/sample\_codes/parseNotificationMarkdown)
 
 ![](https://camo.githubusercontent.com/f5d6277d83d929ad5c4568ad41b59194c9642b38038bd32aadd2b3a8c0f82416/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f78616e6436722f696d6167652f75706c6f61642f76313633323233363032342f53637265656e73686f745f323032312d30392d32315f61745f31352e35332e32395f70306c7074662e706e67)
 

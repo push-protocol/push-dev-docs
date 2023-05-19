@@ -24,7 +24,7 @@ Hello World channel exists to simply demonstrate how easy it is to send notifica
       &#x20;       `"CHAIN_ID": "CHAIN_ID_HERE"`\
       &#x20;   `},` \
       `}`\
-      ``&#x20;
+      &#x20;
 4. Simply copy and paste the private key of your channel instead of `YOUR_CHANNEL_PRIVATE_KEY_HERE` and you should be presented with the following screen.\
    \
    For `CHAIN_ID_HERE`, You will need to paste the multi chain id format, current supported formats are:
@@ -32,8 +32,8 @@ Hello World channel exists to simply demonstrate how easy it is to send notifica
 {% tabs %}
 {% tab title="Ethereum Goerli Testnet" %}
 `"CHAIN_ID": "eip155:5"`\
-``\
-``**Note:** Use `eip155:5` if you deployed your channel on Ethereum Goerli Testnet\
+\
+**Note:** Use `eip155:5` if you deployed your channel on Ethereum Goerli Testnet\
 
 
 {% hint style="info" %}
@@ -43,8 +43,8 @@ Will only work if .env also has SHOWRUNNERS\_ENV=staging
 
 {% tab title="Polygon Mumbai Testnet" %}
 `"CHAIN_ID": "eip155:80001"`\
-``\
-``**Note:** Use `eip155:80001` if you deployed your channel on Matic Mumbai Testnet\
+\
+**Note:** Use `eip155:80001` if you deployed your channel on Matic Mumbai Testnet\
 
 
 {% hint style="info" %}
@@ -54,8 +54,8 @@ Will only work if .env also has SHOWRUNNERS\_ENV=staging
 
 {% tab title="Ethereum Mainnet" %}
 `"CHAIN_ID": "eip155:1"`\
-``\
-``**Note:** Use `eip155:1` if you deployed your channel on Ethereum Mainnet\
+\
+**Note:** Use `eip155:1` if you deployed your channel on Ethereum Mainnet\
 
 
 {% hint style="info" %}
@@ -65,8 +65,8 @@ Will only work if .env also has SHOWRUNNERS\_ENV=prod
 
 {% tab title="Polygon Mainnet" %}
 `"CHAIN_ID": "eip155:137"`\
-``\
-``**Note:** Use `eip155:137` if you deployed your channel on Polygon\
+\
+**Note:** Use `eip155:137` if you deployed your channel on Polygon\
 
 
 {% hint style="info" %}

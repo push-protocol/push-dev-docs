@@ -18,7 +18,7 @@ Verification proofs differ based on the platform from which they are sent. For i
 | thegraph:graphid+notifcounter::uid::optionaluid | Verification proof generated from any subgraph                                                         | The type is proven by validating if the subgraph is attached to the channel and then the counter id is used to pick the message and compare the payload with the payload stored on the graph |
 
 {% hint style="info" %}
-**Note**:- __ _::**uid**:: is an optional delimiter which if present along with **optionaluid** allows the proof to be uniquely different._
+**Note**:-  _::**uid**:: is an optional delimiter which if present along with **optionaluid** allows the proof to be uniquely different._
 {% endhint %}
 
 #### Understanding verificationProofs
@@ -28,7 +28,7 @@ Verification proofs differ based on the platform from which they are sent. For i
 
 {% hint style="warning" %}
 **Note**: _eip-712v1 has a limitation to support only completed old payloads which include all the parameters of the payload which are part of notification, data, and recipients._ \
-__\
+\
 _As identity formats like 0,1 and 3 have single string payload, only identity 2 is compatible with eip-712v1._ \
 _To overcome this limitation eip-712v2 is identity-independent._
 {% endhint %}

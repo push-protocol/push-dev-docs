@@ -51,7 +51,7 @@ _If you are yet to create a channel you can proceed to_ [_our staging dapp_](htt
 
 **Step 5:** Alright. Since we are all set.
 
-**Let's send a notification!!** :rocket:****
+**Let's send a notification!!** :rocket:
 
 ```
 const tx = await sdk.sendNotification(

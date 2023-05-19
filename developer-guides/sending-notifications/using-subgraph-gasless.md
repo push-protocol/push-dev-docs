@@ -196,10 +196,10 @@ Follow steps 5, 6 and 7 within the respective handler functions from which the n
 
     ```
 6.  **Define Notification**\
-    ****The `notification` variable is defined in the given below format 👇🏼\
+    The `notification` variable is defined in the given below format 👇🏼\
     \
     **Format : `{"field1" : "value1", "field2" : "value2" }`**\
-    **``**
+
 
     {% code overflow="wrap" %}
     ```typescript
@@ -268,7 +268,7 @@ Poll Interval (in seconds) defines the time period at which Push Nodes shall pin
 
 > _If you don’t have a channel yet, you can easily create one by following this guide_ [_here_](https://docs.epns.io/developers/developer-zone/create-your-notif-channel)_._
 
-<div>
+<div align="left">
 
 <figure><img src="../../.gitbook/assets/subgraph1.png" alt=""><figcaption><p>Select <code>Add SubGraph Details</code> from the Channel Owner dashboard</p></figcaption></figure>
 

@@ -1,12 +1,8 @@
----
-description: Retrying...
----
-
 # Handling video call retries
 
 ## Handle video call retries
 
-Push video automatically handles the possibility of call not connecting by retrying the connection, inorder to make sure that call retrying works for your dapp, you just need to add the following to our good ol' event handler of the`USER_FEEDS` event from `@pushprotocol/socket`:
+Push video automatically handles the possibility of the call not connecting by retrying the connection. In order to make sure that call retrying works for your dapp, you just need to add the following to our good old event handler of the`USER_FEEDS` event from `@pushprotocol/socket`:
 
 ```typescript
 pushSDKSocket?.on(EVENTS.USER_FEEDS, (feedItem: any) => {

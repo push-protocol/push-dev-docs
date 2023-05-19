@@ -18,7 +18,7 @@ Unlike the Push Core smart contract, the communicator protocol is designed to be
 
 The Push Communicator protocol is comparatively quite simple. The communicator protocol includes features that allow users to _subscribe to a channel, unsubscribe from a channel as well as the imperative one, i.e., **sending notifications.**_
 
-&#x20;_****_ As the communicator protocol can be deployed on various chains, it allows us to trigger notifications on multiple chains and not just the Ethereum blockchain.
+&#x20;As the communicator protocol can be deployed on various chains, it allows us to trigger notifications on multiple chains and not just the Ethereum blockchain.
 
 ### Technical Resources for Push Smart Contracts
 

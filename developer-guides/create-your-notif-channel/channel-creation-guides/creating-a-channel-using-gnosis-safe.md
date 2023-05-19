@@ -16,7 +16,7 @@ Before we proceed with the actual steps of connecting the safe to the Push dapp 
 
 1. Create your own gnosis safe with the right set of owners and policies.
 2. Fund your safe with at least 50 PUSH tokens. _This amount of PUSH is required for channel creation._
-3.  Initiate a **contract interaction** from your safe itself to trigger the _**approve()**_** ** function of the [PUSH Token](https://etherscan.io/token/0xf418588522d5dd018b425e472991e52ebbeeeeee) with the following values for the argument:
+3.  Initiate a **contract interaction** from your safe itself to trigger the _**approve()**_ function of the [PUSH Token](https://etherscan.io/token/0xf418588522d5dd018b425e472991e52ebbeeeeee) with the following values for the argument:
 
     `a.`` `_`spender (address) :`_`0x66329Fdd4042928BfCAB60b179e1538D56eeeeeE - EPNSCore Contract`
 

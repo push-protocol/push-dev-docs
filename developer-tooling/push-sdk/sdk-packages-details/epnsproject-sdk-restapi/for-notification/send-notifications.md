@@ -155,7 +155,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 });
 ```
 
-****
+
 
 ### **Broadcast Notification**
 
@@ -220,7 +220,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 });
 ```
 
-****
+
 
 ### **Broadcast Notification**
 
@@ -247,7 +247,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 
 {% tab title="Subgraph Payload" %}
 {% hint style="info" %}
-Ensure that the channel has the `graphId` **** being provided
+Ensure that the channel has the `graphId` being provided
 {% endhint %}
 
 ### Targeted Notification
@@ -286,7 +286,7 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 });
 ```
 
-****
+
 
 ### **Broadcast Notification**
 

@@ -12,7 +12,7 @@ The **verification tag** of a Channel has its own significance. While on one han
 
 ### **Understanding the Channel Verification procedure**
 
-Channels in the Push Core protocol can have either a **Primary** or **** a **Secondary verification tag.**
+Channels in the Push Core protocol can have either a **Primary** or a **Secondary verification tag.**
 
 **a. Primary Verification tag:** Channels that have directly been verified by the Push Channel Admin are the ones that have a _**primary verification**_ tag.\
 All Primary Verified channels have the power to verify other unverified channels.

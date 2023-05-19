@@ -84,7 +84,7 @@ For Goerli and Mumbai testnets, the namespace is `eip155` and the chain\_id is `
 
 `eip155:80001:0x20E0e045F1baB5CD9284602bdf24D050Dc8CB719`
 
-``
+
 
 In any of the `restapi` methods (unless explicitly stated otherwise) we accept either -
 

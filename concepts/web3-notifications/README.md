@@ -25,10 +25,8 @@ As per the current design of the protocol, there can be 3 main actors who can se
 
 _Sending notifications is a gasless transaction and therefore notification senders need not pay any gas fee while sending notifications via the Dapp._
 
-__\
-_**Gas** Fees **** are only applicable when **on-chain notifications** are triggered directly from smart contracts._
-
-
+\
+_**Gas** Fees_ _are only applicable when **on-chain notifications** are triggered directly from smart contracts._
 {% endhint %}
 
 Now that you have a brief overview of notifications in the protocol, let's understand and explore the different ways to send notifications to your users.

@@ -17,12 +17,12 @@ Channel Creation mainly requires 4 crucial actions:
    _b. Channel addresses that are already in a **blocked** state should never be allowed to create channels again._\
    _c. The amount of PUSH being deposited for channel creation must be above the minimum threshold, etc._
 2. **Deposit of Channel Creation Fee:** \
-   ****Creating a channel on Push Core requires a channel creation fee of at least 50 PUSH, which the Channel Owner must deposit.\
+   Creating a channel on Push Core requires a channel creation fee of at least 50 PUSH, which the Channel Owner must deposit.\
    \
    The contract charges only 10 PUSH as the **Protocol Fees** during channel creations, while the remaining is stored as the channel owner's pool contribution in the contract. In case a channel owner chooses to deactivate their channel, the pool contribution amount is refunded back.
 3. **Storing imperative Channel data:** Once the deposited amount is handled properly, the significant details like the channel’s _pool contribution, state, weight, the channel creation block number as well as the total number of channels in the protocol,_ etc, are updated and stored on-chain.
 4. **Subscribing to important channels:** \
-   ****As per the current architecture of the protocol, the new channel being created must subscribe to 3 important channels right at the time of its creation:\
+   As per the current architecture of the protocol, the new channel being created must subscribe to 3 important channels right at the time of its creation:\
    **a**. _**EPNS Alerter Channel**_\
    **b. **_**Push Channel Admin**_\
    _**c. Channel owners must subscribe to its own channel as well.**_
