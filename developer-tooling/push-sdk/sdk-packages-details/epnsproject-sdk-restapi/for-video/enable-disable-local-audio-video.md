@@ -9,7 +9,9 @@ description: Turn-on/off your audio and video
 To enable/disable local video we'll call the `enableVideo()` method on the `videoObject`.
 
 ```typescript
-videoObject.enableVideo(state);
+videoObject.enableVideo({
+    state:boolean;
+});
 ```
 
 | Property | Description                               |
@@ -21,7 +23,9 @@ videoObject.enableVideo(state);
 To enable/disable local audio we'll call the `enableAudio()` method on the `videoObject`.
 
 ```typescript
-videoObject.enableAudio(state);
+videoObject.enableAudio({
+    state:boolean;
+});
 ```
 
 | Property | Description                               |
@@ -37,10 +41,10 @@ The current local video status can be accessed by `videoObject.data.local.video`
 If `videoObject.data.local.video` is true, then that means your local video is enabled, and if it's false then that means the local video is disabled. Likewise for `videoObject.data.local.audio`.
 {% endhint %}
 
-{% embed url="https://www.npmjs.com/package/@pushprotocol/restapi#togglevideo" %}
+{% embed url="https://www.npmjs.com/package/@pushprotocol/restapi#enablevideo" %}
 enable video
 {% endembed %}
 
-{% embed url="https://www.npmjs.com/package/@pushprotocol/restapi#toggleaudio" %}
+{% embed url="https://www.npmjs.com/package/@pushprotocol/restapi#enableaudio" %}
 enable audio
 {% endembed %}

@@ -11,7 +11,7 @@ Its numerous applications include video-based customer support in decentralized 
 Simply put, this SDK can help developers seamlessly add secure, private video communication into their applications, making it a vital tool for implementing wallet-to-wallet video calls on any dApp.
 
 {% hint style="info" %}
-On [this](https://github.com/ethereum-push-notification-service/push-for-hackers/tree/main/sdk-functionality) repos, you can find all the Video SDK functions use cases. It's a great place to learn how the SDK can be used.
+On [this](https://github.com/ethereum-push-notification-service/push-for-hackers/tree/main/sdk-functionality)[ repos](https://github.com/ethereum-push-notification-service/push-for-hackers/tree/main/sdk-functionality), you can find all the Video SDK functions use cases. It's a great place to learn how the SDK can be used.
 {% endhint %}
 
 ## Video SDK Features

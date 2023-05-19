@@ -72,6 +72,7 @@ In order to receive a video call request, we need to listen for the `USER_FEEDS`
 
 ```typescript
 import { VideoCallStatus } from '@pushprotocol/restapi';
+import { ADDITIONAL_META_TYPE } from '@pushprotocol/restapi/src/lib/payloads/constants';
 
 pushSDKSocket?.on(EVENTS.USER_FEEDS, (feedItem: any) => {
     // The event listner for the USER_FEEDS event
@@ -79,47 +80,51 @@ pushSDKSocket?.on(EVENTS.USER_FEEDS, (feedItem: any) => {
     // we check if the additionalMeta property is present in payload.data
     if (payload.hasOwnProperty('data') && payload['data'].hasOwnProperty('additionalMeta')) {
     
-        // parsing additionalMeta
-        const additionalMeta = JSON.parse(payload['data']['additionalMeta']);
+        const additionalMeta = payload['data']['additionalMeta'];
         
-        // If the received status is INITIALIZED that means we have an incoming call
-        if (additionalMeta.status === VideoCallStatus.INITIALIZED) {
-            const {
-                // your address, ie the recipient address of the video call notification
-                recipientAddress,
+        // check for PUSH_VIDEO
+        if (additionalMeta.type === `${ADDITIONAL_META_TYPE.PUSH_VIDEO}+1`){
+            const videoCallMetaData = JSON.parse(additionalMeta.data);
+        
+            // If the received status is INITIALIZED that means we have an incoming call
+            if (videoCallMetaData.status === VideoCallStatus.INITIALIZED) {
+                const {
+                    // your address, ie the recipient address of the video call notification
+                    recipientAddress,
+                    
+                    // address of the other peer/user part of the video call, who sent you this notification
+                    senderAddress,
+                    
+                    // the unique identifier for every push chat, here, the one between the senderAddress and the recipientAddress
+                    chatId,
+                    
+                    // webRTC signal data received from the peer which sent this notification
+                    signalData,
+                    
+                    // current status of the video call, can be found from VideoCallStatus enum
+                    status,
+                } = videoCallMetaData;
+                // Note - We'll need signalData while calling acceptRequest function
+                // You can save these properties in a state for furture use
                 
-                // address of the other peer/user part of the video call, who sent you this notification
-                senderAddress,
-                
-                // the unique identifier for every push chat, here, the one between the senderAddress and the recipientAddress
-                chatId,
-                
-                // webRTC signal data received from the peer which sent this notification
-                signalingData,
-                
-                // current status of the video call, can be found from VideoCallStatus enum
-                status,
-            } = additionalMeta;
-            // Note - signalingData is the signalData we need in the acceptRequest call
-            // You can save these properties in a state for furture use
-            
-            /* 
-                If you want you can also save these properties on the data state
-                we created while initializing the video object.
-                Later you can use it while calling acceptRequest()
-                signalData will be available via data.meta.initiator.signal
-            */
-            videoObject.setData((oldData) => {
-              return produce(oldData, (draft) => {
-                draft.local.address = recipientAddress;
-                draft.incoming[0].address = senderAddress;
-                draft.incoming[0].status = PushAPI.VideoCallStatus.RECEIVED;
-                draft.meta.chatId = chatId;
-                draft.meta.initiator.address = senderAddress;
-                draft.meta.initiator.signal = signalingData;
-              });
-            });
-            // PS: Don't forget to import videoObject. :)
+                /* 
+                    If you want you can also save these properties on the data state
+                    we created while initializing the video object.
+                    Later you can use it while calling acceptRequest()
+                    signalData will be available via data.meta.initiator.signal
+                */
+                videoObject.setData((oldData) => {
+                  return produce(oldData, (draft) => {
+                    draft.local.address = recipientAddress;
+                    draft.incoming[0].address = senderAddress;
+                    draft.incoming[0].status = PushAPI.VideoCallStatus.RECEIVED;
+                    draft.meta.chatId = chatId;
+                    draft.meta.initiator.address = senderAddress;
+                    draft.meta.initiator.signal = signalData;
+                  });
+                });
+                // PS: Don't forget to import videoObject. :)
+            }
         }
     }
 });
@@ -128,11 +133,25 @@ pushSDKSocket?.on(EVENTS.USER_FEEDS, (feedItem: any) => {
 The `additionalMeta` property has the following type:
 
 ```typescript
-interface VideoPayloadType {
+additionalMeta?: {
+  /**
+   * type = ADDITIONAL_META_TYPE+VERSION
+   * VERSION > 0
+   */
+  type: `${ADDITIONAL_META_TYPE}+${number}`;
+  data: string;
+  domain?: string;
+};
+```
+
+When you parse the `data` property from the `additionalMeta` object, you'll receive the videoCallMetaData, which has the following type:
+
+```typescript
+interface VideoCallMetaDataType {
   recipientAddress: string;
   senderAddress: string;
   chatId: string;
-  signalingData?: any;
+  signalData?: any;
   status: VideoCallStatus;
 }
 ```
@@ -187,26 +206,32 @@ accept request
 Now, to finally connect a video call on the initiator's end, we need to listen for the `USER_FEEDS` event from `@pushprotocol/socket` and use the following code inside of the event listener:
 
 ```typescript
+import { ADDITIONAL_META_TYPE } from '@pushprotocol/restapi/src/lib/payloads/constants'
+
 pushSDKSocket?.on(EVENTS.USER_FEEDS, (feedItem: any) => {
     // The event listner for the USER_FEEDS event
     const { payload } = feedItem || {};
     //We check if the additionalMeta property is present in payload.data
     if (payload.hasOwnProperty('data') && payload['data'].hasOwnProperty('additionalMeta')) {
         
-        // parsing additionalMeta
-        const additionalMeta = JSON.parse(payload['data']['additionalMeta']);
+        const additionalMeta = payload['data']['additionalMeta'];
         
-        // If the received status is RECEIVED that means we can connect the video call
-        if (additionalMeta.status === VideoCallStatus.RECEIVED) {
-            const {
-                signalingData,
-            } = additionalMeta;
-            
-            // connecting the call using received signalData
-            videoObject.connect({
-                signalData: signalingData
-            })
-            // PS: Dont forget to import videoObject. :)
+        // check for PUSH_VIDEO
+        if (additionalMeta.type === `${ADDITIONAL_META_TYPE.PUSH_VIDEO}+1`){
+            const videoCallMetaData = JSON.parse(additionalMeta.data);
+        
+            // If the received status is RECEIVED that means we can connect the video call
+            if (videoCallMetaData.status === VideoCallStatus.RECEIVED) {
+                const {
+                    signalData,
+                } = videoCallMetaData;
+                
+                // connecting the call using received signalData
+                videoObject.connect({
+                    signalData,
+                })
+                // PS: Dont forget to import videoObject. :)
+            }
         }
     }
 });
@@ -237,6 +262,8 @@ videoObject.disconnect();
 And add this to the event handler of the`USER_FEEDS` event from `@pushprotocol/socket`:
 
 ```typescript
+import { ADDITIONAL_META_TYPE } from '@pushprotocol/restapi/src/lib/payloads/constants'
+
 pushSDKSocket?.on(EVENTS.USER_FEEDS, (feedItem: any) => {
     // The event listner for the USER_FEEDS event
 
@@ -245,11 +272,16 @@ pushSDKSocket?.on(EVENTS.USER_FEEDS, (feedItem: any) => {
     if (payload.hasOwnProperty('data') && payload['data'].hasOwnProperty('additionalMeta')) {
         
         // parsing additionalMeta
-        const additionalMeta = JSON.parse(payload['data']['additionalMeta']);
+        const additionalMeta = payload['data']['additionalMeta'];
         
-        // If the received status is DISCONNECTED that means the call has ended
-        if (additionalMeta.status === VideoCallStatus.DISCONNECTED) {
-            // here you can do a window reload or just clear out the video state
+        // check for PUSH_VIDEO
+        if (additionalMeta.type === `${ADDITIONAL_META_TYPE.PUSH_VIDEO}+1`){
+            const videoCallMetaData = JSON.parse(additionalMeta.data);
+            
+            // If the received status is DISCONNECTED that means the call has ended
+            if (videoCallMetaData.status === VideoCallStatus.DISCONNECTED) {
+                // here you can do a window reload or just clear out the video state
+            }
         }
     }
 });
