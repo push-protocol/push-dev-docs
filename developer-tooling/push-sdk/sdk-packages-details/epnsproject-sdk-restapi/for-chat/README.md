@@ -1,16 +1,16 @@
 # For Chat
 
+Push Chat supports wallet-to-wallet chat, group chat, and also NFT Chat. You can use the SDK to start implementing chat on your dApp or your wallet.
+
 <figure><img src="../../../../../.gitbook/assets/pushchatsnippet.png" alt=""><figcaption></figcaption></figure>
 
-This section of SDK contains all things required for you to start implementing chat on your dApp or your wallet.
-
 {% hint style="info" %}
-Do checkout socket SDK to enable active fetching of messages and more 👉 [pushprotocol-socket](../../pushprotocol-socket/ "mention")
+Do checkout socket SDK to enable active fetching of messages and more[pushprotocol-socket](../../pushprotocol-socket/ "mention")
 {% endhint %}
 
-{% embed url="https://github.com/ethereum-push-notification-service/push-for-hackers/tree/main/sdk-functionality" %}
-Push for Hackers repo containing code coverage for all sdk functionality with examples
-{% endembed %}
+The project below provides comprehensive examples demonstrating the usage of all SDK functions:
+
+{% embed url="https://github.com/ethereum-push-notification-service/push-sdk/tree/main/packages/examples/sdk-backend-node" %}
 
 ## Chat SDK Features
 
