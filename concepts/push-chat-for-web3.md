@@ -79,7 +79,7 @@ When an address logs in to the protocol for the first time, PGP encryption keys 
 The PGP private key is then encrypted with the address’ public key and then sent the encrypted PGP private key, along with the PGP public key, to Push Nodes to get stored.&#x20;
 
 {% hint style="success" %}
-This is extensible which means that the PGP key can be encrypted in the future with other methods paving way for a multi-chain future.
+This is extensible, which means that the PGP key can be encrypted in the future with other methods paving the way for a multi-chain future.
 {% endhint %}
 
 Messages are encrypted on the client by using the AES encryption algorithm.&#x20;
@@ -87,6 +87,25 @@ Messages are encrypted on the client by using the AES encryption algorithm.&#x20
 A different AES secret key is generated for each message. This secret key is then encrypted with the PGP public keys from the parties involved in the conversation and then sent the encrypted AES key is to Push Nodes.&#x20;
 
 The message payload content also contains the encrypted AES key in order to decrypt the message.
+
+## NFT Chat
+
+Each NFT Chat has a pair of public and private encryption keys responsible for encrypting and decrypting chat messages. These encryption keys are stored encrypted on the Push Network.
+
+The way that NFT Chats are handled by the Push Network is similar to any chat message. However, there is a crucial distinction: the encryption keys are encrypted using a secret key chosen by the NFT holder rather than being derived from the user's signature.
+
+### Transferring the NFT
+
+The key pair is encrypted by a secret key selected by the NFT holder. When the NFT holder decides to transfer the NFT to another user, two possible scenarios can occur:
+
+* In the first scenario, the original owner can choose to send the new owner the secret key. This allows the new owner to decrypt all the chat messages associated with the NFT. This option ensures the continuity of the chat messages within the NFT.
+* In the second scenario, the new owner creates a new secret key for the NFT. However, this means that the new owner will not have access to any previous chat messages linked to that NFT. This option prioritizes the security of the chat messages and ensures that no one else has access to them.
+
+### User Experience
+
+When users log in to the dapp to read NFT Chat messages, they are prompted to enter their secret key to decrypt the chat messages.
+
+If an NFT Chat does not have a secret key set, or if the user has just received the NFT and doesn't have access to the previous secret key, they are prompted to create a new secret key.
 
 ## Push Chat SDK
 
