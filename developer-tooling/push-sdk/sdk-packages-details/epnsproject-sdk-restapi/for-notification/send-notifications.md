@@ -58,28 +58,29 @@ async function sendNotification(options: {
 
 #### Allowed Options (params with \* are mandatory)
 
-| Param                | Type                | Default | Remarks                                                                                                                                           |
-| -------------------- | ------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| signer\*             | -                   | -       | Signer object                                                                                                                                     |
-| senderType\*         | number              | 0       | 0 for channel notification. 1 for chat notification                                                                                               |
-| channel\*            | string              | -       | channel address (CAIP)                                                                                                                            |
-| type\*               | number              | -       | <p>Notification Type<br>Target = 3 (send to 1 address),<br>Subset = 4 (send to 1 or more addresses),<br>Broadcast = 1 (send to all addresses)</p> |
-| identityType\*       | number              | -       | <p>Identity Type<br>Minimal = 0,<br>IPFS = 1,<br>Direct Payload = 2,<br>Subgraph = 3 }</p>                                                        |
-| recipients\*         | string or string\[] | -       | <p>for Notification Type = Target it is 1 address,<br>for Notification Type = Subset, Broadcast it is an array of addresses (CAIP)</p>            |
-| notification.title\* | string              | -       | Push Notification Title (not required for identityType IPFS, Subgraph)                                                                            |
-| notification.body\*  | string              | -       | Push Notification Body(not required for identityType IPFS, Subgraph)                                                                              |
-| payload.title        | string              | -       | Notification Title(not required for identityType IPFS, Subgraph)                                                                                  |
-| payload.body         | string              | -       | Notification Body(not required for identityType IPFS, Subgraph)                                                                                   |
-| payload.cta          | string              | -       | Notification Call To Action url(not required for identityType IPFS, Subgraph)                                                                     |
-| payload.img          | string              | -       | Notification Media url(not required for identityType IPFS, Subgraph)                                                                              |
-| payload.sectype      | string              | -       | If Secret Notification then pass(not required for identityType IPFS, Subgraph)                                                                    |
-| graph.id             | string              | -       | graph id, required only if the identityType is 3                                                                                                  |
-| graph.counter        | string              | -       | graph counter, required only if the identityType is 3                                                                                             |
-| ipfsHash             | string              | -       | ipfsHash, required only if the identityType is 1                                                                                                  |
-| expiry               | number              | -       | (optional) epoch value if the notification has an expiry                                                                                          |
-| hidden               | boolean             | false   | (optional) true if we want to hide the notification                                                                                               |
-| pgpPrivateKey        | string              | -       | (optional) pgp private key for new notification verification proof                                                                                |
-| env                  | string              | ‘prod’  | API env - ‘prod’, ‘staging’                                                                                                                       |
+| Param                  | Type                                      | Default | Remarks                                                                                                                                           |
+| ---------------------- | ----------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| signer\*               | -                                         | -       | Signer object                                                                                                                                     |
+| senderType\*           | number                                    | 0       | 0 for channel notification. 1 for chat notification                                                                                               |
+| channel\*              | string                                    | -       | channel address (CAIP)                                                                                                                            |
+| type\*                 | number                                    | -       | <p>Notification Type<br>Target = 3 (send to 1 address),<br>Subset = 4 (send to 1 or more addresses),<br>Broadcast = 1 (send to all addresses)</p> |
+| identityType\*         | number                                    | -       | <p>Identity Type<br>Minimal = 0,<br>IPFS = 1,<br>Direct Payload = 2,<br>Subgraph = 3 }</p>                                                        |
+| recipients\*           | string or string\[]                       | -       | <p>for Notification Type = Target it is 1 address,<br>for Notification Type = Subset, Broadcast it is an array of addresses (CAIP)</p>            |
+| notification.title\*   | string                                    | -       | Push Notification Title (not required for identityType IPFS, Subgraph)                                                                            |
+| notification.body\*    | string                                    | -       | Push Notification Body(not required for identityType IPFS, Subgraph)                                                                              |
+| payload.title          | string                                    | -       | Notification Title(not required for identityType IPFS, Subgraph)                                                                                  |
+| payload.body           | string                                    | -       | Notification Body(not required for identityType IPFS, Subgraph)                                                                                   |
+| payload.cta            | string                                    | -       | Notification Call To Action url(not required for identityType IPFS, Subgraph)                                                                     |
+| payload.img            | string                                    | -       | Notification Media url(not required for identityType IPFS, Subgraph)                                                                              |
+| payload.sectype        | string                                    | -       | If Secret Notification then pass(not required for identityType IPFS, Subgraph)                                                                    |
+| payload.additionalMeta | {type: string; data: any; domain: string} | -       | Additional information in case necessary                                                                                                          |
+| graph.id               | string                                    | -       | graph id, required only if the identityType is 3                                                                                                  |
+| graph.counter          | string                                    | -       | graph counter, required only if the identityType is 3                                                                                             |
+| ipfsHash               | string                                    | -       | ipfsHash, required only if the identityType is 1                                                                                                  |
+| expiry                 | number                                    | -       | (optional) epoch value if the notification has an expiry                                                                                          |
+| hidden                 | boolean                                   | false   | (optional) true if we want to hide the notification                                                                                               |
+| pgpPrivateKey          | string                                    | -       | (optional) pgp private key for new notification verification proof                                                                                |
+| env                    | string                                    | ‘prod’  | API env - ‘prod’, ‘staging’                                                                                                                       |
 
 1. Requirements before using SDK calls, derive the `signer`
 
@@ -360,25 +361,3 @@ const apiResponse = await PushAPI.payloads.sendNotification({
 ```
 {% endtab %}
 {% endtabs %}
-
-| Param                  | Type                                      | Default | Remarks                                                                                                                                           |
-| ---------------------- | ----------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| signer\*               | -                                         | -       | Signer object                                                                                                                                     |
-| channel\*              | string                                    | -       | channel address (CAIP)                                                                                                                            |
-| type\*                 | number                                    | -       | <p>Notification Type<br>Target = 3 (send to 1 address),<br>Subset = 4 (send to 1 or more addresses),<br>Broadcast = 1 (send to all addresses)</p> |
-| identityType\*         | number                                    | -       | <p>Identity Type<br>Minimal = 0,<br>IPFS = 1,<br>Direct Payload = 2,<br>Subgraph = 3 }</p>                                                        |
-| recipients\*           | string or string\[]                       | -       | <p>for Notification Type = Target it is 1 address,<br>for Notification Type = Subset, Broadcast it is an array of addresses (CAIP)</p>            |
-| notification.title\*   | string                                    | -       | Push Notification Title (not required for identityType IPFS, Subgraph)                                                                            |
-| notification.body\*    | string                                    | -       | Push Notification Body(not required for identityType IPFS, Subgraph)                                                                              |
-| payload.title          | string                                    | -       | Notification Title(not required for identityType IPFS, Subgraph)                                                                                  |
-| payload.body           | string                                    | -       | Notification Body(not required for identityType IPFS, Subgraph)                                                                                   |
-| payload.cta            | string                                    | -       | Notification Call To Action url(not required for identityType IPFS, Subgraph)                                                                     |
-| payload.img            | string                                    | -       | Notification Media url(not required for identityType IPFS, Subgraph)                                                                              |
-| payload.sectype        | string                                    | -       | If Secret Notification then pass(not required for identityType IPFS, Subgraph)                                                                    |
-| payload.additionalMeta | {type: string; data: any; domain: string} | -       | Additional information in case necessary                                                                                                          |
-| graph.id               | string                                    | -       | graph id, required only if the identityType is 3                                                                                                  |
-| graph.counter          | string                                    | -       | graph counter, required only if the identityType is 3                                                                                             |
-| ipfsHash               | string                                    | -       | ipfsHash, required only if the identityType is 1                                                                                                  |
-| expiry                 | number                                    | -       | (optional) epoch value if the notification has an expiry                                                                                          |
-| hidden                 | boolean                                   | false   | (optional) true if we want to hide the notification                                                                                               |
-| env                    | string                                    | ‘prod’  | API env - ‘prod’, ‘staging’                                                                                                                       |
