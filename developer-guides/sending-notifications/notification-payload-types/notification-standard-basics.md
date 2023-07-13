@@ -38,7 +38,7 @@ For most part except for Smart Contracts, [push-sdk](../../../developer-tooling/
   * Recipients - 0x0 for type 1 (broadcast), 0xTarget for type 3 (Targetted) and \[0x01, 0x02, 0x03, ..., 0xN] for type 4 (Subset)&#x20;
 
 ```json
-// Example Raw Content for targeted notifcation, abstracted away by SDK
+// Example Raw Content for targeted notification, abstracted away by SDK
 {
   "notification": {
     "title": "The title of your message displayed on screen (50 Chars)",

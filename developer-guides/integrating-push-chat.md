@@ -270,7 +270,7 @@ Disconnects the socket connection.
 
 * EVENTS.CONNECT - Whenever the socket is connected
 * EVENTS.DISCONNECT - Whenever the socket is connected
-* EVENTS.CHAT\_RECEIVED\_MESSAGE - Whenever the user recieves a message or chat requests
+* EVENTS.CHAT\_RECEIVED\_MESSAGE - Whenever the user receives a message or chat requests
 
 **Sample Code**
 
