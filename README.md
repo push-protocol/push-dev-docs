@@ -6,9 +6,9 @@ description: A quick introduction to Push Protocol
 
 Push Protocol (previously EPNS) is the world’s first decentralized communication & notification protocol for Web3.
 
-Using the protocol, any smart contract, dApp, or backend service can send on-chain or off-chain notifications tied to the wallet addresses of users in a gasless, multichain, open, and platform-agnostic way.
+Using the protocol, any smart contract, dApp, or backend service can communicate both on-chain and off-chain via user wallet addresses in an **open, gasless, multichain, and platform-agnostic fashion.**
 
-Being an open communication middleware, notifications can be integrated and shown on any crypto wallet, mobile app, browser extension, or dApps enabling a native communication layer for Web3.0
+Being an open communication middleware, Push is building a suite of products to enable **notifications, chats, video, audio** and more that can be integrated and shown on any crypto wallet, mobile app, browser extension, or dApps enabling a native communication layer for Web3.0. We currently have four major products, Push Notifications, Push Chat and Push Video and Push Audio.
 
 <details>
 
@@ -104,5 +104,13 @@ _🛠 Learn about the showrunners framework and how to use it to build out notif
 {% content-ref url="developer-guides/sending-notifications/using-showrunners-scaffold-gasless.md" %}
 [using-showrunners-scaffold-gasless.md](developer-guides/sending-notifications/using-showrunners-scaffold-gasless.md)
 {% endcontent-ref %}
+{% endtab %}
+
+{% tab title="Push Video" %}
+📝 _Learn about the details of Push Video and how to easily integrate it:_
+
+{% hint style="info" %}
+How to integrate Push Video
+{% endhint %}
 {% endtab %}
 {% endtabs %}

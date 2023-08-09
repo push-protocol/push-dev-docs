@@ -46,6 +46,7 @@
   * [Integrating Notifications](developer-guides/integrating-on-frontend/integrating-notifications.md)
 * [Testing Sent Notifications](developer-guides/testing-sent-notifications.md)
 * [Integrating Push Chat](developer-guides/integrating-push-chat.md)
+* [Integrating Push Video](developer-guides/integrating-push-video.md)
 * [Examples](developer-guides/examples/README.md)
   * [Notification Via Smart Contract examples](developer-guides/examples/notification-via-smart-contract-examples/README.md)
     * [Token transfer notification via Smart Contract example](developer-guides/examples/notification-via-smart-contract-examples/token-transfer-notification-via-smart-contract-example.md)
@@ -60,6 +61,7 @@
       * [Expert Level - Oasis](developer-guides/examples/showrunners-examples/advance-examples/expert-level-oasis.md)
   * [Frontend Examples](developer-guides/examples/frontend-examples/README.md)
     * [PUSH x Uniswap Fork Repo](developer-guides/examples/frontend-examples/epns-x-uniswap-fork-repo.md)
+    * [Checkout our Repo and Youtube](developer-guides/examples/frontend-examples/checkout-our-repo-and-youtube.md)
 
 ## ⚙ Developer Tooling
 
