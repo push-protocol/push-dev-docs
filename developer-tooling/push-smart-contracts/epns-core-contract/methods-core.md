@@ -289,7 +289,7 @@ function updateChannelMeta(
    {}
 ```
 
-| Arguements          | Type    | Description                          |
+| Arguments          | Type    | Description                          |
 | ------------------- | ------- | ------------------------------------ |
 | _**\_channel**_     | address | address of the channel               |
 | _**\_newIdentity**_ | bytes   | New Identity bytes of the Channel.   |
