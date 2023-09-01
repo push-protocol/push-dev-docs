@@ -109,8 +109,8 @@ _🛠 Learn about the showrunners framework and how to use it to build out notif
 {% tab title="Push Video" %}
 📝 _Learn about the details of Push Video and how to easily integrate it:_
 
-{% hint style="info" %}
-How to integrate Push Video
-{% endhint %}
+{% content-ref url="developer-guides/integrating-push-video.md" %}
+[How to integrate Push Video.md](developer-guides/integrating-push-video.md)
+{% endcontent-ref %}
 {% endtab %}
 {% endtabs %}
