@@ -38,7 +38,7 @@ import * as PushAPI from "@pushprotocol/restapi";
 
 ## Sample Usage
 
-In the code below, we'll send a notification to all subscribers of your channel, a broadcast notification. For different types of notifications and more examples, go to [this page](../../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-notification/send-notifications.md).
+In the code below, we'll send a notification to all subscribers of your channel, a broadcast notification. For different types of notifications and more examples, go to [this page](../../developer-tooling/push-sdk/sdk-packages-details/pushprotocol-restapi/for-notification/send-notifications.md).
 
 {% hint style="info" %}
 The `PKey` is the private key from the wallet you created a channel. The `channel address` is going to be the address of the wallet you created your channel.
@@ -81,6 +81,6 @@ sendNotification();
 
 For sending different types of notifications, such as Targeted and Subset, and for more examples, go to the page below:
 
-{% content-ref url="../../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-notification/send-notifications.md" %}
-[send-notifications.md](../../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-notification/send-notifications.md)
+{% content-ref url="../../developer-tooling/push-sdk/sdk-packages-details/pushprotocol-restapi/for-notification/send-notifications.md" %}
+[send-notifications.md](../../developer-tooling/push-sdk/sdk-packages-details/pushprotocol-restapi/for-notification/send-notifications.md)
 {% endcontent-ref %}

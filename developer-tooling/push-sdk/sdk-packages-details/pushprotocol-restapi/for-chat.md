@@ -1,8 +1,4 @@
----
-description: Overview about Push Chat SDK
----
-
-# Integrating Push Chat
+# For Chat
 
 Push chat has been moved to new documentation
 

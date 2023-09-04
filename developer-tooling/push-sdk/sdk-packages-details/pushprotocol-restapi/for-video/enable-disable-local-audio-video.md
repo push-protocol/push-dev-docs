@@ -14,9 +14,7 @@ videoObject.enableVideo({
 });
 ```
 
-| Property | Description                               |
-| -------- | ----------------------------------------- |
-| state    | `true` for enable and `false` for disable |
+<table><thead><tr><th width="203">Property</th><th>Description</th></tr></thead><tbody><tr><td>state</td><td><code>true</code> for enable and <code>false</code> for disable</td></tr></tbody></table>
 
 ## Enable/Disable Local Video Audio
 
@@ -28,9 +26,7 @@ videoObject.enableAudio({
 });
 ```
 
-| Property | Description                               |
-| -------- | ----------------------------------------- |
-| state    | `true` for enable and `false` for disable |
+<table><thead><tr><th width="203">Property</th><th>Description</th></tr></thead><tbody><tr><td>state</td><td><code>true</code> for enable and <code>false</code> for disable</td></tr></tbody></table>
 
 {% hint style="info" %}
 ## How to know the current status of local audio/video?

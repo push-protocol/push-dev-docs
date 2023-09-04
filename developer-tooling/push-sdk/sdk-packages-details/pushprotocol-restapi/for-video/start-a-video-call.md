@@ -24,11 +24,7 @@ Before initiating the call, we need to create a local media stream, i.e., local 
 If `stream` object is passed as a param to `create()` function then `create` doesn't generate a new MediaStream rather, it would just assigns `data.local.stream` to the passed `stream` object param. This is for backend use.
 {% endhint %}
 
-| Property | Description                                                                     |
-| -------- | ------------------------------------------------------------------------------- |
-| video    | Whether the video should be enabled or not during the call. Defaults to `true`. |
-| audio    | Whether the audio should be enabled or not during the call. Defaults to `true`. |
-| stream   | Local stream. For backend use. Defaults to `null`.                              |
+<table><thead><tr><th width="179">Property</th><th>Description</th></tr></thead><tbody><tr><td>video</td><td>Whether the video should be enabled or not during the call. Defaults to <code>true</code>.</td></tr><tr><td>audio</td><td>Whether the audio should be enabled or not during the call. Defaults to <code>true</code>.</td></tr><tr><td>stream</td><td>Local stream. For backend use. Defaults to <code>null</code>.</td></tr></tbody></table>
 
 {% hint style="info" %}
 ⚠ **Warning**: If `audio`, `video` aren't passed as true in `create()` then they won't be available during the entire video call respectively.
@@ -52,13 +48,7 @@ await videoObject.request({
 });
 ```
 
-| Property         | Description                                                                                             |
-| ---------------- | ------------------------------------------------------------------------------------------------------- |
-| senderAddress    | Wallet address of the local peer/user                                                                   |
-| recipientAddress | Wallet address of remote peer/user ie the address which you want to call                                |
-| chatId           | Unique identifier for every push chat, here, the one between the senderAddress and the recipientAddress |
-| onReceiveMessage | Function which will be called when the sender receives a message via webRTC data channel                |
-| retry            | If we are retrying the call then this param should be set to true, only for internal use                |
+<table><thead><tr><th width="203">Property</th><th>Description</th></tr></thead><tbody><tr><td>senderAddress</td><td>Wallet address of the local peer/user</td></tr><tr><td>recipientAddress</td><td>Wallet address of remote peer/user ie the address which you want to call</td></tr><tr><td>chatId</td><td>Unique identifier for every push chat, here, the one between the senderAddress and the recipientAddress</td></tr><tr><td>onReceiveMessage</td><td>Function which will be called when the sender receives a message via webRTC data channel</td></tr><tr><td>retry</td><td>If we are retrying the call then this param should be set to true, only for internal use</td></tr></tbody></table>
 
 {% embed url="https://www.npmjs.com/package/@pushprotocol/restapi#request" %}
 request
@@ -188,14 +178,7 @@ await videoObject.acceptRequest({
 });
 ```
 
-| Property         | Description                                                                                             |
-| ---------------- | ------------------------------------------------------------------------------------------------------- |
-| signalData       | Signal data received from the initiator peer via push notification upon request() call                  |
-| senderAddress    | Wallet address of the local peer/user                                                                   |
-| recipientAddress | Wallet address of remote peer/user ie the address which you want to call                                |
-| chatId           | Unique identifier for every push chat, here, the one between the senderAddress and the recipientAddress |
-| onReceiveMessage | Function which will be called when the sender receives a message via webRTC data channel                |
-| retry            | If we are retrying the call, only for internal use                                                      |
+<table><thead><tr><th width="203">Property</th><th>Description</th></tr></thead><tbody><tr><td>signalData</td><td>Signal data received from the initiator peer via push notification upon request() call</td></tr><tr><td>senderAddress</td><td>Wallet address of the local peer/user</td></tr><tr><td>recipientAddress</td><td>Wallet address of remote peer/user ie the address which you want to call</td></tr><tr><td>chatId</td><td>Unique identifier for every push chat, here, the one between the senderAddress and the recipientAddress</td></tr><tr><td>onReceiveMessage</td><td>Function which will be called when the sender receives a message via webRTC data channel</td></tr><tr><td>retry</td><td>If we are retrying the call, only for internal use</td></tr></tbody></table>
 
 {% embed url="https://www.npmjs.com/package/@pushprotocol/restapi#acceptrequest" %}
 accept request
@@ -243,9 +226,7 @@ videoObject.connect({
 });
 ```
 
-| Property   | Description                                                                                 |
-| ---------- | ------------------------------------------------------------------------------------------- |
-| signalData | Signal data received from the receiver peer via push notification upon acceptRequest() call |
+<table><thead><tr><th width="203">Property</th><th>Description</th></tr></thead><tbody><tr><td>signalData</td><td>Signal data received from the receiver peer via push notification upon acceptRequest() call</td></tr></tbody></table>
 
 {% embed url="https://www.npmjs.com/package/@pushprotocol/restapi#connect" %}
 connect

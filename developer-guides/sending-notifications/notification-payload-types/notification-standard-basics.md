@@ -18,10 +18,7 @@ For most part except for Smart Contracts, [push-sdk](../../../developer-tooling/
 
 {% tabs %}
 {% tab title="Identity Type" %}
-| Identity Type | Remarks        | Remarks                        |
-| ------------- | -------------- | ------------------------------ |
-| 0             | Minimal        | Recommended for Smart Contract |
-| 2             | Direct Payload | Recommended for PUSH SDK       |
+<table><thead><tr><th width="156">Identity Type</th><th width="194">Remarks</th><th>Remarks</th></tr></thead><tbody><tr><td>0</td><td>Minimal</td><td>Recommended for Smart Contract</td></tr><tr><td>2</td><td>Direct Payload</td><td>Recommended for PUSH SDK</td></tr></tbody></table>
 {% endtab %}
 {% endtabs %}
 

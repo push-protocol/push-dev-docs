@@ -13,7 +13,7 @@ The creation of a channel is just a one-time simple procedure. It must be noted 
 {% hint style="info" %}
 **Note:** _Although channel creation only happens on the Ethereum blockchain, the protocol is designed to be chain-agnostic, i.e., channel owners can choose to send notification on any chain of their choice and not just Ethereum network_\
 \
-_This is discussed extensively in the following section 👉_ [enabling-channel-on-other-chains](../../developer-guides/create-your-notif-channel/enabling-channel-on-other-chains/ "mention")
+_This is discussed extensively in the following section 👉_ [enabling-channel-on-other-chains](../../../developer-guides/create-your-notif-channel/enabling-channel-on-other-chains/ "mention")
 {% endhint %}
 
 A successfully created channel is capable of _**sending notifications**_ to its subscribers, directly tied to their wallet addresses. Any wallet address can become a subscriber of a particular channel by simply **opting into** that channel.&#x20;
@@ -32,8 +32,8 @@ Moreover, the owner of a channel can also choose to _**delegate his/her notifica
 
 Now that you have a good understanding of channels, you can follow the quick guide mentioned below to create a channel and start communicating with your users.
 
-{% content-ref url="../../developer-guides/create-your-notif-channel/" %}
-[create-your-notif-channel](../../developer-guides/create-your-notif-channel/)
+{% content-ref url="../../../developer-guides/create-your-notif-channel/" %}
+[create-your-notif-channel](../../../developer-guides/create-your-notif-channel/)
 {% endcontent-ref %}
 
 ### Learn more about Channels
@@ -44,10 +44,10 @@ If you wish to dive in a bit deep and understand more about channels, their crea
 [what-is-a-channel-alias.md](what-is-a-channel-alias.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../developer-guides/create-your-notif-channel/enabling-channel-on-other-chains/" %}
-[enabling-channel-on-other-chains](../../developer-guides/create-your-notif-channel/enabling-channel-on-other-chains/)
+{% content-ref url="../../../developer-guides/create-your-notif-channel/enabling-channel-on-other-chains/" %}
+[enabling-channel-on-other-chains](../../../developer-guides/create-your-notif-channel/enabling-channel-on-other-chains/)
 {% endcontent-ref %}
 
-{% content-ref url="../../developer-guides/create-your-notif-channel/adding-delegates-for-channel.md" %}
-[adding-delegates-for-channel.md](../../developer-guides/create-your-notif-channel/adding-delegates-for-channel.md)
+{% content-ref url="../../../developer-guides/create-your-notif-channel/adding-delegates-for-channel.md" %}
+[adding-delegates-for-channel.md](../../../developer-guides/create-your-notif-channel/adding-delegates-for-channel.md)
 {% endcontent-ref %}

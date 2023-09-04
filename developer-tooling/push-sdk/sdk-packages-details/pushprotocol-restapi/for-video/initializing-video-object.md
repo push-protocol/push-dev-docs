@@ -45,13 +45,7 @@ const videoObject = new PushAPI.video.Video({
 });
 ```
 
-| Property      | Description                                                                                                                                                                 |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| signer        | Ethers.js signer                                                                                                                                                            |
-| chainId       | ChainId for the video call - Ethereum Mainnet: 1, Polygon Mainnet: 137                                                                                                      |
-| pgpPrivateKey | User's decrypted pgp private key                                                                                                                                            |
-| env           | Environment variable. Default `prod`. For testing, use `staging`                                                                                                            |
-| setData       | Function to update the video call data, takes a function as an argument which receives the latest state of data as a param and should return the modified/new state of data |
+<table><thead><tr><th width="179">Property</th><th>Description</th></tr></thead><tbody><tr><td>signer</td><td>Ethers.js signer</td></tr><tr><td>chainId</td><td>ChainId for the video call - Ethereum Mainnet: 1, Polygon Mainnet: 137</td></tr><tr><td>pgpPrivateKey</td><td>User's decrypted pgp private key</td></tr><tr><td>env</td><td>Environment variable. Default <code>prod</code>. For testing, use <code>staging</code></td></tr><tr><td>setData</td><td>Function to update the video call data, takes a function as an argument which receives the latest state of data as a param and should return the modified/new state of data</td></tr></tbody></table>
 
 Now let's go over each property individually and understand how to set them.
 

@@ -121,13 +121,7 @@ const pushSDKSocket = createSocketConnection({
 
 #### Allowed Options (params with \* are mandatory)
 
-| Param           | Type                       | Default          | Remarks                                                                            |
-| --------------- | -------------------------- | ---------------- | ---------------------------------------------------------------------------------- |
-| `user*`         | `string`                   | -                | user wallet address in CAIP-10 format                                              |
-| `env`           | `string`                   | `'prod'`         | API environment: `'prod'`, `'staging'` or `'dev'`                                  |
-| `socketType`    | `'notification' \| 'chat'` | `'notification'` | socket type                                                                        |
-| `apiKey`        | `string`                   | -                | api key is needed for chat socket type only                                        |
-| `socketOptions` | `object`                   | -                | supports the same as [SocketIO Options](https://socket.io/docs/v4/client-options/) |
+<table><thead><tr><th width="184">Param</th><th>Type</th><th width="185">Default</th><th>Remarks</th></tr></thead><tbody><tr><td><code>user*</code></td><td><code>string</code></td><td>-</td><td>user wallet address in CAIP-10 format</td></tr><tr><td><code>env</code></td><td><code>string</code></td><td><code>'prod'</code></td><td>API environment: <code>'prod'</code>, <code>'staging'</code> or <code>'dev'</code></td></tr><tr><td><code>socketType</code></td><td><code>'notification' | 'chat'</code></td><td><code>'notification'</code></td><td>socket type</td></tr><tr><td><code>apiKey</code></td><td><code>string</code></td><td>-</td><td>api key is needed for chat socket type only</td></tr><tr><td><code>socketOptions</code></td><td><code>object</code></td><td>-</td><td>supports the same as <a href="https://socket.io/docs/v4/client-options/">SocketIO Options</a></td></tr></tbody></table>
 
 {% hint style="warning" %}
 **`autoConnect`**: Generally, if we don't pass `autoConnect: false`, then the socket connection is automatic once the object is created.

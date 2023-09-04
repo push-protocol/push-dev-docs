@@ -17,12 +17,7 @@ Each notification identity carries at least two parameters which are joined by *
 
 _As of now, there are 4 types of storage that are supported:_
 
-| Id | Type           | Definition                          |
-| -- | -------------- | ----------------------------------- |
-| 0  | Minimal        | Recommended for Smart Contract      |
-| 1  | IPFS           | Indicates storage on IPFS           |
-| 2  | Direct Payload | Indicates storage of direct payload |
-| 3  | SubGraph       | Indicates storage on the subgraph   |
+<table><thead><tr><th width="146.33333333333331">Id</th><th>Type</th><th>Definition</th></tr></thead><tbody><tr><td>0</td><td>Minimal</td><td>Recommended for Smart Contract</td></tr><tr><td>1</td><td>IPFS</td><td>Indicates storage on IPFS</td></tr><tr><td>2</td><td>Direct Payload</td><td>Indicates storage of direct payload</td></tr><tr><td>3</td><td>SubGraph</td><td>Indicates storage on the subgraph</td></tr></tbody></table>
 
 ## **Implementations** for different identity
 

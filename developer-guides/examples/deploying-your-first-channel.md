@@ -65,8 +65,8 @@ Channel Alias is only shown if you switch to any other network than Ethereum. **
 
 Read the section attached below to learn more about channel alias addresses.
 
-{% content-ref url="../../concepts/create-your-notif-channel/what-is-a-channel-alias.md" %}
-[what-is-a-channel-alias.md](../../concepts/create-your-notif-channel/what-is-a-channel-alias.md)
+{% content-ref url="../../concepts/web3-notifications/create-your-notif-channel/what-is-a-channel-alias.md" %}
+[what-is-a-channel-alias.md](../../concepts/web3-notifications/create-your-notif-channel/what-is-a-channel-alias.md)
 {% endcontent-ref %}
 
 ### **Step** 5️⃣ - Do Transactions

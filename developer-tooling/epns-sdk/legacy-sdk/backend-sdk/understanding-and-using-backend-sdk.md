@@ -133,11 +133,7 @@ async  getContract(
 ) {}
 ```
 
-| Parameter | Description                                                      | Default Value                       |
-| --------- | ---------------------------------------------------------------- | ----------------------------------- |
-| chainId   | Specify the id of the chain on which the contract ye seek exists | N/A - required parameter            |
-| address   | Specify the address of which the contract you seek exists        | N/A - required parameter            |
-| abi       | Specify the abi of which the contract you seek                   | <p>N/A - required parameter<br></p> |
+<table><thead><tr><th>Parameter</th><th width="282.97192325690224">Description</th><th>Default Value</th></tr></thead><tbody><tr><td>chainId</td><td>Specify the id of the chain on which the contract ye seek exists</td><td>N/A - required parameter</td></tr><tr><td>address</td><td>Specify the address of which the contract you seek exists</td><td>N/A - required parameter</td></tr><tr><td>abi</td><td>Specify the abi of which the contract you seek</td><td>N/A - required parameter<br></td></tr></tbody></table>
 
 {% hint style="info" %}
 Find all the Push Contract Addresses [here](../../../push-smart-contracts/epns-contract-addresses.md)
@@ -145,8 +141,5 @@ Find all the Push Contract Addresses [here](../../../push-smart-contracts/epns-c
 
 ## Backend SDKs Packages
 
-| Environment    | Github Repo                                                                                                                                                      | NPM Package                                                                                                                      |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| **Staging**    | [https://github.com/ethereum-push-notification-service/push-backend-sdk-staging](https://github.com/ethereum-push-notification-service/push-backend-sdk-staging) | [https://www.npmjs.com/package/@epnsproject/backend-sdk-staging](https://www.npmjs.com/package/@epnsproject/backend-sdk-staging) |
-| **Production** | [https://github.com/ethereum-push-notification-service/push-backend-sdk](https://github.com/ethereum-push-notification-service/push-backend-sdk)                 | [https://www.npmjs.com/package/@epnsproject/backend-sdk](https://www.npmjs.com/package/@epnsproject/backend-sdk)                 |
+<table><thead><tr><th>Environment</th><th width="303.3333333333333">Github Repo</th><th>NPM Package</th></tr></thead><tbody><tr><td><strong>Staging</strong></td><td><a href="https://github.com/ethereum-push-notification-service/push-backend-sdk-staging">https://github.com/ethereum-push-notification-service/push-backend-sdk-staging</a></td><td><a href="https://www.npmjs.com/package/@epnsproject/backend-sdk-staging">https://www.npmjs.com/package/@epnsproject/backend-sdk-staging</a></td></tr><tr><td><strong>Production</strong></td><td><a href="https://github.com/ethereum-push-notification-service/push-backend-sdk">https://github.com/ethereum-push-notification-service/push-backend-sdk</a></td><td><a href="https://www.npmjs.com/package/@epnsproject/backend-sdk">https://www.npmjs.com/package/@epnsproject/backend-sdk</a></td></tr></tbody></table>
 

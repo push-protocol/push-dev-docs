@@ -31,7 +31,7 @@ Push SDK uses CAIP10 format but defaults to Ethereum address format, CAIP 10 for
 \
 _However, as we expand our boundaries to multiple chains in the future, we shall define our own specifications, if need be._\
 \
-_More details about this are in the_ [epnsproject-sdk-restapi](sdk-packages-details/epnsproject-sdk-restapi/ "mention")
+_More details about this are in the_ [pushprotocol-restapi](sdk-packages-details/pushprotocol-restapi/ "mention")
 {% endhint %}
 
 ### Build using Push SDK
@@ -42,16 +42,16 @@ _More details about this are in the_ [epnsproject-sdk-restapi](sdk-packages-deta
 
 ### Learn more about the Push SDK Packages
 
-{% content-ref url="sdk-packages-details/epnsproject-sdk-restapi/" %}
-[epnsproject-sdk-restapi](sdk-packages-details/epnsproject-sdk-restapi/)
+{% content-ref url="sdk-packages-details/pushprotocol-restapi/" %}
+[pushprotocol-restapi](sdk-packages-details/pushprotocol-restapi/)
 {% endcontent-ref %}
 
-{% content-ref url="../epns-sdk/sdk-packages-details/epnsproject-sdk-uiembed.md" %}
-[epnsproject-sdk-uiembed.md](../epns-sdk/sdk-packages-details/epnsproject-sdk-uiembed.md)
+{% content-ref url="sdk-packages-details/pushprotocol-uiembed.md" %}
+[pushprotocol-uiembed.md](sdk-packages-details/pushprotocol-uiembed.md)
 {% endcontent-ref %}
 
-{% content-ref url="sdk-packages-details/epnsproject-sdk-uiweb/" %}
-[epnsproject-sdk-uiweb](sdk-packages-details/epnsproject-sdk-uiweb/)
+{% content-ref url="sdk-packages-details/pushprotocol-uiweb/" %}
+[pushprotocol-uiweb](sdk-packages-details/pushprotocol-uiweb/)
 {% endcontent-ref %}
 
 {% content-ref url="sdk-packages-details/pushprotocol-socket/" %}

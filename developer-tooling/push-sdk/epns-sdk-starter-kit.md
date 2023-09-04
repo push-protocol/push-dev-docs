@@ -204,7 +204,7 @@ const subscribeFn = async () => {
 }
 ```
 
-we can use this [epnsproject-sdk-restapi](sdk-packages-details/epnsproject-sdk-restapi/ "mention") method to do that - [subscribe](https://github.com/ethereum-push-notification-service/push-sdk/blob/main/packages/restapi/README.md#opt-in-to-a-channel)
+we can use this [pushprotocol-restapi](sdk-packages-details/pushprotocol-restapi/ "mention") method to do that - [subscribe](https://github.com/ethereum-push-notification-service/push-sdk/blob/main/packages/restapi/README.md#opt-in-to-a-channel)
 
 ```typescript
 const isSubscribedFn = async () => {
@@ -213,7 +213,7 @@ const isSubscribedFn = async () => {
 }
 ```
 
-we can use this [epnsproject-sdk-restapi](sdk-packages-details/epnsproject-sdk-restapi/ "mention") method to find out that - [getSubscriptions](https://github.com/ethereum-push-notification-service/push-sdk/blob/main/packages/restapi/README.md#fetching-user-subscriptions)
+we can use this [pushprotocol-restapi](sdk-packages-details/pushprotocol-restapi/ "mention") method to find out that - [getSubscriptions](https://github.com/ethereum-push-notification-service/push-sdk/blob/main/packages/restapi/README.md#fetching-user-subscriptions)
 
 **Parsing raw** [**Feeds API data**](https://github.com/ethereum-push-notification-service/push-sdk/blob/main/packages/restapi/README.md#fetching-user-notifications) **using** [**utils**](https://github.com/ethereum-push-notification-service/push-sdk/blob/main/packages/restapi/README.md#parsing-notifications) **method `parseApiResponse`**
 

@@ -38,8 +38,8 @@ Ideally, there are six crucial requirements for creating a Channel. Make sure yo
 * The **Alias Address** field appears only when you select any chain other than Ethereum for your channel's notification. Alias address is basically the representation of your original Ethereum channel on the selected chain of your choice.
 * The alias address basically allows you to provide an address that will represent your channel on the other chain selected in the **Network** dropdown section. It is imperative to note that the address you pass as an alias, must be your own as it will be further verified as a part of the channel creation process. Read more about Alias Addresses👇.
 
-{% content-ref url="../../concepts/create-your-notif-channel/what-is-a-channel-alias.md" %}
-[what-is-a-channel-alias.md](../../concepts/create-your-notif-channel/what-is-a-channel-alias.md)
+{% content-ref url="../../concepts/web3-notifications/create-your-notif-channel/what-is-a-channel-alias.md" %}
+[what-is-a-channel-alias.md](../../concepts/web3-notifications/create-your-notif-channel/what-is-a-channel-alias.md)
 {% endcontent-ref %}
 
 {% hint style="success" %}

@@ -7,7 +7,7 @@ description: Overview about Push Video SDK
 Just like Push Chat, integrating Push Video in your application is very easy.&#x20;
 
 {% hint style="info" %}
-This guide provides all the high level integrations details 👉  [Check it out](../developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-video/)
+This guide provides all the high level integrations details 👉  [Check it out](../developer-tooling/push-sdk/sdk-packages-details/pushprotocol-restapi/for-video/)
 {% endhint %}
 
 

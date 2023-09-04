@@ -31,9 +31,7 @@ function setGovernanceAddress(address _governanceAddress)
     {}
 ```
 
-| Argument                  | Type    | Description                        |
-| ------------------------- | ------- | ---------------------------------- |
-| _**\_governanceAddress**_ | address | Address of the Governance protocol |
+<table><thead><tr><th width="217">Argument</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><em><strong>_governanceAddress</strong></em></td><td>address</td><td>Address of the Governance protocol</td></tr></tbody></table>
 
 **Description:**
 
@@ -121,12 +119,7 @@ function createChannelWithPUSH(
     {}
 ```
 
-| Arguments                 | Type    | Description                                                           |
-| ------------------------- | ------- | --------------------------------------------------------------------- |
-| _**\_channelType**_       | Enum    | Represents the type of Channel being created                          |
-| _**\_identity**_          | bytes   | Identity bytes of the Channel.                                        |
-| _**\_amount**_            | uint256 | Total amount of PUSH being deposit                                    |
-| _**\_channelExpiryTime**_ | uint256 | The time when the channel will expire and will be ready for deletion. |
+<table><thead><tr><th width="209">Arguments</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><em><strong>_channelType</strong></em></td><td>Enum</td><td>Represents the type of Channel being created</td></tr><tr><td><em><strong>_identity</strong></em></td><td>bytes</td><td>Identity bytes of the Channel.</td></tr><tr><td><em><strong>_amount</strong></em></td><td>uint256</td><td>Total amount of PUSH being deposit</td></tr><tr><td><em><strong>_channelExpiryTime</strong></em></td><td>uint256</td><td>The time when the channel will expire and will be ready for deletion.</td></tr></tbody></table>
 
 **CheckPoints:**
 
@@ -204,7 +197,7 @@ function reactivateChannel(uint256 _amount)
 
 **9. blockChannel**
 
-***
+
 
 ```solidity
 function blockChannel(address _channelAddress)

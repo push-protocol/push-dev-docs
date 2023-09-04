@@ -20,7 +20,7 @@ Being an open communication middleware, Push is building a suite of products to 
 * A channel is free to delegate (or revoke delegates) sending notifications functionality to any other wallet addresses on their behalf.
 * Creating a channel requires 50 **PUSH**, Channel info (Channel name, Image, description, CTA), and some **ETH**.
 * Channels can send notifications to their users(wallet addresses) in a number of ways, including:
-  * [Javascript SDK](developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-restapi/for-notification/send-notifications.md) (**Gasless.** Best for automated logic from dApp / Backend)
+  * [Javascript SDK](developer-tooling/push-sdk/sdk-packages-details/pushprotocol-restapi/for-notification/send-notifications.md) (**Gasless.** Best for automated logic from dApp / Backend)
   * [**Showrunners Framework**](developer-tooling/showrunners-framework/) (**Scaffold/Gasless.** Best for automated logic via scaffold backend)
   * Smart contract to Smart contract (**requires gas**, Best for instant on-chain events, piggybacks on an on-chain transaction via Interface ABI call)
   * Manually from Push dApp (**Gasless**, Best for manual logic)
@@ -37,8 +37,8 @@ Being an open communication middleware, Push is building a suite of products to 
 {% tab title="Channels" %}
 **🖥** _Learn everything about channels, their working mechanisms, and how to create one._
 
-{% content-ref url="concepts/create-your-notif-channel/" %}
-[create-your-notif-channel](concepts/create-your-notif-channel/)
+{% content-ref url="concepts/web3-notifications/create-your-notif-channel/" %}
+[create-your-notif-channel](concepts/web3-notifications/create-your-notif-channel/)
 {% endcontent-ref %}
 
 {% content-ref url="developer-guides/create-your-notif-channel/" %}
@@ -89,8 +89,8 @@ Being an open communication middleware, Push is building a suite of products to 
 [integrating-push-chat.md](developer-guides/integrating-push-chat.md)
 {% endcontent-ref %}
 
-{% content-ref url="developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-uiweb/push-support-chat.md" %}
-[push-support-chat.md](developer-tooling/push-sdk/sdk-packages-details/epnsproject-sdk-uiweb/push-support-chat.md)
+{% content-ref url="developer-tooling/push-sdk/sdk-packages-details/pushprotocol-uiweb/push-support-chat.md" %}
+[push-support-chat.md](developer-tooling/push-sdk/sdk-packages-details/pushprotocol-uiweb/push-support-chat.md)
 {% endcontent-ref %}
 {% endtab %}
 

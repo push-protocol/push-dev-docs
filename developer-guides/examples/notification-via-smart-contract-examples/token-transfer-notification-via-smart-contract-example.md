@@ -5,7 +5,7 @@ Here is an example of a contract that uses Push communicator to send notificatio
 ## Prerequisites
 
 * Ensure you have created your channel - [create-your-notif-channel](../../create-your-notif-channel/ "mention")
-* Ensure you know what are channel delegates - [what-are-channel-delegates.md](../../../concepts/create-your-notif-channel/what-are-channel-delegates.md "mention") [adding-delegates-for-channel.md](../../create-your-notif-channel/adding-delegates-for-channel.md "mention")
+* Ensure you know what are channel delegates - [what-are-channel-delegates.md](../../../concepts/web3-notifications/create-your-notif-channel/what-are-channel-delegates.md "mention") [adding-delegates-for-channel.md](../../create-your-notif-channel/adding-delegates-for-channel.md "mention")
 * Ensure you know types of notifications to know what you want to send - [notification-payload-types](../../sending-notifications/notification-payload-types/ "mention")&#x20;
 
 ### What's going to happen

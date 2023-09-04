@@ -18,6 +18,6 @@ You can communicate with your subscribers on Polygon, BSC, Solana, etc. using an
 
 ### How to set-up a Channel Alias for your channel?
 
-{% content-ref url="../../developer-guides/create-your-notif-channel/enabling-channel-on-other-chains/" %}
-[enabling-channel-on-other-chains](../../developer-guides/create-your-notif-channel/enabling-channel-on-other-chains/)
+{% content-ref url="../../../developer-guides/create-your-notif-channel/enabling-channel-on-other-chains/" %}
+[enabling-channel-on-other-chains](../../../developer-guides/create-your-notif-channel/enabling-channel-on-other-chains/)
 {% endcontent-ref %}
