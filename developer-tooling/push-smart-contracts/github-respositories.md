@@ -4,4 +4,7 @@ description: Here you can find GitHub Repositories for EPNS smart contracts..
 
 # GitHub Respositories
 
-{% embed url="https://github.com/ethereum-push-notification-service/push-smart-contracts" %}
+Section has been moved to:\
+
+
+{% embed url="https://push.org/docs/notifications/push-smart-contracts/github-repositories/" %}

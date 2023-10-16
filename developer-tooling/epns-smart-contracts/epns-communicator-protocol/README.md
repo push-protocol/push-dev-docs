@@ -4,10 +4,6 @@ description: Technical Details about comm contract
 
 # Push Communicator Protocol
 
-{% content-ref url="types-and-modifiers-comm.md" %}
-[types-and-modifiers-comm.md](types-and-modifiers-comm.md)
-{% endcontent-ref %}
+Section has been moved to:
 
-{% content-ref url="../../push-smart-contracts/epns-communicator-protocol/methods-comm.md" %}
-[methods-comm.md](../../push-smart-contracts/epns-communicator-protocol/methods-comm.md)
-{% endcontent-ref %}
+{% embed url="https://push.org/docs/notifications/push-smart-contracts/comm-smart-contract/" %}
