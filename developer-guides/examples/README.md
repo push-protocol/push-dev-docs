@@ -1,13 +1,5 @@
 # Examples
 
-{% content-ref url="deploying-your-first-channel.md" %}
-[deploying-your-first-channel.md](deploying-your-first-channel.md)
-{% endcontent-ref %}
+This section has been moved to new documentation:
 
-{% content-ref url="notification-via-smart-contract-examples/" %}
-[notification-via-smart-contract-examples](notification-via-smart-contract-examples/)
-{% endcontent-ref %}
-
-{% content-ref url="showrunners-examples/" %}
-[showrunners-examples](showrunners-examples/)
-{% endcontent-ref %}
+{% embed url="https://push.org/docs/notifications/tutorials/token-transfer-notification-from-smart-contract/" %}
