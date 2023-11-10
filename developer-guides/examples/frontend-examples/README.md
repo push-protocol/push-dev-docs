@@ -1,5 +1,5 @@
 # Frontend Examples
 
-{% content-ref url="epns-x-uniswap-fork-repo.md" %}
-[epns-x-uniswap-fork-repo.md](epns-x-uniswap-fork-repo.md)
-{% endcontent-ref %}
+This section has been moved to new documentation:
+
+{% embed url="https://push.org/docs/notifications/build/integrating-notifications/" %}
