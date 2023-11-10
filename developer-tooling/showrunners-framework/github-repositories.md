@@ -4,6 +4,6 @@ description: Here you can find GitHub Repositories for PUSH showrunners framewor
 
 # Github Repositories
 
-### PUSH Showrunners Framework&#x20;
+This section has been moved to new documentation:
 
-{% embed url="https://github.com/ethereum-push-notification-service/push-showrunners-framework" %}
+{% embed url="https://push.org/docs/notifications/showrunners-scaffold/get-started/" %}
