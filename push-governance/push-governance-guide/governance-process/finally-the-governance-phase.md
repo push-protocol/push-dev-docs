@@ -25,7 +25,7 @@ The draft proposals that pass the promotion criteria of the Discussion phase are
 
 ### What are the Promotion Criteria?
 
-* The proposal needs to meet the Quorom for it to be considered valid. Quorum is defined as 4% of the [circulating supply of $PUSH](https://coinmarketcap.com/currencies/epns/) voting in the affirmative.
-* If the Quorom is not achieved in 7 days for a proposal, then the proposal is considered as defeated.
+* The proposal needs to meet the Quorum for it to be considered valid. Quorum is defined as 4% of the [circulating supply of $PUSH](https://coinmarketcap.com/currencies/epns/) voting in the affirmative.
+* If the Quorum is not achieved in 7 days for a proposal, then the proposal is considered as defeated.
 
 > _For a vote to pass on Snapshot, it must achieve a quorum of 4% of the_ [_circulating supply of $PUSH_](https://coinmarketcap.com/currencies/epns/) _voting in the affirmative. The purpose of the quorum is to ensure that the approved proposals have adequate voter participation. This means that if a proposal that had a majority of votes affirmative but didn’t achieve the necessary quorum, it won’t be approved._
